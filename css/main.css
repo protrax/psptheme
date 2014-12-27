@@ -48,7 +48,7 @@ Isotope
 ********************/
 
 /*** Isotope layout ***/
-* clear fix */
+/* clear fix */ 
 .isotope:after {
   content: '';
   display: block;

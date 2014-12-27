@@ -47,25 +47,39 @@
 Isotope
 ********************/
 
-.example figure {
-  float: left;
-  background: #17A781;
+/*** Isotope layout ***/
+* clear fix */
+.isotope:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+
+
+.item,
+.grid-sizer {
   width: 20%;
-  height: 159px;
-  margin: 0 2px 4px;
+  display: block;
+  margin: 2em 0em;
 }
-.example .item-w2 {
-  width: 40%;
-  background: #ED9393;
+
+.item {
+  
+  height: auto;
+
 }
-.example .item-h2 {
-  height: 322px;
-  background: #7CB744;
+
+.item.width2 { width: 40%; }
+.item.height2 { height: auto; }
+
+/******* Isotope load animation ******/
+
+.iso-animate {
+    -webkit-animation-duration: 1s;
+      animation-duration: 1s;
 }
-.example .item-h3 {
-  height: 485px;
-  background: #38B5E5;
-}
+<<<<<<< HEAD
 .isotope .isotope-item {
   -webkit-transition-duration: 0.8s;
   -moz-transition-duration: 0.8s;
@@ -74,3 +88,35 @@ Isotope
   -moz-transition-property: -moz-transform, opacity;
   transition-property: transform, opacity;
 }
+=======
+
+/******* Media queries for isotope **********/
+
+
+@media screen and (max-width:992px) {
+  .item,
+  .grid-sizer {
+    width: 50%;
+    
+  }
+  .item.width2 {
+    width: 50%;
+  }
+
+  .item {
+    height: 200px;
+
+  }
+
+@media screen and (max-width:570px) {
+  .item,
+  .grid-sizer {
+    width: 100%;
+
+  }
+  .item.width2 {
+    width: 100%;
+  }
+  
+}
+>>>>>>> dd21f75d46dde721ebd4a0a254dde88a732f1a5a

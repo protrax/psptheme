@@ -13,14 +13,12 @@ jQuery(function ($) {
   }
 })
 
-
   //Enable Sidebar offcanvas
   $(document).ready(function () {
   $('[data-toggle="offcanvas"]').click(function () {
     $('.row-offcanvas').toggleClass('active') 
   });
 });
-
 
 })
 
@@ -29,12 +27,15 @@ jQuery(function ($) {
   // Fix math for loading item layout
   // Fix flickering (bug) when filtering data-categories
   // Do other changes if needed
+  // Fix loading bugs
   // Make animation section dynamic for php vars
+  // fix smoother animations
+  // Remove classes used for load
 
 
-//*************************************************
-//****** Start Isotope functions blog masonry *****
-//*************************************************
+//***************************************************************
+//****** Start Isotope functions blog and portfolio masonry *****
+//***************************************************************
 
 //Isotope function
 jQuery( function($) {
@@ -175,5 +176,103 @@ function getItemElement() {
 
 }); // End isotope function
 //End isotope functions
+
+
+
+
+//////// TODO/////////////
+
+  // Fix flickering (bug) when filtering data-categories
+  // Do other changes if needed
+  // Fix loading bugs
+  // Make animation section dynamic for php vars
+  // fix smoother animations
+  // Remove classes used for load
+
+
+//********************************************************************
+//****** Start Isotope functions Portfolio page all column pages *****
+//********************************************************************
+
+//Isotope function
+jQuery( function($) {
+//Isotope masonry
+$( function() {
+
+    var $container = $('.iso-portfolio-page');
+    $container.isotope({
+      itemSelector: '.iso-portfolio-item',
+      layoutMode: 'fitRows',
+      masonry: {
+        columnWidth: '.grid-sizer'
+      }
+});
+//Isotope apend on click
+  $('#append-portfolio-item').on( 'click', function() {
+    // create new item elements
+    var $elems = getItemElement().add( getItemElement() ).add( getItemElement() );
+    // append elements to container
+    $container.append( $elems )
+      // add and lay out newly appended elements
+      .isotope( 'appended', $elems);
+  });
+
+  // Isotope animation function
+// Dynamic animation class variable
+$animationclass_portfolio = 'iso-animate ' + 'fadeInUp';
+// Isotope Animation function
+jQuery(function($) {
+$('.iso-portfolio-item').each(function(i) {
+  $(this).hide();
+  $(this).show( 100 ).delay((i++) * 100).queue(function( next ){
+        $(this).addClass( $animationclass_portfolio ); //add a custom class to isotope loading
+        $(this).dequeue();
+        $(this).finish();
+    });
+    });
+  }); // End Isotope animation function
+
+  
+}); // End isotope masonry function
+
+
+//Fiter data-groups
+  // store filter for each group
+  var filters = {};
+
+  $('#filters-portfolio').on( 'click', '.button', function() {
+    var $this = $(this);
+    // get group key
+    var $buttonGroup = $this.parents('.button-group');
+    var filterGroup = $buttonGroup.attr('data-filter-group');
+    // set filter for group
+    filters[ filterGroup ] = $this.attr('data-filter');
+    // combine filters
+    var filterValue = '';
+    for ( var prop in filters ) {
+      filterValue += filters[ prop ];
+    }
+    // set filter for Isotope
+    $('.iso-portfolio-page').isotope({ filter: filterValue });
+  });
+
+  // change is-checked class on buttons
+  $('.button-group').each( function( i, buttonGroup ) {
+    var $buttonGroup = $( buttonGroup );
+    $buttonGroup.on( 'click', 'button', function() {
+      $buttonGroup.find('.is-checked').removeClass('is-checked');
+      $( this ).addClass('is-checked');
+    });
+  });
+
+// End filder data groups
+
+}); // End isotope function
+//End isotope page-portfolio functions
+
+
+
+
+
 
 

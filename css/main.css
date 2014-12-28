@@ -1,3 +1,65 @@
+/*!
+ * Yamm!3
+ * Yet another megamenu for Bootstrap
+ * http://geedmo.github.com/yamm3
+ *
+ * Demo styles
+ */
+
+
+/* menu styes */
+.list-unstyled,
+.list-unstyled ul { min-width: 284px }
+
+@media ( min-width: 767px ) {
+  .panel-group { width: 400px; }
+  .thumbnail { margin: 0; }
+}
+
+
+
+  .grid-demo [class*="col-"] {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 1em;
+    text-align: center;
+    line-height: 2;
+    background-color: #e5e1ea;
+    border: 1px solid #d1d1d1;
+  }
+
+/*!
+ * Yamm!3 - Yet another megamenu for Bootstrap 3
+ * http://geedmo.github.com/yamm3
+ * 
+ * @geedmo - Licensed under the MIT license
+ */
+.yamm .nav,
+.yamm .collapse,
+.yamm .dropup,
+.yamm .dropdown {
+  
+}
+.mega {
+  position: static !important;
+}
+.yamm .container {
+  position: relative;
+}
+.yamm .dropdown-menu {
+  left: 0;
+}
+.yamm .yamm-content {
+  padding: 20px 30px;
+}
+.yamm .dropdown.yamm-fw .dropdown-menu {
+  left: 0;
+  right: 0;
+}
+
+
+
+
 /*
  * Off Canvas
  * --------------------------------------------------
@@ -102,4 +164,3 @@ Isotope
   }
   
 }
-

@@ -48,30 +48,13 @@ Isotope
 ********************/
 
 /*** Isotope layout ***/
-/* clear fix */ 
+/* clear fix */
 .isotope:after {
   content: '';
   display: block;
   clear: both;
 }
 
-
-
-.item,
-.grid-sizer {
-  width: 20%;
-  display: block;
-  margin: 2em 0em;
-}
-
-.item {
-  
-  height: auto;
-
-}
-
-.item.width2 { width: 40%; }
-.item.height2 { height: auto; }
 
 /******* Isotope load animation ******/
 
@@ -81,31 +64,3 @@ Isotope
 }
 
 /******* Media queries for isotope **********/
-
-
-@media screen and (max-width:992px) {
-  .item,
-  .grid-sizer {
-    width: 50%;
-    
-  }
-  .item.width2 {
-    width: 50%;
-  }
-
-  .item {
-    height: 200px;
-
-  }
-
-@media screen and (max-width:570px) {
-  .item,
-  .grid-sizer {
-    width: 100%;
-
-  }
-  .item.width2 {
-    width: 100%;
-  }
-  
-}

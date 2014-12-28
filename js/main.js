@@ -271,6 +271,24 @@ $('.iso-portfolio-item').each(function(i) {
 //End isotope page-portfolio functions
 
 
+//********************************************
+//************* Ajax portfolio ***************
+//********************************************
+
+  //******** TODO ********/
+    // Load data form html document
+    // make layout
+    // append data
+    // make it posssible to add animations on opening and closing.
+    // Add navigation (Arrows / number / image - next - previous post)
+
+
+
+
+
+
+
+
 
 
 

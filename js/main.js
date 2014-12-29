@@ -283,14 +283,18 @@ $('.iso-portfolio-item').each(function(i) {
     // Add navigation (Arrows / number / image - next - previous post)
 
 
+//****************************************
+//************ Main menu *****************
+//****************************************
 
+// /****** Hover animation ********/
+//  jQuery('.navbar-default .nav li.dropdown').hover(function() {
+//   jQuery(this).addClass('open');
+//   jQuery('.dropdown-menu').addClass('menu-animation zoomIn');
 
+// }, function() {
+//   jQuery(this).removeClass('open');
+//   jQuery('.dropdown-menu').removeClass('menu-animation zoomIn');
 
-
-
-
-
-
-
-
-
+// });
+  

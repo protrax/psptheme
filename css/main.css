@@ -1,13 +1,186 @@
-/*!
- * Yamm!3
- * Yet another megamenu for Bootstrap
- * http://geedmo.github.com/yamm3
- *
- * Demo styles
- */
+/*** Default styles ***/
+
+body {
+  overflow-x:hidden;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+/************************************
+************ Header *****************
+************************************/
+
+/*** main ***/
+.main-nav {
+  background: #fff;
+  border: none;
+  border-radius: 0;
+  box-shadow: 1px 1px 1px #888888;
+  margin-bottom: 0;
+}
+
+/** Logo **/
+.main-logo img {
+  padding: 1.5em 1.5em;
+}
 
 
-/* menu styes */
+
+
+/*** Top header ***/
+.top-bar {
+  padding: .3em 0;
+  background: #3f4040;
+  color: #f9f9f9;
+}
+.social-links p  {
+  margin: 0px;
+  padding: .3em 0 0 0;
+}
+.social-links p a {
+  padding: .6em;
+}
+
+.contact-info p {
+    margin: 0px;
+    padding: .3em 0 0 0;
+}
+.contact-info p a {
+  padding: .6em;
+}
+
+/*** icons ***/
+.top-bar .contact-info,.social-links span.glyphicon{   
+  font-size: 1.1em;
+  color: #f9f9f9;
+}
+.top-bar .contact-info,a,p span.glyphicon{   
+ 
+  color: #f9f9f9;
+}
+.top-bar .contact-info,a:hover{   
+ text-decoration: none;
+ color: #ffffff; 
+}
+.top-bar .contact-info,a:focus{   
+ text-decoration: none;
+ color: #ffffff; 
+}
+.top-bar .contact-info,a:visited{   
+ text-decoration: none;
+ color: #ffffff; 
+}
+
+/**** Tablet and mobile ****/
+@media screen and (max-width:48em ){ 
+  .social-links {
+    float: left !important;
+  }
+
+}
+
+
+
+/************************************
+************ Menu Styles ************
+************************************/
+
+/***** Main menu ****/
+
+
+
+.main-menu-container li a {
+  padding: 2em .8em;
+  font-size: 1.1em;
+  color: #3f4040 !important;
+  height: 85px;
+    border-top: 3px solid #fff;
+}
+
+.navbar-default .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus{
+  background-color: #fff;
+}
+.navbar-default .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:active{
+  background-color: #fff;
+}
+.navbar-default .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:visited{
+  background-color: #fff;
+}
+.main-menu-container .open>a:focus  {
+  border-color: #f78e20;
+}
+
+.main-menu-container .open>a:visited  {
+  border-color: #f78e20;
+}
+
+
+
+.main-menu-container .dropdown-menu li a {
+    height: auto;
+    padding: .4em 1em;
+    border: none;
+}
+
+.main-menu-container .dropdown-menu li a:hover {
+    border:none;
+}
+
+
+
+
+
+
+.main-menu-container li a:hover {
+  border-top: 3px solid #f78e20;
+   -webkit-animation: bordertop .25s forwards; /* Chrome, Safari, Opera */ 
+    animation: bordertop .25s forwards;
+       
+       -webkit-animation: menutext .3s forwards; /* Chrome, Safari, Opera */ 
+    animation: menutext .3s forwards;
+}
+/** Menu border animation **/
+@-webkit-keyframes bordertop {
+    0%   {border-top: 0px solid #f78e20; }
+    100% {border-top: 3px solid #f78e20; color: #f78e20; }
+}
+
+/** Menu text animation **/
+@keyframes menutext {
+    
+    100% {color: #f78e20;}
+}
+
+@-webkit-keyframes menutext {
+  
+    100% {color: #f78e20; }
+}
+
+
+@keyframes bordertop {
+    0%   {border-top: 0px solid #f78e20;}
+    100% {border-top: 3px solid #f78e20; color: #f78e20;}
+}
+
+.menu-animation {
+  -webkit-animation-duration: .40s;
+          animation-duration: .40s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+/*** Main right menu ****/
+
+.main-right-menu {
+  padding: 1em 0em;
+}
+
+
+
+/***** mega menu ****/
+
 .list-unstyled,
 .list-unstyled ul { min-width: 284px }
 
@@ -28,12 +201,7 @@
     border: 1px solid #d1d1d1;
   }
 
-/*!
- * Yamm!3 - Yet another megamenu for Bootstrap 3
- * http://geedmo.github.com/yamm3
- * 
- * @geedmo - Licensed under the MIT license
- */
+
 .yamm .nav,
 .yamm .collapse,
 .yamm .dropup,
@@ -60,10 +228,9 @@
 
 
 
-/*
- * Off Canvas
- * --------------------------------------------------
- */
+/************************************
+************ Off canvas ************
+************************************/
 @media screen and (max-width: 767px) {
   .row-offcanvas {
     position: relative;
@@ -105,9 +272,9 @@
   }
 }
 
-/********************
-Isotope
-********************/
+/************************************
+************ Isotope ************
+************************************/
 
 /*** Isotope layout ***/
 /* clear fix */
@@ -132,35 +299,4 @@ Isotope
   -webkit-transition-property: -webkit-transform, opacity;
   -moz-transition-property: -moz-transform, opacity;
   transition-property: transform, opacity;
-}
-
-
-/******* Media queries for isotope **********/
-
-
-@media screen and (max-width:992px) {
-  .item,
-  .grid-sizer {
-    width: 50%;
-    
-  }
-  .item.width2 {
-    width: 50%;
-  }
-
-  .item {
-    height: 200px;
-
-  }
-
-@media screen and (max-width:570px) {
-  .item,
-  .grid-sizer {
-    width: 100%;
-
-  }
-  .item.width2 {
-    width: 100%;
-  }
-  
 }

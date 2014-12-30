@@ -226,6 +226,15 @@ body {
 }
 
 
+/******** Menu Search *********/
+#main-search-form {
+  position: absolute;
+  /* top: 0; */
+  z-index: 100;
+  margin: 0px;
+  padding: 0px;
+  display: none;
+}
 
 
 /************************************

@@ -301,10 +301,27 @@ $('.iso-portfolio-item').each(function(i) {
 
   /******** Search bar *******/
   
-jQuery(function($){
-  $( "#main-search-button" ).click(function() {
-    console.log('display');
-  $('#main-search-form').show().addClass('animated bounceInLeft');
-  $('#main-search-form').show(2000);
+  /****** Show/Hide search form *****/
+jQuery(function($) {
+    $("#main-search-button").click(function(e) {
+        e.preventDefault();
+        var $toClose = $("#main-search-form")
+        // Show the search div/form
+        $("#main-search-form").show( function() {
+          // Close the menu when clicking outside the search form
+            if($toClose.is(':visible')) { 
+                $('body').one('click', function(e) {
+                    e.preventDefault();
+                    $toClose.hide(600);
+                });
+            }
+            else {
+                $('body').unbind('click');
+            }
+        });
+    });
+    // Prevent Menu to close when targeting the search div
+    $("#main-search-form").click(function(e) {
+       e.stopPropagation(); // This is the preferred method.
   });
 });

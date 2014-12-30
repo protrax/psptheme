@@ -73,6 +73,33 @@ body {
  color: #3f4040; 
 }
 
+.fa {
+  color: #adadad;
+}
+ .facebook:hover{
+  color: #3a5795;
+}
+
+.twitter:hover {
+  color: #55acee;
+}
+
+.google:hover {
+  color: #AE1811;
+}
+
+.instagram:hover {
+  color: #81573F;
+}
+
+.pinterest:hover {
+  color: #DC0E0B;
+}
+
+.linkedin:hover {
+  color: #007AB5;
+}
+
 /**** Tablet and mobile ****/
 @media screen and (max-width:48em ){ 
   .social-links {
@@ -89,6 +116,9 @@ body {
 
 /***** Main menu ****/
 
+.dropdown-menu {
+  margin-top: -1px !important;
+}
 
 
 .main-menu-container li a {
@@ -96,7 +126,7 @@ body {
   font-size: 1.1em;
   color: #3f4040 !important;
   height: 85px;
-    border-top: 3px solid #fff;
+  border-top: 3px solid #fff;
 }
 
 .navbar-default .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus{
@@ -165,8 +195,8 @@ body {
 }
 
 .menu-animation {
-  -webkit-animation-duration: .40s;
-          animation-duration: .40s;
+  -webkit-animation-duration: .25s;
+          animation-duration: .25s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
 }

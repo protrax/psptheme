@@ -237,6 +237,38 @@ body {
 }
 
 
+#main-search-form input {
+    opacity: 0;
+   -webkit-animation: search-show .60s forwards; /* Chrome, Safari, Opera */ 
+    animation: search-show .60s forwards;
+}
+
+
+@keyframes search-show {
+    0% {  
+      width: 0;
+      opacity: 0;
+    }
+    100% { 
+      width: 13em;
+      opacity: 1;
+    }
+}
+
+@-webkit-keyframes search-show {
+  
+   0% { 
+        width: 0;
+        opacity: 0;
+       }
+    100% {
+      width: 13em;
+      opacity: 1;
+    }
+}
+
+
+
 /************************************
 ************ Off canvas ************
 ************************************/

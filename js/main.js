@@ -287,14 +287,24 @@ $('.iso-portfolio-item').each(function(i) {
 //************ Main menu *****************
 //****************************************
 
-// /****** Hover animation ********/
-//  jQuery('.navbar-default .nav li.dropdown').hover(function() {
-//   jQuery(this).addClass('open');
-//   jQuery('.dropdown-menu').addClass('menu-animation zoomIn');
+/****** Hover animation ********/
+ jQuery('.navbar-default .nav li.dropdown').hover(function() {
+  jQuery(this).addClass('open');
+  jQuery('.dropdown-menu').addClass('menu-animation zoomIn');
 
-// }, function() {
-//   jQuery(this).removeClass('open');
-//   jQuery('.dropdown-menu').removeClass('menu-animation zoomIn');
+}, function() {
+  jQuery(this).removeClass('open');
+  jQuery('.dropdown-menu').removeClass('menu-animation zoomIn');
 
-// });
+});
   
+
+  /******** Search bar *******/
+  
+jQuery(function($){
+  $( "#main-search-button" ).click(function() {
+    console.log('display');
+  $('#main-search-form').show().addClass('animated bounceInLeft');
+  $('#main-search-form').show(2000);
+  });
+});

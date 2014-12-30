@@ -72,7 +72,7 @@ body {
  text-decoration: none;
  color: #3f4040; 
 }
-
+/**** Topbar ****/
 .fa {
   color: #adadad;
 }
@@ -100,6 +100,39 @@ body {
   color: #007AB5;
 }
 
+/**** Main menu social icons ****/
+
+ .facebook-big {
+  color: #3a5795;
+}
+
+.twitter-big{
+  color: #55acee;
+}
+
+.google-big {
+  color: #AE1811;
+}
+
+.instagram-big {
+  color: #81573F;
+}
+
+.pinterest-big {
+  color: #DC0E0B;
+}
+
+.linkedin-big {
+  color: #007AB5;
+}
+
+.search-icon {
+  color: #3f4040;
+}
+
+.search-hide {
+  right: -1px;
+}
 /**** Tablet and mobile ****/
 @media screen and (max-width:48em ){ 
   .social-links {
@@ -204,7 +237,7 @@ body {
 /*** Main right menu ****/
 
 .main-right-menu {
-  padding: 1em 0em;
+  padding: 1em 3em;
 }
 
 

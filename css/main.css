@@ -2,6 +2,7 @@
 
 body {
   overflow-x:hidden;
+  color: #5e5e5e;
 }
 
 .no-padding {
@@ -419,6 +420,11 @@ button#main-search-button:hover .search-icon{
 
 .search-bg {
   background: #f78e20;
+}
+
+.search-button {
+  border-radius: 0;
+  margin-top: 8px;
 }
 
 /************************************

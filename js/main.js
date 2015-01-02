@@ -290,15 +290,20 @@ $('.iso-portfolio-item').each(function(i) {
 
 
 /****** sticky  main menu *****/
-
+  // TODO 
+  // Make logo scale on scroll (with no browser conflicts)
+  
 $(document).scroll(function(){
   
   var $navigation = $('.main-nav');
   var $topbar    = $('.top-bar');
+  var $logo      = $('.main-logo img');
+ 
 
   if($(window).scrollTop() >= 34){
     $navigation.addClass('navbar-fixed-top').addClass('main-nav-fixed');
     $topbar.hide();
+
   }else{
     $navigation.removeClass('navbar-fixed-top').removeClass('main-nav-fixed');
     $topbar.show();

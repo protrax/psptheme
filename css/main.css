@@ -8,6 +8,14 @@ body {
   padding: 0 !important;
 }
 
+.no-margin {
+  margin: 0 !important;
+}
+
+.no-outline {
+  outline: none !important; 
+}
+
 /************************************
 ************ Header *****************
 ************************************/
@@ -292,13 +300,16 @@ body {
 /******** Menu Search *********/
 #main-search-form {
   position: absolute;
-  /* top: 0; */
+  /*top: 0;*/
   z-index: 100;
   margin: 0px;
   padding: 0px;
   display: none;
 }
 
+.form-group input{
+  border-radius: 0;
+}
 
 #main-search-form input {
     opacity: 0;
@@ -330,7 +341,9 @@ body {
     }
 }
 
-
+.search-bg {
+  background-color: #f78e20;
+}
 
 /************************************
 ************ Off canvas ************

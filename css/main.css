@@ -202,6 +202,7 @@ button#main-search-button:hover .search-icon{
 .main-nav.navbar-fixed-top.main-nav-fixed .main-menu-container li a {
   height:58px;
 }
+
 .navbar-default .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus{
   background-color: #fff;
 }

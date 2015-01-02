@@ -292,7 +292,7 @@ $('.iso-portfolio-item').each(function(i) {
 /****** sticky  main menu *****/
   // TODO 
   // Make logo scale on scroll (with no browser conflicts)
-  
+
 $(document).scroll(function(){
   
   var $navigation = $('.main-nav');
@@ -308,18 +308,30 @@ $(document).scroll(function(){
     $navigation.removeClass('navbar-fixed-top').removeClass('main-nav-fixed');
     $topbar.show();
   }
+
+});
+
+// Scroll to top function
+$(document).scroll(function(){
+  var $
+  if($(window).scrollTop() >= 400){
+    $('body').append('')
+
+  } 
+
 });
 
 /****** Hover animation ********/
- jQuery('.navbar-default .nav li.dropdown').hover(function() {
-  jQuery(this).addClass('open');
-  jQuery('.dropdown-menu').addClass('menu-animation zoomIn');
-
+jQuery(function($){
+     $('.navbar-default .nav li.dropdown').hover(function() {
+     $(this).addClass('open');
+     $('.dropdown-menu').addClass('menu-animation zoomIn');
 }, function() {
-  jQuery(this).removeClass('open');
-  jQuery('.dropdown-menu').removeClass('menu-animation zoomIn');
-
+     $(this).removeClass('open');
+     $('.dropdown-menu').removeClass('menu-animation zoomIn');
+  });
 });
+
   
 
   /******** Search bar *******/

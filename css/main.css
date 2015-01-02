@@ -493,3 +493,9 @@ button#main-search-button:hover .search-icon{
   -moz-transition-property: -moz-transform, opacity;
   transition-property: transform, opacity;
 }
+
+.main-menu-container .dropdown-menu li a {
+padding: .4em 1em;
+border: none;
+height: auto !important;
+}

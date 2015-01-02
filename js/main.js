@@ -312,14 +312,27 @@ $(document).scroll(function(){
 });
 
 // Scroll to top function
-$(document).scroll(function(){
-  var $
-  if($(window).scrollTop() >= 400){
-    $('body').append('')
+jQuery(function($){
+  $(document).scroll(function(){
 
+  if($(window).scrollTop() >= 400){
+    $('#to-top').show().removeClass('animated fadeOutDown').addClass('animated fadeInDown');
+
+  }else {
+    $('#to-top').fadeOut().addClass('animated fadeOutDown').removeClass('animated fadeInDown');
   } 
 
 });
+
+$('#to-top').click(function(){
+  $('html, body').animate({scrollTop : 0},700);
+    return false;
+
+});
+
+});
+
+
 
 /****** Hover animation ********/
 jQuery(function($){

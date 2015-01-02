@@ -203,6 +203,11 @@ body {
   border-color: #f78e20;
 }
 
+.main-nav .navbar-nav > .open > a,
+.main-nav .navbar-nav > .active > a
+ {
+  border-color: #f78e20;
+}
 
 
 .main-menu-container .dropdown-menu li a {
@@ -214,10 +219,6 @@ body {
 .main-menu-container .dropdown-menu li a:hover {
     border:none;
 }
-
-
-
-
 
 
 .main-menu-container li a:hover {
@@ -272,7 +273,6 @@ body {
 
 
 .main-nav-fixed .main-logo img{
-  width: 80%;
   padding: .8em 1.5em;
    -webkit-transition: all 0.6s;
     -moz-transition: all 0.6s;

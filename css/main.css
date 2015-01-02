@@ -433,23 +433,19 @@ button#main-search-button:hover .search-icon{
 
 #to-top {
   position: fixed;
-  bottom: 0;
-  right: 20px;
-  width: 46px;
+  padding: .8em;
   bottom: 27px;
   right: 40px;
-  border: none;
-  height: 46px;
   background: #f78e20;
+  border: none;
   display: none;
+  outline: none;
 }
 
 #to-top i {
   color: #fff;
-  font-size: 2em;
+  font-size: 1.8em;
 }
-
-
 
 /************************************
 ************ Off canvas ************

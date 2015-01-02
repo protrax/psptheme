@@ -421,6 +421,27 @@ button#main-search-button:hover .search-icon{
   background: #f78e20;
 }
 
+/****** Scroll to top **************/
+
+#to-top {
+  position: fixed;
+  bottom: 0;
+  right: 20px;
+  width: 46px;
+  bottom: 27px;
+  right: 40px;
+  border: none;
+  height: 46px;
+  background: #f78e20;
+  display: none;
+}
+
+#to-top i {
+  color: #fff;
+  font-size: 2em;
+}
+
+
 /************************************
 ************ Off canvas ************
 ************************************/

@@ -287,6 +287,24 @@ $('.iso-portfolio-item').each(function(i) {
 //************ Main menu *****************
 //****************************************
 
+
+
+/****** sticky  main menu *****/
+
+$(document).scroll(function(){
+  
+  var $navigation = $('.main-nav');
+  var $topbar    = $('.top-bar');
+
+  if($(window).scrollTop() >= 34){
+    $navigation.addClass('navbar-fixed-top').addClass('main-nav-fixed');
+    $topbar.hide();
+  }else{
+    $navigation.removeClass('navbar-fixed-top').removeClass('main-nav-fixed');
+    $topbar.show();
+  }
+});
+
 /****** Hover animation ********/
  jQuery('.navbar-default .nav li.dropdown').hover(function() {
   jQuery(this).addClass('open');
@@ -310,12 +328,15 @@ jQuery(function($) {
         $("#main-search-form").show( function() {
           // Close the menu when clicking outside the search form
             if($toClose.is(':visible')) { 
+                $('#main-search-button').addClass('visibility');
                 $('body').one('click', function(e) {
                     e.preventDefault();
                     $toClose.hide(600);
+                    $('#main-search-button').removeClass('visibility');
                 });
             }
             else {
+
                 $('body').unbind('click');
             }
         });
@@ -325,3 +346,7 @@ jQuery(function($) {
        e.stopPropagation(); // This is the preferred method.
   });
 });
+
+
+
+

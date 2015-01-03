@@ -343,6 +343,19 @@ jQuery(function($){
 });
 // Hover on small screen 
 
+$(window).on("resize", resized);
+$(window).on("load", resized);
+
+function resized() { 
+ 
+
+
+
+
+
+}
+
+
 
 
 

@@ -341,8 +341,11 @@ jQuery(function($){
      $('.dropdown-menu').removeClass('menu-animation zoomIn');
   });
 });
+// Hover on small screen 
 
-  
+
+
+
 
   /******** Search bar *******/
   

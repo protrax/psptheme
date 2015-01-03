@@ -204,6 +204,11 @@ button#main-search-button:hover .search-icon{
     transition: all 0.6s;
 }
 
+/******** Main menu Tablet and mobile hover **********/
+  
+
+/******** End Main menu Tablet and mobile hover **********/
+
 .main-nav.navbar-fixed-top.main-nav-fixed .main-menu-container li a {
   height:58px;
 }

@@ -210,6 +210,11 @@ button#main-search-button:hover .search-icon{
   text-transform: initial;
 }
 
+/******** Main menu Tablet and mobile hover **********/
+  
+
+/******** End Main menu Tablet and mobile hover **********/
+
 .main-nav.navbar-fixed-top.main-nav-fixed .main-menu-container li a {
   height:58px;
 }

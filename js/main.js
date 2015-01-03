@@ -228,7 +228,7 @@ $('.iso-portfolio-item').each(function(i) {
         $(this).addClass( $animationclass_portfolio ); //add a custom class to isotope loading
         $(this).dequeue();
         $(this).finish();
-    });
+      });
     });
   }); // End Isotope animation function
 
@@ -264,9 +264,7 @@ $('.iso-portfolio-item').each(function(i) {
       $( this ).addClass('is-checked');
     });
   });
-
 // End filder data groups
-
 }); // End isotope function
 //End isotope page-portfolio functions
 
@@ -308,7 +306,6 @@ $(document).scroll(function(){
     $navigation.removeClass('navbar-fixed-top').removeClass('main-nav-fixed');
     $topbar.show();
   }
-
 });
 
 // Scroll to top function

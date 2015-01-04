@@ -33,7 +33,9 @@ h3 {font-size: 1.563em;}
 
 h4 {font-size: 1.25em;}
 
-small, .font_small {font-size: 0.8em;}
+small, .font_small {
+  font-size: 0.8em;
+}
 
 
 img {
@@ -405,29 +407,37 @@ button#main-search-button:hover .search-icon{
   }
 
 
-.yamm .nav,
-.yamm .collapse,
-.yamm .dropup,
-.yamm .dropdown {
+.mega-menu .nav,
+.mega-menu .collapse,
+.mega-menu .dropup,
+.mega-menu .dropdown {
   
 }
+
+.mega-menu .mega-menu-content li a {
+width: 100%;
+background: #000;
+display: block;
+}
+
+
 .mega {
   position: static !important;
 }
-.yamm .container {
+.mega-menu .container {
   position: relative;
 }
-.yamm .dropdown-menu {
+.mega-menu .dropdown-menu {
   left: 0;
 }
-.yamm .yamm-content {
+.mega-menu .mega-menu-content {
   padding: 20px 30px;
 }
-.yamm .dropdown.yamm-fw .dropdown-menu {
+.mega-menu .dropdown.mega-menu-fw .dropdown-menu {
   left: 0;
   right: 0;
 }
-.yamm .yamm-content li a {
+.mega-menu .mega-menu-content li a {
   padding: 0px !important;
   }
 .dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
@@ -436,15 +446,15 @@ text-decoration: none;
 background-color: #f5f5f5;
 }
 
-.yamm .yamm-content li a::before {
+.mega-menu .mega-menu-content li a::before {
    content: "-";
 }
 
-.yamm .yamm-content li {
+.mega-menu .mega-menu-content li {
    margin-bottom: 8px;
   }
 
-.yamm .yamm-content ul h3 {
+.mega-menu .mega-menu-content ul h3 {
   margin-top: 0px;
   padding-top: 0px;
   margin-bottom: 13px;

@@ -414,10 +414,13 @@ button#main-search-button:hover .search-icon{
   
 }
 
-.mega-menu .mega-menu-content li a {
+.mega-menu .mega-menu-content li a{
 width: 100%;
-background: #000;
 display: block;
+}
+
+.mega-menu .mega-menu-content li a:hover{
+background: #eee;
 }
 
 
@@ -437,9 +440,7 @@ display: block;
   left: 0;
   right: 0;
 }
-.mega-menu .mega-menu-content li a {
-  padding: 0px !important;
-  }
+
 .dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
 color: #262626;
 text-decoration: none;
@@ -451,7 +452,7 @@ background-color: #f5f5f5;
 }
 
 .mega-menu .mega-menu-content li {
-   margin-bottom: 8px;
+   margin: 0;
   }
 
 .mega-menu .mega-menu-content ul h3 {

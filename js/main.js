@@ -347,7 +347,7 @@ $('#to-top').click(function(){
   
   /****** Show/Hide search form *****/
   jQuery(function($) {
-    
+
     $("#main-search-button").click(function(e) {
         e.preventDefault();
         var $toClose = $("#main-search-form")
@@ -377,5 +377,41 @@ $('#to-top').click(function(){
 });
 
 
+//****************************************
+//************ PSP Slider *****************
+//****************************************
+
+// Load slider
+
+$(function(){
+  var mySwiper = $('.swiper-container').swiper({
+    //Your options here:
+    mode:'horizontal',
+    loop: true,
+    autoplay: 2000,
+    speed: 1000,
+    onSlideChangeStart: function() {
+      $('.swiper-slide').addClass('animated fadeInLeft');
+    },
+    onSlideChangeEnd: function() {
+      $('.swiper-slide').removeClass('animated fadeInLeft');
+    },
+    onFirstInit: function() {
+      $('.psp-slider-loading').hide();
+    },
+    //etc..
+  });
+// Navigate slideshow
+$('.arrow-left').on('click', function(e){
+    e.preventDefault()
+    mySwiper.swipePrev()
+  })
+  $('.arrow-right').on('click', function(e){
+    e.preventDefault()
+    mySwiper.swipeNext()
+  })
+  
+  
+})
 
 

@@ -4,38 +4,36 @@ html {
 }
 
 body {
-  overflow-x:hidden;
-  color: #3f4040;
-  font-family: 'Libre Baskerville', serif ;
-  font-weight: 500;
+  overflow-x: hidden;
+  font-family: 'Roboto', serif;
+  font-weight: 400,500,700,900;
   line-height: 1.45;
-  
+  color: #3f4040;
 }
 
 p {
   margin-bottom: 1.3em;
+  font-size: 1.2em;
 }
 
 h1, h2, h3, h4 {
   margin: 1.414em 0 0.5em;
-  font-weight: inherit;
+  font-weight: 500;
   line-height: 1.2;
 }
 
 h1 {
   margin-top: 0;
-  font-size: 2.441em;
+  font-size: 3.157em;
 }
 
-h2 {font-size: 1.953em;}
+h2 {font-size: 2.369em;}
 
-h3 {font-size: 1.563em;}
+h3 {font-size: 1.777em;}
 
-h4 {font-size: 1.25em;}
+h4 {font-size: 1.333em;}
 
-small, .font_small {
-  font-size: 0.8em;
-}
+small, .font_small {font-size: 0.75em;}
 
 
 img {
@@ -43,6 +41,7 @@ img {
   height: auto;
 }
 
+/**** APPENDING STYLES ****/
 .no-padding {
   padding: 0 !important;
 }
@@ -65,6 +64,39 @@ img {
 .topbar-font {
   font-size: 0.9em !important;
   font-family: sans-serif;
+}
+
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.bold {
+  font-weight: 700 !important;
+}
+
+.superbold {
+  font-weight: 900 !important;
+}
+
+.normal {
+  font-weight: 400 !important;
+}
+
+.medium {
+  font-weight: 500 !important;
+}
+
+.hr {
+  max-width: 80px;
+  border-top: 3px solid #f78e20;
 }
 
 /************************************
@@ -253,6 +285,9 @@ button.search-bg:hover .search-icon {
   margin-top: 1.2em;
 }
 
+div#nav-collapse{
+  font-size: 1.050em;
+}
 /***** Main menu tablet ****/
 
 @media screen and (max-width: 1200px) {

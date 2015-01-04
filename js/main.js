@@ -297,7 +297,6 @@ $(document).scroll(function(){
   var $topbar    = $('.top-bar');
   var $logo      = $('.main-logo img');
  
-
   if($(window).scrollTop() >= 34){
     $navigation.addClass('navbar-fixed-top').addClass('main-nav-fixed');
     $topbar.hide();

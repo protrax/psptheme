@@ -332,13 +332,13 @@ $('#to-top').click(function(){
 
     jQuery(function($){
          $('.navbar-default .nav li.dropdown').hover(function() {
-          if($(window).width() > 767) {
+          if($(window).width() >= 767) {
             $(this).addClass('open');
             $('.dropdown-menu').addClass('menu-animation zoomIn');
           }
          
     }, function() {
-      if($(window).width() > 767) {
+      if($(window).width() >= 767) { 
          $(this).removeClass('open');
          $('.dropdown-menu').removeClass('menu-animation zoomIn');
        }

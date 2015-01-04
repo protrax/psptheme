@@ -81,6 +81,11 @@ img {
 
 }
 
+.main-nav .dropdown-menu {
+border-radius: 0px;
+border-top: 1px solid orange; 
+}
+
 /** Logo **/
 .main-logo img {
   padding: 1.5em 1.5em;
@@ -198,9 +203,6 @@ button.search-bg:hover .search-icon {
 }
 
 
-button#main-search-button:hover .search-icon{
-  color: #f78e20;
-}
 
 .search-hide {
   right: -1px;
@@ -243,6 +245,12 @@ button#main-search-button:hover .search-icon{
   text-transform: initial;
 }
 
+.navbar-default .navbar-toggle {
+  border-color: #f78e20;
+  border-radius: 0px;
+  color: #f78e20;
+  margin-top: 1.2em;
+}
 /******** Show menu on hover ********/
 
 
@@ -504,6 +512,8 @@ background-color: #f5f5f5;
 
 .search-bg {
   background: #f78e20;
+  -webkit-transition: all .3s;
+   transition: all .3s;
 }
 
 
@@ -511,6 +521,7 @@ background-color: #f5f5f5;
   border-radius: 0;
   margin-top: 8px;
   border: none;
+  
 }
 
 .button-border{

@@ -329,41 +329,25 @@ $('#to-top').click(function(){
 
 });
 
+  //********** Add open on hovered menus and add animation  ( Desktop ) ****/
 
-
-/****** Hover animation ********/
-jQuery(function($){
-     $('.navbar-default .nav li.dropdown').hover(function() {
-     $(this).addClass('open');
-     $('.dropdown-menu').addClass('menu-animation zoomIn');
-}, function() {
-     $(this).removeClass('open');
-     $('.dropdown-menu').removeClass('menu-animation zoomIn');
-  });
-});
-// Hover on small screen 
-
-$(window).on("resize", resized);
-$(window).on("load", resized);
-
-function resized() { 
- 
-
-
-
-
-
-}
-
-
-
-
-
-
-  /******** Search bar *******/
+    jQuery(function($){
+         $('.navbar-default .nav li.dropdown').hover(function() {
+          if($(window).width() > 767) {
+            $(this).addClass('open');
+            $('.dropdown-menu').addClass('menu-animation zoomIn');
+          }
+         
+    }, function() {
+      if($(window).width() > 767) {
+         $(this).removeClass('open');
+         $('.dropdown-menu').removeClass('menu-animation zoomIn');
+       }
+      });
+    }); 
   
   /****** Show/Hide search form *****/
-jQuery(function($) {
+  jQuery(function($) {
     $("#main-search-button").click(function(e) {
         e.preventDefault();
         var $toClose = $("#main-search-form")

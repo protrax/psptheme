@@ -210,8 +210,13 @@ button#main-search-button:hover .search-icon{
   text-transform: initial;
 }
 
+/******** Show menu on hover ********/
+
+
 /******** Main menu Tablet and mobile hover **********/
-  
+@media screen and (max-width: 767px) {
+    
+}
 
 /******** End Main menu Tablet and mobile hover **********/
 

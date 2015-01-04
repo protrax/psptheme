@@ -280,12 +280,23 @@ button.search-bg:hover .search-icon {
     font-size: 1.150em;
   }
 }
-
+/**** Mobile ****/
 @media screen and (max-width: 767px) {
   .social-links {
     display: none;
   }
-}
+  li.search-hide {
+    display: none;
+  }
+  div#main-search-form {
+    display: block !important;
+    position: relative;
+  }
+    #main-search-form input {
+      
+      float: left;
+  }
+} 
 
 
 /******** Show menu on hover ********/

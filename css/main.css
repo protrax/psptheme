@@ -1,6 +1,6 @@
 /*** Default styles ***/
 html {
-  font-size: 0.875em;
+  font-size: 0.875em !important;
 }
 
 body {
@@ -245,12 +245,49 @@ button.search-bg:hover .search-icon {
   text-transform: initial;
 }
 
+
 .navbar-default .navbar-toggle {
   border-color: #f78e20;
   border-radius: 0px;
   color: #f78e20;
   margin-top: 1.2em;
 }
+
+/***** Main menu tablet ****/
+
+@media screen and (max-width: 1200px) {
+  .navbar.mega-menu.navbar-default.main-nav {
+    font-size: 0.875em !important;
+  }
+  ul.col-sm-2.list-unstyled {
+    min-width: 234px;
+    font-size: 0.815em;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .navbar.mega-menu.navbar-default.main-nav {
+    font-size: 0.815em !important;
+
+  }
+  .social-links {
+    margin-top: -23px;
+  }
+  ul.col-sm-2.list-unstyled {
+    min-width: 179px;
+  }
+  ul.dropdown-menu.initial {
+    font-size: 1.150em;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .social-links {
+    display: none;
+  }
+}
+
+
 /******** Show menu on hover ********/
 
 

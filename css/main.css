@@ -135,6 +135,11 @@ border-top: 1px solid orange;
 /** Logo **/
 .main-logo img {
   padding: 1.5em 1.5em;
+  -webkit-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  -ms-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  transition: all 0.6s
 }
 
 

@@ -405,29 +405,13 @@ $(function(){
 $('.arrow-left').on('click', function(e){
     e.preventDefault();
     mySwiper.swipePrev();
-  });
+  })
 $('.arrow-right').on('click', function(e){
     e.preventDefault();
     mySwiper.swipeNext();
-  });
-// Navigate slideshow label
-$('.arrow-left').on('hover', function(e){
-    e.preventDefault();
-    mySwiper.swipePrev();
-  });
+  })
   
-  $('.arrow-left').hover(function(){
-    $(this).find('span').show().addClass('animated flipInX');
-  }, function(){
-    $(this).find('span').hide();
-  });
-
-  $('.arrow-right').hover(function(){
-    $(this).find('span').show().addClass('animated flipInX');
-  }, function(){
-    $(this).find('span').hide();
-  });
-
+  
 })
 
 

@@ -121,11 +121,6 @@ border-top: 1px solid orange;
 /** Logo **/
 .main-logo img {
   padding: 1.5em 1.5em;
-   -webkit-transition: all 0.6s;
-    -moz-transition: all 0.6s;
-    -ms-transition: all 0.6s;
-    -o-transition: all 0.6s;
-    transition: all 0.6s;
 }
 
 
@@ -704,7 +699,28 @@ background-color: #f5f5f5;
 }
 
 .main-menu-container .dropdown-menu li a {
-padding: .4em 1em;
-border: none;
-height: auto !important;
+  padding: .4em 1em;
+  border: none;
+  height: auto !important;
+}
+
+
+
+/************************************
+************ Synergy buttons ********
+************************************/
+
+/*** Orange ***/
+
+
+a.button-orange {
+  border: 3px solid #f78e20;
+  padding: 0.7em 2.5em;
+  color: #f78e20;
+  font-size: 1.3em;
+}
+
+.button-orange:hover  {
+  background: #f78e20;
+  color: #eee;
 }

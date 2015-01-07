@@ -428,6 +428,6 @@ $('.arrow-left').on('hover', function(e){
     $(this).find('span').hide();
   });
 
-})
+});
 
 

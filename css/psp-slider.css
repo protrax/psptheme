@@ -218,21 +218,47 @@ Pagination Styles
 /************* Slider content styles ***********/
 
 .slider-content {
-	top: 23%;
-	left: 28%;
-	position: absolute;
+	position: relative;
+	margin-top: 165px;
 }
 
-.slider-content h2 {
+
+/*********** Centered slider content 1 col **********/
+
+.slider-content-center {
+	display: block;
+	position: relative;
+	margin: 0px auto;
+	text-align: center;
+	background: rgba(63, 64, 64, 0.24);
+	padding: 1em 0em;
+}
+
+.slider-content-center h2 {
 	font-size: 4em;
-	color: #eee;
+	color: #f9f9f9;
 	letter-spacing: 2px;
-	font-weight: medium;
+	font-weight: normal;
+	text-shadow: rgb(68, 68, 68) 2px 2px 2px;
+	padding: 0.1em;
+	margin-bottom: .4em;
+	margin-top: 0em;
 }
 
-.slider-content p {
+.slider-content-center p {
 	font-size: 1.8em;
+	color: #f9f9f9;
+	max-width: 22em;
+	font-size: 1.6em;
 	color: #eee;
-	max-width: 18em;
-	
+	text-shadow: 1px 1px 1px #444;
+	padding: 0em 0.5em;
+	display: inline-block;
+	text-align: left;
 }
+
+.slider-content-center .button-container {
+	margin-left: -65px;
+	margin-top: 3em;
+}
+	

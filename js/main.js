@@ -388,19 +388,34 @@ $(function(){
     //Your options here:
     mode:'horizontal',
     loop: true,
-    autoplay: 2000,
-    speed: 1000,
+    autoplay: 4800,
+    speed: 1200,
     onSlideChangeStart: function() {
-      //$('.swiper-slide').addClass('animated fadeInLeft');
+      $('.slider-content-center').hide().removeClass('slide-animation-box fadeIn');
+      $('.slider-content-center h2').removeClass('slide-animation-first fadeInDown');
+      $('.slider-content-center p').removeClass('slide-animation-second fadeInUp');
+      $('.button-container').removeClass('slide-animation-third fadeInUp');
     },
     onSlideChangeEnd: function() {
-      //$('.swiper-slide').removeClass('animated fadeInLeft');
+      $('.slider-content-center').show().addClass('slide-animation-box fadeIn');
+      $('.slider-content-center h2').addClass('slide-animation-first fadeInDown');
+      $('.slider-content-center p').addClass('slide-animation-second fadeInUp');
+      $('.button-container').addClass('slide-animation-third fadeInUp');
+      
     },
     onFirstInit: function() {
+      $('.slider-content-center').show().addClass('slide-animation-box fadeIn');
+      $('.slider-content-center h2').addClass('slide-animation-first fadeInDown');
+      $('.slider-content-center p').addClass('slide-animation-second fadeInUp');
+      $('.button-container').addClass('slide-animation-third fadeInUp');
       $('.psp-slider-loading').hide();
     },
     //etc..
   });
+
+
+  // Animation 
+
 // Navigate slideshow
 $('.arrow-left').on('click', function(e){
     e.preventDefault();
@@ -427,7 +442,10 @@ $('.arrow-left').on('hover', function(e){
   }, function(){
     $(this).find('span').hide();
   });
+  // Load slider animation 
+
 
 });
+
 
 

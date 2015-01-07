@@ -226,7 +226,7 @@ Pagination Styles
 /*********** Centered slider content 1 col **********/
 
 .slider-content-center {
-	display: block;
+	
 	position: relative;
 	margin: 0px auto;
 	text-align: center;
@@ -243,6 +243,7 @@ Pagination Styles
 	padding: 0.1em;
 	margin-bottom: .4em;
 	margin-top: 0em;
+	
 }
 
 .slider-content-center p {
@@ -254,11 +255,48 @@ Pagination Styles
 	text-shadow: 1px 1px 1px #444;
 	padding: 0em 0.5em;
 	display: inline-block;
-	text-align: left;
+	text-align: left; 
 }
 
 .slider-content-center .button-container {
 	margin-left: -65px;
 	margin-top: 3em;
+	
+}
+
+/****** Slide animations ********/
+
+.slide-animation-box {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;	
+}
+
+.slide-animation-first {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: .4s; /* Chrome, Safari, Opera */
+    	  animation-delay: .4s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;	
+}
+
+.slide-animation-second {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: .6s; /* Chrome, Safari, Opera */
+    	  animation-delay: .6s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;	
+}
+
+.slide-animation-third {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: .9s; /* Chrome, Safari, Opera */
+    	  animation-delay: .9s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;	
 }
 	

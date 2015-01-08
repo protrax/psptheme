@@ -381,54 +381,79 @@ $('#to-top').click(function(){
 //************ PSP Slider *****************
 //****************************************
 
-// Load slider
+jQuery(document).ready(function($){
 
-$(function(){
-  var mySwiper = $('.swiper-container').swiper({
-    //Your options here:
+  // Load time for animations
+      
+    // Container
+  var animationQueueBox = 'slide-animation-box';
+    // Heading
+  var animationQueueHeader = 'slide-animation-first';
+    // Main text
+  var animationQueueContent = 'slide-animation-second';
+    //Buttons
+  var animationQueueButtons = 'slide-animation-third';
+
+  // Animation
+      // Animations from animate.css
+
+    // Container
+ var animationEffectBox     = 'fadeIn';
+    // Heading
+ var animationEffectHeader  = 'fadeInDown';
+    // Main text
+ var animationEffectContent = 'fadeInUp';
+    //Buttons
+ var animationEffectButtons = 'fadeInUp';
+
+ // Load slider
+
+  var pspSlider = $('.swiper-container').swiper({
+    //Slider options
     mode:'horizontal',
     loop: true,
     autoplay: 4800,
     speed: 1200,
-    onSlideChangeStart: function() {
-      $('.slider-content-center').hide().removeClass('slide-animation-box fadeIn');
-      $('.slider-content-center h2').removeClass('slide-animation-first fadeInDown');
-      $('.slider-content-center p').removeClass('slide-animation-second fadeInUp');
-      $('.button-container').removeClass('slide-animation-third fadeInUp');
-    },
-    onSlideChangeEnd: function() {
-      $('.slider-content-center').show().addClass('slide-animation-box fadeIn');
-      $('.slider-content-center h2').addClass('slide-animation-first fadeInDown');
-      $('.slider-content-center p').addClass('slide-animation-second fadeInUp');
-      $('.button-container').addClass('slide-animation-third fadeInUp');
-      
-    },
-    onFirstInit: function() {
-      $('.slider-content-center').show().addClass('slide-animation-box fadeIn');
-      $('.slider-content-center h2').addClass('slide-animation-first fadeInDown');
-      $('.slider-content-center p').addClass('slide-animation-second fadeInUp');
-      $('.button-container').addClass('slide-animation-third fadeInUp');
-      $('.psp-slider-loading').hide();
-    },
-    //etc..
+    // Slide out 
+      onSlideChangeStart: function() {
+        $('.slider-content-center').hide().removeClass( animationQueueBox   + ' ' +  animationEffectBox );
+        $('.slider-content-center h2').removeClass( animationQueueHeader    + ' ' +  animationEffectHeader );
+        $('.slider-content-center p').removeClass( animationQueueContent    + ' ' +  animationEffectContent );
+        $('.button-container').removeClass( animationQueueButtons           + ' ' +  animationEffectButtons );
+      },
+      // Slide in
+      onSlideChangeEnd: function() {
+        $('.slider-content-center').show().addClass( animationQueueBox  + ' ' + animationEffectBox );
+        $('.slider-content-center h2').addClass( animationQueueHeader   + ' ' + animationEffectHeader );
+        $('.slider-content-center p').addClass( animationQueueContent   + ' ' + animationEffectContent );
+        $('.button-container').addClass( animationQueueButtons          + ' ' + animationEffectButtons );
+      },
+      // First init of slider
+      onFirstInit: function() {
+        $('.slider-content-center').show().addClass( animationQueueBox  + ' ' + animationEffectBox );
+        $('.slider-content-center h2').addClass( animationQueueHeader   + ' ' + animationEffectHeader );
+        $('.slider-content-center p').addClass( animationQueueContent   + ' ' + animationEffectContent );
+        $('.button-container').addClass( animationQueueButtons          + ' ' + animationEffectButtons );
+        $('.psp-slider-loading').hide();
+      }
+   
   });
 
-
-  // Animation 
+// Navigation
 
 // Navigate slideshow
 $('.arrow-left').on('click', function(e){
     e.preventDefault();
-    mySwiper.swipePrev();
+    pspSlider.swipePrev();
   });
 $('.arrow-right').on('click', function(e){
     e.preventDefault();
-    mySwiper.swipeNext();
+    pspSlider.swipeNext();
   });
 // Navigate slideshow label
 $('.arrow-left').on('hover', function(e){
     e.preventDefault();
-    mySwiper.swipePrev();
+    pspSlider.swipePrev();
   });
   
   $('.arrow-left').hover(function(){
@@ -442,8 +467,6 @@ $('.arrow-left').on('hover', function(e){
   }, function(){
     $(this).find('span').hide();
   });
-  // Load slider animation 
-
 
 });
 

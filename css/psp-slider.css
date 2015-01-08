@@ -266,6 +266,7 @@ Pagination Styles
 
 /****** Slide animations ********/
 
+
 .slide-animation-box {
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
@@ -299,4 +300,79 @@ Pagination Styles
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;	
 }
-	
+
+
+
+
+/****** Breakpoints ******/
+
+
+@media screen and (max-width: 620px ) {
+	.swiper-slide {
+		background-size: cover !important;
+		background-repeat: no-repeat !important;
+	}
+	.slider-content-center h2 {
+	font-size: 2em;
+	color: #f9f9f9;
+	letter-spacing: 2px;
+	font-weight: normal;
+	text-shadow: rgb(68, 68, 68) 2px 2px 2px;
+	padding: 0.1em;
+	margin-bottom: .4em;
+	margin-top: 0em;
+	text-align: left;
+	margin-left: 2.8em !important;
+}
+
+.slider-content-center p {
+	color: #f9f9f9;
+	max-width: 22em;
+	font-size: 1.3em;
+	color: #eee;
+	text-shadow: 1px 1px 1px #444;
+	padding: 0em 0.5em;
+	display: inline-block;
+	text-align: left;
+}
+.slider-content {
+	position: relative;
+	margin-top: 0px;
+}
+.swiper-container {
+	width: 100%;
+	min-height: 257px;
+	max-height: 256px;
+}
+
+.divider-100 {
+	margin-bottom: 2.5em !important;
+}
+a.button-orange {
+	border: 3px solid #f9f9f9;
+	padding: 0.5em 0.5em !important;
+	color: #f78e20;
+	font-size: 1.3em;
+	margin: -1em 0em;
+	auti: -1em .2em;
+	text-shadow: 1px 1px 1px #3f4040;
+	-webkit-transition: all 0.6s;
+	-moz-transition: all 0.6s;
+	-ms-transition: all 0.6s;
+	-o-transition: all 0.6s;
+	transition: all 0.6s;
+}
+
+.arrow-right {
+	display: none;
+}
+
+.arrow-left {
+	display: none;
+}
+
+.slider-content-center .button-container {
+	margin-left: -118px;
+	margin-top: 1em;
+}
+}	

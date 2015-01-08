@@ -384,7 +384,7 @@ $('#to-top').click(function(){
 // Load slider
 
 $(function(){
-  var mySwiper = $('.swiper-container').swiper({
+  var pspSlider = $('.swiper-container').swiper({
     //Your options here:
     mode:'horizontal',
     loop: true,
@@ -404,11 +404,11 @@ $(function(){
 // Navigate slideshow
 $('.arrow-left').on('click', function(e){
     e.preventDefault();
-    mySwiper.swipePrev();
+    pspSlider.swipePrev();
   })
 $('.arrow-right').on('click', function(e){
     e.preventDefault();
-    mySwiper.swipeNext();
+    pspSlider.swipeNext();
   })
   
   

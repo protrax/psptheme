@@ -880,8 +880,12 @@ a.button-orange {
 .img-box img {
     width: 100%;
 }
+
+.figcaption {
+  display: none;
+}
  
-.img-box figure {
+.img-box .figure {
     margin: 0;
     padding: 0;
     height: 100%;
@@ -891,32 +895,29 @@ a.button-orange {
     overflow: hidden;
 }
 
-.img-box figure:hover img {
-  -webkit-transform:scale(1.25); /* Safari and Chrome */
-    -moz-transform:scale(1.25); /* Firefox */
-    -ms-transform:scale(1.25); /* IE 9 */
-    -o-transform:scale(1.25); /* Opera */
+.img-box .figure:hover img {
+  -webkit-transform:scale(1.25);
+    -moz-transform:scale(1.25); 
+    -ms-transform:scale(1.25);
+    -o-transform:scale(1.25); 
      transform:scale(1.25);
-
 }
-.img-box figure img {
- -webkit-transition: all 1s ease-out; /* Safari and Chrome */
-    -moz-transition: all 1s ease-out; /* Firefox */
-    -ms-transition: all 1s ease-out; /* IE 9 */
-    -o-transition: all 1s ease-out; /* Opera */
-    transition: all .3s ease-out;
+
+.img-box .figure img {
+ -webkit-transition: all .4s ease-out; 
+    -moz-transition: all .4s ease-out; 
+    -ms-transition: all .4s ease-out; 
+    -o-transition: all .4s ease-out;  
+    transition: all .4s ease-out;
 }
  
-.img-box figure:hover figcaption {
-    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-    filter: alpha(opacity=100);
+.img-box .figure:hover .figcaption {
     opacity: 1;
     top: 0;
 }
  
-.img-box figcaption {
-    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-    filter: alpha(opacity=0);
+.img-box .figcaption {
+    display: block;
     opacity: 0;
     position: absolute;
     height: 100%;
@@ -924,19 +925,14 @@ a.button-orange {
     top: 250px;
     background: rgba(247,142,32,0.6);
     color: #fff;
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    -o-transition: all .2s ease-in-out;
-    -ms-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-    -webkit-transition-delay: 0s;
-    -moz-transition-delay: 0s;
-    -o-transition-delay: 0s;
-    -ms-transition-delay: 0s;
-    transition-delay: 0s;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
 }
  
-.img-box figcaption h3 {
+.img-box .figcaption h3 {
     font-family: 'Roboto';
     font-weight: 500 !important;
     color: #f9f9f9;
@@ -948,30 +944,25 @@ a.button-orange {
     font-size: 30px;
     text-align: center;
     width: 100%;
-    -webkit-transition: all .9s ease;
-    -moz-transition: all .9s ease;
-    -o-transition: all .9s ease;
-    -ms-transition: all .9s ease;
-    transition: all .9s ease;
 }
 
-.img-box figcaption p {
+.img-box .figcaption p {
   text-align: center;
   color: #FFF;
 }
  
-.img-box figure:hover h3,figure:hover p {
+.img-box .figure:hover h3,.figure:hover p {
     left: 0;
 }
  
-.img-box figcaption a {
+.img-box .figcaption a {
     color: #fff !important;
     border: 2px solid #fff;
     padding: 4px 10px;
     text-decoration: none;
 }
  
-.img-box figcaption a:hover {
+.img-box .figcaption a:hover {
     color: #3f4040 !important;
     background: #fff;
 }

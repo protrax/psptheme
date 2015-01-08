@@ -41,7 +41,10 @@ h4 {font-size: 1.333em;}
 small, .font_small {
   font-size: 0.75em;
 }
-
+/**** Icon sizes ******/
+.fa-2x {
+  font-size: 1.5em;
+}
 
 
 
@@ -768,17 +771,28 @@ a.button-orange {
 
 .featured-box {
   padding: 0px;
+  margin: 2em 0em;
 }
 
 .featured-box h2 {
-  margin-top: 0px;
-  margin-bottom: 12px;
+  margin-top: 0em;
+  margin-bottom: 1em;
 }
 
+.featured-box p {
+  font-size: 1.3em;
+  padding: 0em .3em;
+  line-height: 1.3em;
+}
+
+.featured-box .fa-2x{
+  margin-right: 0.4em;
+}
 /**** OUR PARTNERS ****/
 
 .our-partners {
   padding: 0px;
+  margin: 2em 0em;
 }
 
 .our-partners img {
@@ -801,6 +815,7 @@ a.button-orange {
 
 .text-box {
   padding: 0px;
+  margin: 2em 0em;
 }
 
 .text-box i {
@@ -845,6 +860,7 @@ a.button-orange {
 
 .img-box {
     padding: 0px;
+    margin: 2em 0em;
 }
 
 /**** IMG HOVER ****/

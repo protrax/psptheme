@@ -130,30 +130,6 @@ Pagination Styles
 	/* Specific visible button style: */	
 	
 }
-/***** Loading animation ********/
-.psp-slider-loading {
-	background-color: #eee;
-	background-position: center;
-	background-repeat: repeat;
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	width: 100%; 
-	height: 100%;
-
-}
-
-.psp-slider-loading .loading-icon {
-	background-position: center;
-	background-repeat: no-repeat;
-	background-image: url('../images/psp-loader.gif');
-	position: absolute;  
-	z-index: 1000;
-	top: 0px;
-	left: 0px;
-	width: 100%;
-	height: 100%;
-}
 
 
 /*** Navigation  ***/
@@ -354,7 +330,7 @@ a.button-orange {
 	color: #f78e20;
 	font-size: 1.3em;
 	margin: -1em 0em;
-	auti: -1em .2em;
+	padding: -1em .2em; 
 	text-shadow: 1px 1px 1px #3f4040;
 	-webkit-transition: all 0.6s;
 	-moz-transition: all 0.6s;

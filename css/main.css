@@ -11,6 +11,11 @@ body {
   color: #3f4040;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 p {
   margin-bottom: 1.3em;
   font-size: 1.2em;
@@ -33,13 +38,12 @@ h3 {font-size: 1.777em;}
 
 h4 {font-size: 1.333em;}
 
-small, .font_small {font-size: 0.75em;}
-
-
-img {
-  max-width: 100%;
-  height: auto;
+small, .font_small {
+  font-size: 0.75em;
 }
+
+
+
 
 /**** APPENDING STYLES ****/
 .no-padding {
@@ -47,10 +51,6 @@ img {
 }
 
 
-.visibility {
-  visibility: hidden;
-
-}
 .no-margin {
   margin: 0 !important;
 }
@@ -128,8 +128,8 @@ img {
 }
 
 .main-nav .dropdown-menu {
-border-radius: 0px;
-border-top: 1px solid orange; 
+  border-radius: 0px;
+  border-top: 1px solid orange; 
 }
 
 /** Logo **/
@@ -308,6 +308,7 @@ div#nav-collapse{
   .navbar.mega-menu.navbar-default.main-nav {
     font-size: 0.875em !important;
   }
+  
   ul.col-sm-2.list-unstyled {
     min-width: 234px;
     font-size: 0.815em;
@@ -317,7 +318,6 @@ div#nav-collapse{
 @media screen and (max-width: 991px) {
   .navbar.mega-menu.navbar-default.main-nav {
     font-size: 0.815em !important;
-
   }
   .social-links {
     margin-top: -23px;
@@ -342,7 +342,6 @@ div#nav-collapse{
     position: relative;
   }
     #main-search-form input {
-      
       float: left;
   }
 } 
@@ -351,10 +350,6 @@ div#nav-collapse{
 /******** Show menu on hover ********/
 
 
-/******** Main menu Tablet and mobile hover **********/
-@media screen and (max-width: 767px) {
-    
-}
 
 /******** End Main menu Tablet and mobile hover **********/
 
@@ -498,24 +493,6 @@ div#nav-collapse{
 }
 
 
-
-  .grid-demo [class*="col-"] {
-    margin-top: 5px;
-    margin-bottom: 5px;
-    font-size: 1em;
-    text-align: center;
-    line-height: 2;
-    background-color: #e5e1ea;
-    border: 1px solid #d1d1d1;
-  }
-
-
-.mega-menu .nav,
-.mega-menu .collapse,
-.mega-menu .dropup,
-.mega-menu .dropdown {
-  
-}
 
 .mega-menu .mega-menu-content li a{
 width: 100%;
@@ -753,13 +730,7 @@ a.button-orange {
 /*** Page buttons ****/
 
 /*** Sizes ***/
-.button-large {
 
-}
-
-.button-small {
-
-}
 
 .button-medium {
   padding: 0.7em 2.5em;
@@ -778,7 +749,7 @@ a.button-orange {
   transition: all 0.6s;
 }
 
-.button-orange:hover  {
+.button-f-orange:hover  {
   color: #f9f9f9;
   border-color: #f78e20;
   background: #f78e20;
@@ -896,7 +867,7 @@ a.button-orange {
 }
 
 .img-box .figure:hover img {
-  -webkit-transform:scale(1.25);
+    -webkit-transform:scale(1.25);
     -moz-transform:scale(1.25); 
     -ms-transform:scale(1.25);
     -o-transform:scale(1.25); 
@@ -904,7 +875,7 @@ a.button-orange {
 }
 
 .img-box .figure img {
- -webkit-transition: all .4s ease-out; 
+    -webkit-transition: all .4s ease-out; 
     -moz-transition: all .4s ease-out; 
     -ms-transition: all .4s ease-out; 
     -o-transition: all .4s ease-out;  

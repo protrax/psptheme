@@ -291,6 +291,7 @@ $('.iso-portfolio-item').each(function(i) {
   // TODO 
   // Make logo scale on scroll (with no browser conflicts)
 
+
 $(document).scroll(function(){
   
   var $navigation = $('.main-nav');
@@ -299,7 +300,7 @@ $(document).scroll(function(){
  
   if($(window).scrollTop() >= 34){
     $navigation.addClass('navbar-fixed-top').addClass('main-nav-fixed');
-    $topbar.hide();
+    $topbar.hide(); 
 
   }else{
     $navigation.removeClass('navbar-fixed-top').removeClass('main-nav-fixed');
@@ -307,9 +308,11 @@ $(document).scroll(function(){
   }
 });
 
+
+
 // Scroll to top function
 jQuery(function($){
-  $(document).scroll(function(){
+  $(document) .scroll(function(){
 
   if($(window).scrollTop() >= 400){
     $('#to-top').show().removeClass('animated fadeOutDown').addClass('animated fadeInDown');
@@ -434,9 +437,8 @@ jQuery(document).ready(function($){
         $('.slider-content-center h2').addClass( animationQueueHeader   + ' ' + animationEffectHeader );
         $('.slider-content-center p').addClass( animationQueueContent   + ' ' + animationEffectContent );
         $('.button-container').addClass( animationQueueButtons          + ' ' + animationEffectButtons );
-        $('.psp-slider-loading').hide();
       }
-   
+
   });
 
 // Navigation
@@ -467,8 +469,5 @@ $('.arrow-left').on('hover', function(e){
   }, function(){
     $(this).find('span').hide();
   });
-
 });
-
-
 

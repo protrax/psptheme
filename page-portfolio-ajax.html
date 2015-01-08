@@ -6,10 +6,25 @@
         <meta content="IE=edge" http-equiv="X-UA-Compatible">
         <meta content="width=device-width, initial-scale=1" name="viewport">
 
-        <title>Portfolio Ajax</title><!-- Bootstrap -->
+        <title>Index</title>
+
+        <!-- Google font -->
+        <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700' rel='stylesheet' type='text/css'>
+        <!-- Font awesome -->
+
+        <!-- Bootstrap -->
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,500,900' rel='stylesheet' type='text/css'>
+
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+        <!-- Bootstrap -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/main.css" rel="stylesheet">
+        <!-- Synergy slider -->
+        <link href="css/psp-slider.css" rel="stylesheet">
+        <!-- Animate.css -->
         <link href="css/animate.css" rel="stylesheet">
+        <!-- Main css -->
+        <link href="css/main.css" rel="stylesheet">
+
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -18,114 +33,79 @@
     <![endif]-->
 </head>
 
-<body style="margin-top:5em; overflow-x:hidden;">
-        <!-- Remove hardcoded css move to main-css -->
+<body>
+       
+        <div class="row top-bar">
+            <div class="container">
+            <div class="col-md-12 no-padding">
+                <div class=" no-padding col-xs-12 col-sm-12 col-md-6">
+                    <div class="contact-info topbar-font"> 
+                <p>
+                        
+                                <a href="#"><i class="fa fa-envelope"></i> info@example.com</a>
+                        
 
-        <nav class="navbar mega-menu navbar-default navbar-fixed-top">
+                      
+                                <a href="#"><i class="fa fa-phone-square"></i> 458 88 946</a>
+                        
+                </p>
+                </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 no-padding">
+                    <div class="social-links pull-right"> 
+                    <p>
+                                        
+                                                <a href="#"><i class="fa fa-facebook facebook" data-original-title="Facebook" data-placement="bottom" data-toggle="tooltip" title=
+                                                ""></i></a>
+                                        
+
+                                      
+                                                <a href="#"><i class="fa fa-twitter twitter" data-original-title="Twitter" data-placement="bottom" data-toggle="tooltip" title=
+                                                ""></i></a>
+
+
+                                                <a href="#"><i class="fa fa-google-plus google" data-original-title="Google+" data-placement="bottom" data-toggle="tooltip" title=
+                                                ""></i></a>
+                                        
+
+                                        
+                                                <a href="#"><i class="fa fa-linkedin linkedin" data-original-title="LinkedIn" data-placement="bottom" data-toggle="tooltip" title=
+                                                ""></i></a>
+                                        
+
+                                        
+                                                <a href="#"><i class="fa fa-instagram instagram" data-original-title="Instagram" data-placement="bottom" data-toggle="tooltip" title=
+                                                ""></i></a>
+
+
+                                                <a href="#"><i class="fa fa-pinterest pinterest" data-original-title="Pinterest" data-placement="bottom" data-toggle="tooltip" title=
+                                                ""></i></a>
+                                        
+                                </p>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <nav class="navbar mega-menu navbar-default main-nav">  <!-- Append fixed top on scroll navbar-fixed-top -->
                 <div class="container">
                         <!-- Brand and toggle get grouped for better mobile display -->
 
                         <div class="navbar-header">
                                 <button class="navbar-toggle collapsed" data-target="#nav-collapse" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span>
-                                <span class="glyphicon glyphicon-list"></span></button> <a class="main-logo" href="index.html" style="padding:1.5em;"><!-- Remove hardcoded css -->
+                                <span class="glyphicon glyphicon-list"></span></button> <a class="main-logo" href="index.html">
                                 <!-- Detet må in med css senere grunnet SEO <h1>The title</h1> -->
-                                <img alt="..." src="http://placehold.it/200x50"></a>
+                                    <img alt="Synergy" src="images/logo_old.png">
+
+                            </a>
                         </div><!-- Collect the nav links, forms, and other content for toggling -->
 
                         <div class="collapse navbar-collapse" id="nav-collapse">
-                                <ul class="nav navbar-nav">
+                                <ul class="nav navbar-nav main-menu-container medium">
                                         <li class="dropdown">
-                                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Pages<span class="caret"></span></a>
+                                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Home</span></a>
 
-                                                <ul class="dropdown-menu">
-                                                        <li>
-                                                                <a href="page.html">Page</a>
-                                                        </li>
-
-                                                        <li>
-                                                                <a href="404.html">404 Page</a>
-                                                        </li>
-
-                                                        <li>
-                                                                <a href="front-page.html">Front Page</a>
-                                                        </li>
-
-                                                        <li>
-                                                                <a href="page-right-sidebar.html">Page Right Sidebar</a>
-                                                        </li>
-
-                                                        <li>
-                                                                <a href="page-left-sidebar.html">Page Left Sidebar</a>
-                                                        </li>
-
-                                                        <li>
-                                                                <a href="page-home-fullwidth.html">Page Home Fullwidth</a>
-                                                        </li>
-
-                                                        <li>
-                                                                <a href="faq-fullwidth.html">FAQ Fullwidth</a>
-                                                        </li>
-
-                                                        <li>
-                                                                <a href="faq-right-sidebar.html">FAQ Sidebar</a>
-                                                        </li>
-                                                </ul>
-                                        </li>
-
-                                        <li class="dropdown">
-                                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Team<span class="caret"></span></a>
-
-                                                <ul class="dropdown-menu">
-                                                        <li>
-                                                                <a href="page-team-sidebar.html">Team Sidebar</a>
-                                                        </li>
-
-                                                        <li>
-                                                                <a href="page-team-fullwidth.html">Team Fullwidth</a>
-                                                        </li>
-                                                </ul>
-                                        </li>
-
-                                        <li class="dropdown">
-                                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Contact<span class="caret"></span></a>
-
-                                                <ul class="dropdown-menu">
-                                                        <li>
-                                                                <a href="page-contact-boxed.html">Contact Boxed</a>
-                                                        </li>
-
-                                                        <li>
-                                                                <a href="page-contact-fullwidth.html">Contact Fullwidth</a>
-                                                        </li>
-
-                                                        <li>
-                                                                <a href="page-contact-sidebar.html">Contact Sidebar</a>
-                                                        </li>
-                                                </ul>
-                                        </li>
-
-                                        <li class="dropdown">
-                                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Search<span class="caret"></span></a>
-
-                                                <ul class="dropdown-menu">
-                                                        <li>
-                                                                <a href="search-fullwidth.html">Search Fullwidth</a>
-                                                        </li>
-
-                                                        <li>
-                                                                <a href="search-left-sidebar.html">Search Left-Sidebar</a>
-                                                        </li>
-
-                                                        <li>
-                                                                <a href="search-right-sidebar.html">Search Right-Sidebar</a>
-                                                        </li>
-                                                </ul>
-                                        </li>
-
-                                        <li class="dropdown">
-                                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Home<span class="caret"></span></a>
-
-                                                <ul class="dropdown-menu">
+                                                <ul class="dropdown-menu initial">
                                                         <li>
                                                                 <a href="home.html">Home</a>
                                                         </li>
@@ -137,39 +117,22 @@
                                         </li>
 
                                         <li class="dropdown">
-                                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Blog<span class="caret"></span></a>
+                                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Team</span></a>
 
-                                                <ul class="dropdown-menu">
+                                                <ul class="dropdown-menu initial">
                                                         <li>
-                                                                <a href="page-blog-masonry.html">Masonory</a>
+                                                                <a href="page-team-sidebar.html">Team Sidebar</a>
                                                         </li>
 
                                                         <li>
-                                                                <a href="page-blog-grid-fullwidth.html">Blog Grid</a>
-                                                        </li>
-
-                                                        <li>
-                                                                <a href="page-blog-grid-fullwidth.html">Grid Fullwidth</a>
-                                                        </li>
-
-                                                        <li>
-                                                                <a href="page-blog-fullwidth-author.html">Author Fullwidth</a>
-                                                        </li>
-
-                                                        <li>
-                                                                <a href="page-blog-listview.html">Listview</a>
-                                                        </li>
-
-                                                        <li>
-                                                                <a href="single.html">Single Post</a>
+                                                                <a href="page-team-fullwidth.html">Team Fullwidth</a>
                                                         </li>
                                                 </ul>
                                         </li>
-
                                         <li class="dropdown">
-                                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Portfolio<span class="caret"></span></a>
+                                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Portfolio</span></a>
 
-                                                <ul class="dropdown-menu">
+                                                <ul class="dropdown-menu initial">
                                                         <li>
                                                                 <a href="page-portfolio.html">Portfolio</a>
                                                         </li>
@@ -202,58 +165,162 @@
                                                         </li>
                                                 </ul>
                                         </li>
-                                
-                                <!-- Megamenu Start -->
-                                        <li class="dropdown mega"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Mega Menu<b class="caret"></b></a>
-                                          <ul class="dropdown-menu">
+
+                                        <li class="dropdown">
+                                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Search</span></a>
+
+                                                <ul class="dropdown-menu initial">
+                                                        <li>
+                                                                <a href="search-fullwidth.html">Search Fullwidth</a>
+                                                        </li>
+
+                                                        <li>
+                                                                <a href="search-left-sidebar.html">Search Left-Sidebar</a>
+                                                        </li>
+
+                                                        <li>
+                                                                <a href="search-right-sidebar.html">Search Right-Sidebar</a>
+                                                        </li>
+                                                </ul>
+                                        </li>
+                                        <li class="dropdown">
+                                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Pages</a>
+
+                                                <ul class="dropdown-menu initial">
+                                                        <li>
+                                                                <a href="page.html">Page</a>
+                                                        </li>
+
+                                                        <li>
+                                                                <a href="404.html">404 Page</a>
+                                                        </li>
+
+
+                                                        <li>
+                                                                <a href="front-page.html">Front Page</a>
+                                                        </li>
+
+                                                        <li>
+                                                                <a href="page-right-sidebar.html">Page Right Sidebar</a>
+                                                        </li>
+
+                                                        <li>
+                                                                <a href="page-left-sidebar.html">Page Left Sidebar</a>
+                                                        </li>
+
+                                                        <li>
+                                                                <a href="page-home-fullwidth.html">Page Home Fullwidth</a>
+                                                        </li>
+
+                                                        <li>
+                                                                <a href="faq-fullwidth.html">FAQ Fullwidth</a>
+                                                        </li>
+
+                                                        <li>
+                                                                <a href="faq-right-sidebar.html">FAQ Sidebar</a>
+                                                        </li>
+                                                </ul>
+                                        </li>
+                                        
+
+                                        <li class="dropdown">
+                                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Blog</span></a>
+
+                                                <ul class="dropdown-menu initial">
+                                                        <li>
+                                                                <a href="page-blog-masonry.html">Masonry</a>
+                                                        </li>
+
+                                                        <li>
+                                                                <a href="page-blog-grid-fullwidth.html">Blog Grid</a>
+                                                        </li>
+
+                                                        <li>
+                                                                <a href="page-blog-grid-fullwidth.html">Grid Fullwidth</a>
+                                                        </li>
+
+                                                        <li>
+                                                                <a href="page-blog-fullwidth-author.html">Author Fullwidth</a>
+                                                        </li>
+
+                                                        <li>
+                                                                <a href="page-blog-listview.html">Listview</a>
+                                                        </li>
+
+                                                        <li>
+                                                                <a href="single.html">Single Post</a>
+                                                        </li>
+                                                </ul>
+                                        </li>
+                                        <li class="dropdown">
+                                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Contact</span></a>
+
+                                                <ul class="dropdown-menu initial">
+                                                        <li>
+                                                                <a href="page-contact-boxed.html">Contact Boxed</a>
+                                                        </li>
+
+                                                        <li>
+                                                                <a href="page-contact-fullwidth.html">Contact Fullwidth</a>
+                                                        </li>
+
+                                                        <li>
+                                                                <a href="page-contact-sidebar.html">Contact Sidebar</a>
+                                                        </li>
+                                                </ul>
+                                        </li>
+                                        
+                                        <!-- Megamenu Start -->
+                                        <li class="dropdown mega"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Mega Menu</a>
+                                          <ul class="dropdown-menu initial normal">
                                             <li>
                                               <!-- Content container to add padding -->
                                               <div class="mega-menu-content">
                                                 <div class="row">
                                                   <ul class="col-sm-2 list-unstyled">
                                                     <li>
-                                                      <p><strong>Section Title</strong></p>
+                                                      <h3 class="normal">Section Title 1</h3>
                                                     </li>
-                                                       <li><a href="#"> Link Item </a></li>
-                                                       <li><a href="#"> Link Item </a></li>
-                                                       <li><a href="#"> Link Item </a></li>
-                                                       <li><a href="#"> Link Item </a></li>
-                                                       <li><a href="#"> Link Item </a></li>
-                                                        <li><a href="#"> Link Item </a></li>
+                                                       <li><a href="#"> FAQ Page </a></li>
+                                                       <li><a href="#"> Front Page </a></li>
+                                                       <li><a href="#"> 404 Page </a></li>
+                                                       <li><a href="#"> Masonry Blog </a></li>
+                                                       <li><a href="#"> Search Page </a></li>
+                                                       <li><a href="#"> Contact Page </a></li>
 
                                                   </ul>
                                                    <ul class="col-sm-2 list-unstyled">
                                                      <li>
-                                                      <p><strong>Links Title</strong></p>
+                                                      <h3 class="normal">Section Title 2</h3>
                                                      </li>
-                                                       <li><a href="#"> Link Item </a></li>
-                                                       <li><a href="#"> Link Item </a></li>
-                                                       <li><a href="#"> Link Item </a></li>
-                                                       <li><a href="#"> Link Item </a></li>
-                                                       <li><a href="#"> Link Item </a></li>
-                                                        <li><a href="#"> Link Item </a></li>
+                                                       <li><a href="#"> FAQ Page </a></li>
+                                                       <li><a href="#"> Front Page </a></li>
+                                                       <li><a href="#"> 404 Page </a></li>
+                                                       <li><a href="#"> Masonry Blog </a></li>
+                                                       <li><a href="#"> Search Page </a></li>
+                                                       <li><a href="#"> Contact Page </a></li>
                                                     </ul>
                                                   <ul class="col-sm-2 list-unstyled">
                                                     <li>
-                                                      <p><strong>Section Title</strong></p>
+                                                      <h3 class="normal">Section Title 3</h3>
                                                     </li>
-                                                    <li><a href="#"> Link Item </a></li>
-                                                       <li><a href="#"> Link Item </a></li>
-                                                       <li><a href="#"> Link Item </a></li>
-                                                       <li><a href="#"> Link Item </a></li>
-                                                       <li><a href="#"> Link Item </a></li>
-                                                        <li><a href="#"> Link Item </a></li>
+                                                    <li><a href="#"> FAQ Page </a></li>
+                                                       <li><a href="#"> Front Page </a></li>
+                                                       <li><a href="#"> 404 Page </a></li>
+                                                       <li><a href="#"> Masonry Blog </a></li>
+                                                       <li><a href="#"> Search Page </a></li>
+                                                       <li><a href="#"> Contact Page </a></li>
                                                   </ul>
                                                   <ul class="col-sm-2 list-unstyled">
                                                     <li>
-                                                      <p><strong>Section Title</strong></p>
+                                                      <h3 class="normal">Section Title 4</h3>
                                                     </li>
-                                                    <li><a href="#"> Link Item </a></li>
-                                                       <li><a href="#"> Link Item </a></li>
-                                                       <li><a href="#"> Link Item </a></li>
-                                                       <li><a href="#"> Link Item </a></li>
-                                                       <li><a href="#"> Link Item </a></li>
-                                                        <li><a href="#"> Link Item </a></li>
+                                                    <li><a href="#"> FAQ Page </a></li>
+                                                       <li><a href="#"> Front Page </a></li>
+                                                       <li><a href="#"> 404 Page </a></li>
+                                                       <li><a href="#"> Masonry Blog </a></li>
+                                                       <li><a href="#"> Search Page </a></li>
+                                                       <li><a href="#"> Contact Page </a></li>
                                                     
                                                     </li>
                                                   </ul>
@@ -265,31 +332,32 @@
                                     </ul>
                    
                                <!-- /Megamenu -->
-                   
-                               <!-- /Megamenu -->
 
-                                <ul class="nav navbar-nav navbar-right">
-                                        <li>
-                                                <a href="#"><span class="glyphicon glyphicon-search" data-original-title="Search" data-placement="bottom" data-toggle="tooltip" title=""></span></a>
-                                        </li>
+                                <ul class="nav navbar-nav navbar-right main-right-menu pull-left" style="padding-left: 35px;">
+                                        <div class="col-md-3" id="main-search-form">
+                                        <form class="navbar-form navbar-left" style="padding-left: 0px;" role="search">
+                                                      <div class="form-group ">
+                                                        <input type="text" class="no-outline form-control" placeholder="search.."><button type="submit" class="btn btn-default search-bg no-outline button-border" style="border-radius: 0;"><i class="fa fa-search search-icon" data-original-title="Search" data-placement="bottom" data-toggle="tooltip" title=""></i></button>
+                                                      </div>
+                                                      
+                                            </form>
+                                        </div>
 
-                                        <li>
-                                                <a href="#"><span class="glyphicon glyphicon-thumbs-up" data-original-title="LinkedIn" data-placement="bottom" data-toggle="tooltip" title=
-                                                ""></span></a>
-                                        </li>
+                                        <li class="search-hide">
+                                                <button type="submit" id="main-search-button" class="btn btn-default search-bg no-outline search-icon search-button button-border"><i class="fa fa-search search-icon" data-original-title="Search" data-placement="bottom" data-toggle="tooltip" title=""></i></button>
+                                            
+                                                </a>
+                                              
 
-                                        <li>
-                                                <a href="#"><span class="glyphicon glyphicon-eye-open" data-original-title="Twitter" data-placement="bottom" data-toggle="tooltip" title=""></span></a>
                                         </li>
+                                            
 
-                                        <li>
-                                                <a href="#"><span class="glyphicon glyphicon-paperclip" data-original-title="Facebook" data-placement="bottom" data-toggle="tooltip" title=
-                                                ""></span></a>
-                                        </li>
+                                       
                                 </ul>
                         </div><!-- /.navbar-collapse -->
                 </div><!-- /.container-fluid -->
-        </nav>
+        </nav><!-- HTML to write -->
+
         <!-- Start Main title -->
                 <div class="well well-lg main-page-header">
                 <div class="container">
@@ -579,17 +647,102 @@
         </div><!-- End portfolio items -->
 
         
-
+</div>
 
         <!-- End portfolio -->
-        
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <div class="row footer">
+            <div class="container">
+                <div class="col-md-12">
+                    <div class="col-md-3">
+                        <h3>Recent Viewed Posts</h3>
+                        <img src="images/example-3.jpeg">
+                        <img src="images/example-2.jpeg">
+                        <img src="images/example-4.jpeg">
+                        <img src="images/example.jpeg">
+                        
+                    </div> <!-- End col-md-3 -->
+                    <div class="col-md-3 footer-about">
+                        <h3>Favorites</h3>
+                        <p><a href="#">Home</a></p>
+                        <p><a href="#">About</a></p>
+                        <p><a href="#">Masonry</a></p>
+                        <p><a href="#">Search</a></p>
+                 
+                    </div> <!-- End col-md-3 -->
+                    <div class="col-md-3">
+                        <h3> Recent Work</h3>
+                        <p>Lorem impsum dolor sit amet</p>
+                        <p>Lorem impsum dolor sit amet</p>
+                        <p>Lorem impsum dolor sit amet</p>
+                        <p>Lorem impsum dolor sit amet</p>
+                    </div> <!-- End col-md-3 -->
+                    <div class="col-md-3">
+                        <h3> About us </h3>
+                        <p>We are a team of developers that want to serve your needs. We focus on making premium themes on themeforest.We are a team of developers that want to serve your needs. We focus on making premium themes on themeforest.</p>
+                    </div> <!-- End col-md-3 -->
+                </div> <!-- End col-md-12 -->
+            </div> <!-- End container -->
+        </div> <!-- End row -->
+
+      <footer id="footer">
+          <div class="row footer-bottom">
+              <div class="container">
+                  <div class="col-md-12" style="margin-top: 20px;">
+                      <div class="col-md-6">
+                          <p>Copyright &copy; 2014 - 2015 SYNERGY All Rights Reserved</p>
+                      </div> <!-- End col-md-6 -->
+                      
+                      <div class="col-md-6">
+                          <div class="social-links pull-right"> 
+                    <p>
+                                        
+                                                <a href="#"><i class="fa fa-facebook facebook" data-original-title="Facebook" data-placement="top" data-toggle="tooltip" title=
+                                                ""></i></a>
+                                        
+
+                                      
+                                                <a href="#"><i class="fa fa-twitter twitter" data-original-title="Twitter" data-placement="top" data-toggle="tooltip" title=
+                                                ""></i></a>
+
+
+                                                <a href="#"><i class="fa fa-google-plus google" data-original-title="Google+" data-placement="top" data-toggle="tooltip" title=
+                                                ""></i></a>
+                                        
+
+                                        
+                                                <a href="#"><i class="fa fa-linkedin linkedin" data-original-title="LinkedIn" data-placement="top" data-toggle="tooltip" title=
+                                                ""></i></a>
+                                        
+
+                                        
+                                                <a href="#"><i class="fa fa-instagram instagram" data-original-title="Instagram" data-placement="top" data-toggle="tooltip" title=
+                                                ""></i></a>
+
+
+                                                <a href="#"><i class="fa fa-pinterest pinterest" data-original-title="Pinterest" data-placement="top" data-toggle="tooltip" title=
+                                                ""></i></a>
+                                        
+                                </p>
+                </div>
+                      </div> <!-- End col-md-6 -->
+                   </div> <!-- End col-md-12 -->
+                </div> <!-- End container -->
+            </div> <!-- End row -->
+      </footer>
+
+
+        <!-- Scroll to top -->
+<button id="to-top"><i class="fa fa-arrow-up"></i></button>
+        <!-- End scroll to top -->
+
+         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
          <script src="js/bootstrap.min.js"></script>
          <script src="js/main.js"></script>
          <script src="js/isotope.2.1.0.js"></script>
          <script type="text/javascript" src="js/widgets.js"></script>
          <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css"></script>
+         <script src="js/psp-slider.min.js"></script> 
          <script>
          jQuery(function($) {
            window.prettyPrint && prettyPrint()

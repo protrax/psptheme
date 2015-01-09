@@ -183,7 +183,7 @@ small, .font_small {
 }
 .top-bar .contact-info,a:hover{   
  text-decoration: none;
- color: #ffffff; 
+ color: #3f4040;
 }
 .top-bar .contact-info,a:focus{   
  text-decoration: none;
@@ -956,3 +956,42 @@ a.button-orange {
 .img-box .figcaption a:hover {
     color: #3f4040 !important;
     background: #fff;
+}
+/**** Page Search ****/
+
+.page-search-form {
+  position: relative;
+  z-index: 100;
+  margin: 0px;
+  padding: 0px;
+  display: inline-block;
+}
+
+.search-margin {
+  margin-left: -4px !important;
+}
+
+.h2-404 {
+  font-size: 21em;
+}
+
+/**** Suggestions ***/
+
+.suggestions {
+  
+}
+.suggestions p{
+  
+}
+
+.suggestions a:before{
+  content: "- ";
+}
+.suggestions a{
+  color: #f78e20;
+}
+
+.suggestions a:hover{
+  color: #f78e20;
+  text-decoration: underline !important;
+}

@@ -497,10 +497,36 @@ div#nav-collapse{
 .list-unstyled,
 .list-unstyled ul { min-width: 284px }
 
-@media ( min-width: 767px ) {
-  .panel-group { width: 400px; }
-  .thumbnail { margin: 0; }
+
+/*** FAQ Page ***/
+.panel-group { 
+  width: 100%;
 }
+
+.faq-questions a {
+  color: #f78e20 !important;
+}
+
+.our-suggestions {
+  padding: 0px;
+  margin-bottom: 10px;
+}
+
+.our-suggestions h2 {
+  margin-bottom: 30px;
+}
+
+.no-border .panel-default {
+     border-color: #eee !important;
+     border-radius: 0px;
+}
+
+
+
+
+
+
+
 
 
 
@@ -744,14 +770,16 @@ a.button-orange {
 
 .button-medium {
   padding: 0.7em 2.5em;
+  margin: 10px 0 20px 0;
 }
 /*** Types **/
 
 .button-f-orange {
-  border: 3px solid #f9f9f9 ;
-  color: #f78e20;
+  color: #f9f9f9;
+  border: none;
+  background: #f78e20;
   font-size: 1.3em;
-  text-shadow: 1px 1px 1px #3f4040;
+   
   -webkit-transition: all 0.6s;
   -moz-transition: all 0.6s;
   -ms-transition: all 0.6s;
@@ -761,7 +789,7 @@ a.button-orange {
 
 .button-f-orange:hover  {
   color: #f9f9f9;
-  border-color: #f78e20;
+  
   background: #f78e20;
 }
 
@@ -979,6 +1007,11 @@ a.button-orange {
   font-size: 21em;
 }
 
+/** Responsive search **/
+.flex {
+  display: inline-flex;
+}
+
 /**** Suggestions ***/
 
 .suggestions {
@@ -998,8 +1031,6 @@ a.button-orange {
 .suggestions a:hover{
   color: #f78e20;
   text-decoration: underline !important;
-
-
 }
 /************************************
 ************ Pages ******************
@@ -1048,3 +1079,4 @@ a.button-orange {
   padding: 3em;
 
 }
+

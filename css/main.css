@@ -129,7 +129,7 @@ small, .font_small {
   background: #fff;
   border: none;
   border-radius: 0;
-  box-shadow: 1px 1px 1px #888888;
+  
   margin-bottom: 0;
 
 }
@@ -440,6 +440,7 @@ div#nav-collapse{
 /**************** Fixed header ****************/
 .main-nav .main-nav-fixed {
   height: 50px;
+   
    -webkit-transition: all 0.6s;
     -moz-transition: all 0.6s;
     -ms-transition: all 0.6s;
@@ -448,7 +449,9 @@ div#nav-collapse{
 } 
 
 
-
+.navbar-fixed-top.main-nav-fixed {
+  box-shadow: 1px 1px 1px #888888;
+}
 
 .main-nav-fixed .main-logo img{
    padding: .8em 1.5em;
@@ -956,3 +959,51 @@ a.button-orange {
 .img-box .figcaption a:hover {
     color: #3f4040 !important;
     background: #fff;
+
+}
+/************************************
+************ Pages ******************
+************************************/
+
+
+  /**** Page header Default ****/
+
+
+    .main-page-header {
+      border: none;
+      border-radius: 0em;
+      padding: 2em 0em;
+    }
+  /**** Page header image   ***/
+  .main-page-header-img {
+      border: none;
+      border-radius: 0em;
+      padding: 2em 0em;
+      background: #f9f9f9;
+      min-height: 200px;
+      max-height: 400px;
+      margin-bottom: 5em;
+
+    }
+
+    .main-page-header-img h1 {
+      font-size: 2.9em;
+      margin: .1em 0em;
+      letter-spacing: .06em;
+}
+.main-page-header-img ol {
+  font-size: 1.1em;
+}
+
+.main-page-header-img ol a {
+  color: #f78e20;
+}
+.main-page-header-img .breadcrumb {
+  background:none;
+}
+
+.header-img-container {
+  background: rgba(249, 249, 249, 0.18);
+  min-height: 144px;
+  padding: 3em;
+}

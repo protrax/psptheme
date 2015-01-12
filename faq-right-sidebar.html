@@ -358,24 +358,22 @@
                 </div><!-- /.container-fluid -->
         </nav><!-- HTML to write -->
 
-        <div class="row row-offcanvas row-offcanvas-right">
-                <div class="well well-lg main-page-header">
-                        <div class="container">
-                                <div class="col-md-8">
-                                        <h1>FAQ <span>Right-Sidebar</span></h1>
-                                </div>
+        <div class="well well-lg main-page-header-img" style="background: url('images/slider-4.jpg');">
 
-                                <div class="col-md-4">
-                                        <ol class="breadcrumb">
-                                                <li>
-                                                        <a href="#">Home</a>
-                                                </li>
-
-                                                <li class="active">Blog</li>
-                                        </ol>
-                                </div>
+                <div class="container header-img-container animated fadeIn">
+                        <div class="col-md-8">
+                            <h1 class="bold">FAQ <span class="txt-color normal">Sidebar</span></h1>
+                        </div>
+                        <div class="col-md-4">
+                                <ol class="breadcrumb">
+                                        <li>
+                                           <a href="#">Home</a>
+                                        </li>
+                                        <li class="active">FAQ Sidebar</li>
+                                </ol>
                         </div>
                 </div>
+        </div><!-- Ending Title Bar -->
 
                 <p class="pull-right visible-xs"><button class="btn btn-primary btn-xs" data-toggle="offcanvas" type="button"><span class=
                 "glyphicon glyphicon-align-right">&nbsp;Sidebar</span></button></p>
@@ -383,23 +381,33 @@
                 <div class="container">
                         <div class="col-md-12 main-content-home">
                                 <div class="col-md-8">
-                                        <div class="col-md-12">
-                                                <h2>Search in FAQ: <input type="text"> <button class="btn btn-lg btn-default"><span class="glyphicon glyphicon-search"></span></button></h2>
-                                                <hr style="border-top:1px solid #222;">
-                                                <br>
+                                        <div class="col-md-12 center">
+                                                <h2>Search in FAQ:</h2>
+                                <div class="page-search-form">
+                                        <form class="navbar-form navbar-left">
+                                        <div class="form-group flex">
+                                        <input type="text" class="no-outline form-control" placeholder="search..">
+                                        <button type="submit" class="btn btn-default search-bg no-outline button-border search-margin" style="border-radius: 0;display: inline-block;">
+                                        <i class="fa fa-search search-icon" data-original-title="Search" data-placement="bottom" data-toggle="tooltip" title=""></i></button>
+                                        
+                                        </div>
+                                        </form>
+                                        </div> <!-- Close  Search bar -->
+                                <hr style="border-top:1px solid #222;">
+                                <br>
                                         </div><!-- End col-md-12 -->
                                         <!-- Starting FAQ menu -->
 
-                                        <div class="col-md-12">
-                                                <div class="panel-group" id="accordion">
+                                        <div class="col-md-12 faq-questions">
+                                                <div class="panel-group no-border" id="accordion">
                                                         <!-- Section -->
 
                                                         <div class="panel panel-default">
                                                                 <!-- Starting first tab -->
 
-                                                                <div class="panel-heading" id="headingOne">
-                                                                        <h4 class="panel-title"><a class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseOne">1. What are
-                                                                        the most frequently asked questions?</a></h4>
+                                                                <a class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseOne"><div class="panel-heading" id="headingOne">
+                                                                        <h4 class="panel-title">1. What are
+                                                                        the most frequently asked questions?</h4></a>
                                                                 </div>
 
                                                                 <div class="panel-collapse collapse" id="collapseOne">
@@ -415,9 +423,9 @@
                                                         </div><!-- End tab -->
 
                                                         <div class="panel panel-default">
-                                                                <div class="panel-heading" id="headingTwo">
-                                                                        <h4 class="panel-title"><a class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseTwo">2. What are
-                                                                        the most frequently asked questions?</a></h4>
+                                                                <a class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseTwo"><div class="panel-heading" id="headingTwo">
+                                                                        <h4 class="panel-title">2. What are
+                                                                        the most frequently asked questions?</h4></a>
                                                                 </div>
 
                                                                 <div class="panel-collapse collapse" id="collapseTwo">
@@ -433,9 +441,9 @@
                                                         </div>
 
                                                         <div class="panel panel-default">
-                                                                <div class="panel-heading" id="headingThree">
-                                                                        <h4 class="panel-title"><a class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseThree">3. What are
-                                                                        the most frequently asked questions?</a></h4>
+                                                                <a class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseThree"><div class="panel-heading" id="headingThree">
+                                                                        <h4 class="panel-title">3. What are
+                                                                        the most frequently asked questions?</h4></a>
                                                                 </div>
 
                                                                 <div class="panel-collapse collapse" id="collapseThree">
@@ -451,9 +459,9 @@
                                                         </div>
 
                                                         <div class="panel panel-default">
-                                                                <div class="panel-heading" id="headingFour">
-                                                                        <h4 class="panel-title"><a class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseFour">4. What are
-                                                                        the most frequently asked questions?</a></h4>
+                                                                <a class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseFour"><div class="panel-heading" id="headingFour">
+                                                                        <h4 class="panel-title">4. What are
+                                                                        the most frequently asked questions?</h4></a>
                                                                 </div>
 
                                                                 <div class="panel-collapse collapse" id="collapseFour">
@@ -469,9 +477,9 @@
                                                         </div>
 
                                                         <div class="panel panel-default">
-                                                                <div class="panel-heading" id="headingFive">
-                                                                        <h4 class="panel-title"><a class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseFive">5. What are
-                                                                        the most frequently asked questions?</a></h4>
+                                                                <a class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseFive"><div class="panel-heading" id="headingFive">
+                                                                        <h4 class="panel-title">5. What are
+                                                                        the most frequently asked questions?</h4></a>
                                                                 </div>
 
                                                                 <div class="panel-collapse collapse" id="collapseFive">
@@ -487,9 +495,9 @@
                                                         </div>
 
                                                         <div class="panel panel-default">
-                                                                <div class="panel-heading" id="headingSix">
-                                                                        <h4 class="panel-title"><a class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseSix">6. What are
-                                                                        the most frequently asked questions?</a></h4>
+                                                                <a class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseSix"><div class="panel-heading" id="headingSix">
+                                                                        <h4 class="panel-title">6. What are
+                                                                        the most frequently asked questions?</h4></a>
                                                                 </div>
 
                                                                 <div class="panel-collapse collapse" id="collapseSix">
@@ -505,9 +513,9 @@
                                                         </div>
 
                                                         <div class="panel panel-default">
-                                                                <div class="panel-heading" id="headingSeven">
-                                                                        <h4 class="panel-title"><a class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseSeven">7. What are
-                                                                        the most frequently asked questions?</a></h4>
+                                                                <a class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseSeven"><div class="panel-heading" id="headingSeven">
+                                                                        <h4 class="panel-title">7. What are
+                                                                        the most frequently asked questions?</h4></a>
                                                                 </div>
 
                                                                 <div class="panel-collapse collapse" id="collapseSeven">
@@ -523,9 +531,9 @@
                                                         </div>
 
                                                         <div class="panel panel-default">
-                                                                <div class="panel-heading" id="headingEight">
-                                                                        <h4 class="panel-title"><a class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseEight">8. What are
-                                                                        the most frequently asked questions?</a></h4>
+                                                                <a class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseEight"><div class="panel-heading" id="headingEight">
+                                                                        <h4 class="panel-title">8. What are
+                                                                        the most frequently asked questions?</h4></a>
                                                                 </div>
 
                                                                 <div class="panel-collapse collapse" id="collapseEight">
@@ -541,9 +549,9 @@
                                                         </div>
 
                                                         <div class="panel panel-default">
-                                                                <div class="panel-heading" id="headingNine">
-                                                                        <h4 class="panel-title"><a class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseNine">9. What are
-                                                                        the most frequently asked questions?</a></h4>
+                                                                <a class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseNine"><div class="panel-heading" id="headingNine">
+                                                                        <h4 class="panel-title">9. What are
+                                                                        the most frequently asked questions?</h4></a>
                                                                 </div>
 
                                                                 <div class="panel-collapse collapse" id="collapseNine">
@@ -559,9 +567,9 @@
                                                         </div>
 
                                                         <div class="panel panel-default">
-                                                                <div class="panel-heading" id="headingTen">
-                                                                        <h4 class="panel-title"><a class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseTen">10. What are
-                                                                        the most frequently asked questions?</a></h4>
+                                                                <a class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseTen"><div class="panel-heading" id="headingTen">
+                                                                        <h4 class="panel-title">10. What are
+                                                                        the most frequently asked questions?</h4></a>
                                                                 </div>
 
                                                                 <div class="panel-collapse collapse" id="collapseTen">
@@ -574,121 +582,114 @@
                                                                                 labore sustainable VHS.
                                                                         </div>
                                                                 </div>
-                                                        </div><a class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseEleven">
+                                                        </div>
                                                         <div class="panel panel-default">
-                                                                <div class="panel-heading" id="headingEleven">
-                                                                        <h4 class="panel-title">11. What are the most frequently asked questions?</h4>
-                                                                </div>
-                                                        </div></a>
-
-                                                        <div class="panel-collapse collapse" id="collapseEleven">
-                                                                <div class="panel-body">
-                                                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non
-                                                                        cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a
-                                                                        bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
-                                                                        anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
-                                                                        raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                                                </div>
+                                               <a class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseTen"><div class="panel-heading" id="headingTen">
+                                                        <h4 class="panel-title">10. What are the most
+                                                        frequently asked questions?</h4></a>
+                                                </div>
+                                                  </div>
+                                                <div class="panel-collapse collapse" id="collapseTen">
+                                                        <div class="panel-body">
+                                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
+                                                                skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                                                                single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                                                sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth
+                                                                nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
                                                         </div>
                                                 </div>
+                                        </div>
                                         </div><!-- /section -->
                                 
+                                   
+                                 <div class="col-md-12 our-suggestions">
+                          <h2 class="center">No answers? Try our suggestions:</h2>
+                                <div class="col-md-6">
+                                        <img src="images/slider-4.jpg" alt="...">
 
-                                <div class="col-md-12">
-                                        <h2 style="text-align: center;">No answers? Try Our suggestions:</h2>
+                                        <h3 class="bold">LOREM <span class="txt-color normal">PAGE</span></h3>
                                         <hr style="border-top:1px solid #222;">
-                                </div><!-- End col-md-12 -->
 
-                                <div class="col-md-12">
-                                        <div class="col-md-6">
-                                                <img src="http://placehold.it/330x240">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><button class="button-medium button-f-orange">Visit Page</button>
+                                </div><!-- End col-md-6 -->
 
-                                                <h3>Lorem Page</h3>
-                                                <hr style="border-top:1px solid #222;">
+                                <div class="col-md-6">
+                                        <img src="images/slider-4.jpg" alt="...">
+                                        <h3 class="bold">LOREM <span class="txt-color normal">PAGE</span></h3>
+                                        <hr style="border-top:1px solid #222;">
 
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                                                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                                                laborum.</p><button class="btn btn-lg btn-info">Visit Page</button>
-                                        </div><!-- End col-md-6 -->
-
-                                        <div class="col-md-6">
-                                                <img src="http://placehold.it/330x240">
-
-                                                <h3>Lorem Page</h3>
-                                                <hr style="border-top:1px solid #222;">
-
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                                                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                                                laborum.</p><button class="btn btn-lg btn-info">Visit Page</button>
-                                        </div><!-- End col-md-6 -->
-                                </div><!-- End col-md-12 -->
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><button class="button-medium button-f-orange">Visit Page</button>
+                                </div><!-- End col-md-6 -->
+                        </div><!-- End col-md-12 -->
                                 <!-- Ending suggestions -->
                         </div> 
 
                         <div class="col-md-4 col-xs-11 col-sm-11 sidebar-offcanvas">
                                 <aside id="sidebar">
-                                        <section class="widget clearfix widget_categories" id="categories-1">
-                                                <h3>Categories</h3>
+                                                <section class="widget clearfix widget_categories" id="categories-1">
+                                                        <h3>Categories</h3>
 
-                                                <ul>
-                                                        <li>
-                                                                <a href="#">Movies</a>
-                                                        </li>
+                                                        <ul>
+                                                                <li>
+                                                                        <a href="#">Movies</a>
+                                                                </li>
 
-                                                        <li>
-                                                                <a href="#">Templates</a>
-                                                        </li>
+                                                                <li>
+                                                                        <a href="#">Templates</a>
+                                                                </li>
 
-                                                        <li>
-                                                                <a href="#">Templates</a>
-                                                        </li>
-                                                </ul>
-                                        </section>
+                                                                <li>
+                                                                        <a href="#">Plugins</a>
+                                                                </li>
+                                                        </ul>
+                                                </section>
 
-                                        <section class="widget clearfix widget_recent_posts" id="recent-posts-1">
-                                                <h3>Recent posts</h3>
+                                                <section class="widget clearfix widget_recent_posts" id="recent-posts-1">
+                                                        <h3>Recent posts</h3>
 
-                                                <ul>
-                                                        <li>
-                                                                <a href="#">Article</a><br>
+                                                        <ul>
+                                                                <li>
+                                                                        <a href="#">World Tour</a><br>
 
-                                                                <p><span class="glyphicon glyphicon-calendar"></span>&nbsp;hello</p>
-                                                        </li>
+                                                                        <p><i class="fa fa-calendar"></i>&nbsp; January / 2015</p>
+                                                                </li>
 
-                                                        <li>
-                                                                <a href="#">Article</a><br>
+                                                                <li>
+                                                                        <a href="#">Vacation</a><br>
 
-                                                                <p><span class="glyphicon glyphicon-calendar"></span>&nbsp;hello</p>
-                                                        </li>
+                                                                        <p><i class="fa fa-calendar"></i>&nbsp; March / 2015</p>
+                                                                </li>
 
-                                                        <li>
-                                                                <a href="#">Article</a><br>
+                                                                <li>
+                                                                        <a href="#">Meetup</a><br>
 
-                                                                <p><span class="glyphicon glyphicon-calendar"></span>&nbsp;hello</p>
-                                                        </li>
-                                                </ul>
-                                        </section>
+                                                                        <p><i class="fa fa-calendar"></i>&nbsp; September / 2015</p>
+                                                                </li>
+                                                        </ul>
+                                                </section>
 
-                                        <section class="widget clearfix widget_archive" id="archives-1">
-                                                <h3>Archives</h3>
+                                                <section class="widget clearfix widget_archive" id="archives-1">
+                                                        <h3>Archives</h3>
 
-                                                <ul>
-                                                        <li>
-                                                                <a href="#">March 2014</a><br>
-                                                        </li>
+                                                        <ul>
+                                                                <li>
+                                                                        <a href="#">March 2014</a><br>
+                                                                </li>
 
-                                                        <li>
-                                                                <a href="#">February 2014</a><br>
-                                                        </li>
+                                                                <li>
+                                                                        <a href="#">February 2014</a><br>
+                                                                </li>
 
-                                                        <li>
-                                                                <a href="#">January 2014</a><br>
-                                                        </li>
-                                                </ul>
-                                        </section>
-                                </aside>
+                                                                <li>
+                                                                        <a href="#">January 2014</a><br>
+                                                                </li>
+                                                        </ul>
+                                                </section>
+                                        </aside>
                         </div>
                 </div>
                 </div>
@@ -697,10 +698,10 @@
                 <div class="col-md-12">
                     <div class="col-md-3">
                         <h3>Recent Viewed Posts</h3>
-                        <img src="images/example-3.jpeg">
-                        <img src="images/example-2.jpeg">
-                        <img src="images/example-4.jpeg">
-                        <img src="images/example.jpeg">
+                        <img src="images/slider-4.jpg" alt="...">
+                        <img src="images/slider-4.jpg" alt="...">
+                        <img src="images/slider-4.jpg" alt="...">
+                        <img src="images/slider-4.jpg" alt="...">
                         
                     </div> <!-- End col-md-3 -->
                     <div class="col-md-3 footer-about">
@@ -712,11 +713,11 @@
                  
                     </div> <!-- End col-md-3 -->
                     <div class="col-md-3">
-                        <h3> Recent Work</h3>
-                        <p>Lorem impsum dolor sit amet</p>
-                        <p>Lorem impsum dolor sit amet</p>
-                        <p>Lorem impsum dolor sit amet</p>
-                        <p>Lorem impsum dolor sit amet</p>
+                         <h3>Contact Us!</h3>
+                        <p><a href="#"><i class="fa fa-envelope"></i> info@example.com</a></p>
+                        <p><a href="#"><i class="fa fa-phone-square"></i> 458 88 946</a></p>
+                        <p><a href="#"><i class="fa fa-map-marker"></i> 1600 Pennsylvania Avenue 
+Washington D.C</a></p>
                     </div> <!-- End col-md-3 -->
                     <div class="col-md-3">
                         <h3> About us </h3>

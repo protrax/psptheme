@@ -41,6 +41,7 @@ h4 {font-size: 1.333em;}
 small, .font_small {
   font-size: 0.75em;
 }
+
 /**** Icon sizes ******/
 .fa-2x {
   font-size: 1.5em;
@@ -503,7 +504,7 @@ div#nav-collapse{
   width: 100%;
 }
 
-.faq-questions a {
+.faq-questions a:focus {
   color: #f78e20 !important;
 }
 
@@ -1010,7 +1011,6 @@ a.button-orange {
 .img-box .figcaption a:hover {
     color: #3f4040 !important;
     background: #fff;
-<<<<<<< HEAD
 }
 /**** Page Search ****/
 
@@ -1104,6 +1104,7 @@ a.button-orange {
 }
 
 
+
 /*************** Main Content **********/
 
 .main-content img {
@@ -1116,3 +1117,44 @@ a.button-orange {
     min-height: 400px;
     background: transparent;
 }
+
+/**** SIDEBAR PAGE ****/ 
+
+.sidebar-page {
+  padding: 0;
+}
+
+/**** SIDEBAR ****/
+
+#sidebar a {
+  color: #f78e20;
+}
+
+#sidebar a:hover {
+  text-decoration: underline;
+}
+
+#sidebar li:before {
+  content: "- ";
+}
+
+#sidebar li {
+  list-style: none;
+  text-align: left;
+}
+
+#sidebar section ul {
+  padding-left: 5px;
+}
+
+#sidebar h3 {
+  font-weight: normal;
+}
+
+/**** SEARCH PAGE ****/
+
+.search-results {
+  padding: 0 !important;
+}
+
+

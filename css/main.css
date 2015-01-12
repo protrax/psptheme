@@ -776,10 +776,10 @@ a.button-orange {
 
 .button-f-orange {
   color: #f9f9f9;
-  border: none;
-  background: #f78e20;
+  border: 3px solid #f78e20;
+  background: none;
   font-size: 1.3em;
-   
+  display: inline-block;
   -webkit-transition: all 0.6s;
   -moz-transition: all 0.6s;
   -ms-transition: all 0.6s;
@@ -789,7 +789,6 @@ a.button-orange {
 
 .button-f-orange:hover  {
   color: #f9f9f9;
-  
   background: #f78e20;
 }
 
@@ -803,7 +802,7 @@ a.button-orange {
 
 
 /**** FEATURED BOX ****/
-
+  /** Featured box right ***/
 .featured-box {
   padding: 0px;
   margin: 2em 0em;
@@ -821,6 +820,30 @@ a.button-orange {
 }
 
 .featured-box .fa-2x{
+  margin-right: 0.4em;
+}
+
+/*** Featured box left ****/
+
+
+.featured-box-left {
+  padding: 0px;
+  margin: 2em 0em;
+}
+
+.featured-box-left h2 {
+  margin-top: 0em;
+  margin-bottom: 1em;
+}
+
+.featured-box-left p {
+  font-size: 1.3em;
+  padding: 0em .3em;
+  line-height: 1.3em;
+ 
+}
+
+.featured-box-left .fa-2x{
   margin-right: 0.4em;
 }
 /**** OUR PARTNERS ****/
@@ -1080,3 +1103,16 @@ a.button-orange {
 
 }
 
+
+/*************** Main Content **********/
+
+.main-content img {
+  margin: 2em 0em;
+}
+
+/***** Parralax ******/
+
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+}

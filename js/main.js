@@ -469,5 +469,5 @@ $('.arrow-left').on('hover', function(e){
   }, function(){
     $(this).find('span').hide();
   });
+  
 });
-

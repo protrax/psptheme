@@ -986,7 +986,7 @@ a.button-orange {
     margin-bottom: 5px;
     position: relative;
     right: 100%;
-    margin-top: 90px;
+    margin-top: 65px;
     font-size: 30px;
     text-align: center;
     width: 100%;
@@ -1006,6 +1006,7 @@ a.button-orange {
     border: 2px solid #fff;
     padding: 4px 10px;
     text-decoration: none;
+    margin-top: 10px;
 }
  
 .img-box .figcaption a:hover {
@@ -1157,4 +1158,57 @@ a.button-orange {
   padding: 0 !important;
 }
 
+/**** TEAM PAGES ****/
 
+.team-members {
+ padding-bottom: 50px;
+}
+
+.team-members .about {
+  margin: 0.85em 0;
+}
+
+.team-members h2 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 90px;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.team-members h4 {
+   margin-top: 10px;
+   margin-bottom: 10px;
+   font-weight: 400;
+   text-transform: capitalize;
+   font-size: 1.5em;
+}
+
+.team-members .position {
+  margin: 0;
+  font-size: 1.1em;
+  text-transform: capitalize;
+  color: #666;
+}
+
+.team-members img {
+  
+  
+}
+
+.team-links .instagram {
+  color: #81573F;
+}
+
+.team-links .facebook {
+  color: #3a5795;
+}
+
+.team-links .twitter {
+  color: #55acee;
+}
+
+.team-links .pinterest {
+  color: #DC0E0B;
+}

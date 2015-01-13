@@ -469,5 +469,11 @@ $('.arrow-left').on('hover', function(e){
   }, function(){
     $(this).find('span').hide();
   });
-  
 });
+
+
+/******* Init Parallax *******/
+jQuery(document).ready(function($){
+  $('.img-holder').imageScroll();
+});
+

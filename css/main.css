@@ -777,8 +777,14 @@ a.button-orange {
 /*** Sizes ***/
 
 
+.button-small {
+  padding: 0.1em 0.5em;
+  margin: 10px 0 20px 0;
+  font-size: 1em !important;
+}
+
 .button-medium {
-  padding: 0.1em .5em;
+  padding: 0.5em 2.7em;
   margin: 10px 0 20px 0;
 }
 /*** Types **/
@@ -787,7 +793,7 @@ a.button-orange {
   color: #3f4040;
   border: 3px solid #f78e20;
   background: none;
-  font-size: 1em;
+  font-size: 1.2em;
   display: inline-block;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -1411,6 +1417,43 @@ figure.effect-bubba:hover p {
 .team-links .pinterest {
   color: #DC0E0B;
 }
+
+
+/**** Blog Author ****/
+
+.author-content {
+   padding: 0;
+   margin-bottom: 50px;
+ }
+
+ .author-image {
+  padding-bottom: 25px;
+ }
+
+ .author-image img {
+   width: 1140px !important;
+   height: 440px !important;
+   border: 5px solid lightgray;
+ }
+ 
+ .author a {
+  color: #f78e20;
+ }
+
+ .author p {
+  margin-bottom: 15px;
+ }
+
+ .author a:hover {
+  text-decoration: underline;
+ }
+
+ .author h2 {
+  margin-top: 0;
+  font-weight: 400;
+  text-transform: capitalize;
+ }
+
 
 /**** Blog Listview ****/
 

@@ -1444,3 +1444,30 @@ figure.effect-bubba:hover p {
   margin-top: 10px;
   border: 5px solid lightgray;
 }
+
+@media screen and (max-width: 1200px) {
+  .buttons {
+    display: inline-flex;
+    font-size: 1em;
+  }
+  .buttons button {
+    margin-right: 6px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .buttons {
+    display: inherit;
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (max-width: 394px) {
+   .buttons {
+    display: inline-flex;
+    font-size: 1em;
+  }
+  .buttons button {
+    margin-right: 6px;
+  }
+}

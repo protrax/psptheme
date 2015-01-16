@@ -1,3 +1,5 @@
+
+
 jQuery(function ($) {
   
   // Enable tooltip
@@ -476,4 +478,106 @@ $('.arrow-left').on('hover', function(e){
 jQuery(document).ready(function($){
   $('.img-holder').imageScroll();
 });
+
+/*************************************************************
+PROGRESS PIE ANIMATION
+*************************************************************/
+  
+  function pieChartAnim() {
+    $('.to-pie-chart-anim').appear(function(){  
+      var percent = $(this).attr('data-anim');
+      $(this).data('easyPieChart').update(percent);
+    },{accX: 0, accY: -90});
+  }
+
+
+/*************************************************************
+PROGRESS BAR ANIMATION
+*************************************************************/
+  jQuery(function($){
+        $( "#progressbar" ).progressbar({
+          value: 20
+        });
+  });
+
+
+/*************************************************************
+PROGRESS PIE ANIMATION
+*************************************************************/
+  
+  function pieChartAnim() {
+    $('.to-pie-chart-anim').appear(function(){  
+      var percent = $(this).attr('data-anim');
+      $(this).data('easyPieChart').update(percent);
+    },{accX: 0, accY: -90});
+  }
+
+/*************************************************************
+COUNTER
+*************************************************************/
+
+  function counter() {
+    $('.to-counter-holder').appear(function(){  
+      var $this = $(this);
+      var number = $this.attr('data-counter');
+      var speed = $this.attr('data-counter-speed');
+      if ($this.closest('.no-touch .col.has-anim').length) {
+        setTimeout(function() {
+          $this.find('.to-counter-number .to-count-number').countTo({
+            from: 0,
+            to: number,
+            speed: speed,
+            refreshInterval: 30
+          });
+        }, 800);
+      } else {
+      $this.find('.to-counter-number .to-count-number').countTo({
+        from: 0,
+        to: number,
+        speed: speed,
+        refreshInterval: 30
+      }); 
+      }
+    },{accX: 0, accY: -90});
+  }
+  
+  
+/*************************************************************
+REQUEST ANIMATION FRAME DECLARATION FOR SCROLLING
+*************************************************************/
+
+var scroll = window.requestAnimationFrame ||
+             window.webkitRequestAnimationFrame ||
+             window.mozRequestAnimationFrame ||
+             window.msRequestAnimationFrame ||
+             window.oRequestAnimationFrame ||
+             function(callback){ window.setTimeout(callback, 1000/6); };
+
+/*************************************************************
+DEBOUNCED RESIZE (http://www.paulirish.com/2009/throttled-smartresize-jquery-event-handler)  
+*************************************************************/
+
+function smartresize(sr) {
+  var debounce = function (func, threshold, execAsap) {
+  var timeout;
+  return function debounced () {
+  var obj = this, args = arguments;
+    function delayed () {
+      if (!execAsap) {
+        func.apply(obj, args);
+      }
+      timeout = null;
+      }
+      if (timeout) {
+        clearTimeout(timeout);
+      } else if (execAsap) {
+        func.apply(obj, args);
+      }
+      timeout = setTimeout(delayed, threshold || 100);
+    };
+  };
+  $.fn[sr] = function(fn){  return fn ? this.bind('resize', debounce(fn)) : this.trigger(sr); };
+}
+
+
 

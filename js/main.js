@@ -496,7 +496,7 @@ PROGRESS BAR ANIMATION
 *************************************************************/
   jQuery(function($){
         $( "#progressbar" ).progressbar({
-          value: 20
+          
         });
   });
 

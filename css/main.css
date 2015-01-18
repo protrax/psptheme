@@ -1523,7 +1523,6 @@ figure.effect-bubba:hover p {
   color: #DC0E0B;
 }
 
-<<<<<<< HEAD
 /*********************************
 ************ Testimonials ********
 **********************************/
@@ -1739,4 +1738,30 @@ figure.effect-bubba:hover p {
   .buttons button {
     margin-right: 6px;
   }
+}
+
+/*******************************
+/****** Progress bar ***********
+********************************/
+progress {
+  width: 100%;
+}
+.progress-bar {
+  background-color: whiteSmoke;
+  border-radius: 2px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25) inset;
+
+  width: 500px !important; 
+  height: 20px;
+  
+  position: relative;
+  display: block;
+}
+  
+.progress-bar > span {
+  background-color: blue;
+  border-radius: 2px;
+
+  display: block;
+  text-indent: -9999px;
 }

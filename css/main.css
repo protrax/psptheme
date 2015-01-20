@@ -18,12 +18,12 @@ img {
 
 p {
   margin-bottom: 1.3em;
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 
 h1, h2, h3, h4 {
   margin: 1.414em 0 0.5em;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.2;
 }
 
@@ -1031,7 +1031,7 @@ a.button-orange {
     margin-bottom: 5px;
     position: relative;
     right: 100%;
-    margin-top: 65px;
+    margin-top: 24%;
     font-size: 30px;
     text-align: center;
     width: 100%;
@@ -1769,10 +1769,30 @@ progress {
 #maps-fullwidth {
   width: 100%;
   height: 400px;
+  -webkit-filter: grayscale(70%);
+}
+
+.gmnoprint img {
+    max-width: none; 
+}
+
+.map-padding {
+  width: 100%;
+  height: auto;
+  padding-right: 15px;
+}
+
+#maps-fullwidth:hover {
+  -webkit-filter: grayscale(0%);
 }
 
 #maps-boxed {
   height: 400px;
+  -webkit-filter: grayscale(70%);
+}
+
+#maps-boxed:hover {
+  -webkit-filter: grayscale(0%);
 }
 
 .contact-heading {
@@ -1878,3 +1898,90 @@ textarea.form-control.no-radius {
  }
 }
 
+/**** Single Post ****/
+
+.single-post {
+  padding: 0;
+}
+
+.single-post img {
+  border: 5px solid lightgray;
+}
+
+.post-info i {
+  color: orange;
+}
+
+.single-post { 
+   padding: 0;
+}
+
+.single-post h2 {
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.single-post-author {
+  padding: 0;
+}
+
+.single-post-author img {
+  border: 1px solid lightgray;
+   max-width: 100px;
+  max-height: 100px;
+}
+
+.single-post-author h3 {
+  font-weight: 400;
+  margin-left: 10px;
+  text-transform: capitalize;
+  margin-top: 20px;
+}
+
+.single-post-author h4 {
+  margin-top: 0px;
+  font-weight: 500;
+  margin-left: 15px;
+}
+
+.single-post-author p {
+  margin-left: 15px;
+}
+
+.related-posts {
+  padding: 0;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.related-posts h2 {
+  text-align: center;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.related-posts h3 {
+  margin-top: 30px;
+  font-weight: 400;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+.comments {
+  padding: 0px;
+}
+
+.comments h2 {
+  font-weight: 400;
+  text-transform: capitalize;
+  margin-top: 25px;
+  margin-bottom: 35px;
+}
+
+.comments img {
+  max-width: 85px;
+  max-height: 85px;
+  border: 1px solid lightgray;
+}

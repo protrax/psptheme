@@ -6,7 +6,7 @@
         <meta content="IE=edge" http-equiv="X-UA-Compatible">
         <meta content="width=device-width, initial-scale=1" name="viewport">
 
-        <title>Index</title>
+        <title>Single Post</title>
 
         <!-- Google font -->
         <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700' rel='stylesheet' type='text/css'>
@@ -358,53 +358,22 @@
                 </div><!-- /.container-fluid -->
         </nav><!-- HTML to write -->
 
-        <div class="carousel slide" data-ride="carousel" id="carousel-example-generic">
-                <!-- Indicators -->
-
-                <ol class="carousel-indicators">
-                        <li class="active" data-slide-to="0" data-target="#carousel-example-generic"></li>
-
-                        <li class="" data-slide-to="1" data-target="#carousel-example-generic"></li>
-
-                        <li data-slide-to="2" data-target="#carousel-example-generic"></li>
-                </ol><!-- Wrapper for slides -->
-
-                <div class="carousel-inner">
-                        <div class="item active">
-                                <img alt="..." src="http://placehold.it/1920x720">
-
-                                <div class="carousel-caption">
-                                        ...
-                                </div>
-                        </div>
-
-                        <div class="item">
-                                <img alt="..." src="http://placehold.it/1920x720">
-
-                                <div class="carousel-caption">
-                                        ...
-                                </div>
-                        </div>
-                </div><!-- Controls -->
-                <a class="left carousel-control" data-slide="prev" href="#carousel-example-generic"><span class="glyphicon glyphicon-chevron-left"></span> <span class="sr-only">Previous</span></a>
-                <a class="right carousel-control" data-slide="next" href="#carousel-example-generic"><span class="glyphicon glyphicon-chevron-right"></span> <span class="sr-only">Next</span></a>
-        </div><!-- Ending Slideshow -->
         <!-- Starting Content -->
+
         <!-- Starting Title Bar -->
 
-        <div class="well well-lg main-page-header">
-                <div class="container">
-                        <div class="col-md-8">
-                                <h1>The <span>Post Title</span></h1>
-                        </div>
+        <div class="well well-lg main-page-header-img" style="background: url('images/slider-4.jpg');">
 
+                <div class="container header-img-container animated fadeIn">
+                        <div class="col-md-8">
+                            <h1 class="bold">Single <span class="txt-color normal">Post</span></h1>
+                        </div>
                         <div class="col-md-4">
                                 <ol class="breadcrumb">
                                         <li>
-                                                <a href="#">Home</a>
+                                           <a href="#">Home</a>
                                         </li>
-
-                                        <li class="active">Blog</li>
+                                        <li class="active">Single Post</li>
                                 </ol>
                         </div>
                 </div>
@@ -413,18 +382,25 @@
 
         <div class="row">
                 <div class="container">
-                        <div class="col-md-12"><img src="http://placehold.it/1140x450" style="margin-top: 50px;"></div><!-- End col-md-12 -->
+                        <div class="col-md-9 single-post">
+                            <img src="images/blog-img.jpg" alt="...">
+                       
+                        <!-- Start Post Info -->
+                         <p><i class="fa fa-user"></i> Posted by: <a href="#">Admin</a></p>
+                         <p><i class="fa fa-calendar"></i> December 21, 2014</p>
+                        <!-- End Post Info -->
+                        </div>
 
-                        <div class="col-md-12">
-                                <h2>THE TITLE</h2>
-                                <hr style="border-top:1px solid #222;">
+                        <div class="col-md-9 single-post">
 
-                                <p>orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                <h2>The post Title</h2>
+                         
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                                 exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br>
-
-                                <p>orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                 exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
                                 pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                                 <hr style="border-top:1px solid #222;">
                         </div><!-- End col-md-12 -->
@@ -435,12 +411,15 @@
 
         <div class="row">
                 <div class="container">
-                        <div class="col-md-12">
+                        <div class="col-md-9 single-post-author">
                                 <div class="media">
-                                        <h3>Author</h3><a class="media-left" href="#"><img src="https://placehold.it/150x120"></a>
+                                        <h3>author</h3>
+                                        <a class="media-left" href="#">
+                                        <img src="images/member6.jpg">
+                                        </a>
 
                                         <div class="media-body">
-                                                <h4>Author Name</h4>
+                                                <h4>Jake Williams</h4>
 
                                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit
                                                 amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur
@@ -448,14 +427,16 @@
                                         </div><!-- End media-body -->
                                 </div><!-- End media -->
 
-                                <h4>Share This Post!</h4>
+                                <h3>Share This Post!</h3>
 
-                                <div class="social-icons">
-                                        <a href="#">
-                                        <p><span class="glyphicon glyphicon-flash">F |</span></p></a> <a href="#"><span class="glyphicon glyphicon-flash">T |</span></a> <a href="#"><span class=
-                                        "glyphicon glyphicon-flash">L |</span></a> <a href="#"><span class="glyphicon glyphicon-flash">M |</span></a> <a href="#"><span class=
-                                        "glyphicon glyphicon-flash">I</span></a>
-                                        <p>
+                                <div class="team-links">
+                                              <p>
+                                                  <a href="#"><i class="fa fa-facebook-square fa-2x facebook"></i></a>
+                                                  <a href="#"><i class="fa fa-twitter-square fa-2x twitter"></i></a>
+                                                  <a href="#"><i class="fa fa-instagram fa-2x instagram"></i></a>
+                                                  <a href="#"><i class="fa fa-pinterest fa-2x pinterest"></i></a>
+                                                 
+                                              </p>
                                 </div>
                                 <hr style="border-top:1px solid #222;">
                         </div><!-- End col-md-12 -->
@@ -466,130 +447,142 @@
 
         <div class="row">
                 <div class="container">
-                        <div class="col-md-12">
-                                <h2>RELATED POSTS</h2>
-                        </div><!-- End col-md-12 -->
+                        <div class="col-md-9 related-posts">
+                               <h2>Related <span class="txt-color normal">Posts</span></h2>
+                        
+                                <div class="col-md-3">
+                                      
+                            <img src="images/slider-4.jpg" alt="...">
+                          
+                            <h3>The Post</h3>
+                      <p class="left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    <a href="#"><button class="button-small button-f-orange">Read More</button></a>
+                    </div>
 
-                        <div class="col-md-12">
-                                <div class="col-md-4">
-                                        <img src="https://placehold.it/360x240">
+                    <div class="col-md-3">
+                                      
+                            <img src="images/slider-4.jpg" alt="...">
+                          
+                            <h3>The Post</h3>
+                      <p class="left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    <a href="#"><button class="button-small button-f-orange">Read More</button></a>
+                    </div>
 
-                                        <h4>Post Title</h4>
+                                <div class="col-md-3">        
+                            <img src="images/slider-4.jpg" alt="...">
+                            <h3>The Post</h3>
+                            <p class="left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                                <a href="#"><button class="button-small button-f-orange">Read More</button></a>
+                                </div>
 
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magnadolore magna dolore magna dolore magna
-                                        dolore magna dolore magna aliqua.</p>
-                                </div><!-- End col-md-4 -->
-
-                                <div class="col-md-4">
-                                        <img src="https://placehold.it/360x240">
-
-                                        <h4>Post Title</h4>
-
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magnadolore magna dolore magna dolore magna
-                                        dolore magna dolore magna aliqua.</p>
-                                </div><!-- End col-md-4 -->
-
-                                <div class="col-md-4">
-                                        <img src="https://placehold.it/360x240">
-
-                                        <h4>Post Title</h4>
-
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magnadolore magna dolore magna dolore magna
-                                        dolore magna dolore magna aliqua.</p>
-                                </div><!-- End col-md-4 -->
+                                <div class="col-md-3">        
+                            <img src="images/slider-4.jpg" alt="...">
+                            <h3>The Post</h3>
+                            <p class="left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                            <a href="#"><button class="button-small button-f-orange">Read More</button></a>
+                                </div>
                         </div><!-- End col-md-12 -->
                 </div><!-- End container -->
         </div><!-- End row -->
         <!-- End Related Posts -->
         <!-- Starting Comments -->
 
-        <div class="row">
-                <div class="container">
-                        <div class="col-md-12">
-                                <h2>Comments (3)</h2>
-                        </div><!-- End col-md-12 -->
+<div class="row">
+        <div class="container">
+                <div class="col-md-9 comments">
+                        <h3>Comments (3)</h3>
+                </div><!-- End col-md-12 -->
 
-                        <div class="col-md-8">
-                                <div class="media">
-                                        <a class="media-left" href="#"><img alt="64x64" data-holder-rendered="true" src="https://placehold.it/150x120"></a>
+                <div class="col-md-6 comments">
+                        <div class="media">
+                        <a class="media-left" href="#">
+                        <img alt="64x64" src="images/member3.jpg"></a>
 
-                                        <div class="media-body">
-                                                <h4 class="media-heading">Commentator</h4>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras
-                                                purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in
-                                                faucibus.
+                                <div class="media-body">
+                                        <h4 class="media-heading">Frank Stone</h4>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras
+                                        purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in
+                                        faucibus.
 
-                                                <div class="media">
-                                                        <a class="media-left" href="#"><img alt="64x64" data-holder-rendered="true" src="https://placehold.it/150x120"></a>
+                                        <div class="media">
+                                                <a class="media-left" href="#"><img alt="64x64" data-holder-rendered="true" src="images/member2.jpg"></a>
 
-                                                        <div class="media-body">
-                                                                <h4 class="media-heading">Comment on comment</h4>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante
-                                                                sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
-                                                                fringilla. Donec lacinia congue felis in faucibus.
-                                                        </div><!-- End media-body -->
-                                                </div><!-- End media -->
+                                                <div class="media-body">
+                                                        <h4 class="media-heading">Laura Clark</h4>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante
+                                                        sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
+                                                        fringilla. Donec lacinia congue felis in faucibus.
+                                                </div><!-- End media-body -->
+                                        </div><!-- End media -->
 
-                                                <div class="media">
-                                                        <a class="media-left" href="#"><img alt="64x64" data-holder-rendered="true" src="https://placehold.it/150x120"></a>
+                                        <div class="media">
+                                                <a class="media-left" href="#"><img alt="64x64" data-holder-rendered="true" src="images/member1.jpg"></a>
 
-                                                        <div class="media-body">
-                                                                <h4 class="media-heading">Comment on comment</h4>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante
-                                                                sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
-                                                                fringilla. Donec lacinia congue felis in faucibus.
-                                                        </div><!-- End media-body -->
-                                                </div><!-- End media -->
-                                        </div><!-- End media-body -->
-                                </div><!-- End media -->
+                                                <div class="media-body">
+                                                        <h4 class="media-heading">Amanda De</h4>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante
+                                                        sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
+                                                        fringilla. Donec lacinia congue felis in faucibus.
+                                                </div><!-- End media-body -->
+                                        </div><!-- End media -->
+                                </div><!-- End media-body -->
+                        </div><!-- End media -->
 
-                                <div class="media">
-                                        <a class="media-left" href="#"><img alt="64x64" data-holder-rendered="true" src="https://placehold.it/150x120"></a>
+                        <div class="media">
+                                <a class="media-left" href="#"><img alt="64x64" data-holder-rendered="true" src="images/member4.jpg"></a>
 
-                                        <div class="media-body">
-                                                <h4 class="media-heading">Commentator</h4>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras
-                                                purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in
-                                                faucibus.
-                                        </div><!-- End col-md-12 -->
-                                </div><!-- End container -->
-                        </div><!-- End row -->
-                        <!-- Ending Comments -->
-                        <!-- Starting leaving comment -->
+                                <div class="media-body">
+                                        <h4 class="media-heading">Chris Ryan</h4>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras
+                                        purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in
+                                        faucibus.
+                                </div><!-- End col-md-12 -->
+                        </div><!-- End container -->
+                </div><!-- End row -->
+                <!-- Ending Comments -->
+                <!-- Starting leaving comment -->
 
-                        <div class="row">
-                                <div class="container">
-                                        <div class="col-md-12">
-                                                <h2>Leave a Comment</h2>
+                <div class="row">
+          <div class="container">
+                <div class="col-md-9 contact-heading">
+                        <h2>Leave a comment:</h2>
+                       <form id="commentForm" method="get" action="">
+                        <fieldset>
+                        <div class="input-group contact-inline-fw contact-name-fw">
+                                <label for="name">Name *</label>
+                                <input class="form-control no-radius" id="name" name="name" type="text">
+                        </div><!-- End input group -->
 
-                                                <div class="input-group" style="margin-top: 20px; width:300px; !important">
-                                                        <label>Name *</label> <input class="form-control" type="text">
-                                                </div><!-- End input group -->
+                        <div class="input-group contact-inline-fw">
+                                <label>Last Name *</label>
+                                <input class="form-control no-radius" name="lastname" type="text">
+                        </div><!-- End input group -->
 
-                                                <div class="input-group" style="margin-top: 20px;width:300px; !important">
-                                                        <label>Last Name *</label> <input class="form-control" type="text">
-                                                </div><!-- End input group -->
+                        <div class="input-group contact-email-fw">
+                                <label>E-mail *</label>
+                                <input class="form-control no-radius" name="email" type="email">
+                        </div><!-- End input group -->
 
-                                                <div class="input-group" style="margin-top: 20px;width:300px; !important">
-                                                        <label>E-mail *</label> <input class="form-control" type="text">
-                                                </div><!-- End input group -->
-
-                                                <div class="input-group" style="margin-top: 20px;width:700px; !important">
-                                                        <label>Comment *</label> 
-                                                        <textarea class="form-control">
-</textarea>
-                                                </div><!-- End input group -->
-                                                <button class="btn btn-info">Post Comment</button>
-                                        </div><!-- End col-md-12 -->
-                                </div><!-- End container -->
-                        </div><!-- End row -->
+                        <div class="input-group contact-textarea-fw">
+                                <label>Comment *</label> 
+                                <textarea class="form-control no-radius"></textarea>
+                                <button class="button-medium button-f-orange" type="submit" value="Submit">Submit</button>
+                        </div><!-- End input group -->
+                        </form>
+                         </fieldset>
+                        <script>
+                        $("#commentForm").validate();
+                        </script>
+                </div><!-- End col-md-12 -->
+        </div><!-- End container -->
+</div><!-- End row -->
                         </div>
                        
          <div class="row footer">
             <div class="container">
                 <div class="col-md-12">
                     <div class="col-md-3">
-                        <h3>Recent Viewed Posts</h3>
-                        <img src="images/example-3.jpeg">
-                        <img src="images/example-2.jpeg">
-                        <img src="images/example-4.jpeg">
-                        <img src="images/example.jpeg">
+                       <h3>Recent Viewed Posts</h3>
+                        <img src="images/slider-4.jpg" alt="...">
+                        <img src="images/slider-4.jpg" alt="...">
+                        <img src="images/slider-4.jpg" alt="...">
+                        <img src="images/slider-4.jpg" alt="...">
                         
                     </div> <!-- End col-md-3 -->
                     <div class="col-md-3 footer-about">
@@ -601,11 +594,11 @@
                  
                     </div> <!-- End col-md-3 -->
                     <div class="col-md-3">
-                        <h3> Recent Work</h3>
-                        <p>Lorem impsum dolor sit amet</p>
-                        <p>Lorem impsum dolor sit amet</p>
-                        <p>Lorem impsum dolor sit amet</p>
-                        <p>Lorem impsum dolor sit amet</p>
+                       <h3>Contact Us!</h3>
+                        <p><a href="#"><i class="fa fa-envelope"></i> info@example.com</a></p>
+                        <p><a href="#"><i class="fa fa-phone-square"></i> 458 88 946</a></p>
+                        <p><a href="#"><i class="fa fa-map-marker"></i> 1600 Pennsylvania Avenue 
+Washington D.C</a></p>
                     </div> <!-- End col-md-3 -->
                     <div class="col-md-3">
                         <h3> About us </h3>
@@ -674,6 +667,7 @@
          <script type="text/javascript" src="js/widgets.js"></script>
          <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css"></script>
          <script src="js/psp-slider.min.js"></script> 
+         <script src="js/jquery.validate.js"></script>
          <script>
          jQuery(function($) {
            window.prettyPrint && prettyPrint()

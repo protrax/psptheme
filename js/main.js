@@ -494,12 +494,37 @@ PROGRESS PIE ANIMATION
 /*************************************************************
 PROGRESS BAR ANIMATION
 *************************************************************/
-  jQuery(function($){
-        $( "#progressbar" ).progressbar({
-          
-        });
-  });
+  
+  // Initiate the script
+  jQuery(document).ready(function(){
+    var progressbar = $('#progressbar'),
+        maxWidth    = progressbar.attr('max'),
+        width       = progressbar.attr('value'),
+        time        = (1000/maxWidth)*5,
+        value       = progressbar.val();
+        console.log(value);
 
+        // Load time
+        var loading = function() {
+          value += 1;
+            addValue = progressbar.val(value);
+               
+             $('.progress-value').html(value + '%');
+
+             if (value == maxWidth) {
+                  clearInterval(animate);                
+              }
+        };
+
+        var animate = setInterval(function() {
+              progressbar.each(function(){
+                loading();
+              })
+              
+
+          }, time);  
+  });
+  
 
 /*************************************************************
 PROGRESS PIE ANIMATION

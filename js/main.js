@@ -503,10 +503,11 @@ PROGRESS BAR ANIMATION
         time        = (1000/maxWidth)*5,
         value       = progressbar.val();
         console.log(value);
-
+        i = 1;
         // Load time
         var loading = function() {
-          value += 1;
+          // value += 1;
+            value = i++;
             addValue = progressbar.val(value);
                
              $('.progress-value').html(value + '%');
@@ -609,4 +610,49 @@ function smartresize(sr) {
 GOOGLE MAPS
 *************************************************************/
 
-      
+/*************************************************************
+TOGGLES
+*************************************************************/
+
+  $(document).on('click', '.to-toggle-title', function(){
+    if ($(this).find('.to-toggle-open .icon-to-plus').length) {
+      $(this).find('.to-toggle-open').html('<i class="fa fa-minus accentColorHover"></i>');
+    } else {
+      $(this).find('.to-toggle-open').html('<i class="icon-to-plus accentColorHover"></i>');
+    }
+    $(this).next('.to-toggle-content').slideToggle(200);
+  }); 
+
+/*************************************************************
+ACCORDIONS
+*************************************************************/
+  var accContent = '.accordion-content',
+    accHolder    = 'accordion-holder',
+    accOpen      = '.accordion-open',
+    accPlus      = '.accordion-open .icon-to-plus';
+    
+  $(document).on('click', '.accordion-title', function(){
+    $this = $(this);
+    $prev = $this.parent().prev();
+    while ($prev.hasClass(accHolder)) {
+      if ($prev.find(accContent).is(':visible')) {
+        $prev.find(accContent).slideToggle(300);
+        $prev.find(accOpen).html('<i class="icon-to-plus fa fa-plus accentColorHover"></i>');
+      }
+      $prev = $prev.prev();
+    }
+    $next = $this.parent().next();
+    while ($next.hasClass(accHolder)) {
+      if ($next.find(accContent).is(':visible')) {
+        $next.find(accContent).slideToggle(300);
+        $next.find(accOpen).html('<i class="icon-to-plus fa fa-plus accentColorHover"></i>');
+      }
+      $next = $next.next();
+    }
+    if ($this.find(accPlus).length) {
+      $this.next(accContent).slideToggle(300);
+      $this.find(accOpen).html('<i class="fa fa-minus accentColorHover"></i>');
+    }
+  });
+
+

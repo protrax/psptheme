@@ -2016,3 +2016,246 @@ textarea.form-control.no-radius {
   max-height: 85px;
   border: 1px solid lightgray;
 }
+
+/* ============================================================
+   12. PARALLAX SECTION
+/* ============================================================ */
+
+.parallax-container {
+  position: relative;
+  display: block;
+  z-index: 0;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto; 
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translate3d(0);
+}
+.parallax-container.paratrue .parallax-container-inner {
+  -webkit-transform: translate3d(0,-50%,0);
+}
+.parallax-container-inner {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  margin: 0 auto;
+}
+.parallax-container-inner.no-repeat {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+  background-size: cover;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.parallax-container-inner.repeat {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  margin: 0 auto;
+  background-repeat: repeat;
+}
+.touch .parallax-container-inner.no-repeat {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.touch .parallax-container-inner.repeat {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  margin: 0 auto;
+  background-repeat: repeat;
+}
+.parallax-container.paratrue .parallax-container-inner {
+  height: 200%;
+}
+.parallax-container-inner iframe {
+  position: absolute !important;
+}
+.parallax-container-inner .mejs-layers,
+.parallax-container-inner .mejs-controls {
+  display: none !important;
+}
+.parallax-container-inner .mejs-video {
+  width: auto !important;
+  height: auto !important;
+}
+.parallax-container-inner video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 100%;
+  min-width: 100%;
+}
+.parallax-container-overlay,
+.parallax-container-overlay-color {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-repeat: repeat;
+}
+.parallax-container-poster {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.parallax-container-inner .mejs-container {
+  z-index: -1;
+}
+.parallax-container-inner .mejs-container.mejs-video,
+.parallax-container-inner .mejs-container.mejs-video * {
+  transform: translateZ(0);
+  position: relative;
+}
+
+
+
+/* ============================================================
+   13. ACCORDION
+/* ============================================================ */
+
+.accordion-holder {
+  margin-bottom: 5px;
+  border-bottom: 1px solid;
+  border-color: inherit;
+}
+.accordion-title {
+  position: relative;
+  line-height: 30px;
+  padding: 5px 0;
+  margin: 0 !important;
+  cursor: pointer;
+}
+
+
+.accordion-icon {
+  display: inline-block;
+  position: relative;
+  top: 3px;
+  color: #f78e20;
+  margin: 0 10px;
+  font-size: 18px;
+}
+.accordion-open {
+  display: inline-block;
+  float: right;
+  margin: 0 10px;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  opacity: 0.85;
+  font-weight: 100;
+  border-radius: 100%;
+  -o-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+}
+.accordion-open i {
+  font-size: 14px;
+  line-height: 30px;
+  transition: all 0s linear;
+  -webkit-transition: color .3s ease-in-out;
+  -moz-transition: color .3s ease-in-out;
+  -o-transition: color .3s ease-in-out;
+  -ms-transition: color .3s ease-in-out;
+}
+.accordion-open .fa {
+  font-size: 14px;
+}
+.accordion-title:hover .accordion-open {
+  opacity: 1;
+}
+.accordion-content {
+  display: none;
+  margin: 25px 50px 25px 10px;
+}
+
+
+/* ============================================================
+   14. TOGGLE
+/* ============================================================ */
+
+.to-toggle-holder {
+  margin-bottom: 5px;
+  border-bottom: 1px solid;
+  border-color: inherit;
+}
+.to-toggle-title {
+  position: relative;
+  line-height: 30px;
+  padding: 5px 0;
+  margin: 0 !important;
+  cursor: pointer;
+}
+.to-toggle-open {
+  display: inline-block;
+  margin: 0 10px;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  opacity: 0.85;
+  font-weight: 100;
+  border-radius: 100%;
+  -o-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+}
+.to-toggle-open i {
+  font-size: 14px;
+  line-height: 30px;
+  transition: all 0s linear;
+  -webkit-transition: color .3s ease-in-out;
+  -moz-transition: color .3s ease-in-out;
+  -o-transition: color .3s ease-in-out;
+  -ms-transition: color .3s ease-in-out;
+}
+.to-toggle-open .fa {
+  font-size: 14px;
+}
+.to-toggle-title:hover .to-toggle-open {
+  opacity: 1;
+}
+.to-toggle-content {
+  display: none;
+  margin: 25px 50px 25px 10px;
+}
+

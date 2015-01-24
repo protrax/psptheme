@@ -497,21 +497,30 @@
         </div><!-- End Row --> <!-- End text box -->
                 </div><!-- End container -->
         </div><!-- End row -->
-
-                  <!-- Start parallax -->
-            <div class="row img-holder" data-image="images/parallax-bg-2.jpg" data-cover-ratio="0.3">
-                <div class="container parallax-light-txt"> 
-                    <div class="col-md-12">
-                        <h6 class="txt-center">lorem ipsum</h6>
+        <!-- Parallax demo -->
+           <div 
+            data-0="background-position:0px 0px; background-size:cover;"
+            data-1="padding:8em 0 8em 0;"
+            data-100000="background-position:0px -50000px;" 
+            class="row skrollable skrollable-between" 
+            style="background-position: 0px 0px; background-image:url('images/parallax-bg-2.jpg');"
+            >
+            <div class="container">
+            <div class="col-md-12">
+                     <h6 class="txt-center">lorem ipsum</h6>
                         <div class="to-divider-holder"><div class="to-divider" style="width:50px;border-top:1px solid #F5F6FA;"></div></div>
                         <h1 class="txt-center">CREATIVITY IS INTELLIGENCE HAVING FUN</h1>  
                     </div>
                     <div class="col col-12  col-last txt-center" style="background: light">
                         <a href="#" class="button-f-orange">Read more</a>
                     </div>
-                </div>
+                
             </div>
         </div>
+           
+        <!-- End parallax demo -->
+                  <!-- Start parallax -->
+   
             <!-- End parallax --> 
 
             <!-- Start front page masonry -->
@@ -766,11 +775,19 @@ Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac tu
                 </div><!-- End container -->
 
                 <!-- Parallax container -->
-<div class="row ">
- <div class="img-holder" data-image="images/parallax-bg-2.jpg" data-cover-ratio="0.5"</div>
+           <div 
+            data-0="background-position:0px 0px; background-size:cover;"
+            data-1="padding:0em;"
+            data-100000="background-position:0px -50000px;" 
+            class="row skrollable skrollable-between" 
+            style="background-position: 0px 0px; background-image:url('images/world-map.jpg');"
+            >
+
 <div class="col-md-12">
 <div class="col-md-8" style="background: rgba(255, 255, 255, 0.298039);">
+<h1>dgdløfgdfsgkdgkdsø</h1>
 <p>left</p>
+
 
 
 </div>
@@ -993,7 +1010,8 @@ Washington D.C</a></p>
          <script type="text/javascript" src="js/widgets.js"></script>
          <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css"></script>
          <script src="js/psp-slider.min.js"></script>
-         <script type="text/javascript" src="js/jquery.imageScroll.min.js"></script>
+         <script src="js/skrollr.js"></script>
+         
          
          <script>
          jQuery(function($) {

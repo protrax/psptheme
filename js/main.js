@@ -474,10 +474,17 @@ $('.arrow-left').on('hover', function(e){
 });
 
 
-/******* Init Parallax *******/
+/*************************************************************
+Parallax
+*************************************************************/
+  
 jQuery(document).ready(function($){
-  $('.img-holder').imageScroll();
+      skrollr.init({
+        forceHeight: false
+      });
 });
+
+  
 
 /*************************************************************
 PROGRESS PIE ANIMATION
@@ -623,15 +630,23 @@ TOGGLES
     $(this).next('.to-toggle-content').slideToggle(200);
   }); 
 
+
+
+
+
 /*************************************************************
 ACCORDIONS
 *************************************************************/
-  var accContent = '.accordion-content',
-    accHolder    = 'accordion-holder',
-    accOpen      = '.accordion-open',
-    accPlus      = '.accordion-open .icon-to-plus';
-    
+    var accContent = '.accordion-content',
+    accHolder  = 'accordion-holder',
+    accOpen    = '.accordion-open',
+    accPlus    = '.accordion-open .icon-to-plus';
+
+
   $(document).on('click', '.accordion-title', function(){
+
+  
+
     $this = $(this);
     $prev = $this.parent().prev();
     while ($prev.hasClass(accHolder)) {
@@ -653,6 +668,6 @@ ACCORDIONS
       $this.next(accContent).slideToggle(300);
       $this.find(accOpen).html('<i class="fa fa-minus accentColorHover"></i>');
     }
-  });
+  }); 
 
 

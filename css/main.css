@@ -2259,3 +2259,39 @@ textarea.form-control.no-radius {
   margin: 25px 50px 25px 10px;
 }
 
+/**** HOME PAGE ****/
+
+.main-blog-info {
+  margin-bottom: 10px;
+}
+
+.main-blog-info img {
+   border: 5px solid lightgray;
+}
+
+.main-blog-info h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.home-extra-info {
+   display: inline-flex;
+}
+
+.home-extra-info p {
+  margin-right: 10px;
+}
+
+.home-extra-info a {
+  color: #f78e20;
+}
+
+.home-extra-info a:hover {
+  text-decoration: underline;
+}
+
+.home-likes i {
+  margin-left: 20px;
+}

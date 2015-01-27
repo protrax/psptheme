@@ -116,15 +116,28 @@ small, .font_small {
   margin-bottom: 50px;
 }
 
+/** Spacers **/
+
+.spacer-25 {
+   height: 25px;
+}
+
+.spacer-50 {
+   height: 50px;
+}
+
 .spacer-70 {
    height: 70px;
 }
 
-
-
-.footer-about a {
-  color: #3f4040;
+.spacer-100 {
+   height: 100px;
 }
+
+.spacer-150 {
+   height: 150px;
+}
+
 
  .txt-color {
   color: #f78e20 ;
@@ -931,36 +944,87 @@ a.button-orange {
   text-align: center !important;
 }
 
-/**** FOOTER STYLES ****/
+/* ============================================================
+   18. Footer
+/* ============================================================ */
+  #footer {
+    clear: both;
+    position: relative;
+    width: 100%;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
 
-.footer a {
-   color: #f78e20 !important;
+  #footer-top {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  #footer-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    max-width: none;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+#footer-top-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 
-.footer a:hover {
-  text-decoration: underline;
-}
-
-.footer h3 {
-   font-weight: 400;
-}
-
-.footer img {
-  width: 64px;
-  height: 64px;
-}
-
-.footer {
-  background-color: #6f7072;
-  color: #B5B5B5;
-}
-
-.footer-bottom {
-  background-color: #3f4040;
-  color: #6f7072;
+#footer-inner-top {
+  position: relative;
+  padding: 100px 0px;
 }
 
 
+#footer-bottom {
+  position: relative;
+  min-height: 50px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#footer-bot-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+#footer-inner-bottom {
+  position: relative;
+  height: 100%;
+  
+  margin: 0 auto;
+  padding: 50px 0;
+  cursor: pointer;
+}
+
+#copyright {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  font-size: 13px;
+  line-height: 22px;
+}
 /**** IMAGE BOX ****/
 
 .img-box {
@@ -1158,35 +1222,8 @@ a.button-orange {
   margin: 2em 0em;
 }
 
-/***** Parralax ******/
 
-.parallax-window {
-    min-height: 400px;
-    background: transparent;
-}
 
-/** parallax-light-txt ***/
-
-.parallax-light-txt {
-  color: #f9f9f9;
-  top: 5em;
-  position: relative;
-}
-
-.parallax-light-txt h6 {
-  font-weight: 600;
-  font-style: normal;
-  font-size: 1.2em;
-  line-height: 20px;
-}
-
-.parallax-light-txt h1 {
-  font-family: Source Sans Pro;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 45px;
-  line-height: 45px;
-}
 
 
 
@@ -2017,10 +2054,43 @@ textarea.form-control.no-radius {
 /* ============================================================
    12. PARALLAX SECTION
 /* ============================================================ */
+  /*** No repeat ***/
 
 
+  /** Center content **/
+.parallax-container .parallax-big-content {
+  display: block;
+  text-align: center;
+}
+
+.parallax-container .parallax-smal-content {
+ 
+}
+
+.parallax-big-content {
+  padding: 5.4em 0;
+}
 
 
+.parallax-smal-content {
+  padding: 1em 5em;
+}
+
+
+/********* Parallax quote ****/
+
+.quote-container {
+  padding: 8em 0;
+}
+
+.quote-sub-heading {
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+.quote-heading {
+  
+}
 
 /* ============================================================
    13. ACCORDION
@@ -2130,6 +2200,123 @@ textarea.form-control.no-radius {
 .to-toggle-content {
   display: none;
   margin: 25px 50px 25px 10px;
+}
+
+
+/* ============================================================
+   15. Counter
+/* ============================================================ */
+
+.counter-holder {
+
+}
+
+.counter-content {
+  display: block;
+
+}
+
+.counter-content .counter {
+  font-size: 4.2em;
+}
+
+.counter-icon {
+  font-size: 3.2em;
+  padding: 0 .3em 0 0;
+}
+
+.counter-desc {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #fff;
+  
+}
+
+
+/* ============================================================
+   15. Fullwidth container
+/* ============================================================ */
+
+  /** Center content **/
+.parallax-container .fullwidth-content-big {
+  display: block;
+  text-align: center;
+}
+
+.parallax-container .fullwidth-content-smal {
+ 
+}
+
+.fullwidth-content-big {
+  padding: 5.4em 0;
+}
+
+
+.fullwidth-content-smal {
+  padding: 1em 5em;
+}
+
+/* ============================================================
+   16. Text icon
+/* ============================================================ */
+
+.icon-text-container {
+  text-align: center;
+}
+
+.icon-text-icon {
+  font-size: 4em;
+  color: #3F4045;
+}
+
+.icon-text-heading {
+  
+  font-weight: bold;
+  color: #3F4045;
+
+}
+
+/* ============================================================
+   17. Pie chart
+/* ============================================================ */
+
+.piechart-container {
+  text-align: center;
+  margin: 1em 0;
+}
+
+.chart {
+  position: relative;
+  display: inline-block;
+  width: 110px;
+  height: 110px;
+  text-align: center;
+}
+
+.chart canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.percent {
+  display: inline-block;
+  line-height: 110px;
+  z-index: 2;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.percent:after {
+  content: '%';
+  margin-left: 0.1em;
+  font-size: 1em;
+}
+
+.piechart-lable {
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 1em 0 0 0;
 }
 
 /**** HOME PAGE ****/

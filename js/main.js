@@ -474,21 +474,40 @@ $('.arrow-left').on('hover', function(e){
 });
 
 
-/******* Init Parallax *******/
+/*************************************************************
+Parallax
+*************************************************************/
+  
 jQuery(document).ready(function($){
-  $('.img-holder').imageScroll();
+      skrollr.init({
+        forceHeight: false
+      });
 });
 
 /*************************************************************
 PROGRESS PIE ANIMATION
 *************************************************************/
   
-  function pieChartAnim() {
-    $('.to-pie-chart-anim').appear(function(){  
-      var percent = $(this).attr('data-anim');
-      $(this).data('easyPieChart').update(percent);
-    },{accX: 0, accY: -90});
-  }
+
+
+
+
+  jQuery(function($) {
+    $('.chart').easyPieChart({
+      animate: 6000,
+      easing: 'easeOut',
+      onStep: function(from, to, percent) {
+        $(this.el).find('.percent').text(Math.round(percent));
+      },
+        trackColor: '#eee',
+        barColor: "#f78e20",
+        scaleColor: "#4F5050",
+        
+
+    });
+ 
+  });
+
 
 
 /*************************************************************
@@ -506,7 +525,6 @@ PROGRESS BAR ANIMATION
         i = 1;
         // Load time
         var loading = function() {
-          // value += 1;
             value = i++;
             addValue = progressbar.val(value);
                
@@ -527,45 +545,17 @@ PROGRESS BAR ANIMATION
   });
   
 
-/*************************************************************
-PROGRESS PIE ANIMATION
-*************************************************************/
-  
-  function pieChartAnim() {
-    $('.to-pie-chart-anim').appear(function(){  
-      var percent = $(this).attr('data-anim');
-      $(this).data('easyPieChart').update(percent);
-    },{accX: 0, accY: -90});
-  }
 
 /*************************************************************
 COUNTER
 *************************************************************/
 
-  function counter() {
-    $('.to-counter-holder').appear(function(){  
-      var $this = $(this);
-      var number = $this.attr('data-counter');
-      var speed = $this.attr('data-counter-speed');
-      if ($this.closest('.no-touch .col.has-anim').length) {
-        setTimeout(function() {
-          $this.find('.to-counter-number .to-count-number').countTo({
-            from: 0,
-            to: number,
-            speed: speed,
-            refreshInterval: 30
-          });
-        }, 800);
-      } else {
-      $this.find('.to-counter-number .to-count-number').countTo({
-        from: 0,
-        to: number,
-        speed: speed,
-        refreshInterval: 30
-      }); 
-      }
-    },{accX: 0, accY: -90});
-  }
+   jQuery(document).ready(function($) {
+            $('.counter').counterUp({
+                delay: 80,
+                time: 2000,
+            });
+        });  
   
   
 /*************************************************************
@@ -623,15 +613,20 @@ TOGGLES
     $(this).next('.to-toggle-content').slideToggle(200);
   }); 
 
+
+
+
+
 /*************************************************************
 ACCORDIONS
 *************************************************************/
-  var accContent = '.accordion-content',
-    accHolder    = 'accordion-holder',
-    accOpen      = '.accordion-open',
-    accPlus      = '.accordion-open .icon-to-plus';
-    
+    var accContent = '.accordion-content',
+    accHolder  = 'accordion-holder',
+    accOpen    = '.accordion-open',
+    accPlus    = '.accordion-open .icon-to-plus';
+  
   $(document).on('click', '.accordion-title', function(){
+
     $this = $(this);
     $prev = $this.parent().prev();
     while ($prev.hasClass(accHolder)) {
@@ -654,5 +649,3 @@ ACCORDIONS
       $this.find(accOpen).html('<i class="fa fa-minus accentColorHover"></i>');
     }
   });
-
-

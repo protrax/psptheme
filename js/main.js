@@ -552,8 +552,13 @@ COUNTER
                 delay: 80,
                 time: 2000,
             });
+
         });  
-  
+
+
+
+
+
   
 /*************************************************************
 REQUEST ANIMATION FRAME DECLARATION FOR SCROLLING
@@ -621,7 +626,6 @@ ACCORDIONS
     accHolder  = 'accordion-holder',
     accOpen    = '.accordion-open',
     accPlus    = '.accordion-open .icon-to-plus';
-
   $(document).on('click', '.accordion-title', function(){
 
     $this = $(this);
@@ -646,3 +650,10 @@ ACCORDIONS
       $this.find(accOpen).html('<i class="fa fa-minus accentColorHover"></i>');
     }
   });
+
+
+  /*********** Scroll reveal **********/
+  jQuery(document).ready(function(){
+    window.sr = new scrollReveal(); 
+  })
+  

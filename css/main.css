@@ -2429,7 +2429,7 @@ textarea.form-control.no-radius {
 .home-likes i {
   margin-left: 20px;
 }
-<<<<<<< HEAD
+
 
 /**** Page ****/
 
@@ -2448,5 +2448,12 @@ textarea.form-control.no-radius {
 .featured-image a:hover{
   text-decoration: underline;
 }
-=======
->>>>>>> 12ea4f06b3abd151efac2070a06f80eb3d3d8e9d
+
+/* ============================================================
+   18. Form Validation Styles
+/* ============================================================ */
+
+.error {
+  font-style: italic;
+  color: #EC2222;
+}

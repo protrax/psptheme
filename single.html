@@ -542,29 +542,27 @@
                         <fieldset>
                         <div class="input-group contact-inline-fw contact-name-fw">
                                 <label for="name">Name *</label>
-                                <input class="form-control no-radius" id="name" name="name" type="text">
+                                <input class="form-control no-radius" id="name" name="name" type="text" minlenght="7" required>
                         </div><!-- End input group -->
 
                         <div class="input-group contact-inline-fw">
                                 <label>Last Name *</label>
-                                <input class="form-control no-radius" name="lastname" type="text">
+                                <input class="form-control no-radius" name="lastname" type="text" required>
                         </div><!-- End input group -->
 
                         <div class="input-group contact-email-fw">
                                 <label>E-mail *</label>
-                                <input class="form-control no-radius" name="email" type="email">
+                                <input class="form-control no-radius" name="email" type="email" required> 
                         </div><!-- End input group -->
 
                         <div class="input-group contact-textarea-fw">
                                 <label>Comment *</label> 
-                                <textarea class="form-control no-radius"></textarea>
-                                <button class="button-medium button-f-orange" type="submit" value="Submit">Submit</button>
+                                <textarea class="form-control no-radius" required></textarea>
+            <button class="button-medium button-f-orange submit" type="submit" value="Submit">Submit</button>
                         </div><!-- End input group -->
                         </form>
                          </fieldset>
-                        <script>
-                        $("#commentForm").validate();
-                        </script>
+                        
                 </div><!-- End col-md-12 -->
         
                         </div>
@@ -729,11 +727,9 @@
          <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css"></script>
          <script src="js/psp-slider.min.js"></script>
          <script src="js/skrollr.js"></script>
+         <script src="js/jquery.validate.js"></script>
          <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
          <script src="js/jquery.counterup.min.js"></script>
-         
-         
-         
          <script>
          jQuery(function($) {
            window.prettyPrint && prettyPrint()

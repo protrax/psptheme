@@ -489,9 +489,6 @@ PROGRESS PIE ANIMATION
 *************************************************************/
   
 
-
-
-
   jQuery(function($) {
     $('.chart').easyPieChart({
       animate: 6000,
@@ -555,8 +552,13 @@ COUNTER
                 delay: 80,
                 time: 2000,
             });
+
         });  
-  
+
+
+
+
+
   
 /*************************************************************
 REQUEST ANIMATION FRAME DECLARATION FOR SCROLLING
@@ -624,7 +626,6 @@ ACCORDIONS
     accHolder  = 'accordion-holder',
     accOpen    = '.accordion-open',
     accPlus    = '.accordion-open .icon-to-plus';
-  
   $(document).on('click', '.accordion-title', function(){
 
     $this = $(this);
@@ -650,6 +651,7 @@ ACCORDIONS
     }
   });
 
+<<<<<<< HEAD
 /*************************************************************
 FORM VALIDATION
 *************************************************************/
@@ -678,3 +680,11 @@ $("#commentForm").validate({
   },
   submitHandler: function() { alert("Submitted!") }
 }); });
+
+
+  /*********** Scroll reveal **********/
+  jQuery(document).ready(function(){
+    window.sr = new scrollReveal(); 
+  })
+  
+

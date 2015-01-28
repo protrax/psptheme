@@ -489,9 +489,6 @@ PROGRESS PIE ANIMATION
 *************************************************************/
   
 
-
-
-
   jQuery(function($) {
     $('.chart').easyPieChart({
       animate: 6000,
@@ -624,7 +621,7 @@ ACCORDIONS
     accHolder  = 'accordion-holder',
     accOpen    = '.accordion-open',
     accPlus    = '.accordion-open .icon-to-plus';
-  
+
   $(document).on('click', '.accordion-title', function(){
 
     $this = $(this);

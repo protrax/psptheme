@@ -51,6 +51,11 @@ small, .font_small {
 
 
 /**** APPENDING STYLES ****/
+
+.negative {
+  color: #f9f9f9;
+}
+
 .no-padding {
   padding: 0 !important;
 }
@@ -84,7 +89,7 @@ small, .font_small {
 }
 
 .bold {
-  font-weight: 700 !important;
+  font-weight: 400 !important;
 }
 
 .superbold {
@@ -96,7 +101,7 @@ small, .font_small {
 }
 
 .medium {
-  font-weight: 500 !important;
+  font-weight: 400 !important;
 }
 
 .hr {
@@ -227,6 +232,11 @@ small, .font_small {
 }
 
 /*** icons ***/
+
+.fa {
+  font-size: 1.2em !important;
+}
+
 .top-bar .contact-info,.social-links span.glyphicon{   
   font-size: 1.1em;
   color: #3f4040;
@@ -442,12 +452,6 @@ div#nav-collapse{
 }
 
 
-.main-menu-container .dropdown-menu li a {
-    height: auto;
-    padding: .4em 1em;
-    border: none;
-}
-
 .main-menu-container .dropdown-menu li a:hover {
     border:none;
 }
@@ -610,8 +614,12 @@ text-decoration: none;
 background-color: #f5f5f5;
 }
 
+.mega-menu .mega-menu-content li a {
+  padding: 0.4em 0em !important;
+}
+
 .mega-menu .mega-menu-content li a::before {
-   content: "-";
+   
 }
 
 .mega-menu .mega-menu-content li {
@@ -783,6 +791,9 @@ background-color: #f5f5f5;
   height: auto !important;
 }
 
+.dropdown-mega a {
+  padding-top: 0 !important;
+}
 
 
 /************************************
@@ -1552,7 +1563,7 @@ figure.effect-bubba:hover p {
 ********** Team members ******
 ******************************/
 .team-members {
- padding-bottom: 50px;
+ padding-bottom: 30px;
 }
 
 .team-members .about {
@@ -1584,10 +1595,11 @@ figure.effect-bubba:hover p {
 }
 
 
-.team-links h3 {
+.team-links h4 {
   margin-left: 0px !important;
   margin-right: 15px;
   display: inline-block;
+  font-weight: 400;
 }
 
 .team-links p {
@@ -1611,13 +1623,15 @@ figure.effect-bubba:hover p {
   color: #DC0E0B;
 }
 
-<<<<<<< HEAD
+.team-links {
+  font-size: 1.5em;
+}
+
 .team-links-share {
   font-size: initial !important;
 }
 
-=======
->>>>>>> 12ea4f06b3abd151efac2070a06f80eb3d3d8e9d
+
 /*********************************
 ************ Testimonials ********
 **********************************/
@@ -2069,7 +2083,7 @@ textarea.form-control.no-radius {
 
 .single-post-author h4 {
   margin-top: 0px;
-  font-weight: 500;
+  font-weight: 400;
   margin-left: 15px;
 }
 
@@ -2468,3 +2482,203 @@ textarea.form-control.no-radius {
   color: #EC2222;
 }
 
+/* ============================================================
+   19. Pricing Tables
+/* ============================================================ */
+
+.pricing-table-4 {
+   margin-bottom: 30px;
+}
+
+.pricing-table-3 {
+  margin-bottom: 30px;
+}
+
+.pricing-table-2 {
+   margin-bottom: 30px;
+}
+
+.price-table {
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.pricing-table-4 h2 {
+   margin-top: 40px;
+   margin-bottom: 40px;
+   text-align: center;
+   text-transform: uppercase;
+}
+
+.pricing-table-2 h2 {
+   margin-top: 40px;
+   margin-bottom: 40px;
+   text-align: center;
+   text-transform: uppercase;
+}
+
+.pricing-table-3 h2 {
+   margin-top: 20px;
+   margin-bottom: 30px;
+   text-align: center;
+   text-transform: uppercase;
+}
+
+.price-table h4 {
+  text-align: center;
+  margin: 0;
+  padding-top: 10px;
+  font-size: 1.5em;
+  padding-bottom: 10px;
+  background-color: tan;
+  color: #f9f9f9;
+  border-bottom: 1px solid #f9f9f9;
+  
+}
+
+.table-content {
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: tan;
+  color: #f9f9f9;
+}
+
+.table-info {
+  font-size: 2em;
+  margin-bottom: 5px;
+}
+
+.table-features {
+  padding: 0;
+  list-style: none;
+  background-color: #eee;
+  margin: 0;
+  text-align: center;
+}
+
+.table-features li {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-top: 1px solid #d0d0d0;
+}
+
+.table-features i {
+  color: #555;
+  margin-right: 10px;
+  font-size: 1.1em;
+}
+
+.table-price {
+  font-size: 60px;
+}
+
+.hint {
+  margin: 0;
+}
+
+.table-footer {
+  background-color: tan;
+  text-align: center;
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #f9f9f9;
+}
+
+.folded h2 {
+    background: teal;
+    background-image: radial-gradient(transparent 30%, rgba(0, 0, 0, 0.2));
+    border: 0 solid rgba(0,0,0,0.2);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    position: relative;
+    text-shadow: -1px -1px 1px rgba(0,0,0,0.2);
+}
+
+
+div.folded:before {
+    left: 2%;
+    transform: rotate(-3deg);
+}
+div.folded:after {
+    right: 2%;
+    transform: rotate(3deg);
+}
+div.folded h2 {
+    border-width: 1px 1px 2px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+    margin: 0;
+    padding: 4px 25px;
+    position: absolute;
+    right: -9px;
+    top: 43px;
+}
+div.folded h2:after {
+    border-width: 7px;
+    border-style: solid;
+    border-color: #134 transparent transparent #134;
+    bottom: -15px;
+    content: "";
+    position: absolute;
+    right: -1px;
+}
+
+
+
+.color-1 {
+  background-color: #C3350F !important;
+}
+
+.color-2 {
+  background-color: #E06400 !important;
+}
+
+.color-3 {
+  background-color: #F19300 !important;
+}
+
+.color-4 {
+  background-color: #F3BF34 !important;
+}
+
+/* ============================================================
+   19. Syngergy Callout Box
+/* ============================================================ */
+
+.syngery-callout {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #eee;
+    border-left-width: 5px;
+    border-radius: 3px;
+    background-color: #f9f9f9;
+}
+
+.syngery-callout p {
+  margin: 0;
+}
+
+.syngery-callout h4 {
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+
+.callout-title-color-1 {
+  color: #f78e20;
+}
+
+.callout-title-color-2 {
+  color: #1b809e;
+}
+
+.callout-border-color-1 {
+  border-left-color: #f78e20;
+  
+}
+
+.callout-border-color-2 {
+  border-left-color: #1b809e;
+}

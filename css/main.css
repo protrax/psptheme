@@ -143,6 +143,43 @@ small, .font_small {
    height: 150px;
 }
 
+/**** Fixed height *****/
+
+.fixed-height-100 {
+  height: 100px;
+}
+
+.fixed-height-150 {
+  height: 150px;
+}
+
+.fixed-height-200 {
+  height: 200px;
+}
+
+.fixed-height-250 {
+  height: 250px;
+}
+
+.fixed-height-300 {
+  height: 300px;
+}
+
+.fixed-height-350 {
+  height: 350px;
+}
+
+.fixed-height-400 {
+  height: 400px;
+}
+
+.fixed-height-450 {
+  height: 450px;
+}
+
+.fixed-height-500 {
+  height: 500px;
+}
 
  .txt-color {
   color: #f78e20 !important;
@@ -1730,8 +1767,42 @@ figure.effect-bubba:hover p {
 /****************************
 ******** Progress bar ******/
 /***************************/
+.six-sec-ease-in-out {
+    -webkit-transition: width 6s ease-in-out;
+    -moz-transition: width 6s ease-in-out;
+    -ms-transition: width 6s ease-in-out;
+    -o-transition: width 6s ease-in-out;
+    transition: width 6s ease-in-out;
+}
 
 
+.progress .bar {
+    -webkit-transition: width 2s ease-in-out;
+    -moz-transition: width 2s ease-in-out;
+    -ms-transition: width 2s ease-in-out;
+    -o-transition: width 2s ease-in-out;
+    transition: width 2s ease-in-out;
+}
+
+
+.progress.vertical .bar {
+    -webkit-transition: height 2s ease-in-out;
+    -moz-transition: height 2s ease-in-out;
+    -ms-transition: height 2s ease-in-out;
+    -o-transition: height 2s ease-in-out;
+    transition: height 2s ease-in-out;
+}
+
+
+/*** vertical *****/
+  /** Bottom ***/
+.progress.vertical.bottom {
+  width: 60px;
+}
+ /*** Top ***/
+.progress.vertical {
+  width: 60px;
+}
 /**** Blog Author ****/
 
 .author-content {

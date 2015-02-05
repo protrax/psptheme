@@ -40,18 +40,54 @@ jQuery(function ($) {
 //***************************************************************
 
 //Isotope function
-jQuery( function($) {
+
+
+jQuery(function($){
+
+// Make a loading function
+
+  // Ajax
+    // append a loading class
+    // End the ajax dfunction
+    // Show all
+
+      // var isotopeContainer = $('.isotope');
+
+      // // Load function
+      //   function pfLoading(e){
+          
+      //     e.find()
+
+      //   };
+      //   // Call the load function
+      //   pfLoading( isotopeContainer );
+
+
+
+
+
+// item column size
+
+  $('.iso-item').addClass('col-sm-6 col-xs-12 col-md-3');
+  $('.iso-item:odd').removeClass('col-md-3').addClass('col-md-6');
 //Isotope masonry
 $( function() {
 
+
     var $container = $('.isotope');
     $container.isotope({
+      
       itemSelector: '.iso-item',
-      layoutMode: 'fitRows',
+      layoutMode: 'masonry',
+      transitionDuration: '0.8s',
+          getSortData: {
+            category: '[data-category]',
+          },
       masonry: {
-        columnWidth: '.grid-sizer'
+      columnWidth: '.grid-sizer'
       }
 });
+
 //Isotope apend on click
   $('#append').on( 'click', function() {
     // create new item elements
@@ -64,13 +100,13 @@ $( function() {
 
   // Isotope animation function
 // Dynamic animation class variable
-$animationclass = 'iso-animate ' + 'flipInX';
+      // $animationclass = 'iso-animate ' + 'flipInX';
 // Isotope Animation function
 jQuery(function($) {
 $('.iso-item').each(function(i) {
   $(this).hide();
   $(this).show( 100 ).delay((i++) * 100).queue(function( next ){
-        $(this).addClass( $animationclass ); //add a custom class to isotope loading
+        // $(this).addClass( $animationclass ); //add a custom class to isotope loading
         $(this).dequeue();
         $(this).finish();
     });
@@ -128,14 +164,13 @@ function getItemElement() {
   // add width and height class
   var wRand = Math.random();
   var hRand = Math.random();
-  var widthClass = wRand > 0.85 ? 'col-md-6' : wRand > 0.7 ? 'col-md-6' : ''; // TODO fix math
-  var heightClass = hRand > 0.85 ? 'col-md-3' : hRand > 0.5 ? 'col-md-3' : ''; // TODO fix math
+  var widthClass = wRand > 0.85 ? '.col-md-6' : wRand > 0.7 ? '.col-md-6' : ''; // TODO fix math
+  var heightClass = hRand > 0.85 ? '.col-md-3' : hRand > 0.5 ? '.col-md-3' : ''; // TODO fix math
   //Append styles for layout and load animation for the items
   $item.addClass( widthClass ).addClass( heightClass ).addClass('loading');
   $('.loading').each(function(i) {
   $(this).hide();
-  $(this).show( 100 ).delay((i++) * 100).queue(function(  ){
-        $(this).addClass( $animationclass ); //add a custom class to isotope loading
+  $(this).show( 800 ).delay((i++) * 100).queue(function(  ){
         $(this).removeClass('loading');
         $(this).dequeue();
         $(this).finish();
@@ -184,11 +219,9 @@ function getItemElement() {
 
 //////// TODO/////////////
 
-  // Fix flickering (bug) when filtering data-categories
+ 
   // Do other changes if needed
   // Fix loading bugs
-  // Make animation section dynamic for php vars
-  // fix smoother animations
   // Remove classes used for load
 
 
@@ -489,7 +522,12 @@ PROGRESS PIE ANIMATION
 *************************************************************/
   
 
-  jQuery(function($) {
+
+
+jQuery(function($) {
+ 
+  $('.chart').waypoint(function() {
+    
     $('.chart').easyPieChart({
       animate: 6000,
       easing: 'easeOut',
@@ -498,49 +536,38 @@ PROGRESS PIE ANIMATION
       },
         trackColor: '#eee',
         barColor: "#f78e20",
-        scaleColor: "#4F5050",
-        
-
+        scaleColor: "#4F5050",  
     });
- 
+
+  },
+
+  {
+    offset: '100%',
+    triggerOnce: true
   });
+});
 
 
 
 /*************************************************************
 PROGRESS BAR ANIMATION
 *************************************************************/
-  
-  // Initiate the script
+
+
+  // Ready
   jQuery(document).ready(function(){
-    var progressbar = $('#progressbar'),
-        maxWidth    = progressbar.attr('max'),
-        width       = progressbar.attr('value'),
-        time        = (1000/maxWidth)*5,
-        value       = progressbar.val();
-        console.log(value);
-        i = 1;
-        // Load time
-        var loading = function() {
-            value = i++;
-            addValue = progressbar.val(value);
-               
-             $('.progress-value').html(value + '%');
+     // Progressbar init   
+    $('.progress .progress-bar').progressbar();
 
-             if (value == maxWidth) {
-                  clearInterval(animate);                
-              }
-        };
-
-        var animate = setInterval(function() {
-              progressbar.each(function(){
-                loading();
-              })
-              
-
-          }, time);  
+ 
   });
-  
+
+
+
+
+
+
+
 
 
 /*************************************************************
@@ -555,11 +582,6 @@ COUNTER
 
         });  
 
-
-
-
-
-  
 /*************************************************************
 REQUEST ANIMATION FRAME DECLARATION FOR SCROLLING
 *************************************************************/
@@ -614,10 +636,6 @@ TOGGLES
     }
     $(this).next('.to-toggle-content').slideToggle(200);
   }); 
-
-
-
-
 
 /*************************************************************
 ACCORDIONS

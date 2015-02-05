@@ -557,9 +557,7 @@ PROGRESS BAR ANIMATION
   // Ready
   jQuery(document).ready(function(){
      // Progressbar init   
-    $('.progress .progress-bar').progressbar();
-
- 
+    $('.progress .progress-bar').progressbar({display_text: 'center', use_percentage: true});  
   });
 
 
@@ -644,6 +642,9 @@ ACCORDIONS
     accHolder  = 'accordion-holder',
     accOpen    = '.accordion-open',
     accPlus    = '.accordion-open .icon-to-plus';
+
+
+
   $(document).on('click', '.accordion-title', function(){
 
     $this = $(this);

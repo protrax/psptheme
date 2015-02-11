@@ -554,10 +554,36 @@ PROGRESS BAR ANIMATION
 *************************************************************/
 
 
-  // Ready
-  jQuery(document).ready(function(){
-     // Progressbar init   
-    $('.progress .progress-bar').progressbar({display_text: 'center', use_percentage: true});  
+jQuery(function($){
+  var $this = $(this);
+  
+// Progressbar waypoint
+
+    // Progressbar animation
+     $this.find('.progress-bar').progressbar({
+        transition_delay: 300,
+        refresh_speed: 50,
+        display_text: 'center',
+        use_percentage: true
+      });
+
+// Progressbar tab loading
+
+  $(document).on( 'click', '.toggle-tabs li', function() {
+    var $this = $(this);
+    
+        $this.closest('.toggle-tabs-holder').find('.progress-bar').css('width', '0');
+    
+       setTimeout(function(){
+            
+            $this.closest('.toggle-tabs-holder').find('.progress-bar').progressbar();
+           
+
+       }, 800 );
+    
+      
+
+    
   });
 
 
@@ -566,6 +592,11 @@ PROGRESS BAR ANIMATION
 
 
 
+
+
+
+
+}); // End
 
 
 /*************************************************************
@@ -621,6 +652,38 @@ function smartresize(sr) {
 /*************************************************************
 GOOGLE MAPS
 *************************************************************/
+
+/*************************************************************
+Toggle tabs
+*************************************************************/
+
+/*************************************************************
+TABS
+*************************************************************/
+
+
+
+
+/*************************************************************
+TABS
+*************************************************************/
+
+  var tabholder = '.toggle-tabs-holder',
+    tab = '.toggle-tabs li',
+    tabLine = '.toggle-tabs-line',
+    activetab = 'active-tab';
+  
+  $(document).on( 'click',tab, function() {
+    var $this = $(this);
+    if(!$this.hasClass('active-tab') && $this.index()>1) {
+      var i = $this.index()-2;
+      $this.closest(tabholder).find('.toggle-tab').hide().removeClass('active-tab');
+      $this.closest(tabholder).find('.toggle-tab').eq(i).fadeIn(500).addClass('active-tab');
+      $this.closest(tabholder).find('li').removeClass(activetab);
+      $this.addClass(activetab);
+    }
+  });
+
 
 /*************************************************************
 TOGGLES
@@ -683,4 +746,25 @@ FORM VALIDATION
     window.sr = new scrollReveal(); 
   })
   
+
+
+/*************************************************************
+Google maps
+*************************************************************/
+
+
+
+      $(function() { 
+       $(window).add(function() {
+          $('#map_canvas').gmap({'center': '57.7973333,12.0502107', 'zoom': 10, 'disableDefaultUI':true, 'callback': function() {
+            var self = this;
+            self.addMarker({'position': this.get('map').getCenter() }).click(function() {
+              self.openInfoWindow({ 'content': 'Hello World!' }, this);
+            }); 
+          }});
+        }).load();
+      });
+
+
+
 

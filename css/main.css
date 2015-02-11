@@ -142,6 +142,26 @@ small, .font_small {
    height: 150px;
 }
 
+.spacer-200 {
+   height: 200px;
+}
+
+
+.spacer-250 {
+   height: 250px;
+}
+
+.spacer-300 {
+   height: 300px;
+}
+
+.spacer-350 {
+   height: 350px;
+}
+
+.spacer-400 {
+   height: 350px;
+}
 /**** Fixed height *****/
 
 .fixed-height-100 {
@@ -2727,3 +2747,126 @@ width: 100%;
   height: 280px;
 }
 
+=======
+/* ============================================================
+   11. TABS
+/* ============================================================ */
+
+.toggle-tabs-holder {
+  position: relative;
+  display: block;
+}
+.toggle-tabs {
+  position: relative;
+  display: inline-block;
+  min-width: 100%;
+  margin: 0 0 10px 0;
+  padding: 0px 0;
+}
+.block-tabs .toggle-tabs {
+  display: block;
+  width: 100%;
+  padding: 0;
+}
+
+li.active-tab {
+  border-bottom: 3px solid orange !important;
+  color: #3F4040 !important;
+}
+
+.toggle-tabs li {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  width: auto;
+  height: 40px;
+  line-height: 40px;
+  margin: 0 0 10px 0;
+  margin-bottom: 0;
+  margin-left:0;
+  text-transform: uppercase;
+  list-style-type:none;
+  cursor: pointer;
+  padding: 0 0  4em 0;
+  border-bottom:  3px solid transparent;
+  color: #999;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s
+}
+
+
+.toggle-tabs li:hover {
+  border-bottom: 3px orange solid;
+}
+.toggle-tabs li span {
+  padding: 0 20px;
+  font-weight: 600;
+}
+.block-tabs .toggle-tabs li {
+  display: block;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid;
+}
+.block-tabs .toggle-tabs li:last-child {
+  border-bottom: none;
+}
+.toggle-tabs-holder.tab .toggle-tabs li {
+  overflow: visible;
+}
+.toggle-tabs-content {
+  display: block;
+  margin: 10px 0 0 0;
+  text-align: left;
+  cursor: default;
+  transform: translateZ(0);
+  overflow: hidden;
+}
+.toggle-tabs-content .toggle-tab {
+  display: none;
+}
+.toggle-tabs-content .toggle-tab.active-tab {
+  display: block;
+}
+.toggle-tabs-holder .clear {
+  padding: 0;
+}
+.toggle-tabs li.toggle-tabs-line {
+  position: absolute;
+  display: block;
+  height: 3px;
+  bottom: -1px;
+  left: 0;
+}
+.product .toggle-tabs li.toggle-tabs-line {
+  bottom: -2px;
+}
+.block-tabs .toggle-tabs li.toggle-tabs-line {
+  display: none;
+}
+.toggle-tabs li.toggle-tabs-overlay {
+  position: absolute;
+  display: block;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-bottom: 1px solid;
+  border-color: inherit;
+}
+.product .toggle-tabs li.toggle-tabs-overlay {
+  border-top: 1px solid;
+  border-color: inherit;  
+}
+
+.yolo {
+    -webkit-transition: width 6s ease-in-out;
+    -moz-transition: width 6s ease-in-out;
+    -ms-transition: width 6s ease-in-out;
+    -o-transition: width 6s ease-in-out;
+    transition: width 6s ease-in-out;
+}

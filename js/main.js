@@ -1,5 +1,3 @@
-
-
 jQuery(function ($) {
   
   // Enable tooltip
@@ -70,6 +68,7 @@ jQuery(function($){
 
   $('.iso-item').addClass('col-sm-6 col-xs-12 col-md-3');
   $('.iso-item:odd').removeClass('col-md-3').addClass('col-md-6');
+
 //Isotope masonry
 $( function() {
 
@@ -88,19 +87,6 @@ $( function() {
       }
 });
 
-//Isotope apend on click
-  $('#append').on( 'click', function() {
-    // create new item elements
-    var $elems = getItemElement().add( getItemElement() ).add( getItemElement() );
-    // append elements to container
-    $container.append( $elems )
-      // add and lay out newly appended elements
-      .isotope( 'appended', $elems);
-  });
-
-  // Isotope animation function
-// Dynamic animation class variable
-      // $animationclass = 'iso-animate ' + 'flipInX';
 // Isotope Animation function
 jQuery(function($) {
 $('.iso-item').each(function(i) {
@@ -114,80 +100,20 @@ $('.iso-item').each(function(i) {
   }); // End Isotope animation function
 
   
-}); // End isotope masonry function
-
-//Load more and generate it
-// make <div class="item width# height#" />
-function getItemElement() {
-  //Append more divs
-  var $item = $(
-    '<div class="iso-item blog-masonry">'+
-    '<div class="thumbnail">' +
-    '<div class="caption">' +
-    '<div class="col-md-12 ">' +
-    '<p class="pull-right">' +
-    'Posted by:' +
-     '<a href="#">' +
-     'Admin' +
-     '</a>' +
-     '</p>' +
-    '</div>' +
-    '<h3>' +
-    'Article number 1' +
-    '</h3>' +
-      '<p>' +
-        'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.' + 
-      '</p>' +
-    '<hr>' +
-    '<p>' +
-            '<span class="glyphicon glyphicon-calendar">' +
-                'On:December 21, 2014' +
-            '</span>' +
-
-            '<span class="glyphicon glyphicon-heart-empty">' +
-                'Comments: 120' +
-            '</span>' +
-        '</p>' +
-        '<p>' +
-        '<a href="#" class="btn btn-primary" role="button">' +
-        'Button' +
-        '</a>' + 
-        '<a href="#" class="btn btn-default" role="button">' +
-        'Button' + 
-        '</a>' +
-        '</p>' +
-        '</div>' +
-        '</div>'
-
-     +'</div>'); 
-
-  // add width and height class
-  var wRand = Math.random();
-  var hRand = Math.random();
-  var widthClass = wRand > 0.85 ? '.col-md-6' : wRand > 0.7 ? '.col-md-6' : ''; // TODO fix math
-  var heightClass = hRand > 0.85 ? '.col-md-3' : hRand > 0.5 ? '.col-md-3' : ''; // TODO fix math
-  //Append styles for layout and load animation for the items
-  $item.addClass( widthClass ).addClass( heightClass ).addClass('loading');
-  $('.loading').each(function(i) {
-  $(this).hide();
-  $(this).show( 800 ).delay((i++) * 100).queue(function(  ){
-        $(this).removeClass('loading');
-        $(this).dequeue();
-        $(this).finish();
-    });
-  });
-  return $item;
-}
+}); // End isotope portfolio function
 
 //Fiter data-groups
   // store filter for each group
   var filters = {};
 
   $('#filters').on( 'click', '.button', function() {
+    
     var $this = $(this);
+    
     // get group key
     var $buttonGroup = $this.parents('.button-group');
     var filterGroup = $buttonGroup.attr('data-filter-group');
+    
     // set filter for group
     filters[ filterGroup ] = $this.attr('data-filter');
     // combine filters
@@ -197,6 +123,7 @@ function getItemElement() {
     }
     // set filter for Isotope
     $('.isotope').isotope({ filter: filterValue });
+    console.lof(filters);
   });
 
   // change is-checked class on buttons
@@ -206,23 +133,11 @@ function getItemElement() {
       $buttonGroup.find('.is-checked').removeClass('is-checked');
       $( this ).addClass('is-checked');
     });
-  });
-
-// End filder data groups
-
-
-}); // End isotope function
-//End isotope functions
+  }); // End filder data groups
+  
+}); //End isotope portfolio functions
 
 
-
-
-//////// TODO/////////////
-
- 
-  // Do other changes if needed
-  // Fix loading bugs
-  // Remove classes used for load
 
 
 //********************************************************************
@@ -557,43 +472,44 @@ PROGRESS BAR ANIMATION
 jQuery(function($){
   var $this = $(this);
   
-// Progressbar waypoint
-
-    // Progressbar animation
+// Progressbar
+  function progressBar() {
      $this.find('.progress-bar').progressbar({
         transition_delay: 300,
         refresh_speed: 50,
         display_text: 'center',
         use_percentage: true
       });
+    }
 
-// Progressbar tab loading
+// Progressbar waypoint
+$this.find('.toggle-tabs-content').waypoint(function() {
 
-  $(document).on( 'click', '.toggle-tabs li', function() {
-    var $this = $(this);
-    
-        $this.closest('.toggle-tabs-holder').find('.progress-bar').css('width', '0');
-    
-       setTimeout(function(){
-            
-            $this.closest('.toggle-tabs-holder').find('.progress-bar').progressbar();
-           
+      progressBar();
 
-       }, 800 );
-    
-      
+      },
 
-    
+  {
+    offset: '100%',
+    triggerOnce: true
   });
 
+// Progressbar tab loading
+  $(document).on( 'click', '.toggle-tabs li', function() {
+        var $this = $(this);
 
+        $this.closest('.toggle-tabs-holder').find('.progress-bar')
+        .hide().css('width', '0');
 
+        $this.closest('.toggle-tabs-holder').find('.vertical .progress-bar')
+        .hide().css({width: "100" + "%", height: "0" });
 
-
-
-
-
-
+             
+        setTimeout(function(){
+            $this.closest('.toggle-tabs-holder').find('.progress-bar')
+            .show().progressbar();
+        }, 300 );
+  });
 
 
 }); // End
@@ -647,21 +563,6 @@ function smartresize(sr) {
   };
   $.fn[sr] = function(fn){  return fn ? this.bind('resize', debounce(fn)) : this.trigger(sr); };
 }
-
-
-/*************************************************************
-GOOGLE MAPS
-*************************************************************/
-
-/*************************************************************
-Toggle tabs
-*************************************************************/
-
-/*************************************************************
-TABS
-*************************************************************/
-
-
 
 
 /*************************************************************
@@ -752,7 +653,6 @@ FORM VALIDATION
 /*************************************************************
 Google maps
 *************************************************************/
-
 
 
       $(function() { 

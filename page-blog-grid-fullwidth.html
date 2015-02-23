@@ -6,14 +6,14 @@
         <meta content="IE=edge" http-equiv="X-UA-Compatible">
         <meta content="width=device-width, initial-scale=1" name="viewport">
 
-        <title>Index</title>
+        <title>Blog</title>
 
         <!-- Google font -->
         
         <!-- Font awesome -->
 
         <!-- Bootstrap -->
-        <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,500,900' rel='stylesheet' type='text/css'>
+         <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,700,500,900' rel='stylesheet' type='text/css'>
 
         <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
         <!-- Bootstrap -->
@@ -146,15 +146,11 @@
                                                         <li>
                                                                 <a href="page-portfolio-3-columns.html">3 Columns</a>
                                                         </li>
-                                                        <li>
-                                                                <a href="page-portfolio-right-sidebar.html">Portfolio Right Sidebar</a>
-                                                        </li>     
+                                                             
 
                                                        
 
-                                                        <li>
-                                                                <a href="page-portfolio.html">Portfolio Fullwidth</a>
-                                                        </li>
+                                                         
 
                                                         <li>
                                                                 <a href="page-portfolio-masonry.html">Portfolio Masonry</a>
@@ -231,8 +227,8 @@
                                                                 <a href="page-blog-masonry.html">Masonry</a>
                                                         </li>
 
-                                                        <li>
-                                                                <a href="page-blog-grid-fullwidth.html">Blog Grid</a>
+                                                         <li>
+                                                                <a href="page-blog-grid.html">Blog Grid</a>
                                                         </li>
 
                                                         <li>
@@ -282,11 +278,11 @@
                                                       <h3 class="normal">Elements 1</h3>
                                                     </li>
                                                        <li><a href="#"> Tabs / Accordions</a></li>
-                                                       <li><a href="#"> Progress Bars </a></li>
+                                                       <li><a href="progress-bars.html"> Progress Bars </a></li>
                                                        <li><a href="#"> Pie Charts </a></li>
                                                        <li><a href="table.html"> Pricing Tables </a></li></li>
                                                        <li><a href="#"> Counters </a></li>
-                                                       <li><a href="#"> Alerts </a></li>
+                                                        
                                                        <li><a href="columns.html"> Columns </a></li>
 
                                                   </ul>
@@ -351,208 +347,588 @@
                 </div><!-- /.container-fluid -->
         </nav><!-- HTML to write -->
         
-        <div class="row row-offcanvas row-offcanvas-right">
-                <div class="well well-lg main-page-header">
-                        <div class="container">
-                                <div class="col-md-8">
-                                        <h1>Blog <span>Page</span></h1>
-                                </div>
+        <div class="well well-lg main-page-header-img" style="background: url('images/slider-4.jpg');">
 
-                                <div class="col-md-4">
-                                        <ol class="breadcrumb">
-                                                <li>
-                                                        <a href="#">Home</a>
-                                                </li>
-
-                                                <li class="active">Blog</li>
-                                        </ol>
-                                </div>
+                <div class="container header-img-container animated fadeIn">
+                        <div class="col-md-8">
+                            <h1 class="bold">Blog Grid <span class="txt-color normal">Fullwidth</span></h1>
+                        </div>
+                        <div class="col-md-4">
+                                <ol class="breadcrumb">
+                                        <li>
+                                           <a href="#">Blog</a>
+                                        </li>
+                                        <li class="active">Grid Fullwidth</li>
+                                </ol>
                         </div>
                 </div>
+        </div><!-- Ending Title Bar -->
+        <div class="spacer-50"></div>
+        <!-- Start Masonry section -->
 
-                <p class="pull-right visible-xs"><button class="btn btn-primary btn-xs" data-toggle="offcanvas" type="button"><span class=
-                "glyphicon glyphicon-align-right">&nbsp;Sidebar</span></button></p>
+        <div class="row filter-group">
+            <div class="container">
 
-                <div class="container">
-                        <div class="col-md-12 main-content-home">
-                                <!--  Start blog grid view -->
+                <div id="filters-portfolio">
+                    <div class="ui-group">
+                        <a class=
+                        "button btn" data-filter=
+                        "*">show all</a>
 
-                                <div class="col-md-12">
-                                        <!-- Start col-md-8 -->
+                        <a class=
+                        "button btn" data-filter=
+                        ".web">Web</a>
 
-                                        <div class="row blog-grid-view">
-                                                <!-- Grid view row -->
+                        <a class="button btn" data-filter=
+                        ".photo">Photo</a>
 
-                                                <div class="col-sm-6 col-md-3">
-                                                        <!-- Start Grid columns grid item -->
+                         <a class="button btn" data-filter=
+                        ".facebook">Facebook</a>
 
-                                                        <div class="thumbnail">
-                                                                <img alt="..." src="http://placehold.it/300x300">
+                         <a class=
+                        "button btn" data-filter=
+                        ".app">App</a> <a class=
+                        "button btn" data-filter=
+                        ".art">Art</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+       <div class="spacer-50"></div>
+        
+        
+        <!-- Start portfolio items -->
+        
+          <div class="col-md-12 no-padding">
+            <div class="iso-portfolio-page">
+                <div class="grid-sizer"></div><!-- Test layout -->
 
-                                                                <div class="caption">
-                                                                        <p><span>Posted by:</span><a href="#">Admin</a></p>
+                <div class="row">
+                    <div class=
+                    "iso-portfolio-item portfolio-page col-xs-12 col-sm-6 col-md-3 web">
+                            <div>
+                                <figure class="effect-ruby">
+                                         <div style=
+                            " background: url('images/member5.jpg') center no-repeat; height: inherit; background-size: cover; min-height: 23em; position: relative; max-height: 450px;">
+                            </div>
+                                    <figcaption>
+                                           <h2>DNB Meeting</h2>
+                                            <p>Bubba likes to appear out of thin air.</p>
+                                            <a href="#">View more</a>
+                                        </figcaption>           
+                                    </figure>
+                        <div class="col-md-12 no-padding">
+                        <div class="post-info">
+                        <p><i class="fa fa-user"></i> Posted by: <a href="#">Admin</a></p>
+                        </div> <!-- End post-info -->
+                        <div class="article-info">
+                        <h3><a href="#">Random Article</a></h3>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam . Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        <hr>
+                        <div class="col-md-12 under-info no-padding">
+                        <div class="col-md-9 no-padding">
+                        <div class="post-info">
+                        <p><i class="fa fa-calendar"></i> December 21, 2014</p>
+                        </div> <!-- End post-info -->
+                        </div> <!-- End col-md-9 -->
+                        <div class="col-md-3 no-padding">
+                        <p><i class="fa fa-heart pull-right" style="color: #f78e20;"><span style="color: #3f4040;">&nbsp;500</span></i></p>
+                        </div> <!-- End col-md-3 -->
+                        
+                        </div> <!-- End under-info -->
 
-                                                                        <h3>Article number 3</h3>
+                        </div> <!-- End article-info -->
 
-                                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                                                        Ut enim ad minim veniam.</p>
-                                                                        <hr>
+                                    </div> <!-- End col-md-12 -->
+                            </div> <!-- End info -->                  
+                    </div> <!-- End Article -->
 
-                                                                        <p><span class="glyphicon glyphicon-calendar"></span>on: December 21, 2014<br>
-                                                                        <span class="glyphicon glyphicon-heart-empty"></span>120</p>
-                                                                </div>
-                                                        </div>
-                                                </div><!-- End Grid view item-->
 
-                                                <div class="col-sm-6 col-md-3">
-                                                        <!-- Start Grid columns grid item -->
 
-                                                        <div class="thumbnail">
-                                                                <img alt="..." src="http://placehold.it/300x300">
+                    <div class=
+                    "iso-portfolio-item portfolio-page col-xs-12 col-sm-6 col-md-3 web">
+                            <div>
+                                <figure class="effect-ruby">
+                                         <div style=
+                            " background: url('images/parallax-bg-1.png') center no-repeat; height: inherit; background-size: cover; min-height: 23em; position: relative; max-height: 450px;">
+                            </div>
+                                    <figcaption>
+                                           <h2>Portfolio <span>item</span></h2>
+                                            <p>Bubba likes to appear out of thin air.</p>
+                                            
+                                        </figcaption>           
+                                    </figure>
+                                  <div class="col-md-12 no-padding">
+                        <div class="post-info">
+                        <p><i class="fa fa-user"></i> Posted by: <a href="#">Admin</a></p>
+                        </div> <!-- End post-info -->
+                        <div class="article-info">
+                        <h3><a href="#">Random Article</a></h3>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam . Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        <hr>
+                        <div class="col-md-12 under-info no-padding">
+                        <div class="col-md-9 no-padding">
+                        <div class="post-info">
+                        <p><i class="fa fa-calendar"></i> December 21, 2014</p>
+                        </div> <!-- End post-info -->
+                        </div> <!-- End col-md-9 -->
+                        <div class="col-md-3 no-padding">
+                        <p><i class="fa fa-heart pull-right" style="color: #f78e20;"><span style="color: #3f4040;">&nbsp;500</span></i></p>
+                        </div> <!-- End col-md-3 -->
+                        
+                        </div> <!-- End under-info -->
 
-                                                                <div class="caption">
-                                                                        <p><span>Posted by:</span><a href="#">Admin</a></p>
+                        </div> <!-- End article-info -->
 
-                                                                        <h3>Article number 3</h3>
+                                    </div> <!-- End col-md-12 -->
+                            </div> 
+                                                     
+                    </div>
 
-                                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                                                        Ut enim ad minim veniam.</p>
-                                                                        <hr>
 
-                                                                        <p><span class="glyphicon glyphicon-calendar"></span>on: December 21, 2014<br>
-                                                                        <span class="glyphicon glyphicon-heart-empty"></span>120</p>
-                                                                </div>
-                                                        </div>
-                                                </div><!-- End Grid view item-->
 
-                                                <div class="col-sm-6 col-md-3">
-                                                        <!-- Start Grid columns grid item -->
+                    <div class=
+                    "iso-portfolio-item portfolio-page col-xs-12 col-sm-6 col-md-3 art">
+                            <div>
+                                <figure class="effect-ruby">
+                                         <div style=
+                            " background: url('images/pf-item-4.jpg') center no-repeat; height: inherit; background-size: cover; min-height: 23em; position: relative; max-height: 450px;">
+                            </div>
+                                    <figcaption>
+                                           <h2>Portfolio <span>item</span></h2>
+                                            <p>Bubba likes to appear out of thin air.</p>
+                                            <a href="#">View more</a>
+                                        </figcaption>           
+                                    </figure>
+                                 <div class="col-md-12 no-padding">
+                        <div class="post-info">
+                        <p><i class="fa fa-user"></i> Posted by: <a href="#">Admin</a></p>
+                        </div> <!-- End post-info -->
+                        <div class="article-info">
+                        <h3><a href="#">Random Article</a></h3>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam . Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        <hr>
+                        <div class="col-md-12 under-info no-padding">
+                        <div class="col-md-9 no-padding">
+                        <div class="post-info">
+                        <p><i class="fa fa-calendar"></i> December 21, 2014</p>
+                        </div> <!-- End post-info -->
+                        </div> <!-- End col-md-9 -->
+                        <div class="col-md-3 no-padding">
+                        <p><i class="fa fa-heart pull-right" style="color: #f78e20;"><span style="color: #3f4040;">&nbsp;500</span></i></p>
+                        </div> <!-- End col-md-3 -->
+                        
+                        </div> <!-- End under-info -->
 
-                                                        <div class="thumbnail">
-                                                                <img alt="..." src="http://placehold.it/300x300">
+                        </div> <!-- End article-info -->
 
-                                                                <div class="caption">
-                                                                        <p><span>Posted by:</span><a href="#">Admin</a></p>
+                                    </div> <!-- End col-md-12 -->
+                            </div> 
+                                                       
+                    </div>
 
-                                                                        <h3>Article number 3</h3>
 
-                                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                                                        Ut enim ad minim veniam.</p>
-                                                                        <hr>
 
-                                                                        <p><span class="glyphicon glyphicon-calendar"></span>on: December 21, 2014<br>
-                                                                        <span class="glyphicon glyphicon-heart-empty"></span>120</p>
-                                                                </div>
-                                                        </div>
-                                                </div><!-- End Grid view item-->
 
-                                                <div class="col-sm-6 col-md-3">
-                                                        <!-- Start Grid columns grid item -->
+                    <div class=
+                    "iso-portfolio-item portfolio-page col-xs-12 col-sm-6 col-md-3 app">
+                            <div>
+                                <figure class="effect-ruby">
+                                         <div style=
+                            " background: url('images/pf-item-4.jpg') center no-repeat; height: inherit; background-size: cover; min-height: 23em; position: relative; max-height: 450px;">
+                            </div>
+                                    <figcaption>
+                                           <h2>Portfolio <span>item</span></h2>
+                                            <p>Bubba likes to appear out of thin air.</p>
+                                            <a href="#">View more</a>
+                                        </figcaption>           
+                                    </figure>
+                                 <div class="col-md-12 no-padding">
+                        <div class="post-info">
+                        <p><i class="fa fa-user"></i> Posted by: <a href="#">Admin</a></p>
+                        </div> <!-- End post-info -->
+                        <div class="article-info">
+                        <h3><a href="#">Random Article</a></h3>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam . Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        <hr>
+                        <div class="col-md-12 under-info no-padding">
+                        <div class="col-md-9 no-padding">
+                        <div class="post-info">
+                        <p><i class="fa fa-calendar"></i> December 21, 2014</p>
+                        </div> <!-- End post-info -->
+                        </div> <!-- End col-md-9 -->
+                        <div class="col-md-3 no-padding">
+                        <p><i class="fa fa-heart pull-right" style="color: #f78e20;"><span style="color: #3f4040;">&nbsp;500</span></i></p>
+                        </div> <!-- End col-md-3 -->
+                        
+                        </div> <!-- End under-info -->
 
-                                                        <div class="thumbnail">
-                                                                <img alt="..." src="http://placehold.it/300x300">
+                        </div> <!-- End article-info -->
 
-                                                                <div class="caption">
-                                                                        <p><span>Posted by:</span><a href="#">Admin</a></p>
+                                    </div> <!-- End col-md-12 -->
+                            </div> 
+                                                    
+                    </div> 
 
-                                                                        <h3>Article number 3</h3>
 
-                                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                                                        Ut enim ad minim veniam.</p>
-                                                                        <hr>
+                    <div class=
+                    "iso-portfolio-item portfolio-page col-xs-12 col-sm-6 col-md-3 app">
+                            <div>
+                                <figure class="effect-ruby">
+                                         <div style=
+                            " background: url('images/pf-item-4.jpg') center no-repeat; height: inherit; background-size: cover; min-height: 23em; position: relative; max-height: 450px;">
+                            </div>
+                                    <figcaption>
+                                           <h2>Portfolio <span>item</span></h2>
+                                            <p>Bubba likes to appear out of thin air.</p>
+                                            <a href="#">View more</a>
+                                        </figcaption>           
+                                    </figure>
+                                 <div class="col-md-12 no-padding">
+                        <div class="post-info">
+                        <p><i class="fa fa-user"></i> Posted by: <a href="#">Admin</a></p>
+                        </div> <!-- End post-info -->
+                        <div class="article-info">
+                        <h3><a href="#">Random Article</a></h3>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam . Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        <hr>
+                        <div class="col-md-12 under-info no-padding">
+                        <div class="col-md-9 no-padding">
+                        <div class="post-info">
+                        <p><i class="fa fa-calendar"></i> December 21, 2014</p>
+                        </div> <!-- End post-info -->
+                        </div> <!-- End col-md-9 -->
+                        <div class="col-md-3 no-padding">
+                        <p><i class="fa fa-heart pull-right" style="color: #f78e20;"><span style="color: #3f4040;">&nbsp;500</span></i></p>
+                        </div> <!-- End col-md-3 -->
+                        
+                        </div> <!-- End under-info -->
 
-                                                                        <p><span class="glyphicon glyphicon-calendar"></span>on: December 21, 2014<br>
-                                                                        <span class="glyphicon glyphicon-heart-empty"></span>120</p>
-                                                                </div>
-                                                        </div>
-                                                </div><!-- End Grid view item-->
+                        </div> <!-- End article-info -->
 
-                                                <div class="col-sm-6 col-md-3">
-                                                        <!-- Start Grid columns grid item -->
+                                    </div> <!-- End col-md-12 -->
+                            </div> 
+                                                       
+                    </div>   
 
-                                                        <div class="thumbnail">
-                                                                <img alt="..." src="http://placehold.it/300x300">
 
-                                                                <div class="caption">
-                                                                        <p><span>Posted by:</span><a href="#">Admin</a></p>
+                    <div class=
+                    "iso-portfolio-item portfolio-page col-xs-12 col-sm-6 col-md-3 art">
+                            <div>
+                                <figure class="effect-ruby">
+                                         <div style=
+                            " background: url('images/pf-item-4.jpg') center no-repeat; height: inherit; background-size: cover; min-height: 23em; position: relative; max-height: 450px;">
+                            </div>
+                                    <figcaption>
+                                           <h2>Portfolio <span>item</span></h2>
+                                            <p>Bubba likes to appear out of thin air.</p>
+                                            <a href="#">View more</a>
+                                        </figcaption>           
+                                    </figure>
+                                  <div class="col-md-12 no-padding">
+                        <div class="post-info">
+                        <p><i class="fa fa-user"></i> Posted by: <a href="#">Admin</a></p>
+                        </div> <!-- End post-info -->
+                        <div class="article-info">
+                        <h3><a href="#">Random Article</a></h3>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam . Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        <hr>
+                        <div class="col-md-12 under-info no-padding">
+                        <div class="col-md-9 no-padding">
+                        <div class="post-info">
+                        <p><i class="fa fa-calendar"></i> December 21, 2014</p>
+                        </div> <!-- End post-info -->
+                        </div> <!-- End col-md-9 -->
+                        <div class="col-md-3 no-padding">
+                        <p><i class="fa fa-heart pull-right" style="color: #f78e20;"><span style="color: #3f4040;">&nbsp;500</span></i></p>
+                        </div> <!-- End col-md-3 -->
+                        
+                        </div> <!-- End under-info -->
 
-                                                                        <h3>Article number 3</h3>
+                        </div> <!-- End article-info -->
 
-                                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                                                        Ut enim ad minim veniam.</p>
-                                                                        <hr>
+                                    </div> <!-- End col-md-12 -->
+                            </div>                           
+                    </div>                                                                           
+                    <div class=
+                    "iso-portfolio-item portfolio-page col-xs-12 col-sm-6 col-md-3 photo">
+                            <div>
+                                <figure class="effect-ruby">
+                                         <div style=
+                            " background: url('images/pf-item-4.jpg') center no-repeat; height: inherit; background-size: cover; min-height: 23em; position: relative; max-height: 450px;">
+                            </div>
+                                    <figcaption>
+                                           <h2>Portfolio <span>item</span></h2>
+                                            <p>Bubba likes to appear out of thin air.</p>
+                                            <a href="#">View more</a>
+                                        </figcaption>           
+                                    </figure>
+                                 <div class="col-md-12 no-padding">
+                        <div class="post-info">
+                        <p><i class="fa fa-user"></i> Posted by: <a href="#">Admin</a></p>
+                        </div> <!-- End post-info -->
+                        <div class="article-info">
+                        <h3><a href="#">Random Article</a></h3>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam . Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        <hr>
+                        <div class="col-md-12 under-info no-padding">
+                        <div class="col-md-9 no-padding">
+                        <div class="post-info">
+                        <p><i class="fa fa-calendar"></i> December 21, 2014</p>
+                        </div> <!-- End post-info -->
+                        </div> <!-- End col-md-9 -->
+                        <div class="col-md-3 no-padding">
+                        <p><i class="fa fa-heart pull-right" style="color: #f78e20;"><span style="color: #3f4040;">&nbsp;500</span></i></p>
+                        </div> <!-- End col-md-3 -->
+                        
+                        </div> <!-- End under-info -->
 
-                                                                        <p><span class="glyphicon glyphicon-calendar"></span>on: December 21, 2014<br>
-                                                                        <span class="glyphicon glyphicon-heart-empty"></span>120</p>
-                                                                </div>
-                                                        </div>
-                                                </div><!-- End Grid view item-->
+                        </div> <!-- End article-info -->
 
-                                                <div class="col-sm-6 col-md-3">
-                                                        <!-- Start Grid columns grid item -->
+                                    </div> <!-- End col-md-12 -->
+                            </div> 
+                                                      
+                    </div>
 
-                                                        <div class="thumbnail">
-                                                                <img alt="..." src="http://placehold.it/300x300">
 
-                                                                <div class="caption">
-                                                                        <p><span>Posted by:</span><a href="#">Admin</a></p>
+                    <div class=
+                    "iso-portfolio-item portfolio-page col-xs-12 col-sm-6 col-md-3 web">
+                            <div>
+                                <figure class="effect-ruby">
+                                         <div style=
+                            " background: url('images/pf-item-4.jpg') center no-repeat; height: inherit; background-size: cover; min-height: 23em; position: relative; max-height: 450px;">
+                            </div>
+                                    <figcaption>
+                                           <h2>Portfolio <span>item</span></h2>
+                                            <p>Bubba likes to appear out of thin air.</p>
+                                            <a href="#">View more</a>
+                                        </figcaption>           
+                                    </figure>
+                                  <div class="col-md-12 no-padding">
+                        <div class="post-info">
+                        <p><i class="fa fa-user"></i> Posted by: <a href="#">Admin</a></p>
+                        </div> <!-- End post-info -->
+                        <div class="article-info">
+                        <h3><a href="#">Random Article</a></h3>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam . Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        <hr>
+                        <div class="col-md-12 under-info no-padding">
+                        <div class="col-md-9 no-padding">
+                        <div class="post-info">
+                        <p><i class="fa fa-calendar"></i> December 21, 2014</p>
+                        </div> <!-- End post-info -->
+                        </div> <!-- End col-md-9 -->
+                        <div class="col-md-3 no-padding">
+                        <p><i class="fa fa-heart pull-right" style="color: #f78e20;"><span style="color: #3f4040;">&nbsp;500</span></i></p>
+                        </div> <!-- End col-md-3 -->
+                        
+                        </div> <!-- End under-info -->
 
-                                                                        <h3>Article number 3</h3>
+                        </div> <!-- End article-info -->
 
-                                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                                                        Ut enim ad minim veniam.</p>
-                                                                        <hr>
+                                    </div> <!-- End col-md-12 -->
+                            </div> 
+                                                      
+                    </div>
 
-                                                                        <p><span class="glyphicon glyphicon-calendar"></span>on: December 21, 2014<br>
-                                                                        <span class="glyphicon glyphicon-heart-empty"></span>120</p>
-                                                                </div>
-                                                        </div>
-                                                </div><!-- End Grid view item-->
 
-                                                <div class="col-sm-6 col-md-3">
-                                                        <!-- Start Grid columns grid item -->
+                    <div class=
+                    "iso-portfolio-item portfolio-page col-xs-12 col-sm-6 col-md-3 photo">
+                            <div>
+                                <figure class="effect-ruby">
+                                         <div style=
+                            " background: url('images/pf-item-4.jpg') center no-repeat; height: inherit; background-size: cover; min-height: 23em; position: relative; max-height: 450px;">
+                            </div>
+                                    <figcaption>
+                                           <h2>Portfolio <span>item</span></h2>
+                                            <p>Bubba likes to appear out of thin air.</p>
+                                            <a href="#">View more</a>
+                                        </figcaption>           
+                                    </figure>
+                                  <div class="col-md-12 no-padding">
+                        <div class="post-info">
+                        <p><i class="fa fa-user"></i> Posted by: <a href="#">Admin</a></p>
+                        </div> <!-- End post-info -->
+                        <div class="article-info">
+                        <h3><a href="#">Random Article</a></h3>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam . Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        <hr>
+                        <div class="col-md-12 under-info no-padding">
+                        <div class="col-md-9 no-padding">
+                        <div class="post-info">
+                        <p><i class="fa fa-calendar"></i> December 21, 2014</p>
+                        </div> <!-- End post-info -->
+                        </div> <!-- End col-md-9 -->
+                        <div class="col-md-3 no-padding">
+                        <p><i class="fa fa-heart pull-right" style="color: #f78e20;"><span style="color: #3f4040;">&nbsp;500</span></i></p>
+                        </div> <!-- End col-md-3 -->
+                        
+                        </div> <!-- End under-info -->
 
-                                                        <div class="thumbnail">
-                                                                <img alt="..." src="http://placehold.it/300x300">
+                        </div> <!-- End article-info -->
 
-                                                                <div class="caption">
-                                                                        <p><span>Posted by:</span><a href="#">Admin</a></p>
+                                    </div> <!-- End col-md-12 -->
+                            </div>                        
+                    </div> 
 
-                                                                        <h3>Article number 3</h3>
 
-                                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                                                        Ut enim ad minim veniam.</p>
-                                                                        <hr>
+                    <div class=
+                    "iso-portfolio-item portfolio-page col-xs-12 col-sm-6 col-md-3 art">
+                            <div>
+                                <figure class="effect-ruby">
+                                         <div style=
+                            " background: url('images/pf-item-4.jpg') center no-repeat; height: inherit; background-size: cover; min-height: 23em; position: relative; max-height: 450px;">
+                            </div>
+                                    <figcaption>
+                                           <h2>Portfolio <span>item</span></h2>
+                                            <p>Bubba likes to appear out of thin air.</p>
+                                            <a href="#">View more</a>
+                                        </figcaption>           
+                                    </figure>
+                                 <div class="col-md-12 no-padding">
+                        <div class="post-info">
+                        <p><i class="fa fa-user"></i> Posted by: <a href="#">Admin</a></p>
+                        </div> <!-- End post-info -->
+                        <div class="article-info">
+                        <h3><a href="#">Random Article</a></h3>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam . Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        <hr>
+                        <div class="col-md-12 under-info no-padding">
+                        <div class="col-md-9 no-padding">
+                        <div class="post-info">
+                        <p><i class="fa fa-calendar"></i> December 21, 2014</p>
+                        </div> <!-- End post-info -->
+                        </div> <!-- End col-md-9 -->
+                        <div class="col-md-3 no-padding">
+                        <p><i class="fa fa-heart pull-right" style="color: #f78e20;"><span style="color: #3f4040;">&nbsp;500</span></i></p>
+                        </div> <!-- End col-md-3 -->
+                        
+                        </div> <!-- End under-info -->
 
-                                                                        <p><span class="glyphicon glyphicon-calendar"></span>on: December 21, 2014<br>
-                                                                        <span class="glyphicon glyphicon-heart-empty"></span>120</p>
-                                                                </div>
-                                                        </div>
-                                                </div><!-- End Grid view item-->
+                        </div> <!-- End article-info -->
 
-                                                <div class="col-sm-6 col-md-3">
-                                                        <!-- Start Grid columns grid item -->
+                                    </div> <!-- End col-md-12 -->
+                            </div>                       
+                    </div>  
 
-                                                        <div class="thumbnail">
-                                                                <img alt="..." src="http://placehold.it/300x300">
+                   <div class=
+                    "iso-portfolio-item portfolio-page col-xs-12 col-sm-6 col-md-3 art">
+                            <div>
+                                <figure class="effect-ruby">
+                                         <div style=
+                            " background: url('images/pf-item-4.jpg') center no-repeat; height: inherit; background-size: cover; min-height: 23em; position: relative; max-height: 450px;">
+                            </div>
+                                    <figcaption>
+                                           <h2>Portfolio <span>item</span></h2>
+                                            <p>Bubba likes to appear out of thin air.</p>
+                                            <a href="#">View more</a>
+                                        </figcaption>           
+                                    </figure>
+                                 <div class="col-md-12 no-padding">
+                        <div class="post-info">
+                        <p><i class="fa fa-user"></i> Posted by: <a href="#">Admin</a></p>
+                        </div> <!-- End post-info -->
+                        <div class="article-info">
+                        <h3><a href="#">Random Article</a></h3>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam . Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        <hr>
+                        <div class="col-md-12 under-info no-padding">
+                        <div class="col-md-9 no-padding">
+                        <div class="post-info">
+                        <p><i class="fa fa-calendar"></i> December 21, 2014</p>
+                        </div> <!-- End post-info -->
+                        </div> <!-- End col-md-9 -->
+                        <div class="col-md-3 no-padding">
+                        <p><i class="fa fa-heart pull-right" style="color: #f78e20;"><span style="color: #3f4040;">&nbsp;500</span></i></p>
+                        </div> <!-- End col-md-3 -->
+                        
+                        </div> <!-- End under-info -->
 
-                                                                <div class="caption">
-                                                                        <p><span>Posted by:</span><a href="#">Admin</a></p>
+                        </div> <!-- End article-info -->
 
-                                                                        <h3>Article number 3</h3>
+                                    </div> <!-- End col-md-12 -->
+                            </div>                       
+                    </div>  
 
-                                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                                                        Ut enim ad minim veniam.</p>
-                                                                        <hr>
 
-                                                                        <p><span class="glyphicon glyphicon-calendar"></span>on: December 21, 2014<br>
-                                                                        <span class="glyphicon glyphicon-heart-empty"></span>120</p>
-                                                                </div>
-                                                        </div>
-                                                </div><!-- End Grid view item-->
-                                        </div><!-- End gridview row -->
-                                </div><!-- End col-md-8 -->
-                                <!--  Start blog grid view -->
+                    <div class=
+                    "iso-portfolio-item portfolio-page col-xs-12 col-sm-6 col-md-3 art">
+                            <div>
+                                <figure class="effect-ruby">
+                                         <div style=
+                            " background: url('images/pf-item-4.jpg') center no-repeat; height: inherit; background-size: cover; min-height: 23em; position: relative; max-height: 450px;">
+                            </div>
+                                    <figcaption>
+                                           <h2>Portfolio <span>item</span></h2>
+                                            <p>Bubba likes to appear out of thin air.</p>
+                                            <a href="#">View more</a>
+                                        </figcaption>           
+                                    </figure>
+                                    <div class="col-md-12 no-padding">
+                        <div class="post-info">
+                        <p><i class="fa fa-user"></i> Posted by: <a href="#">Admin</a></p>
+                        </div> <!-- End post-info -->
+                        <div class="article-info">
+                        <h3><a href="#">Random Article</a></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam . Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        <hr>
+                        <div class="col-md-12 under-info no-padding">
+                        <div class="col-md-9 no-padding">
+                        <div class="post-info">
+                        <p><i class="fa fa-calendar"></i> December 21, 2014</p>
+                        </div> <!-- End post-info -->
+                        </div> <!-- End col-md-9 -->
+                        <div class="col-md-3 no-padding">
+                        <p><i class="fa fa-heart pull-right" style="color: #f78e20;"><span style="color: #3f4040;">&nbsp;500</span></i></p>
+                        </div> <!-- End col-md-3 -->
+                        
+                        </div> <!-- End under-info -->
+
+                        </div> <!-- End article-info -->
+
+                                    </div> <!-- End col-md-12 -->
+                            </div> 
+                                                      
+                    </div>                    
+                </div><!-- End test layout -->
+            </div>
+        </div><!-- End portfolio items -->
                         </div>
                 </div>
         </div>
@@ -649,8 +1025,10 @@
          <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css"></script>
          <script src="js/psp-slider.min.js"></script>
          <script src="js/skrollr.js"></script>
+         <script type="text/javascript" src="js/scrollReveal.min.js"></script>
          <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
          <script src="js/jquery.counterup.min.js"></script>
+         <script src="js/bootstrap-progressbar.min.js"></script>
          
          
          

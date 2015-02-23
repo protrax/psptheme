@@ -6,7 +6,7 @@ html {
 body {
   overflow-x: hidden;
   font-family: 'Roboto', serif;
-  font-weight: 400,500,700,900;
+  font-weight: 300,400,500,700,900;
   line-height: 1.45;
   color: #3f4040;
   height: 100%;
@@ -20,6 +20,7 @@ img {
 p {
   margin-bottom: 1.3em;
   font-size: 1em;
+  font-weight: 300;
 }
 
 h1, h2, h3, h4 {
@@ -609,7 +610,11 @@ div#nav-collapse{
 /***** mega menu ****/
 
 .list-unstyled,
-.list-unstyled ul { min-width: 284px }
+.list-unstyled ul { 
+  min-width: 284px;
+  border-right: 1px dotted lightgray; 
+}
+
 
 
 /*** FAQ Page ***/
@@ -1464,10 +1469,8 @@ a.button-orange {
 /* Common style */
 figure {
   position: relative;
-  float: left;
   overflow: hidden;
   width: 100%;
-  background: #f78e20;
   text-align: center;
   cursor: pointer;
 }
@@ -1477,7 +1480,7 @@ figure img {
   display: block;
   min-height: 100%;
   max-width: 100%;
-  opacity: 0.8;
+  opacity: 1;
 }
 
 figure figcaption {
@@ -1519,7 +1522,7 @@ figure figcaption > a {
 }
 
 figure h2 span {
-  font-weight: 800;
+  font-weight: 400;
 }
 
 figure h2,
@@ -1612,10 +1615,10 @@ figure p {
   font-size: 2em;
 }
 
-
-
-
-
+.pf-single-img img {
+  padding-left: 25px;
+  padding-bottom: 10px;
+}
 
 
 /*****************************
@@ -1812,12 +1815,283 @@ figure.effect-zoe:hover p.icon-links a:first-child {
   transition-delay: 0.2s;
 }
 
+/*---------------*/
+/***** Ruby *****/
+/*---------------*/
+
+figure.effect-ruby {
+  background: #9e5406;
+}
+
+figure.effect-ruby div {
+  opacity: 1;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(1.20);
+  transform: scale(1.20);
+}
+
+figure.effect-ruby img {
+  opacity: 1;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(1.20);
+  transform: scale(1.20);
+}
+
+figure.effect-ruby:hover div {
+  opacity: 0.5;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+figure.effect-ruby:hover img {
+  opacity: 0.5;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+
+figure.effect-ruby h2 {
+  margin-top: 1.3em;
+  opacity: 0;
+  font-weight: 300;
+  text-align: center;
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(0,20px,0);
+  transform: translate3d(0,20px,0);
+}
+
+figure.effect-ruby h3 {
+  margin-top: 1.2em;
+  opacity: 0;
+  font-weight: 300;
+  text-align: center;
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(0,20px,0);
+  transform: translate3d(0,20px,0);
+}
+
+figure.effect-ruby p {
+  margin: 1em 0 0;
+  padding: 3em;
+  border: 1px solid #fff;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,20px,0) scale(1.1);
+  transform: translate3d(0,20px,0) scale(1.1);
+} 
+
+
+figure.effect-ruby:hover h2 {
+  opacity: 1;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+figure.effect-ruby:hover h3 {
+  opacity: 1;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+
+figure.effect-ruby:hover p {
+  opacity: 1;
+  -webkit-transform: translate3d(0,0,0) scale(1);
+  transform: translate3d(0,0,0) scale(1);
+}
+
+/*-----------------*/
+/***** Winston *****/
+/*-----------------*/
+
+figure.effect-winston {
+  text-align: left;
+}
+
+figure.effect-winston img {
+  -webkit-transition: opacity 0.45s;
+  transition: opacity 0.45s;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+figure.effect-winston figcaption::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  -webkit-transition: opacity 0.45s, -webkit-transform 0.45s;
+  transition: opacity 0.45s, transform 0.45s;
+  -webkit-transform: rotate3d(0,0,1,45deg);
+  transform: rotate3d(0,0,1,45deg);
+  -webkit-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+}
+
+figure.effect-winston h3 {
+  opacity: 0;
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(0,20px,0);
+  transform: translate3d(0,20px,0);
+}
+
+figure.effect-winston h4 {
+  opacity: 0;
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(0,20px,0);
+  transform: translate3d(0,20px,0);
+}
+
+.team-hover-big h3 {
+  margin-top:0 !important;
+  font-size: 1.6em;
+  text-transform: none;
+}
+
+.team-hover-big h4 {
+  margin-top:0 !important;
+  font-size: 1em !important;
+  text-transform: none;
+}
+
+.team-hover-big p {
+  font-size: 22px !important;
+}
+
+.team-hover-medium h3 {
+  margin-top:0 !important;
+  font-size: 1.3em;
+  text-transform: none;
+}
+
+.team-hover-medium h4 {
+  margin-top:0 !important;
+  font-size: 0.9em !important;
+  text-transform: none;
+}
+
+.team-hover-medium p {
+  font-size: 18px !important;
+}
+
+.team-hover-small h3 {
+  margin-top:0 !important;
+  font-size: 1.1em;
+  text-transform: none;
+}
+
+.team-hover-small h4 {
+  margin-top:0 !important;
+  font-size: 0.9em !important;
+  text-transform: none;
+}
+
+.team-hover-small p {
+  font-size: 13px !important;
+}
+
+
+figure.effect-winston p {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 0 1.5em 7% 0;
+}
+
+figure.effect-winston a {
+  margin: 0 10px;
+  color: #5d504f;
+  font-size: 170%;
+}
+
+figure.effect-winston a:hover,
+figure.effect-winston a:focus {
+  color: #cc6055;
+}
+
+figure.effect-winston p a i {
+  opacity: 0;
+  color: #FFF;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,50px,0);
+  transform: translate3d(0,50px,0);
+}
+
+figure.effect-winston:hover img {
+  opacity: 0.4;
+}
+
+
+figure.effect-winston:hover h3 {
+  opacity: 1;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+figure.effect-winston:hover h4 {
+  opacity: 1;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+figure.effect-winston:hover figcaption::before {
+  opacity: 0.7;
+  -webkit-transform: rotate3d(0,0,1,20deg);
+  transform: rotate3d(0,0,1,20deg);
+}
+
+figure.effect-winston:hover p i {
+  opacity: 1;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+
+figure.effect-winston:hover p a:nth-child(5) i {
+  -webkit-transition-delay: 0.05s;
+  transition-delay: 0.05s;
+}
+
+figure.effect-winston:hover p a:nth-child(4) i {
+  -webkit-transition-delay: 0.05s;
+  transition-delay: 0.05s;
+}
+
+figure.effect-winston:hover p a:nth-child(3) i {
+  -webkit-transition-delay: 0.05s;
+  transition-delay: 0.05s;
+}
+
+figure.effect-winston:hover p a:nth-child(2) i {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+figure.effect-winston:hover p a:first-child i {
+  -webkit-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+}
+
 
 /*****************************
 ********** Team members ******
 ******************************/
 .team-members {
  padding-bottom: 30px;
+}
+
+.team-members img {
+  width: 100%;
 }
 
 .team-members .about {
@@ -1827,7 +2101,7 @@ figure.effect-zoe:hover p.icon-links a:first-child {
 .team-members h2 {
   text-align: center;
   margin-top: 0;
-  margin-bottom: 90px;
+  margin-bottom: 60px;
   font-weight: normal;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -1848,18 +2122,60 @@ figure.effect-zoe:hover p.icon-links a:first-child {
   color: #666;
 }
 
+.team-members-side {
+ padding-bottom: 30px;
+}
+
+.team-members-side img {
+  width: 100%;
+}
+
+.team-members-side .about {
+  margin: 0.85em 0;
+}
+
+.team-members-side h2 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 90px;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.team-members-side h4 {
+   margin-top: 10px;
+   margin-bottom: 10px;
+   font-weight: 400;
+   text-transform: capitalize;
+   font-size: 1.5em;
+}
+
+.team-members-side .position {
+  margin: 0;
+  font-size: 1.1em;
+  text-transform: capitalize;
+  color: #666;
+}
 
 .team-links h4 {
   margin-left: 0px !important;
   margin-right: 15px;
+  margin-bottom: 0;
+  margin-top: 0;
   display: inline-block;
   font-weight: 400;
 }
 
 .team-links p {
-  margin-left: 0px !important;
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.team-links {
   display: inline-block;
 }
+
 
 .team-links .instagram {
   color: #81573F;
@@ -1875,6 +2191,14 @@ figure.effect-zoe:hover p.icon-links a:first-child {
 
 .team-links .pinterest {
   color: #DC0E0B;
+}
+
+.team-links .linkedin {
+  color: #007AB5;
+}
+
+.team-links .google {
+  color: #AE1811;
 }
 
 .team-links {
@@ -2027,7 +2351,7 @@ figure.effect-zoe:hover p.icon-links a:first-child {
  .author-image img {
    width: 1140px !important;
    height: auto !important;
-   border: 5px solid lightgray;
+   
  }
  
  .author a {
@@ -2056,11 +2380,16 @@ figure.effect-zoe:hover p.icon-links a:first-child {
 }
 
 .listview-content {
-  padding: 0;
+  padding: 20px;
+  background-color: #f5f5f5;
+  height: 285px;
 }
+
 
 .listview {
   margin-bottom: 50px;
+  overflow: hidden;
+  height: 285px;
 }
 
 .listview a {
@@ -2081,10 +2410,6 @@ figure.effect-zoe:hover p.icon-links a:first-child {
   text-transform: capitalize;
 }
 
-.listview img {
-  margin-top: 10px;
-  border: 5px solid lightgray;
-}
 
 @media screen and (max-width: 1200px) {
   .buttons {
@@ -2256,24 +2581,18 @@ textarea.form-control.no-radius {
 
 .post-info p {
    margin-right: 10px;
-   margin-top: 10px;
+   margin-top: 5px;
+   margin-bottom: 5px;
 }
 
 .post-info a {
   color: #f78e20;
 }
 
-.single-post {
-  padding: 0;
-}
-
-.single-post img {
-  border: 5px solid lightgray;
-}
-
 
 .single-post { 
    padding: 0;
+   
 }
 
 .single-post a {
@@ -2286,8 +2605,7 @@ textarea.form-control.no-radius {
 
 .single-post h2 {
   font-weight: 400;
-  text-transform: capitalize;
-  margin-top: 5px;
+  margin-top: 25px;
 }
 
 .single-post-author {
@@ -2311,7 +2629,6 @@ textarea.form-control.no-radius {
 .single-post-author h3 {
   font-weight: 400;
   margin-left: 10px;
-  text-transform: capitalize;
   margin-top: 20px;
 }
 
@@ -2326,19 +2643,13 @@ textarea.form-control.no-radius {
 }
 
 .related-posts {
-  padding: 0;
   margin-top: 25px;
-  margin-bottom: 25px;
-}
 
-.related-posts img {
-  border: 3px solid lightgray;
 }
 
 .related-posts h2 {
   text-align: center;
-  font-weight: 500;
-  text-transform: uppercase;
+  font-weight: 400;
   margin-top: 15px;
   margin-bottom: 30px;
 }
@@ -2347,7 +2658,6 @@ textarea.form-control.no-radius {
   margin-top: 15px;
   font-weight: 400;
   text-align: left;
-  text-transform: capitalize;
 }
 
 .comments {
@@ -2920,7 +3230,7 @@ div.folded h2:after {
 
 
 /* ============================================================
-   11. TABS
+   20. TABS
 /* ============================================================ */
 
 .toggle-tabs-holder {
@@ -3040,4 +3350,37 @@ li.active-tab {
     -ms-transition: width 6s ease-in-out;
     -o-transition: width 6s ease-in-out;
     transition: width 6s ease-in-out;
+}
+
+.iso-portfolio-item {
+  margin-bottom: 10px;
+}
+
+.pf-single h2 {
+   margin-top: 0;
+}
+
+.pf-single a {
+  color: #f78e20;
+}
+
+.pf-single a:hover {
+  text-decoration: underline;
+}
+
+/* ============================================================
+   21. BLOG MASONRY
+/* ============================================================ */
+
+.article-info h3 {
+  margin-top: 0;
+}
+
+.article-info p {
+  margin-top: 0;
+  font-weight: 300;
+}
+
+.article-info a:hover {
+  color: #f78e20;
 }

@@ -6,14 +6,14 @@
         <meta content="IE=edge" http-equiv="X-UA-Compatible">
         <meta content="width=device-width, initial-scale=1" name="viewport">
 
-        <title>Index</title>
+        <title>Portfolio</title>
 
         <!-- Google font -->
         
         <!-- Font awesome -->
 
         <!-- Bootstrap -->
-        <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,500,900' rel='stylesheet' type='text/css'>
+         <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,700,500,900' rel='stylesheet' type='text/css'>
 
         <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
         <!-- Bootstrap -->
@@ -146,15 +146,11 @@
                                                         <li>
                                                                 <a href="page-portfolio-3-columns.html">3 Columns</a>
                                                         </li>
-                                                        <li>
-                                                                <a href="page-portfolio-right-sidebar.html">Portfolio Right Sidebar</a>
-                                                        </li>     
+                                                             
 
                                                        
 
-                                                        <li>
-                                                                <a href="page-portfolio.html">Portfolio Fullwidth</a>
-                                                        </li>
+                                                         
 
                                                         <li>
                                                                 <a href="page-portfolio-masonry.html">Portfolio Masonry</a>
@@ -231,8 +227,8 @@
                                                                 <a href="page-blog-masonry.html">Masonry</a>
                                                         </li>
 
-                                                        <li>
-                                                                <a href="page-blog-grid-fullwidth.html">Blog Grid</a>
+                                                         <li>
+                                                                <a href="page-blog-grid.html">Blog Grid</a>
                                                         </li>
 
                                                         <li>
@@ -282,11 +278,11 @@
                                                       <h3 class="normal">Elements 1</h3>
                                                     </li>
                                                        <li><a href="#"> Tabs / Accordions</a></li>
-                                                       <li><a href="#"> Progress Bars </a></li>
+                                                       <li><a href="progress-bars.html"> Progress Bars </a></li>
                                                        <li><a href="#"> Pie Charts </a></li>
                                                        <li><a href="table.html"> Pricing Tables </a></li></li>
                                                        <li><a href="#"> Counters </a></li>
-                                                       <li><a href="#"> Alerts </a></li>
+                                                        
                                                        <li><a href="columns.html"> Columns </a></li>
 
                                                   </ul>
@@ -351,52 +347,55 @@
                 </div><!-- /.container-fluid -->
         </nav><!-- HTML to write -->
 
-        <!-- Start Main title -->
-                <div class="well well-lg main-page-header">
-                <div class="container">
-                        <div class="col-md-8">
-                                <h1>Portfolio <span>page</span></h1>
-                        </div>
+        <!-- Starting Title Bar -->
 
+        <div class="well well-lg main-page-header-img" style="background: url('images/slider-4.jpg');">
+
+                <div class="container header-img-container animated fadeIn">
+                        <div class="col-md-8">
+                            <h1 class="bold">3 column <span class="txt-color normal">portfolio</span></h1>
+                        </div>
                         <div class="col-md-4">
                                 <ol class="breadcrumb">
                                         <li>
-                                                <a href="#">Home</a>
+                                           <a href="#">portfolio</a>
                                         </li>
-
-                                        <li class="active">Blog</li>
+                                        <li class="active">3 column</li>
                                 </ol>
                         </div>
                 </div>
-        </div>
+        </div><!-- Ending Title Bar -->
 
-        <!-- End main title -->
+        <!-- Start Masonry section -->
 
-        <!-- Starting portfolio -->
-
-        <div class="row"> <!-- Start portfolio filter -->
+        <div class="row filter-group">
             <div class="container">
-                <h2>See our work</h2>
-                                <div id="filters-portfolio">
+
+                <div id="filters-portfolio">
                     <div class="ui-group">
-                        <button class=
-                        "button btn btn-md btn-default is-checked" data-filter=
-                        "*">show all</button> <button class=
-                        "button btn btn-md btn-default" data-filter=
-                        ".web">Web</button> <button class=
-                        "button btn btn-md btn-default" data-filter=
-                        ".photo">Photo</button> <button class=
-                        "button btn btn-md btn-default" data-filter=
-                        ".facebook">Facebook</button> <button class=
-                        "button btn btn-md btn-default" data-filter=
-                        ".app">App</button> <button class=
-                        "button btn btn-md btn-default" data-filter=
-                        ".art">Art</button>
+                        <a class=
+                        "button btn" data-filter=
+                        "*">show all</a>
+
+                        <a class=
+                        "button btn" data-filter=
+                        ".web">Web</a>
+
+                        <a class="button btn" data-filter=
+                        ".photo">Photo</a>
+
+                         <a class="button btn" data-filter=
+                        ".facebook">Facebook</a>
+
+                         <a class=
+                        "button btn" data-filter=
+                        ".app">App</a> <a class=
+                        "button btn" data-filter=
+                        ".art">Art</a>
                     </div>
                 </div>
             </div>
-        </div> <!-- End portfolio filter -->
-        
+        </div>
         <!-- Start portfolio items -->
         <div class="container">
                 <div class="col-md-12">
@@ -405,233 +404,184 @@
 
                 <div class="row">
                     <div class=
-                    "iso-portfolio-item portfolio-page web col-xs-12 col-sm-6 col-md-4">
-                        <div class="thumbnail">
-                            <div style=
-                            " background: url('http://placehold.it/300x300') center no-repeat; height: inherit; background-size: cover; min-height: 23em; position: relative; max-height: 450px;">
+                    "iso-portfolio-item portfolio-page col-xs-12 col-sm-6 col-md-4 web">
+                            <div>
+                                <figure class="effect-ruby">
+                                         <div style=
+                            " background: url('images/member5.jpg') center no-repeat; height: inherit; background-size: cover; min-height: 23em; position: relative; max-height: 450px;">
                             </div>
+                                    <figcaption>
+                                           <h2>Portfolio Item</h2>
+                                            <p>Bubba likes to appear out of thin air.</p>
+                                            <a href="#">View more</a>
+                                        </figcaption>         
+                                    </figure>
 
-                            <div class="caption">
-
-                                <h3>Article number 1</h3>
-
-
-                                
-                            </div>
-                        </div>
+                            </div> 
+                                                    
                     </div>
 
+
+
                     <div class=
-                    "iso-portfolio-item portfolio-page web col-xs-12 col-sm-6 col-md-4">
-                        <div class="thumbnail">
-                            <div style=
-                            " background: url('http://placehold.it/300x300') center no-repeat; height: inherit; background-size: cover; min-height: 23em; position: relative; max-height: 450px;">
+                    "iso-portfolio-item portfolio-page col-xs-12 col-sm-6 col-md-4 web">
+                            <div>
+                                <figure class="effect-ruby">
+                                         <div style=
+                            " background: url('images/member6.jpg') center no-repeat; height: inherit; background-size: cover; min-height: 23em; position: relative; max-height: 450px;">
                             </div>
+                                    <figcaption>
+                                           <h2>Portfolio <span>item</span></h2>
+                                            <p>Bubba likes to appear out of thin air.</p>
+                                            
+                                        </figcaption>           
+                                    </figure>
 
-                            <div class="caption">
-                                
-
-                                <h3>Article number 1</h3>
-
-                                
-
-                                
-                            </div>
-                        </div>
+                            </div> 
+                                                     
                     </div>
 
+
+
                     <div class=
-                    "iso-portfolio-item portfolio-page photo col-xs-12 col-sm-6 col-md-4">
-                        <div class="thumbnail">
-                            <div style=
-                            " background: url('http://placehold.it/300x300') center no-repeat; height: inherit; background-size: cover; min-height: 23em; position: relative; max-height: 450px;">
+                    "iso-portfolio-item portfolio-page col-xs-12 col-sm-6 col-md-4 art">
+                            <div>
+                                <figure class="effect-ruby">
+                                         <div style=
+                            " background: url('images/member5.jpg') center no-repeat; height: inherit; background-size: cover; min-height: 23em; position: relative; max-height: 450px;">
                             </div>
+                                    <figcaption>
+                                           <h2>Portfolio <span>item</span></h2>
+                                            <p>Bubba likes to appear out of thin air.</p>
+                                            <a href="#">View more</a>
+                                        </figcaption>           
+                                    </figure>
 
-                            <div class="caption">
-
-
-                                <h3>Article number 1</h3>
-
-                            </div>
-                        </div>
+                            </div> 
+                                                       
                     </div>
 
+
+
+
+                    
+
+
                     <div class=
-                    "iso-portfolio-item portfolio-page facebook col-xs-12 col-sm-6 col-md-4">
-                    <div class="thumbnail">
-                            <div style=
-                            " background: url('http://placehold.it/300x300') center no-repeat; height: inherit; background-size: cover; min-height: 23em; position: relative; max-height: 450px;">
+                    "iso-portfolio-item portfolio-page col-xs-12 col-sm-6 col-md-4 app">
+                            <div>
+                                <figure class="effect-ruby">
+                                         <div style=
+                            " background: url('images/member6.jpg') center no-repeat; height: inherit; background-size: cover; min-height: 23em; position: relative; max-height: 450px;">
                             </div>
+                                    <figcaption>
+                                           <h2>Portfolio <span>item</span></h2>
+                                            <p>Bubba likes to appear out of thin air.</p>
+                                            <a href="#">View more</a>
+                                        </figcaption>           
+                                    </figure>
 
-                            <div class="caption">
-                                
+                            </div> 
+                                                       
+                    </div>   
 
-                                <h3>Article number 1</h3>
 
-                                
-                                
+                    <div class=
+                    "iso-portfolio-item portfolio-page col-xs-12 col-sm-6 col-md-4 art">
+                            <div>
+                                <figure class="effect-ruby">
+                                         <div style=
+                            " background: url('images/member5.jpg') center no-repeat; height: inherit; background-size: cover; min-height: 23em; position: relative; max-height: 450px;">
                             </div>
-                        </div>
+                                    <figcaption>
+                                           <h2>Portfolio <span>item</span></h2>
+                                            <p>Bubba likes to appear out of thin air.</p>
+                                            <a href="#">View more</a>
+                                        </figcaption>           
+                                    </figure>
+
+                            </div>                           
+                    </div>                                                                           
+                    <div class=
+                    "iso-portfolio-item portfolio-page col-xs-12 col-sm-6 col-md-4 photo">
+                            <div>
+                                <figure class="effect-ruby">
+                                         <div style=
+                            " background: url('images/member6.jpg') center no-repeat; height: inherit; background-size: cover; min-height: 23em; position: relative; max-height: 450px;">
+                            </div>
+                                    <figcaption>
+                                           <h2>Portfolio <span>item</span></h2>
+                                            <p>Bubba likes to appear out of thin air.</p>
+                                            <a href="#">View more</a>
+                                        </figcaption>           
+                                    </figure>
+
+                            </div> 
+                                                      
                     </div>
 
-                    <div class=
-                    "iso-portfolio-item portfolio-page photo col-xs-12 col-sm-6 col-md-4">
-                        <div class="thumbnail">
-                            <div style=
-                            " background: url('http://placehold.it/300x300') center no-repeat; height: inherit; background-size: cover; min-height: 23em; position: relative; max-height: 450px;">
-                            </div>
 
-                            <div class="caption">
-                                
-
-                                <h3>Article number 1</h3>
-
-                                
-
-                                
-                            </div>
-                        </div>
-                    </div>
+                    
 
                     <div class=
-                    "iso-portfolio-item portfolio-page web col-xs-12 col-sm-6 col-md-4">
-                        <div class="thumbnail">
-                            <div style=
-                            " background: url('http://placehold.it/300x300') center no-repeat; height: inherit; background-size: cover; min-height: 23em; position: relative; max-height: 450px;">
+                    "iso-portfolio-item portfolio-page col-xs-12 col-sm-6 col-md-4 photo">
+                            <div>
+                                <figure class="effect-ruby">
+                                         <div style=
+                            " background: url('images/member5.jpg') center no-repeat; height: inherit; background-size: cover; min-height: 23em; position: relative; max-height: 450px;">
                             </div>
+                                    <figcaption>
+                                           <h2>Portfolio <span>item</span></h2>
+                                            <p>Bubba likes to appear out of thin air.</p>
+                                            <a href="#">View more</a>
+                                        </figcaption>           
+                                    </figure>
 
-                            <div class="caption">
-                                
-
-                                <h3>Article number 1</h3>
-
-                                
-
-                                
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class=
-                    "iso-portfolio-item portfolio-page app col-xs-12 col-sm-6 col-md-4">
-                        <div class="thumbnail">
-                            <div style=
-                            " background: url('http://placehold.it/300x300') center no-repeat; height: inherit; background-size: cover; min-height: 23em; position: relative; max-height: 450px;">
-                            </div>
-
-                            <div class="caption">
-                                
-
-                                <h3>Article number 1</h3>
-
-                                
-
-                                
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class=
-                    "iso-portfolio-item portfolio-page photo col-xs-12 col-sm-6 col-md-4">
-                        <div class="thumbnail">
-                            <div style=
-                            " background: url('http://placehold.it/300x300') center no-repeat; height: inherit; background-size: cover; min-height: 23em; position: relative; max-height: 450px;">
-                            </div>
-
-                            <div class="caption">
-                                
-
-                                <h3>Article number 1</h3>
-
-                                
-
-                                
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class=
-                    "iso-portfolio-item portfolio-page facebook col-xs-12 col-sm-6 col-md-4">
-                    <div class="thumbnail">
-                            <div style=
-                            " background: url('http://placehold.it/300x300') center no-repeat; height: inherit; background-size: cover; min-height: 23em; position: relative; max-height: 450px;">
-                            </div>
-
-                            <div class="caption">
-                                
-
-                                <h3>Article number 1</h3>
-
-                                
-
-                                
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class=
-                    "iso-portfolio-item portfolio-page art col-xs-12 col-sm-6 col-md-4">
-                        <div class="thumbnail">
-                            <div style=
-                            " background: url('http://placehold.it/300x300') center no-repeat; height: inherit; background-size: cover; min-height: 23em; position: relative; max-height: 450px;">
-                            </div>
-
-                            <div class="caption">
-                                
-
-                                <h3>Article number 1</h3>
-
-                               
-
-                               
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class=
-                    "iso-portfolio-item portfolio-page facebook col-xs-12 col-sm-6 col-md-4">
-                    <div class="thumbnail">
-                            <div style=
-                            " background: url('http://placehold.it/300x300') center no-repeat; height: inherit; background-size: cover; min-height: 23em; position: relative; max-height: 450px;">
-                            </div>
-
-                            <div class="caption">
-                                
-
-                                <h3>Article number 1</h3>
-
-                                
-
-                                
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class=
-                    "iso-portfolio-item portfolio-page photo col-xs-12 col-sm-6 col-md-4">
-                        <div class="thumbnail">
-                            <div style=
-                            " background: url('http://placehold.it/300x300') center no-repeat; height: inherit; background-size: cover; min-height: 23em; position: relative; max-height: 450px;">
-                            </div>
-
-                            <div class="caption">
-                                
-
-                                <h3>Article number 1</h3>
-
-                                
-
-                               
-                            </div>
-                        </div>
+                            </div>                        
                     </div> 
+
+
+                    <div class=
+                    "iso-portfolio-item portfolio-page col-xs-12 col-sm-6 col-md-4 facebook">
+                            <div>
+                                <figure class="effect-ruby">
+                                         <div style=
+                            " background: url('images/member6.jpg') center no-repeat; height: inherit; background-size: cover; min-height: 23em; position: relative; max-height: 450px;">
+                            </div>
+                                    <figcaption>
+                                           <h2>Portfolio <span>item</span></h2>
+                                            <p>Bubba likes to appear out of thin air.</p>
+                                            <a href="#">View more</a>
+                                        </figcaption>           
+                                    </figure>
+
+                            </div>                       
+                    </div>  
+
+                   <div class=
+                    "iso-portfolio-item portfolio-page col-xs-12 col-sm-6 col-md-4 art">
+                            <div>
+                                <figure class="effect-ruby">
+                                         <div style=
+                            " background: url('images/member5.jpg') center no-repeat; height: inherit; background-size: cover; min-height: 23em; position: relative; max-height: 450px;">
+                            </div>
+                                    <figcaption>
+                                           <h2>Portfolio <span>item</span></h2>
+                                            <p>Bubba likes to appear out of thin air.</p>
+                                            <a href="#">View more</a>
+                                        </figcaption>           
+                                    </figure>
+
+                            </div>                       
+                    </div>  
+
+
+                  
                 </div><!-- End test layout -->
             </div>
-
         </div><!-- End portfolio items -->
-
-        </div>
-
+</div>
+<div class="spacer-50"></div>
  <footer id="footer">
         <div id="footer-background" style="background-image: url(http://theme-one.com/mobius/wp-content/uploads/sites/2/2015/01/hero-bg.jpg)"></div>
 
@@ -725,8 +675,10 @@
          <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css"></script>
          <script src="js/psp-slider.min.js"></script>
          <script src="js/skrollr.js"></script>
+         <script type="text/javascript" src="js/scrollReveal.min.js"></script>
          <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
          <script src="js/jquery.counterup.min.js"></script>
+         <script src="js/bootstrap-progressbar.min.js"></script>
          
          
          

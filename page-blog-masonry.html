@@ -6,14 +6,14 @@
         <meta content="IE=edge" http-equiv="X-UA-Compatible">
         <meta content="width=device-width, initial-scale=1" name="viewport">
 
-        <title>Index</title>
+        <title>Blog</title>
 
         <!-- Google font -->
         
         <!-- Font awesome -->
 
         <!-- Bootstrap -->
-        <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,500,900' rel='stylesheet' type='text/css'>
+         <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,700,500,900' rel='stylesheet' type='text/css'>
 
         <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
         <!-- Bootstrap -->
@@ -152,9 +152,7 @@
 
                                                        
 
-                                                        <li>
-                                                                <a href="page-portfolio.html">Portfolio Fullwidth</a>
-                                                        </li>
+                                                         
 
                                                         <li>
                                                                 <a href="page-portfolio-masonry.html">Portfolio Masonry</a>
@@ -231,8 +229,8 @@
                                                                 <a href="page-blog-masonry.html">Masonry</a>
                                                         </li>
 
-                                                        <li>
-                                                                <a href="page-blog-grid-fullwidth.html">Blog Grid</a>
+                                                         <li>
+                                                                <a href="page-blog-grid.html">Blog Grid</a>
                                                         </li>
 
                                                         <li>
@@ -282,11 +280,11 @@
                                                       <h3 class="normal">Elements 1</h3>
                                                     </li>
                                                        <li><a href="#"> Tabs / Accordions</a></li>
-                                                       <li><a href="#"> Progress Bars </a></li>
+                                                       <li><a href="progress-bars.html"> Progress Bars </a></li>
                                                        <li><a href="#"> Pie Charts </a></li>
                                                        <li><a href="table.html"> Pricing Tables </a></li></li>
                                                        <li><a href="#"> Counters </a></li>
-                                                       <li><a href="#"> Alerts </a></li>
+                                                        
                                                        <li><a href="columns.html"> Columns </a></li>
 
                                                   </ul>
@@ -351,558 +349,601 @@
                 </div><!-- /.container-fluid -->
         </nav><!-- HTML to write -->
 
-    <div class="row row-offcanvas row-offcanvas-right">
-        <div class="well well-lg main-page-header">
-            <div class="container">
-                <div class="col-md-8">
-                    <h1>Blog <span>Page</span></h1>
+    <div class="well well-lg main-page-header-img" style="background: url('images/slider-4.jpg');">
+
+                <div class="container header-img-container animated fadeIn">
+                        <div class="col-md-8">
+                            <h1 class="bold">Blog <span class="txt-color normal">Masonry</span></h1>
+                        </div>
+                        <div class="col-md-4">
+                                <ol class="breadcrumb">
+                                        <li>
+                                           <a href="#">Blog</a>
+                                        </li>
+                                        <li class="active">Masonry</li>
+                                </ol>
+                        </div>
                 </div>
+        </div><!-- Ending Title Bar -->
+        <div class="spacer-50"></div>
+        <!-- Start Masonry section -->
 
-                <div class="col-md-4">
-                    <ol class="breadcrumb">
-                        <li>
-                            <a href="#">Home</a>
-                        </li>
-
-                        <li class="active">Blog</li>
-                    </ol>
-                </div>
-            </div>
-        </div><!-- Start Masonry section -->
-
-        <div class="row">
+        <div class="row filter-group">
             <div class="container">
-                <div id="filters">
+
+                <div id="filters-portfolio">
                     <div class="ui-group">
-                        <button class=
-                        "button btn btn-md btn-default is-checked" data-filter=
-                        "*">show all</button> <button class=
-                        "button btn btn-md btn-default" data-filter=
-                        ".web">Web</button> <button class=
-                        "button btn btn-md btn-default" data-filter=
-                        ".photo">Photo</button> <button class=
-                        "button btn btn-md btn-default" data-filter=
-                        ".facebook">Facebook</button> <button class=
-                        "button btn btn-md btn-default" data-filter=
-                        ".app">App</button> <button class=
-                        "button btn btn-md btn-default" data-filter=
-                        ".art">Art</button>
+                        <a class=
+                        "button btn" data-filter=
+                        "*">show all</a>
+
+                        <a class=
+                        "button btn" data-filter=
+                        ".web">Web</a>
+
+                        <a class="button btn" data-filter=
+                        ".photo">Photo</a>
+
+                         <a class="button btn" data-filter=
+                        ".facebook">Facebook</a>
+
+                         <a class=
+                        "button btn" data-filter=
+                        ".app">App</a> <a class=
+                        "button btn" data-filter=
+                        ".art">Art</a>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="col-md-12"><!-- Starrt masonry section -->
-            <div class="isotope">
+       <div class="spacer-50"></div>
+        
+        
+        <!-- Start portfolio items -->
+        
+          <div class="col-md-12 no-padding">
+            <div class="iso-portfolio-page">
                 <div class="grid-sizer"></div><!-- Test layout -->
 
                 <div class="row">
                     <div class=
-                    "iso-item blog-masonry web col-xs-12 col-sm-6 col-md-6">
-                        <div class="thumbnail">
-                            <div style=
-                            " background: url('http://placehold.it/300x300') center no-repeat; height: inherit; background-size: cover; min-height: 23em; position: relative; max-height: 450px;">
+                    "iso-portfolio-item portfolio-page col-xs-12 col-sm-6 col-md-3 web">
+                            <div>
+                                <figure class="effect-ruby">
+                                         <div style=
+                            " background: url('images/member5.jpg') center no-repeat; height: inherit; background-size: cover; min-height: 23em; position: relative; max-height: 450px;">
                             </div>
+                                    <figcaption>
+                                           <h2>DNB Meeting</h2>
+                                            <p>Bubba likes to appear out of thin air.</p>
+                                            <a href="#">View more</a>
+                                        </figcaption>           
+                                    </figure>
+                        <div class="col-md-12 no-padding">
+                        <div class="post-info">
+                        <p><i class="fa fa-user"></i> Posted by: <a href="#">Admin</a></p>
+                        </div> <!-- End post-info -->
+                        <div class="article-info">
+                        <h3><a href="#">Random Article</a></h3>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam . Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        <hr>
+                        <div class="col-md-12 under-info no-padding">
+                        <div class="col-md-9 no-padding">
+                        <div class="post-info">
+                        <p><i class="fa fa-calendar"></i> December 21, 2014</p>
+                        </div> <!-- End post-info -->
+                        </div> <!-- End col-md-9 -->
+                        <div class="col-md-3 no-padding">
+                        <p><i class="fa fa-heart pull-right" style="color: #f78e20;"><span style="color: #3f4040;">&nbsp;500</span></i></p>
+                        </div> <!-- End col-md-3 -->
+                        
+                        </div> <!-- End under-info -->
 
-                            <div class="caption">
-                                <div class="col-md-12">
-                                    <p class="pull-right">Posted by: <a href=
-                                    "#">Admin</a></p>
-                                </div>
+                        </div> <!-- End article-info -->
 
-                                <h3>Article number 1</h3>
+                                    </div> <!-- End col-md-12 -->
+                            </div> <!-- End info -->                  
+                    </div> <!-- End Article -->
 
-                                <p>Lorem ipsum dolor sit amet, consectetur
-                                adipisicing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut
-                                enim ad minim veniam, quis nostrud exercitation
-                                ullamco laboris nisi ut aliquip ex ea commodo
-                                consequat. Duis aute irure dolor in
-                                reprehenderit in voluptate velit esse cillum
-                                dolore eu fugiat nulla pariatur. Excepteur sint
-                                occaecat cupidatat non proident, sunt in culpa
-                                qui officia deserunt mollit anim id est
-                                laborum.</p>
-                                <hr>
 
-                                <p><span class=
-                                "glyphicon glyphicon-calendar">On:December 21,
-                                2014</span> <span class=
-                                "glyphicon glyphicon-heart-empty">Comments:
-                                120</span></p>
-
-                                <p><a class="btn btn-primary" href=
-                                "#">Button</a> <a class="btn btn-default" href=
-                                "#">Button</a></p>
-                            </div>
-                        </div>
-                    </div>
 
                     <div class=
-                    "iso-item blog-masonry web col-xs-12 col-sm-6 col-md-3">
-                        <div class="thumbnail">
-                            <div style=
-                            " background: url('http://placehold.it/300x300') center no-repeat; height: inherit; background-size: cover; min-height: 23em; position: relative; max-height: 450px;">
+                    "iso-portfolio-item portfolio-page col-xs-12 col-sm-6 col-md-3 web">
+                            <div>
+                                <figure class="effect-ruby">
+                                         <div style=
+                            " background: url('images/parallax-bg-1.png') center no-repeat; height: inherit; background-size: cover; min-height: 23em; position: relative; max-height: 450px;">
                             </div>
+                                    <figcaption>
+                                           <h2>Portfolio <span>item</span></h2>
+                                            <p>Bubba likes to appear out of thin air.</p>
+                                            
+                                        </figcaption>           
+                                    </figure>
+                                  <div class="col-md-12 no-padding">
+                        <div class="post-info">
+                        <p><i class="fa fa-user"></i> Posted by: <a href="#">Admin</a></p>
+                        </div> <!-- End post-info -->
+                        <div class="article-info">
+                        <h3><a href="#">Random Article</a></h3>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam . Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        <hr>
+                        <div class="col-md-12 under-info no-padding">
+                        <div class="col-md-9 no-padding">
+                        <div class="post-info">
+                        <p><i class="fa fa-calendar"></i> December 21, 2014</p>
+                        </div> <!-- End post-info -->
+                        </div> <!-- End col-md-9 -->
+                        <div class="col-md-3 no-padding">
+                        <p><i class="fa fa-heart pull-right" style="color: #f78e20;"><span style="color: #3f4040;">&nbsp;500</span></i></p>
+                        </div> <!-- End col-md-3 -->
+                        
+                        </div> <!-- End under-info -->
 
-                            <div class="caption">
-                                <div class="col-md-12">
-                                    <p class="pull-right">Posted by: <a href=
-                                    "#">Admin</a></p>
-                                </div>
+                        </div> <!-- End article-info -->
 
-                                <h3>Article number 1</h3>
-
-                                <p>Lorem ipsum dolor sit amet, consectetur
-                                adipisicing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut
-                                enim ad minim veniam, quis nostrud exercitation
-                                ullamco laboris nisi ut aliquip ex ea commodo
-                                consequat. Duis aute irure dolor in
-                                reprehenderit in voluptate velit esse cillum
-                                dolore eu fugiat nulla pariatur. Excepteur sint
-                                occaecat cupidatat non proident, sunt in culpa
-                                qui officia deserunt mollit anim id est
-                                laborum.</p>
-                                <hr>
-
-                                <p><span class=
-                                "glyphicon glyphicon-calendar">On:December 21,
-                                2014</span> <span class=
-                                "glyphicon glyphicon-heart-empty">Comments:
-                                120</span></p>
-
-                                <p><a class="btn btn-primary" href=
-                                "#">Button</a> <a class="btn btn-default" href=
-                                "#">Button</a></p>
-                            </div>
-                        </div>
+                                    </div> <!-- End col-md-12 -->
+                            </div> 
+                                                     
                     </div>
+
+
 
                     <div class=
-                    "iso-item blog-masonry photo col-xs-12 col-sm-6 col-md-3">
-                        <div class="thumbnail">
-                            <div style=
-                            " background: url('http://placehold.it/300x300') center no-repeat; height: inherit; background-size: cover; min-height: 23em; position: relative; max-height: 450px;">
+                    "iso-portfolio-item portfolio-page col-xs-12 col-sm-6 col-md-3 art">
+                            <div>
+                                <figure class="effect-ruby">
+                                         <div style=
+                            " background: url('images/pf-item-4.jpg') center no-repeat; height: inherit; background-size: cover; min-height: 23em; position: relative; max-height: 450px;">
                             </div>
+                                    <figcaption>
+                                           <h2>Portfolio <span>item</span></h2>
+                                            <p>Bubba likes to appear out of thin air.</p>
+                                            <a href="#">View more</a>
+                                        </figcaption>           
+                                    </figure>
+                                 <div class="col-md-12 no-padding">
+                        <div class="post-info">
+                        <p><i class="fa fa-user"></i> Posted by: <a href="#">Admin</a></p>
+                        </div> <!-- End post-info -->
+                        <div class="article-info">
+                        <h3><a href="#">Random Article</a></h3>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam . Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        <hr>
+                        <div class="col-md-12 under-info no-padding">
+                        <div class="col-md-9 no-padding">
+                        <div class="post-info">
+                        <p><i class="fa fa-calendar"></i> December 21, 2014</p>
+                        </div> <!-- End post-info -->
+                        </div> <!-- End col-md-9 -->
+                        <div class="col-md-3 no-padding">
+                        <p><i class="fa fa-heart pull-right" style="color: #f78e20;"><span style="color: #3f4040;">&nbsp;500</span></i></p>
+                        </div> <!-- End col-md-3 -->
+                        
+                        </div> <!-- End under-info -->
 
-                            <div class="caption">
-                                <div class="col-md-12">
-                                    <p class="pull-right">Posted by: <a href=
-                                    "#">Admin</a></p>
-                                </div>
+                        </div> <!-- End article-info -->
 
-                                <h3>Article number 1</h3>
-
-                                <p>Lorem ipsum dolor sit amet, consectetur
-                                adipisicing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut
-                                enim ad minim veniam, quis nostrud exercitation
-                                ullamco laboris nisi ut aliquip ex ea commodo
-                                consequat. Duis aute irure dolor in
-                                reprehenderit in voluptate velit esse cillum
-                                dolore eu fugiat nulla pariatur. Excepteur sint
-                                occaecat cupidatat non proident, sunt in culpa
-                                qui officia deserunt mollit anim id est
-                                laborum.</p>
-                                <hr>
-
-                                <p><span class=
-                                "glyphicon glyphicon-calendar">On:December 21,
-                                2014</span> <span class=
-                                "glyphicon glyphicon-heart-empty">Comments:
-                                120</span></p>
-
-                                <p><a class="btn btn-primary" href=
-                                "#">Button</a> <a class="btn btn-default" href=
-                                "#">Button</a></p>
-                            </div>
-                        </div>
+                                    </div> <!-- End col-md-12 -->
+                            </div> 
+                                                       
                     </div>
+
+
+
 
                     <div class=
-                    "iso-item blog-masonry facebook col-xs-12 col-sm-6 col-md-3">
-                    <div class="thumbnail">
-                            <div style=
-                            " background: url('http://placehold.it/300x300') center no-repeat; height: inherit; background-size: cover; min-height: 23em; position: relative; max-height: 450px;">
+                    "iso-portfolio-item portfolio-page col-xs-12 col-sm-6 col-md-3 app">
+                            <div>
+                                <figure class="effect-ruby">
+                                         <div style=
+                            " background: url('images/pf-item-4.jpg') center no-repeat; height: inherit; background-size: cover; min-height: 23em; position: relative; max-height: 450px;">
                             </div>
+                                    <figcaption>
+                                           <h2>Portfolio <span>item</span></h2>
+                                            <p>Bubba likes to appear out of thin air.</p>
+                                            <a href="#">View more</a>
+                                        </figcaption>           
+                                    </figure>
+                                 <div class="col-md-12 no-padding">
+                        <div class="post-info">
+                        <p><i class="fa fa-user"></i> Posted by: <a href="#">Admin</a></p>
+                        </div> <!-- End post-info -->
+                        <div class="article-info">
+                        <h3><a href="#">Random Article</a></h3>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam . Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        <hr>
+                        <div class="col-md-12 under-info no-padding">
+                        <div class="col-md-9 no-padding">
+                        <div class="post-info">
+                        <p><i class="fa fa-calendar"></i> December 21, 2014</p>
+                        </div> <!-- End post-info -->
+                        </div> <!-- End col-md-9 -->
+                        <div class="col-md-3 no-padding">
+                        <p><i class="fa fa-heart pull-right" style="color: #f78e20;"><span style="color: #3f4040;">&nbsp;500</span></i></p>
+                        </div> <!-- End col-md-3 -->
+                        
+                        </div> <!-- End under-info -->
 
-                            <div class="caption">
-                                <div class="col-md-12">
-                                    <p class="pull-right">Posted by: <a href=
-                                    "#">Admin</a></p>
-                                </div>
+                        </div> <!-- End article-info -->
 
-                                <h3>Article number 1</h3>
+                                    </div> <!-- End col-md-12 -->
+                            </div> 
+                                                    
+                    </div> 
 
-                                <p>Lorem ipsum dolor sit amet, consectetur
-                                adipisicing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut
-                                enim ad minim veniam, quis nostrud exercitation
-                                ullamco laboris nisi ut aliquip ex ea commodo
-                                consequat. Duis aute irure dolor in
-                                reprehenderit in voluptate velit esse cillum
-                                dolore eu fugiat nulla pariatur. Excepteur sint
-                                occaecat cupidatat non proident, sunt in culpa
-                                qui officia deserunt mollit anim id est
-                                laborum.</p>
-                                <hr>
-
-                                <p><span class=
-                                "glyphicon glyphicon-calendar">On:December 21,
-                                2014</span> <span class=
-                                "glyphicon glyphicon-heart-empty">Comments:
-                                120</span></p>
-
-                                <p><a class="btn btn-primary" href=
-                                "#">Button</a> <a class="btn btn-default" href=
-                                "#">Button</a></p>
-                            </div>
-                        </div>
-                    </div>
 
                     <div class=
-                    "iso-item blog-masonry photo col-xs-12 col-sm-6 col-md-6">
-                        <div class="thumbnail">
-                            <div style=
-                            " background: url('http://placehold.it/300x300') center no-repeat; height: inherit; background-size: cover; min-height: 23em; position: relative; max-height: 450px;">
+                    "iso-portfolio-item portfolio-page col-xs-12 col-sm-6 col-md-3 app">
+                            <div>
+                                <figure class="effect-ruby">
+                                         <div style=
+                            " background: url('images/pf-item-4.jpg') center no-repeat; height: inherit; background-size: cover; min-height: 23em; position: relative; max-height: 450px;">
                             </div>
+                                    <figcaption>
+                                           <h2>Portfolio <span>item</span></h2>
+                                            <p>Bubba likes to appear out of thin air.</p>
+                                            <a href="#">View more</a>
+                                        </figcaption>           
+                                    </figure>
+                                 <div class="col-md-12 no-padding">
+                        <div class="post-info">
+                        <p><i class="fa fa-user"></i> Posted by: <a href="#">Admin</a></p>
+                        </div> <!-- End post-info -->
+                        <div class="article-info">
+                        <h3><a href="#">Random Article</a></h3>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam . Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        <hr>
+                        <div class="col-md-12 under-info no-padding">
+                        <div class="col-md-9 no-padding">
+                        <div class="post-info">
+                        <p><i class="fa fa-calendar"></i> December 21, 2014</p>
+                        </div> <!-- End post-info -->
+                        </div> <!-- End col-md-9 -->
+                        <div class="col-md-3 no-padding">
+                        <p><i class="fa fa-heart pull-right" style="color: #f78e20;"><span style="color: #3f4040;">&nbsp;500</span></i></p>
+                        </div> <!-- End col-md-3 -->
+                        
+                        </div> <!-- End under-info -->
 
-                            <div class="caption">
-                                <div class="col-md-12">
-                                    <p class="pull-right">Posted by: <a href=
-                                    "#">Admin</a></p>
-                                </div>
+                        </div> <!-- End article-info -->
 
-                                <h3>Article number 1</h3>
+                                    </div> <!-- End col-md-12 -->
+                            </div> 
+                                                       
+                    </div>   
 
-                                <p>Lorem ipsum dolor sit amet, consectetur
-                                adipisicing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut
-                                enim ad minim veniam, quis nostrud exercitation
-                                ullamco laboris nisi ut aliquip ex ea commodo
-                                consequat. Duis aute irure dolor in
-                                reprehenderit in voluptate velit esse cillum
-                                dolore eu fugiat nulla pariatur. Excepteur sint
-                                occaecat cupidatat non proident, sunt in culpa
-                                qui officia deserunt mollit anim id est
-                                laborum.</p>
-                                <hr>
-
-                                <p><span class=
-                                "glyphicon glyphicon-calendar">On:December 21,
-                                2014</span> <span class=
-                                "glyphicon glyphicon-heart-empty">Comments:
-                                120</span></p>
-
-                                <p><a class="btn btn-primary" href=
-                                "#">Button</a> <a class="btn btn-default" href=
-                                "#">Button</a></p>
-                            </div>
-                        </div>
-                    </div>
 
                     <div class=
-                    "iso-item blog-masonry web col-xs-12 col-sm-6 col-md-3">
-                        <div class="thumbnail">
-                            <div style=
-                            " background: url('http://placehold.it/300x300') center no-repeat; height: inherit; background-size: cover; min-height: 23em; position: relative; max-height: 450px;">
+                    "iso-portfolio-item portfolio-page col-xs-12 col-sm-6 col-md-3 art">
+                            <div>
+                                <figure class="effect-ruby">
+                                         <div style=
+                            " background: url('images/pf-item-4.jpg') center no-repeat; height: inherit; background-size: cover; min-height: 23em; position: relative; max-height: 450px;">
                             </div>
+                                    <figcaption>
+                                           <h2>Portfolio <span>item</span></h2>
+                                            <p>Bubba likes to appear out of thin air.</p>
+                                            <a href="#">View more</a>
+                                        </figcaption>           
+                                    </figure>
+                                  <div class="col-md-12 no-padding">
+                        <div class="post-info">
+                        <p><i class="fa fa-user"></i> Posted by: <a href="#">Admin</a></p>
+                        </div> <!-- End post-info -->
+                        <div class="article-info">
+                        <h3><a href="#">Random Article</a></h3>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam . Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        <hr>
+                        <div class="col-md-12 under-info no-padding">
+                        <div class="col-md-9 no-padding">
+                        <div class="post-info">
+                        <p><i class="fa fa-calendar"></i> December 21, 2014</p>
+                        </div> <!-- End post-info -->
+                        </div> <!-- End col-md-9 -->
+                        <div class="col-md-3 no-padding">
+                        <p><i class="fa fa-heart pull-right" style="color: #f78e20;"><span style="color: #3f4040;">&nbsp;500</span></i></p>
+                        </div> <!-- End col-md-3 -->
+                        
+                        </div> <!-- End under-info -->
 
-                            <div class="caption">
-                                <div class="col-md-12">
-                                    <p class="pull-right">Posted by: <a href=
-                                    "#">Admin</a></p>
-                                </div>
+                        </div> <!-- End article-info -->
 
-                                <h3>Article number 1</h3>
-
-                                <p>Lorem ipsum dolor sit amet, consectetur
-                                adipisicing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut
-                                enim ad minim veniam, quis nostrud exercitation
-                                ullamco laboris nisi ut aliquip ex ea commodo
-                                consequat. Duis aute irure dolor in
-                                reprehenderit in voluptate velit esse cillum
-                                dolore eu fugiat nulla pariatur. Excepteur sint
-                                occaecat cupidatat non proident, sunt in culpa
-                                qui officia deserunt mollit anim id est
-                                laborum.</p>
-                                <hr>
-
-                                <p><span class=
-                                "glyphicon glyphicon-calendar">On:December 21,
-                                2014</span> <span class=
-                                "glyphicon glyphicon-heart-empty">Comments:
-                                120</span></p>
-
-                                <p><a class="btn btn-primary" href=
-                                "#">Button</a> <a class="btn btn-default" href=
-                                "#">Button</a></p>
+                                    </div> <!-- End col-md-12 -->
+                            </div>                           
+                    </div>                                                                           
+                    <div class=
+                    "iso-portfolio-item portfolio-page col-xs-12 col-sm-6 col-md-3 photo">
+                            <div>
+                                <figure class="effect-ruby">
+                                         <div style=
+                            " background: url('images/pf-item-4.jpg') center no-repeat; height: inherit; background-size: cover; min-height: 23em; position: relative; max-height: 450px;">
                             </div>
-                        </div>
+                                    <figcaption>
+                                           <h2>Portfolio <span>item</span></h2>
+                                            <p>Bubba likes to appear out of thin air.</p>
+                                            <a href="#">View more</a>
+                                        </figcaption>           
+                                    </figure>
+                                 <div class="col-md-12 no-padding">
+                        <div class="post-info">
+                        <p><i class="fa fa-user"></i> Posted by: <a href="#">Admin</a></p>
+                        </div> <!-- End post-info -->
+                        <div class="article-info">
+                        <h3><a href="#">Random Article</a></h3>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam . Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        <hr>
+                        <div class="col-md-12 under-info no-padding">
+                        <div class="col-md-9 no-padding">
+                        <div class="post-info">
+                        <p><i class="fa fa-calendar"></i> December 21, 2014</p>
+                        </div> <!-- End post-info -->
+                        </div> <!-- End col-md-9 -->
+                        <div class="col-md-3 no-padding">
+                        <p><i class="fa fa-heart pull-right" style="color: #f78e20;"><span style="color: #3f4040;">&nbsp;500</span></i></p>
+                        </div> <!-- End col-md-3 -->
+                        
+                        </div> <!-- End under-info -->
+
+                        </div> <!-- End article-info -->
+
+                                    </div> <!-- End col-md-12 -->
+                            </div> 
+                                                      
                     </div>
+
 
                     <div class=
-                    "iso-item blog-masonry app col-xs-12 col-sm-6 col-md-4">
-                        <div class="thumbnail">
-                            <div style=
-                            " background: url('http://placehold.it/300x300') center no-repeat; height: inherit; background-size: cover; min-height: 23em; position: relative; max-height: 450px;">
+                    "iso-portfolio-item portfolio-page col-xs-12 col-sm-6 col-md-3 web">
+                            <div>
+                                <figure class="effect-ruby">
+                                         <div style=
+                            " background: url('images/pf-item-4.jpg') center no-repeat; height: inherit; background-size: cover; min-height: 23em; position: relative; max-height: 450px;">
                             </div>
+                                    <figcaption>
+                                           <h2>Portfolio <span>item</span></h2>
+                                            <p>Bubba likes to appear out of thin air.</p>
+                                            <a href="#">View more</a>
+                                        </figcaption>           
+                                    </figure>
+                                  <div class="col-md-12 no-padding">
+                        <div class="post-info">
+                        <p><i class="fa fa-user"></i> Posted by: <a href="#">Admin</a></p>
+                        </div> <!-- End post-info -->
+                        <div class="article-info">
+                        <h3><a href="#">Random Article</a></h3>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam . Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        <hr>
+                        <div class="col-md-12 under-info no-padding">
+                        <div class="col-md-9 no-padding">
+                        <div class="post-info">
+                        <p><i class="fa fa-calendar"></i> December 21, 2014</p>
+                        </div> <!-- End post-info -->
+                        </div> <!-- End col-md-9 -->
+                        <div class="col-md-3 no-padding">
+                        <p><i class="fa fa-heart pull-right" style="color: #f78e20;"><span style="color: #3f4040;">&nbsp;500</span></i></p>
+                        </div> <!-- End col-md-3 -->
+                        
+                        </div> <!-- End under-info -->
 
-                            <div class="caption">
-                                <div class="col-md-12">
-                                    <p class="pull-right">Posted by: <a href=
-                                    "#">Admin</a></p>
-                                </div>
+                        </div> <!-- End article-info -->
 
-                                <h3>Article number 1</h3>
-
-                                <p>Lorem ipsum dolor sit amet, consectetur
-                                adipisicing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut
-                                enim ad minim veniam, quis nostrud exercitation
-                                ullamco laboris nisi ut aliquip ex ea commodo
-                                consequat. Duis aute irure dolor in
-                                reprehenderit in voluptate velit esse cillum
-                                dolore eu fugiat nulla pariatur. Excepteur sint
-                                occaecat cupidatat non proident, sunt in culpa
-                                qui officia deserunt mollit anim id est
-                                laborum.</p>
-                                <hr>
-
-                                <p><span class=
-                                "glyphicon glyphicon-calendar">On:December 21,
-                                2014</span> <span class=
-                                "glyphicon glyphicon-heart-empty">Comments:
-                                120</span></p>
-
-                                <p><a class="btn btn-primary" href=
-                                "#">Button</a> <a class="btn btn-default" href=
-                                "#">Button</a></p>
-                            </div>
-                        </div>
+                                    </div> <!-- End col-md-12 -->
+                            </div> 
+                                                      
                     </div>
+
 
                     <div class=
-                    "iso-item blog-masonry photo col-xs-12 col-sm-6 col-md-4">
-                        <div class="thumbnail">
-                            <div style=
-                            " background: url('http://placehold.it/300x300') center no-repeat; height: inherit; background-size: cover; min-height: 23em; position: relative; max-height: 450px;">
+                    "iso-portfolio-item portfolio-page col-xs-12 col-sm-6 col-md-3 photo">
+                            <div>
+                                <figure class="effect-ruby">
+                                         <div style=
+                            " background: url('images/pf-item-4.jpg') center no-repeat; height: inherit; background-size: cover; min-height: 23em; position: relative; max-height: 450px;">
                             </div>
+                                    <figcaption>
+                                           <h2>Portfolio <span>item</span></h2>
+                                            <p>Bubba likes to appear out of thin air.</p>
+                                            <a href="#">View more</a>
+                                        </figcaption>           
+                                    </figure>
+                                  <div class="col-md-12 no-padding">
+                        <div class="post-info">
+                        <p><i class="fa fa-user"></i> Posted by: <a href="#">Admin</a></p>
+                        </div> <!-- End post-info -->
+                        <div class="article-info">
+                        <h3><a href="#">Random Article</a></h3>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam . Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        <hr>
+                        <div class="col-md-12 under-info no-padding">
+                        <div class="col-md-9 no-padding">
+                        <div class="post-info">
+                        <p><i class="fa fa-calendar"></i> December 21, 2014</p>
+                        </div> <!-- End post-info -->
+                        </div> <!-- End col-md-9 -->
+                        <div class="col-md-3 no-padding">
+                        <p><i class="fa fa-heart pull-right" style="color: #f78e20;"><span style="color: #3f4040;">&nbsp;500</span></i></p>
+                        </div> <!-- End col-md-3 -->
+                        
+                        </div> <!-- End under-info -->
 
-                            <div class="caption">
-                                <div class="col-md-12">
-                                    <p class="pull-right">Posted by: <a href=
-                                    "#">Admin</a></p>
-                                </div>
+                        </div> <!-- End article-info -->
 
-                                <h3>Article number 1</h3>
+                                    </div> <!-- End col-md-12 -->
+                            </div>                        
+                    </div> 
 
-                                <p>Lorem ipsum dolor sit amet, consectetur
-                                adipisicing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut
-                                enim ad minim veniam, quis nostrud exercitation
-                                ullamco laboris nisi ut aliquip ex ea commodo
-                                consequat. Duis aute irure dolor in
-                                reprehenderit in voluptate velit esse cillum
-                                dolore eu fugiat nulla pariatur. Excepteur sint
-                                occaecat cupidatat non proident, sunt in culpa
-                                qui officia deserunt mollit anim id est
-                                laborum.</p>
-                                <hr>
-
-                                <p><span class=
-                                "glyphicon glyphicon-calendar">On:December 21,
-                                2014</span> <span class=
-                                "glyphicon glyphicon-heart-empty">Comments:
-                                120</span></p>
-
-                                <p><a class="btn btn-primary" href=
-                                "#">Button</a> <a class="btn btn-default" href=
-                                "#">Button</a></p>
-                            </div>
-                        </div>
-                    </div>
 
                     <div class=
-                    "iso-item blog-masonry facebook col-xs-12 col-sm-6 col-md-4">
-                    <div class="thumbnail">
-                            <div style=
-                            " background: url('http://placehold.it/300x300') center no-repeat; height: inherit; background-size: cover; min-height: 23em; position: relative; max-height: 450px;">
+                    "iso-portfolio-item portfolio-page col-xs-12 col-sm-6 col-md-3 art">
+                            <div>
+                                <figure class="effect-ruby">
+                                         <div style=
+                            " background: url('images/pf-item-4.jpg') center no-repeat; height: inherit; background-size: cover; min-height: 23em; position: relative; max-height: 450px;">
                             </div>
+                                    <figcaption>
+                                           <h2>Portfolio <span>item</span></h2>
+                                            <p>Bubba likes to appear out of thin air.</p>
+                                            <a href="#">View more</a>
+                                        </figcaption>           
+                                    </figure>
+                                 <div class="col-md-12 no-padding">
+                        <div class="post-info">
+                        <p><i class="fa fa-user"></i> Posted by: <a href="#">Admin</a></p>
+                        </div> <!-- End post-info -->
+                        <div class="article-info">
+                        <h3><a href="#">Random Article</a></h3>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam . Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        <hr>
+                        <div class="col-md-12 under-info no-padding">
+                        <div class="col-md-9 no-padding">
+                        <div class="post-info">
+                        <p><i class="fa fa-calendar"></i> December 21, 2014</p>
+                        </div> <!-- End post-info -->
+                        </div> <!-- End col-md-9 -->
+                        <div class="col-md-3 no-padding">
+                        <p><i class="fa fa-heart pull-right" style="color: #f78e20;"><span style="color: #3f4040;">&nbsp;500</span></i></p>
+                        </div> <!-- End col-md-3 -->
+                        
+                        </div> <!-- End under-info -->
 
-                            <div class="caption">
-                                <div class="col-md-12">
-                                    <p class="pull-right">Posted by: <a href=
-                                    "#">Admin</a></p>
-                                </div>
+                        </div> <!-- End article-info -->
 
-                                <h3>Article number 1</h3>
+                                    </div> <!-- End col-md-12 -->
+                            </div>                       
+                    </div>  
 
-                                <p>Lorem ipsum dolor sit amet, consectetur
-                                adipisicing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut
-                                enim ad minim veniam, quis nostrud exercitation
-                                ullamco laboris nisi ut aliquip ex ea commodo
-                                consequat. Duis aute irure dolor in
-                                reprehenderit in voluptate velit esse cillum
-                                dolore eu fugiat nulla pariatur. Excepteur sint
-                                occaecat cupidatat non proident, sunt in culpa
-                                qui officia deserunt mollit anim id est
-                                laborum.</p>
-                                <hr>
-
-                                <p><span class=
-                                "glyphicon glyphicon-calendar">On:December 21,
-                                2014</span> <span class=
-                                "glyphicon glyphicon-heart-empty">Comments:
-                                120</span></p>
-
-                                <p><a class="btn btn-primary" href=
-                                "#">Button</a> <a class="btn btn-default" href=
-                                "#">Button</a></p>
+                   <div class=
+                    "iso-portfolio-item portfolio-page col-xs-12 col-sm-6 col-md-3 art">
+                            <div>
+                                <figure class="effect-ruby">
+                                         <div style=
+                            " background: url('images/pf-item-4.jpg') center no-repeat; height: inherit; background-size: cover; min-height: 23em; position: relative; max-height: 450px;">
                             </div>
-                        </div>
-                    </div>
+                                    <figcaption>
+                                           <h2>Portfolio <span>item</span></h2>
+                                            <p>Bubba likes to appear out of thin air.</p>
+                                            <a href="#">View more</a>
+                                        </figcaption>           
+                                    </figure>
+                                 <div class="col-md-12 no-padding">
+                        <div class="post-info">
+                        <p><i class="fa fa-user"></i> Posted by: <a href="#">Admin</a></p>
+                        </div> <!-- End post-info -->
+                        <div class="article-info">
+                        <h3><a href="#">Random Article</a></h3>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam . Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        <hr>
+                        <div class="col-md-12 under-info no-padding">
+                        <div class="col-md-9 no-padding">
+                        <div class="post-info">
+                        <p><i class="fa fa-calendar"></i> December 21, 2014</p>
+                        </div> <!-- End post-info -->
+                        </div> <!-- End col-md-9 -->
+                        <div class="col-md-3 no-padding">
+                        <p><i class="fa fa-heart pull-right" style="color: #f78e20;"><span style="color: #3f4040;">&nbsp;500</span></i></p>
+                        </div> <!-- End col-md-3 -->
+                        
+                        </div> <!-- End under-info -->
+
+                        </div> <!-- End article-info -->
+
+                                    </div> <!-- End col-md-12 -->
+                            </div>                       
+                    </div>  
+
 
                     <div class=
-                    "iso-item blog-masonry art col-xs-12 col-sm-6 col-md-3">
-                        <div class="thumbnail">
-                            <div style=
-                            " background: url('http://placehold.it/300x300') center no-repeat; height: inherit; background-size: cover; min-height: 23em; position: relative; max-height: 450px;">
+                    "iso-portfolio-item portfolio-page col-xs-12 col-sm-6 col-md-3 art">
+                            <div>
+                                <figure class="effect-ruby">
+                                         <div style=
+                            " background: url('images/pf-item-4.jpg') center no-repeat; height: inherit; background-size: cover; min-height: 23em; position: relative; max-height: 450px;">
                             </div>
+                                    <figcaption>
+                                           <h2>Portfolio <span>item</span></h2>
+                                            <p>Bubba likes to appear out of thin air.</p>
+                                            <a href="#">View more</a>
+                                        </figcaption>           
+                                    </figure>
+                                    <div class="col-md-12 no-padding">
+                        <div class="post-info">
+                        <p><i class="fa fa-user"></i> Posted by: <a href="#">Admin</a></p>
+                        </div> <!-- End post-info -->
+                        <div class="article-info">
+                        <h3><a href="#">Random Article</a></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam . Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        <hr>
+                        <div class="col-md-12 under-info no-padding">
+                        <div class="col-md-9 no-padding">
+                        <div class="post-info">
+                        <p><i class="fa fa-calendar"></i> December 21, 2014</p>
+                        </div> <!-- End post-info -->
+                        </div> <!-- End col-md-9 -->
+                        <div class="col-md-3 no-padding">
+                        <p><i class="fa fa-heart pull-right" style="color: #f78e20;"><span style="color: #3f4040;">&nbsp;500</span></i></p>
+                        </div> <!-- End col-md-3 -->
+                        
+                        </div> <!-- End under-info -->
 
-                            <div class="caption">
-                                <div class="col-md-12">
-                                    <p class="pull-right">Posted by: <a href=
-                                    "#">Admin</a></p>
-                                </div>
+                        </div> <!-- End article-info -->
 
-                                <h3>Article number 1</h3>
-
-                                <p>Lorem ipsum dolor sit amet, consectetur
-                                adipisicing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut
-                                enim ad minim veniam, quis nostrud exercitation
-                                ullamco laboris nisi ut aliquip ex ea commodo
-                                consequat. Duis aute irure dolor in
-                                reprehenderit in voluptate velit esse cillum
-                                dolore eu fugiat nulla pariatur. Excepteur sint
-                                occaecat cupidatat non proident, sunt in culpa
-                                qui officia deserunt mollit anim id est
-                                laborum.</p>
-                                <hr>
-
-                                <p><span class=
-                                "glyphicon glyphicon-calendar">On:December 21,
-                                2014</span> <span class=
-                                "glyphicon glyphicon-heart-empty">Comments:
-                                120</span></p>
-
-                                <p><a class="btn btn-primary" href=
-                                "#">Button</a> <a class="btn btn-default" href=
-                                "#">Button</a></p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class=
-                    "iso-item blog-masonry facebook col-xs-12 col-sm-6 col-md-3">
-                    <div class="thumbnail">
-                            <div style=
-                            " background: url('http://placehold.it/300x300') center no-repeat; height: inherit; background-size: cover; min-height: 23em; position: relative; max-height: 450px;">
-                            </div>
-
-                            <div class="caption">
-                                <div class="col-md-12">
-                                    <p class="pull-right">Posted by: <a href=
-                                    "#">Admin</a></p>
-                                </div>
-
-                                <h3>Article number 1</h3>
-
-                                <p>Lorem ipsum dolor sit amet, consectetur
-                                adipisicing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut
-                                enim ad minim veniam, quis nostrud exercitation
-                                ullamco laboris nisi ut aliquip ex ea commodo
-                                consequat. Duis aute irure dolor in
-                                reprehenderit in voluptate velit esse cillum
-                                dolore eu fugiat nulla pariatur. Excepteur sint
-                                occaecat cupidatat non proident, sunt in culpa
-                                qui officia deserunt mollit anim id est
-                                laborum.</p>
-                                <hr>
-
-                                <p><span class=
-                                "glyphicon glyphicon-calendar">On:December 21,
-                                2014</span> <span class=
-                                "glyphicon glyphicon-heart-empty">Comments:
-                                120</span></p>
-
-                                <p><a class="btn btn-primary" href=
-                                "#">Button</a> <a class="btn btn-default" href=
-                                "#">Button</a></p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class=
-                    "iso-item blog-masonry photo col-xs-12 col-sm-6 col-md-6">
-                        <div class="thumbnail">
-                            <div style=
-                            " background: url('http://placehold.it/300x300') center no-repeat; height: inherit; background-size: cover; min-height: 23em; position: relative; max-height: 450px;">
-                            </div>
-
-                            <div class="caption">
-                                <div class="col-md-12">
-                                    <p class="pull-right">Posted by: <a href=
-                                    "#">Admin</a></p>
-                                </div>
-
-                                <h3>Article number 1</h3>
-
-                                <p>Lorem ipsum dolor sit amet, consectetur
-                                adipisicing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut
-                                enim ad minim veniam, quis nostrud exercitation
-                                ullamco laboris nisi ut aliquip ex ea commodo
-                                consequat. Duis aute irure dolor in
-                                reprehenderit in voluptate velit esse cillum
-                                dolore eu fugiat nulla pariatur. Excepteur sint
-                                occaecat cupidatat non proident, sunt in culpa
-                                qui officia deserunt mollit anim id est
-                                laborum.</p>
-                                <hr>
-
-                                <p><span class=
-                                "glyphicon glyphicon-calendar">On:December 21,
-                                2014</span> <span class=
-                                "glyphicon glyphicon-heart-empty">Comments:
-                                120</span></p>
-
-                                <p><a class="btn btn-primary" href=
-                                "#">Button</a> <a class="btn btn-default" href=
-                                "#">Button</a></p>
-                            </div>
-                        </div>
-                    </div>
+                                    </div> <!-- End col-md-12 -->
+                            </div> 
+                                                      
+                    </div>                    
                 </div><!-- End test layout -->
             </div>
+        </div><!-- End portfolio items -->
+          
 
             <div class="row">
                 <div class="container">
                     <div class="col-md-12">
-                        <p><a class="btn btn-lg btn-danger" href="#bottom" id=
-                        "append"><span class=
-                        "glyphicon glyphicon-dashboard"></span> Load more
-                        posts</a></p>
+                        <p><button class="button-medium button-f-orange"><i class="fa fa-refresh"></i> Load More</button></p>
                     </div>
                 </div>
             </div>
-        </div><!-- End Masonry section -->
+       
         </div>
+        
+        
      <footer id="footer">
         <div id="footer-background" style="background-image: url(http://theme-one.com/mobius/wp-content/uploads/sites/2/2015/01/hero-bg.jpg)"></div>
 
@@ -996,8 +1037,11 @@
          <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css"></script>
          <script src="js/psp-slider.min.js"></script>
          <script src="js/skrollr.js"></script>
+         <script type="text/javascript" src="js/scrollReveal.min.js"></script>
          <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
          <script src="js/jquery.counterup.min.js"></script>
+         <script src="js/bootstrap-progressbar.min.js"></script>
+         
          
          
          

@@ -840,9 +840,8 @@ background-color: #f5f5f5;
   -moz-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-transform: translateZ(0);
-   
-
 }
+
 
 
 .main-menu-container .dropdown-menu li a {
@@ -1357,30 +1356,209 @@ a.button-orange {
 
 /**** SIDEBAR ****/
 
-#sidebar a {
-  color: #f78e20;
-}
-
-#sidebar a:hover {
-  text-decoration: underline;
-}
-
-#sidebar li:before {
-  content: "- ";
-}
-
-#sidebar li {
-  list-style: none;
-  text-align: left;
-}
-
-#sidebar section ul {
-  padding-left: 5px;
+#sidebar {
+ float: right;
+ margin: 0px;
+ width:215px;
 }
 
 #sidebar h3 {
   font-weight: normal;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  padding: .48em 0;
+  border-bottom: 1px solid orange;
 }
+
+#sidebar ul {
+  list-style: none;
+  padding: 0 0em;
+}
+
+#sidebar ul li {
+  padding: .29em 0;
+  border:none;
+}
+
+#sidebar ul li a {
+  font-size: 1.05em;
+  color: #999999;
+}
+
+#sidebar ul li a:hover {
+ 
+  color: #f78e20;
+}
+
+
+/*** Recent posts sidebar ****/
+
+.widget-post-like ul {
+  margin-top:1.5em;
+}
+
+.widget-post-like ul li {
+  margin: 0em 0 0em 0;
+  width: 100%;
+}
+
+
+.widget.widget-post-like .post-like-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  display: none
+  right: 0;
+  width: 64px;
+  height: 64px;
+  line-height: 64px;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 100;
+  opacity: 0;
+  transition: all 0.2s linear 0s;
+    -moz-transition: all 0.2s linear 0s;
+    -webkit-transition: all 0.2s linear 0s;
+    -o-transition: all 0.2s linear 0s;
+}
+.widget.widget-post-like .post-like-img:hover .post-like-overlay {
+  opacity: 0.85;
+  color: #f9f9f9;
+  background-color: orange;
+}
+
+
+.post-like-img {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  float: left;
+  z-index: 100;
+}
+
+.post-like-img img {
+  position: relative;
+  display: inline-block;
+  float: left;
+  width: 64px;
+  height: 64px;
+  margin: 0 12px 0 0;
+  background: rgba(0,0,0,0.2);
+}
+
+.post-like-title{
+  position: relative;
+  display: block;
+  overflow: hidden;
+  max-height: 22px;
+  -webkit-line-clamp: 1;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.post-like-date {
+  position: relative;
+  display: block;
+  margin: 5px 0px 5px 0;
+  font-size: .9em;
+  color: #999999;
+  width: 100%;
+}
+
+.post-like-date i {
+  color: #999999;
+  font-size: .9em !important;
+  padding: 0 .4em;
+}
+
+.post-like-likes {
+  position: relative;
+  display: block;
+  margin: 5px 0px 5px 0;
+  font-size: .9em;
+  color: #999999;
+  width: 100%;
+}
+
+.post-like-likes i {
+  color: #999999;
+  font-size: .9em !important;
+  padding: 0 .4em;
+}
+
+
+
+/***** categories sidebar ******/
+
+
+.widget_categories ul {
+  margin: 1.5em 0;
+} 
+
+
+
+
+.widget_categories ul li {
+  margin: .8em 0;
+  padding:0em 3em;
+    border-bottom: 1px solid #999999 !important;
+
+}
+
+
+
+.widget_categories .categories-title {
+  
+}
+
+.widget_categories .categories-amount {
+  padding: 0 0 0 .3em;
+}
+
+
+/******* Search sidebar *****/
+ .widget-search .page-search-form {
+  margin-top: .5em;
+ }
+ .widget-search form.navbar-form.navbar-left{
+  padding: 0px !important;
+ }
+
+/******Tag cloud Sidebar *******/
+#sidebar .widget .tagcloud {
+  margin-top: 1.5em;
+}
+#sidebar .widget .tagcloud a, .post-tags a {
+  background-color: #fff;
+  border: 1px solid #999999;
+  color: #999999 !important;
+  cursor: pointer;
+  display: inline-block;
+  float: left;
+  margin: 3px 3px 0px 0px;
+  font-size: .8em !important;
+  padding: 7px 9px;
+  position: relative;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+
+#sidebar .widget .tagcloud a:hover , .post-tags a{
+  background-color: #f78e20;
+  border: 1px solid #f78e20;
+  color: #ffffff !important;
+}
+
+
 
 /**** SEARCH PAGE ****/
 
@@ -2539,7 +2717,10 @@ margin-top: 1em;
 
 .single-post { 
    padding: 0;
-   
+}
+
+.single-post img { 
+   width: 100%;
 }
 
 .single-post a {

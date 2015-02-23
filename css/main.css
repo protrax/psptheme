@@ -1362,9 +1362,7 @@ a.button-orange {
 /**** SIDEBAR ****/
 
 #sidebar {
- float: right;
  margin: 0px;
- width:215px;
 }
 
 #sidebar h3 {
@@ -2289,6 +2287,7 @@ figure.effect-winston:hover p a:first-child i {
 ******************************/
 .team-members {
  padding-bottom: 30px;
+ float: left;
 }
 
 .team-members img {

@@ -123,7 +123,6 @@ $('.iso-item').each(function(i) {
     }
     // set filter for Isotope
     $('.isotope').isotope({ filter: filterValue });
-    console.lof(filters);
   });
 
   // change is-checked class on buttons
@@ -890,7 +889,7 @@ Google maps
        }else {
         return false;
        }
-       
+
       }); // end anon func
 
 

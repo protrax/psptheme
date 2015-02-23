@@ -653,6 +653,7 @@ FORM VALIDATION
 /*************************************************************
 Google maps
 *************************************************************/
+
       $(function() { 
 
         var $this = $(this),
@@ -883,7 +884,13 @@ Google maps
               });
 
 
+       if ( $('.google-maps').hasClass( "google-maps" ) ) {
         google.maps.event.addDomListener(window, 'load', initialize);
+
+       }else {
+        return false;
+       }
+       
       }); // end anon func
 
 

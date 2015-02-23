@@ -351,140 +351,144 @@
                 </div><!-- /.container-fluid -->
         </nav><!-- HTML to write -->
 
-      <div class="well well-lg main-page-header-img" style="background: url('images/slider-4.jpg');">
-
-                <div class="container header-img-container animated fadeIn">
-                        <div class="col-md-8">
-                            <h1 class="bold">Contact <span class="txt-color normal">Boxed</span></h1>
-                        </div>
-                        <div class="col-md-4">
-                                <ol class="breadcrumb">
-                                        <li>
-                                           <a href="#">Home</a>
-                                        </li>
-                                        <li class="active">Contact Boxed</li>
-                                </ol>
-                        </div>
-                </div>
-        </div>
-        <!-- Ending Title Bar -->
+            <!-- Google map -->
 
                 <div class="row">
+                    <!-- map-streetview : leave blank for false -->
             <div class="col-md-12">
-                        <div id="maps-boxed"></div>
+                <div class="google-maps">
+                        <div id="maps-boxed" 
+                            map-lat="60.791673"
+                            map-long="11.076144"
+                            map-zoom="13"
+                            map-zoomcontroll="true"
+                            map-type="roadmap"
+                            map-streetview="true"
+                            map-pancontroll="true"
+                            map-maptypecontroll="true"
+                            map-landscapecolor="#f5f5f5"
+                            map-roadcolor="#C8C8C8"
+                            map-watercolor="#ffffff"
+                            map-poicolor="#808080"
+                            map-lables="on"
+
+                        >
+                        </div>
+                    <ul style="display:none;">
+
+                        <li class="markers" data-gmapping='{
+                        "latlng":{"lat":60.817426,
+                        "lng":11.069548},
+                        "tags":"flyplass",
+                        "zindex":"4",
+                        "mapicon":"images/marker1.png",
+                        "content": "<div><h1>hello></h1><p>Helloys</p></div>"
+                        }'>
+    
+                        </li>
+
+                        <li class="markers" data-gmapping='{
+                        "latlng":{"lat":60.8175242,
+                        "lng":11.0835119 },
+                        "tags":"joakim",
+                        "zindex":"4",
+                        "mapicon":"images/marker2.png",
+                        "content": "Joakim´s place"                       
+                        }'>              
+                        </li> 
+
+                        <li class="markers"  data-gmapping='{
+                        "latlng":{"lat":60.804188,
+                        "lng":11.042716},
+                        "tags":"roberto",
+                        "zindex":"4",
+                        "mapicon":"images/marker2.png",
+                        "content": "Roberto´s place" 
+                        }'
+
+                        >          
+                        </li>
+                         
+                        <li class="markers" data-gmapping='{
+                        "latlng":{"lat":60.794763,
+                        "lng":11.072002},
+                        "tags":"food",
+                        "zindex":"4",
+                        "mapicon":"images/marker1.png",
+                        "content": "Snart mat på dette stedet :D"                      
+                        }'>           
+                        </li>
+                    </ul> 
+                       
                     </div>
-
+                </div>
                 </div><!-- End row -->
+                <!-- End google map -->
 
-                <p class="pull-right visible-xs"><button class="btn btn-primary btn-xs" data-toggle="offcanvas" type="button"><span class=
-                "glyphicon glyphicon-align-right">&nbsp;Sidebar</span></button></p>
+        <div class="row header-element">
+                <div class="container txt-center">
+                    <div class="col-md-12">
+                        <div class="spacer-25"></div>
+                        <h2 class="normal"><i class="fa fa-map-marker" style="color:#5F5F5C;"></i>&nbsp;<span class="bold">Contact us </span><span class="txt-color">today!</span></h2>
+                    <div class="spacer-50"></div>
+                </div>
+            </div>
+        </div>                
 
-                <div class="container">
-                        <div class="col-md-12 main-content-home">
+                <div class="row">
+                    <div class="container">
+                        <div class="col-md-12">
                                 <div class="col-md-8">
                                         <!-- Starting ur content -->
+                                    <form class="ps-form">
+                                      <div class="form-group">
+                                        <label for="name">Name</label>
+                                        <input type="text" class="form-control" id="name">
+                                      </div>
 
-                                        <div class="col-md-12 contact-heading">
-                                <div class="col-md-8 no-padding">
-                                        <h3>About Us</h3>
+                                      <div class="form-group">
+                                        <label for="email">Email address</label>
+                                        <input type="email" class="form-control" id="email">
+                                      </div>
 
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                </div><!-- End col-md-8 -->
-                        </div><!-- End col-md-12 -->
-               
-                        <div class="col-md-12 contact-heading">
-                                <h2>Leave us a message:</h2>
-                               
-                                <div class="input-group contact-inline-fw contact-name-fw">
-                                        <label>Name *</label> <input class="form-control no-radius" type="text">
-                                </div><!-- End input group -->
+                                      <div class="form-group">
+                                        <label for="subject">Subject</label>
+                                        <input type="text" class="form-control" id="subject">
+                                      </div>
 
-                                <div class="input-group contact-inline-fw">
-                                        <label>Last Name *</label> <input class="form-control no-radius" type="text">
-                                </div><!-- End input group -->
+                                    <div class="form-group">
+                                      <label for="comment">Comment:</label>
+                                      <textarea class="form-control"  id="comment"></textarea>
+                                    </div>
 
-                                <div class="input-group contact-email-fw">
-                                        <label>E-mail *</label> <input class="form-control no-radius" type="text">
-                                </div><!-- End input group -->
+                                                                                                                  
+                                      <button type="submit" class="btn btn-default">Send</button>
+                                </form>
+                    </div>
+                            <div class="col-md-4">
 
-                                <div class="input-group contact-textarea-fw">
-                                        <label>Comment *</label> 
-                                        <textarea class="form-control no-radius"></textarea>
-                                        <button class="button-medium button-f-orange">Submit</button>
-                                </div><!-- End input group -->
-                                
-                        </div><!-- End col-md-12 -->
-                                        <!-- End your content -->
-                                        <!-- Ending suggestions -->
-                                </div>
+                                <h3>About us!</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-                                <div class="col-md-4 col-xs-11 col-sm-11 sidebar-offcanvas">
-                                        <aside id="sidebar">
-                                                <section class="widget clearfix widget_categories" id="categories-1">
-                                                        <h3>Categories</h3>
+                                <div class="spacer-25"></div>
+                                <h3>Contact Information</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>                                
+                            </div>
 
-                                                        <ul>
-                                                                <li>
-                                                                        <a href="#">Movies</a>
-                                                                </li>
-
-                                                                <li>
-                                                                        <a href="#">Templates</a>
-                                                                </li>
-
-                                                                <li>
-                                                                        <a href="#">Plugins</a>
-                                                                </li>
-                                                        </ul>
-                                                </section>
-
-                                                <section class="widget clearfix widget_recent_posts" id="recent-posts-1">
-                                                        <h3>Recent posts</h3>
-
-                                                        <ul>
-                                                                <li>
-                                                                        <a href="#">World Tour</a><br>
-
-                                                                        <p><i class="fa fa-calendar"></i>&nbsp; January / 2015</p>
-                                                                </li>
-
-                                                                <li>
-                                                                        <a href="#">Vacation</a><br>
-
-                                                                        <p><i class="fa fa-calendar"></i>&nbsp; March / 2015</p>
-                                                                </li>
-
-                                                                <li>
-                                                                        <a href="#">Meetup</a><br>
-
-                                                                        <p><i class="fa fa-calendar"></i>&nbsp; September / 2015</p>
-                                                                </li>
-                                                        </ul>
-                                                </section>
-
-                                                <section class="widget clearfix widget_archive" id="archives-1">
-                                                        <h3>Archives</h3>
-
-                                                        <ul>
-                                                                <li>
-                                                                        <a href="#">March 2014</a><br>
-                                                                </li>
-
-                                                                <li>
-                                                                        <a href="#">February 2014</a><br>
-                                                                </li>
-
-                                                                <li>
-                                                                        <a href="#">January 2014</a><br>
-                                                                </li>
-                                                        </ul>
-                                                </section>
-                                        </aside>
-                                </div>
                         </div>
-                        </div>
+                    </div>
+                    <div class="spacer-100"></div>
+                </div>
    <footer id="footer">
         <div id="footer-background" style="background-image: url(http://theme-one.com/mobius/wp-content/uploads/sites/2/2015/01/hero-bg.jpg)"></div>
 
@@ -596,7 +600,7 @@
 
          <script src="js/bootstrap-progressbar.min.js"></script>
             <script type="text/javascript"
-                    src="http://maps.google.com/maps/api/js?sensor=false">
+                    src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true">
             </script> 
             <script type="text/javascript" src="js/jquery.ui.map.min.js"></script> 
 

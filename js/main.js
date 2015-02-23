@@ -653,17 +653,380 @@ FORM VALIDATION
 /*************************************************************
 Google maps
 *************************************************************/
-
-
-
       $(function() { 
-       $(window).add(function() {
-          $('#map_canvas').gmap({'center': '57.7973333,12.0502107', 'zoom': 10, 'disableDefaultUI':true, 'callback': function() {
-            var self = this;
-            self.addMarker({'position': this.get('map').getCenter() }).click(function() {
-              self.openInfoWindow({ 'content': 'Hello World!' }, this);
-            }); 
-          }});
-        }).load();
-      });
 
+        var $this = $(this),
+            empty = "",
+            // Latitude and longitude
+            latitude        = $this.find('#maps-boxed').attr('map-lat'),
+            longitude       = $this.find('#maps-boxed').attr('map-long'),
+            // Default map options
+            mapType         = $this.find('#maps-boxed').attr('map-type'),
+            zoom            = $this.find('#maps-boxed').attr('map-zoom'),
+            MY_MAPTYPE_ID = 'custom_style',
+            // Map controll UI options
+            zoomControll    = $this.find('#maps-boxed').attr('map-zoomcontroll'),
+            streetview      = $this.find('#maps-boxed').attr('map-streetview'),         
+            panControll     = $this.find('#maps-boxed').attr('map-pancontroll'),
+            mapTypeControl  = $this.find('#maps-boxed').attr('map-maptypecontroll'),
+            // Map color settings
+            landscapeColor  = $this.find('#maps-boxed').attr('map-landscapecolor'),
+            roadColor       = $this.find('#maps-boxed').attr('map-roadcolor'),
+            waterColor      = $this.find('#maps-boxed').attr('map-watercolor'),
+            poiColor        = $this.find('#maps-boxed').attr('map-poicolor'),
+            lables          = $this.find('#maps-boxed').attr('map-lables'),
+            // vars
+            bounceTimer,
+            map;
+        
+
+            
+            // If params not set
+               if( zoom == empty ){
+                   zoom = 12;
+                }
+               if( mapType == empty ){
+                   mapType = "roadmap";
+                }
+               if( latitude == empty ){
+                   latitude = "40.782865,";
+                }
+               if( longitude == empty ){
+                   longitude = "-73.965355,17z";
+                }
+
+
+       function initialize() {
+
+          // Map styles
+
+          var featureOpts = [
+            {
+              stylers: [
+                { hue: '#890000' },
+                { visibility: 'simplified' },
+                { gamma: 0.5 },
+                { weight: 0.5 }
+              ]
+            },
+            {
+              elementType: 'labels',
+              stylers: [
+                { visibility: lables }
+              ]
+            },
+            {
+              featureType: "landscape",
+              stylers: [
+                { visibility: "on" },
+                { color: landscapeColor }
+              ]
+            },{
+              featureType: "road",
+              stylers: [
+                { visibility: "on" },
+                { weight: 1.1 },
+                { color: roadColor }
+              ]
+            },{
+              featureType: "water",
+              stylers: [
+                { visibility: "on" },
+                { color: waterColor }
+              ]
+            },{
+              featureType: "poi",
+              elementType: "geometry",
+              stylers: [
+                { visibility: "on" },
+                { color: poiColor }
+              ]
+            }
+                    ];
+
+          // map Options
+          var mapOptions = {
+            center: new google.maps.LatLng(latitude, longitude),
+            zoom: parseInt(zoom),
+            zoomControl: zoomControll,
+            disableDefaultUI: true,
+            panControl: panControll,
+            streetViewControl: streetview,
+            mapTypeControl: mapTypeControl,
+            mapTypeControlOptions: {
+              mapTypeIds: [google.maps.MapTypeId.ROADMAP, MY_MAPTYPE_ID]
+            },
+            mapTypeId: MY_MAPTYPE_ID
+          };
+  
+          map = new google.maps.Map(document.getElementById('maps-boxed'),
+              mapOptions);
+
+          var styledMapOptions = {
+            name: 'Custom Style'
+          };
+
+          var customMapType = new google.maps.StyledMapType(featureOpts, styledMapOptions);
+          map.mapTypes.set(MY_MAPTYPE_ID, customMapType);
+           
+           setMarkers(map, beaches);
+    
+        }; // end init
+
+        // Drop animation function
+        function drop() {
+          clearMarkers();
+          for (var i = 0; i < neighborhoods.length; i++) {
+            window.setTimeout(function() {
+              addMarker(neighborhoods[i]);
+            }, i * 200);
+          }
+          iterator = 0;
+        }
+
+        // Marker cords ( pushed in )
+        var beaches = [];
+
+        // Set markers
+        function setMarkers(map, locations) {
+          // Add markers to the map
+        console.log(beaches);
+    
+          var image = {
+            url: 'images/marker1.png',
+            // This marker is 20 pixels wide by 32 pixels tall.
+            size: new google.maps.Size(42, 68),
+            // The origin for this image is 0,0.
+            origin: new google.maps.Point(0,0),
+            // The anchor for this image is the base of the flagpole at 0,32.
+            anchor: new google.maps.Point(42, 42)
+          };
+
+
+      setTimeout(function(){
+          for (var i = 0; i < locations.length; i++) {
+            var beach = locations[i],
+                myLatLng = new google.maps.LatLng(beach[1], beach[2]),
+                myinfowindow = new google.maps.InfoWindow({
+                    content: String(beach[4])
+                });
+            // add marker ( marker options )  
+            var marker = new google.maps.Marker({
+                position: myLatLng,
+                draggable: false,
+                optimized: false,
+                map: map,
+                icon: String(beach[5]),
+                title: String(beach[0]),
+                zIndex: parseInt(beach[3]),
+                infowindow: myinfowindow,
+                animation: google.maps.Animation.DROP
+            });
+
+
+
+            google.maps.event.addListener(marker, 'click', function() {
+              this.infowindow.open(map, this);
+            });
+
+
+    google.maps.event.addListener(marker, 'mouseover', function() {
+        if (this.getAnimation() == null || typeof this.getAnimation() === 'undefined') {
+            
+
+            
+            clearTimeout(bounceTimer);
+            
+            var that = this;
+             
+            bounceTimer = setTimeout(function(){
+                 that.setAnimation(google.maps.Animation.BOUNCE);
+            },
+            500);
+ 
+        }
+    });
+    
+    google.maps.event.addListener(marker, 'mouseout', function() {
+        
+         if (this.getAnimation() != null) {
+            this.setAnimation(null);
+         }
+         
+         // If we already left marker, no need to bounce when timer is ready
+         clearTimeout(bounceTimer);
+        
+    });
+
+
+          } // end loop 
+      }, 1800);// end timeout
+
+        }// end marker func
+
+        $("[data-gmapping]").each(function(i,el) {
+              var data = $(el).data('gmapping');
+              var icon = data.mapicon;
+              var markerPos = [
+                                  [data.tags],
+                                  [data.latlng.lat],
+                                  [data.latlng.lng],
+                                  [data.zindex],
+                                  [data.content],
+                                  [data.mapicon]
+
+                              ];
+              // Push marker data to array
+              beaches.push(markerPos);
+
+
+              });
+
+
+        google.maps.event.addDomListener(window, 'load', initialize);
+      }); // end anon func
+
+
+/************************************
+ *********** Button styles **********
+/************************************/
+
+jQuery(document).ready(function($){
+//Values stored in array
+
+ //Button background color
+ var buttonBgColor           = [],
+ // Button hover background color
+     buttonBgHoverColor      = [],
+ // Button text color
+     buttonColor             = [],
+ // Buton Hover text color
+     buttonHoverColor        = [],
+ // Append icon to the button     
+     buttonHasIcon           = [],
+ //Button icon color
+     buttonIconColor         = [],
+ //Button Hover icon color
+     buttonHoverIconColor    = [],         
+ // Button icon ( Change the icon )
+     buttonIcon              = [],
+ //Button border color
+     buttonBorderColor       = [],
+ // Button hover border color
+     buttonHoverBorderColor  = [],
+ // Button size
+     buttonSize              = [],
+ // Show icon
+     buttonShowIcon          = [],
+ // Button shape
+     buttonShape             = [];
+
+// Loop trough and get values from each data value
+$('.ps-btn').each(function(){
+// Variables
+   var btnBgColor             = $( this ).data('bgcolor'),
+       btnBgHoverColor        = $( this ).data('bghovercolor'),
+       btnColor               = $( this ).data('textcolor'),
+       btnHoverColor          = $( this ).data('texthovercolor'),
+       btnHasIcon             = $( this ).data('hasicon');
+       btnIconColor           = $( this ).data('iconcolor'),
+       btnHoverIconColor      = $( this ).data('iconhovercolor'),
+       btnIcon                = $( this ).data('icon'),
+       btnBorderColor         = $( this ).data('bordercolor'),
+       btnHoverBorderColor    = $( this ).data('borderhovercolor'),
+       btnButtonSize          = $( this ).data('buttonsize'),
+       btnShowIcon            = $( this ).data('showicon'),
+       btnShape               = $( this ).data('buttonshape');
+
+// Push values to array
+  
+  // Default bg color
+  buttonBgColor.push(btnBgColor);
+  // Hover bg color
+  buttonBgHoverColor.push(btnBgHoverColor);
+  // Text color
+  buttonColor.push(btnColor);
+  // Text hover color
+  buttonHoverColor.push(btnHoverColor);
+  // has icon 
+  buttonHasIcon.push(btnHasIcon);
+  //icon color
+  buttonIconColor.push(btnIconColor);
+  //icon hover color
+  buttonHoverIconColor.push(btnHoverIconColor);
+  //icon
+  buttonIcon.push(btnIcon);
+  //Border color
+  buttonBorderColor.push(btnBorderColor);
+  //Border hover color
+  buttonHoverBorderColor.push(btnHoverBorderColor);
+  //Button size
+  buttonSize.push(btnButtonSize);
+  // Button icon animation
+  buttonShowIcon.push(btnShowIcon);
+  // Button shape
+  buttonShape.push(btnShape);
+
+}); 
+
+//Set color to each element based on index
+$('.ps-btn').each(function(index){
+
+  if( buttonHasIcon[index] === ""){
+    $(this).removeClass('ps-icon-anim');
+    $(this).find("i").remove();
+    $(this).removeClass('ps-btn-icon');
+  }
+
+// Set button icon
+if( buttonIcon[index] == "" ){
+  $(this).find('i').addClass('fa-arrow-right');
+}else{
+  $(this).find('i').addClass(buttonIcon[index]);
+  }
+// Set button size
+if( buttonSize[index] == "" ){
+  $(this).addClass('regular');
+}else {
+  $(this).addClass(buttonSize[index]);
+}
+// SHow buton or show button on hover
+if( !buttonShowIcon[index] == "" ){
+ $(this).addClass('ps-icon-anim');
+}
+// set Button shape
+if( !buttonShape[index] == "" ){
+ $(this).addClass(buttonShape[index]);
+}
+
+// init styles
+  // Button colors
+  $(this).attr('style',
+     'border-color:' + buttonBorderColor[index] + '!important; '
+      + 'background-color:' + buttonBgColor[index] + '!important; '
+       + 'color:' + buttonColor[index] + '!important; ');
+  
+   //  icon color
+   $(this).find('i').attr('style', 'color:' + buttonIconColor[index] + '!important;' );
+
+  // Hover styles
+    $(this).hover(function(){
+
+      $(this).attr('style', 'background-color:' + buttonBgHoverColor[index] + '!important; '
+       + 'border-color:' + buttonHoverBorderColor[index] + '!important; ' + 'color:' + buttonHoverColor[index] + '!important; ' );
+      // icon color
+      $(this).find('i').attr('style', 'color:' + buttonHoverIconColor[index] + '!important;' );
+
+    // Mouse leave
+    }, function(){
+      
+  $(this).attr('style',
+     'border-color:' + buttonBorderColor[index] + '!important; '
+      + 'background-color:' + buttonBgColor[index] + '!important; '
+       + 'color:' + buttonColor[index] + '!important; ');
+  // Icon color
+  $(this).find('i').attr('style', 'color:' + buttonIconColor[index] + '!important;');
+    
+    }); // end hover
+  }); // end loop
+}); // End document.ready

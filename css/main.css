@@ -1137,39 +1137,38 @@ background-color: #f5f5f5;
 /**** Page Search ****/
 
 .search-content {
-   margin-left: 25px;
+   margin-bottom: 50px;
+   max-width: 350px !important;
 }
 
-.search-results {
-  margin-bottom: 30px;
+.search-wrapper p {
+   margin-top: 10px;
 }
+
 
 .search-wrapper {
-  width: 100%;
-  margin-bottom: 30px;
-  background-color: #f5f5f5;
-  border: 2px solid #f2f2f2;
-  padding: 20px !important;
+  margin-bottom: 10px;
+  float: left;
 }
 
 .search-wrapper button {
   margin: 0;
 }
 
-.search-wrapper img {
-  width: 100%;
-  height: auto;
-  margin-top: 10px;
-  border: 3px solid lightgray;
-}
 
 .search-wrapper h3 {
   text-transform: capitalize;
-  font-weight: 500;
+  font-weight: 400;
   margin-top: 10px;
+  margin-bottom: 13px;
 }
 
-.search-wrapper a:hover {
+.search-wrapper h3 a:hover {
+  color: #f78e20;
+  text-decoration: none !important;
+}
+
+.search-wrapper p a:hover {
   text-decoration: underline;
 }
 
@@ -1190,14 +1189,20 @@ background-color: #f5f5f5;
 }
 
 @media screen and (max-width: 992px ) {
-  .search-wrapper img {
-    width: 0px;
+  .search-content {
+   max-width: 100% !important;
+  }
+  .search-wrapper {
+   width: 100% !important;
   }
 }
 
 @media screen and (max-width: 584px ) {
   .search-wrapper .post-info {
     display: block;
+  }
+  .search-wrapper .post-info p {
+   margin-top: 16px;
   }
 }
 
@@ -1297,9 +1302,7 @@ background-color: #f5f5f5;
 /**** SIDEBAR ****/
 
 #sidebar {
- float: right;
  margin: 0px;
- width:215px;
 }
 
 #sidebar h3 {
@@ -1992,6 +1995,18 @@ figure.effect-ruby h3 {
   transform: translate3d(0,20px,0);
 }
 
+figure.effect-ruby h4 {
+  margin-top: 1em;
+  opacity: 0;
+  font-weight: 300;
+  text-align: center;
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(0,20px,0);
+  transform: translate3d(0,20px,0);
+}
+
+
 figure.effect-ruby p {
   margin: 1em 0 0;
   padding: 3em;
@@ -2011,6 +2026,12 @@ figure.effect-ruby:hover h2 {
 }
 
 figure.effect-ruby:hover h3 {
+  opacity: 1;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+figure.effect-ruby:hover h4 {
   opacity: 1;
   -webkit-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
@@ -2206,6 +2227,7 @@ figure.effect-winston:hover p a:first-child i {
 ******************************/
 .team-members {
  padding-bottom: 30px;
+ float: left;
 }
 
 .team-members img {

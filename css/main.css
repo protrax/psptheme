@@ -112,6 +112,11 @@ small, .font_small {
 
 }
 
+/*** General ****/
+.hidden {
+  visibility: hidden !important;
+}
+
 /**** Dividers ***/
 
 .divider-100 {
@@ -856,74 +861,9 @@ background-color: #f5f5f5;
 }
 
 
-/************************************
-************ Synergy buttons ********
-************************************/
-
-/*** Slider buttons ***/
-
-/*** Simple Orange ***/
-a.button-orange {
-  border: 3px solid #f9f9f9 ;
-  padding: 0.7em 2.5em;
-  color: #f78e20;
-  font-size: 1.3em;
-  text-shadow: 1px 1px 1px #3f4040;
-  -webkit-transition: all 0.6s;
-  -moz-transition: all 0.6s;
-  -ms-transition: all 0.6s;
-  -o-transition: all 0.6s;
-  transition: all 0.6s;
-}
-
-.button-orange:hover  {
-  color: #f9f9f9;
-  border-color: #f78e20;
-}
-
-/*** Page buttons ****/
-
-/*** Sizes ***/
-
-
-.button-small {
-  padding: 0.1em 0.5em;
-  margin: 10px 0 20px 0;
-  font-size: 1em !important;
-}
-
-.button-medium {
-  padding: 0.5em 2.7em;
-  margin: 10px 0 20px 0;
-}
-/*** Types **/
-
-.button-f-orange {
- color: #f9f9f9;
-  border: 3px solid #f78e20;
-  background: #f78e20;
-  font-size: 1.2em;
-  display: inline-block;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-.button-f-orange:hover  {
-  color: #f9f9f9;
-  color: #3f4040;
-  background: none;
-}
-
-
-
 
 
 /**** THEME FEATURES ****/
-
-
 
 
 /**** FEATURED BOX ****/
@@ -3862,5 +3802,152 @@ li.active-tab {
 
 .article-info a:hover {
   color: #f78e20;
+}
+
+/* ========================================================
+    22. Slideshow
+/* ======================================================== */
+
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        height: 45em;
+        background-size: cover !important;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+    }
+
+    .swiper-slide .content {
+      color: #f9f9f9;
+      max-width: 35em;
+      padding: 1em;
+      margin: 0px auto;
+      min-height: 374px;
+    }
+
+    .swiper-slide .content h1 {
+      color: #f9f9f9;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 2.8em;
+      line-height: 60px;
+    }
+
+    .swiper-slide .content-inner {
+     
+    }
+
+    .swiper-slide .content-buttons {
+      
+    }
+
+    /***** Navigation *******/
+
+.swiper-button-prev {
+  position: absolute;
+  z-index: 99999;
+  font-size: 3em;
+  left: 0;
+  background: #444;
+  height: 1.5em;
+  color: #fff;
+  -webkit-transition: all 5s;
+  -moz-transition: all 5s;
+  -o-transition: all 5s;
+  transition: all 5s;
+  cursor: pointer;
+  width: 1.2em;
+}
+
+.swiper-button-prev i {
+  padding: .2em 2px;
+}
+
+
+
+.swiper-button-next {
+  position: absolute;
+  z-index: 99999;
+  font-size: 3em;
+  right: 0;
+  background: #444;
+  height: 1.5em;
+  color: #fff;
+  -webkit-transition: all 5s;
+  -moz-transition: all 5s;
+  -o-transition: all 5s;
+  transition: all 5s;
+  cursor: pointer;
+  width: 1.2em;
+}
+
+.swiper-button-next i {
+  padding: 0.2em .2em;
+}
+
+/** Nav indication text ****/
+
+.swiper-button-next span {
+  display: none;
+  font-size: .8em !important;
+  position: absolute;
+  top: 0;
+  padding: .2em .4em;
+  right: 100%;
+  background: rgba(238, 238, 238, 0.66);
+  color:#3f4040;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.49);
+}
+
+.swiper-button-prev span {
+  display: none;
+  font-size: .8em !important;
+  position: absolute;
+  top: 0;
+  padding: .2em .4em;
+  left: 100%;
+  background: rgba(238, 238, 238, 0.66);
+  color:#3f4040;
+  font-size: .8em;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.49);
+}
+
+
+    /**** Video slider **********/
+
+    .swiper-slide video {
+      width: 100%;
+      z-index: -1000;
+      position: fixed;
+    }
+
+    /**** Slider animation ****/
+
+    .slider-animation {
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 

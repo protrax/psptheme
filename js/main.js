@@ -332,93 +332,134 @@ $('#to-top').click(function(){
 //****************************************
 //************ PSP Slider *****************
 //****************************************
-
 jQuery(document).ready(function($){
+// general vars
+  var slider           = $('.swiper-container'),
+      buttonPrev       = $('.swiper-button-prev'),
+      buttonNext       = $('.swiper-button-next'),
+      sliderHeading    = $('.swiper-slide  .content h1'),
+      sliderParagraph  = $('.swiper-slide .content .content-inner'),
+      sliderButtons    = $('.swiper-slide .content .content-buttons');
 
-  // Load time for animations
-      
-    // Container
-  var animationQueueBox = 'slide-animation-box';
-    // Heading
-  var animationQueueHeader = 'slide-animation-first';
-    // Main text
-  var animationQueueContent = 'slide-animation-second';
-    //Buttons
-  var animationQueueButtons = 'slide-animation-third';
+// Attr settings
+  var sliderStart                = $( slider ).data('start'),
+      slidereffect               = $( slider ).data('effect'),
+      sliderAutoplayTime         = $( slider ).data('autoplaytime'),
+      sliderTransitionSpeed      = $( slider ).data('transitionspeed'),
+      sliderNav                  = $( slider ).data('navigationtype'),
+      sliderAnimationHeading     = $( slider ).data('animationheading'),
+      sliderAnimationParagraph   = $( slider ).data('animationparagraph');
+      sliderAnimationButtons     = $( slider ).data('animationbuttons');
 
-  // Animation
-      // Animations from animate.css
 
-    // Container
- var animationEffectBox     = 'fadeIn';
-    // Heading
- var animationEffectHeader  = 'fadeInDown';
-    // Main text
- var animationEffectContent = 'fadeInUp';
-    //Buttons
- var animationEffectButtons = 'fadeInUp';
-
- // Load slider
-
-  var pspSlider = $('.swiper-container').swiper({
-    //Slider options
-    mode:'horizontal',
-    loop: true,
-    autoplay: 4800,
-    speed: 1200,
-    // Slide out 
-      onSlideChangeStart: function() {
-        $('.slider-content-center').hide().removeClass( animationQueueBox   + ' ' +  animationEffectBox );
-        $('.slider-content-center h2').removeClass( animationQueueHeader    + ' ' +  animationEffectHeader );
-        $('.slider-content-center p').removeClass( animationQueueContent    + ' ' +  animationEffectContent );
-        $('.button-container').removeClass( animationQueueButtons           + ' ' +  animationEffectButtons );
+    var pspSlider = $('.swiper-container').swiper({
+      //Slider options
+      direction: 'horizontal',
+      watchVisibility: true,
+      loop: false,
+      autoplay: parseInt(sliderAutoplayTime),
+      speed: parseInt(sliderTransitionSpeed),
+      effect: slidereffect,
+      initialSlide: parseInt(sliderStart),
+      grabCursor: true,
+      longSwipes: true,
+      shortSwipes: true,
+      allowSwipeToNext: true,
+      allowSwipeToPrev: true,
+      updateOnImagesReady: true,
+      onInit: function() {
+        slideInit();
       },
-      // Slide in
-      onSlideChangeEnd: function() {
-        $('.slider-content-center').show().addClass( animationQueueBox  + ' ' + animationEffectBox );
-        $('.slider-content-center h2').addClass( animationQueueHeader   + ' ' + animationEffectHeader );
-        $('.slider-content-center p').addClass( animationQueueContent   + ' ' + animationEffectContent );
-        $('.button-container').addClass( animationQueueButtons          + ' ' + animationEffectButtons );
+      onSlideChangeStart: function(){
+        slideStart();
+
       },
-      // First init of slider
-      onFirstInit: function() {
-        $('.slider-content-center').show().addClass( animationQueueBox  + ' ' + animationEffectBox );
-        $('.slider-content-center h2').addClass( animationQueueHeader   + ' ' + animationEffectHeader );
-        $('.slider-content-center p').addClass( animationQueueContent   + ' ' + animationEffectContent );
-        $('.button-container').addClass( animationQueueButtons          + ' ' + animationEffectButtons );
+      onSlideChangeEnd: function(){
+        slideEnd();
       }
+      
+      
 
-  });
+    });
+
+
+// Slider init action
+function slideInit() {
+  // Hide elements
+  $( sliderHeading ).addClass('hidden');
+  $( sliderParagraph ).addClass('hidden');
+  $( sliderButtons ).addClass('hidden');
+
+  // Show elements
+  $( sliderHeading ).removeClass('hidden').addClass('slider-animation ' + sliderAnimationHeading );
+    setTimeout( function() {
+      $( sliderParagraph ).removeClass('hidden').addClass('slider-animation ' + sliderAnimationParagraph );
+    }, 800);
+
+    setTimeout(function() {
+      $( sliderButtons ).removeClass('hidden').addClass('slider-animation ' + sliderAnimationButtons );
+    }, 1200);
+
+} // End slideInit
+
+// Slider start change action
+function slideStart() {
+    $( sliderHeading ).addClass('hidden').removeClass('slider-animation ' + sliderAnimationHeading );
+    $( sliderParagraph ).addClass('hidden').removeClass('slider-animation ' + sliderAnimationParagraph );
+    $( sliderButtons ).addClass('hidden').removeClass('slider-animation ' + sliderAnimationButtons );
+} // End slideStart
+
+// Slider end change action
+function slideEnd() {
+  // Show elements
+  $( sliderHeading ).removeClass('hidden').addClass('slider-animation ' + sliderAnimationHeading );
+    setTimeout( function() {
+      $( sliderParagraph ).removeClass('hidden').addClass('slider-animation ' + sliderAnimationParagraph);
+    }, 800);
+
+    setTimeout(function() {
+      $( sliderButtons ).removeClass('hidden').addClass('slider-animation ' + sliderAnimationButtons);
+    }, 1200);
+} // end slideEnd
+
+
+
 
 // Navigation
 
 // Navigate slideshow
-$('.arrow-left').on('click', function(e){
+$( buttonPrev ).on('click', function(e){
     e.preventDefault();
-    pspSlider.swipePrev();
+    pspSlider.slidePrev();
   });
-$('.arrow-right').on('click', function(e){
+
+$( buttonNext ).on('click', function(e){
     e.preventDefault();
-    pspSlider.swipeNext();
+    pspSlider.slideNext();
   });
 // Navigate slideshow label
-$('.arrow-left').on('hover', function(e){
-    e.preventDefault();
-    pspSlider.swipePrev();
-  });
   
-  $('.arrow-left').hover(function(){
+  $( buttonPrev ).hover(function(index){
     $(this).find('span').show().addClass('animated flipInX');
   }, function(){
     $(this).find('span').hide();
   });
 
-  $('.arrow-right').hover(function(){
+
+  $( buttonNext ).hover(function(){
     $(this).find('span').show().addClass('animated flipInX');
   }, function(){
     $(this).find('span').hide();
   });
-});
+
+
+// Slider video
+
+
+
+
+
+}); // end document.ready
 
 
 /*************************************************************

@@ -10,6 +10,7 @@ body {
   line-height: 1.45;
   color: #3f4040;
   height: 100%;
+  vertical-align: baseline;
 }
 
 img {
@@ -1806,6 +1807,82 @@ figure p {
  ********* Hover effects ****
 /****************************/
 
+
+/*-----------------*/
+/***** Goliath *****/
+/*-----------------*/
+
+figure.effect-goliath {
+  background: #f9f9f9;
+}
+
+figure.effect-goliath div,
+figure.effect-goliath h3 {
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+}
+
+figure.effect-goliath div {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+figure.effect-goliath h3,
+figure.effect-goliath p {
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 30px;
+}
+
+figure.effect-goliath h3 {
+  text-transform: none;
+  font-size: 150%;
+  color: #333;
+  padding: 29px;
+  opacity: 0;
+  font-weight: 500;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,50px,0);
+  transform: translate3d(0,50px,0);
+}
+
+figure.effect-goliath p {
+  text-transform: none;
+  font-size: 90%;
+  color: #333;
+  opacity: 0;
+  padding: 0 0 13px 31px;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,50px,0);
+  transform: translate3d(0,50px,0);
+}
+
+figure.effect-goliath:hover div {
+  -webkit-transform: translate3d(0,-80px,0);
+  transform: translate3d(0,-80px,0);
+}
+
+
+figure.effect-goliath:hover p {
+  opacity: 1;
+  display: block;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+figure.effect-goliath:hover h3 {
+  display: block;
+  opacity: 1;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+
+
 /*---------------*/
 /***** Bubba *****/
 /*---------------*/
@@ -1852,6 +1929,7 @@ figure.effect-bubba figcaption::after {
 }
 
 figure.effect-bubba h2 {
+  opacity: 0;
   position: relative;
   top: 2.2em;
   -webkit-transition: -webkit-transform 0.35s;
@@ -2372,6 +2450,10 @@ figure.effect-winston:hover p a:first-child i {
   margin-bottom: 0;
 }
 
+.team-links p i {
+  margin-right: 4px;
+}
+
 .team-links {
   display: inline-block;
 }
@@ -2539,77 +2621,185 @@ figure.effect-winston:hover p a:first-child i {
 }
 /**** Blog Author ****/
 
+.author-wrapper {
+  width: 100%;
+  min-width: 544px;
+  height: auto;
+  float: left;
+  margin-bottom: 50px;
+}
+
+.author-content h3 {
+  margin-top: 0px;
+}
+
 .author-content {
-   padding: 0;
-   margin-bottom: 50px;
- }
+  float: left;
+  background-color: #f5f5f5;
+  border: 1px solid #eee;
+  padding: 15px 30px;
+}
 
- .author-image {
-  padding-bottom: 25px;
- }
+.author-wrapper figure.effect-ruby h4{
+  margin-top: 2.2em;
+}
 
- .author-image img {
-   width: 1140px !important;
-   height: auto !important;
-   
- }
- 
- .author a {
+.background-image-author {
+   height: 200px;
+}
+
+.author-info {
+  display: inline-block;
+}
+
+.author-info p {
+  display: inline-block;
+  margin-right: 7px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.author-info a {
   color: #f78e20;
- }
+}
 
- .author p {
-  margin-bottom: 15px;
- }
-
- .author a:hover {
+.author-info a:hover {
   text-decoration: underline;
- }
+}
 
- .author h2 {
+.author-info i {
+  font-size: 1.1em !important;
+}
+
+.author-buttons {
+  display: inline-block;
+  width: 100%;
+}
+
+.author-buttons p {
+  display: inline-block;
+  float: right;
+  margin-bottom: 0;
+  margin-top: 23px;
+  margin-right: 20px;
+}
+
+.author-info-wrapper {
+  float: left;
+  width: 100%;
+  height: auto;
+}
+
+.author-info-wrapper h4 {
   margin-top: 0;
-  font-weight: 400;
-  text-transform: capitalize;
- }
+  margin-bottom: 15px;
+}
 
+.author-info-bg {
+  float: left;
+  width: 100%;
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+.author-post-info {
+  display: inline-block;
+}
+
+.author-post-info p {
+  display: inline-block;
+  margin: 0 10px 0 0;
+
+}
+
+.author-post-info p i {
+  margin-right: 4px;
+}
+
+.author-post-info a {
+  color: #f78e20;
+}
+
+.author-post-info a:hover {
+  text-decoration: underline;
+}
+
+.author-section {
+  float: left;
+  height: auto;
+  width: 100%;
+  margin-bottom: 150px;
+}
+
+.author-sub {
+  float: left;
+  width: 100%;
+}
 
 /**** Blog Listview ****/
 
-.listview-likes {
-  padding-top: 10px;
+.listview-wrapper {
+  width: 100%;
+  min-width: 544px;
+  height: auto;
+  float: left;
+  margin-bottom: 50px;
+}
+
+.listview-content h3 {
+  margin-top: 0px;
 }
 
 .listview-content {
-  padding: 20px;
+  float: left;
   background-color: #f5f5f5;
-  height: 285px;
+  border: 1px solid #eee;
+  padding: 15px 30px;
 }
 
-
-.listview {
-  margin-bottom: 50px;
-  overflow: hidden;
-  height: 285px;
+.listview-wrapper figure.effect-ruby h4{
+  margin-top: 2.2em;
 }
 
-.listview a {
+.background-image-listview {
+   height: 200px;
+}
+
+.listview-info {
+  display: inline-block;
+}
+
+.listview-info p {
+  display: inline-block;
+  margin-right: 7px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.listview-info a {
   color: #f78e20;
 }
 
-.listview p {
-  margin-bottom: 15px;
-}
-
-.listview a:hover {
+.listview-info a:hover {
   text-decoration: underline;
 }
 
-.listview h2 {
-  margin-top: 0;
-  font-weight: 400;
-  text-transform: capitalize;
+.listview-info i {
+  font-size: 1.1em !important;
 }
 
+.listview-buttons {
+  display: inline-block;
+  width: 100%;
+}
+
+.listview-buttons p {
+  display: inline-block;
+  float: right;
+  margin-bottom: 0;
+  margin-top: 23px;
+  margin-right: 20px;
+}
 
 @media screen and (max-width: 1200px) {
   .buttons {
@@ -3343,11 +3533,12 @@ div.folded h2:after {
 
 .syngery-callout {
     padding: 20px;
-    margin: 20px 0;
+    margin-bottom: 15px;
     border: 1px solid #eee;
-    border-left-width: 5px;
+    border-left-width: 3px;
     border-radius: 3px;
     background-color: #f9f9f9;
+    float: left;
 }
 
 .syngery-callout p {

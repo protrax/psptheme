@@ -361,7 +361,7 @@ jQuery(document).ready(function($){
       speed: parseInt(sliderTransitionSpeed),
       effect: slidereffect,
       initialSlide: parseInt(sliderStart),
-      grabCursor: true,
+      grabCursor: false,
       longSwipes: true,
       shortSwipes: true,
       allowSwipeToNext: true,
@@ -1077,3 +1077,70 @@ if( !buttonShape[index] == "" ){
     }); // end hover
   }); // end loop
 }); // End document.ready
+
+
+/*===========================
+  Gallery
+ ===========================*/
+
+ jQuery(window).ready(function(){
+
+    var appendNumber  = 4;
+    var prependNumber = 1;
+    var psGallery     = $('.gallery-top').swiper({
+        spaceBetween: 10,
+        centeredSlides: true,
+        onTouchStart: false,
+    });
+    var galleryThumbs =  $('.gallery-thumbs').swiper({
+        spaceBetween: 10,
+        centeredSlides: true,
+        slidesPerView: 4,
+        touchRatio: 0.2,
+        slideToClickedSlide: true
+    });
+    psGallery.params.control     = galleryThumbs;
+    galleryThumbs.params.control = psGallery;
+ 
+
+    // Lightbox 
+    var galleryOverlay = '<div class="gallery-overlay">';
+        galleryOverlay += '<i class="fa fa-search-plus">';
+        galleryOverlay += '</span>';
+        galleryOverlay += '</div>';
+
+    // Append hover container to document
+    // $('.gallery-top').hover(function(){
+    //   $(this).append(galleryOverlay);
+    // }, function() {
+    // $(this).find('.gallery-overlay').detach();
+    // });
+
+  // append lightbox container to body 
+
+    $('body').append('<div class="lightbox-container"></div>');
+
+    $('.swiper-slide a').click(function(e) {
+      e.preventDefault();
+      var lightboxImageUrl  = $(this).attr('href');
+      var lightboxContainer = $('.lightbox-container');
+
+      /*** lightbox image ***/
+      var lightboxImage  = '<div class="lightbox-image-container">';      
+          lightboxImage += '<img src="' + lightboxImageUrl + '" alt="" class="">';
+          lightboxImage += '</div>';
+
+      $(lightboxContainer).append(lightboxImage);
+      $(lightboxContainer).show();
+    });
+
+    $('.lightbox-container').click(function() {
+      $(this).hide();
+      $(this).find('.lightbox-image-container').detach();
+    });
+
+ }); // End document.ready
+
+
+
+

@@ -2018,8 +2018,13 @@ figure.effect-zoe:hover p.icon-links a:first-child {
 /***** Ruby *****/
 /*---------------*/
 
+.gallery-top figure figcaption:hover {
+  background:rgba(51, 51, 51, 0.42);
+}
+
 figure.effect-ruby {
   background: #9e5406;
+
 }
 
 figure.effect-ruby div {
@@ -2299,6 +2304,77 @@ figure.effect-winston:hover p a:first-child i {
   transition-delay: 0.15s;
 }
 
+
+/*-----------------*/
+/***** Hera *****/
+/*-----------------*/
+
+figure.effect-hera h2,
+figure.effect-hera p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-50%,-50%,0);
+  transform: translate3d(-50%,-50%,0);
+  -webkit-transform-origin: 50%;
+  transform-origin: 50%;
+}
+
+figure.effect-hera figcaption::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  border: 2px solid #fff;
+  content: '';
+  opacity: 0;
+}
+
+
+figure.effect-hera p {
+  width: 100px;
+  text-transform: none;
+  font-size: 121%;
+  line-height: 2;
+}
+
+figure.effect-hera p a {
+  color: #fff;
+}
+
+figure.effect-hera p a:hover,
+figure.effect-hera p a:focus {
+  opacity: 0.6;
+}
+
+figure.effect-hera p a i {
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-hera p a:first-child i {
+  -webkit-transform: translate3d(-60px,-60px,0);
+  transform: translate3d(-60px,-60px,0);
+}
+
+
+
+
+figure.effect-hera:hover h2 {
+  opacity: 0;
+  -webkit-transform: translate3d(-50%,-50%,0) scale3d(0.8,0.8,1);
+  transform: translate3d(-50%,-50%,0) scale3d(0.8,0.8,1);
+}
+
+figure.effect-hera:hover p i:empty {
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0); /* just because it's stronger than nth-child */
+  opacity: 1;
+}
 
 /*****************************
 ********** Team members ******
@@ -3950,4 +4026,111 @@ li.active-tab {
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
 }
+
+/* =================================
+    Gallery
+   ================================= */
+
+    .gallery-top {
+      height: 32em;
+      width: 100%;
+    }
+
+    .gallery-top .swiper-slide {
+      width: 100%;
+      height: 100%;
+    }
+
+    .gallery-thumbs {
+        height: 10em;
+        box-sizing: border-box;
+        padding: 10px 0;
+    }
+    .gallery-thumbs .swiper-slide {
+        width: 25%;
+        height: 100%;
+        opacity: 0.4;
+    }
+    .gallery-thumbs .swiper-slide-active {
+        opacity: 1;
+    }
+
+/***** Gallery hover *****/
+
+.gallery-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(237, 237, 237, 0.7);
+  z-index: 99999;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.gallery-overlay i {
+  display: block;
+  text-align: center;
+  top: 50%;
+  position: relative;
+}
+
+.gallery-overlay i.fa.fa-search-plus {
+  color: orange;
+  font-size: 2.5em !important;
+}
+
+
+/*** Lightbox ****/
+
+.lightbox-container {
+  width: 100%;
+  height: 100%;
+  background: rgba(51, 51, 51, 0.82);
+  position: fixed;
+  z-index: 999999;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  display: none;
+}
+
+.lightbox-image-container {
+  display: block;
+  margin: 0px auto;
+  overflow: hidden;
+  text-align: center;
+  max-height: 603px;
+  top: 9em;
+  position: relative;
+}
+
+.lightbox-image-container img {
+  max-height: 603px;
+  max-width: 100%;
+}
+
+/**** lightbox controllers ****/
+
+span.lightbox-leftarrow {
+background: #000;
+height: 8em;
+width: 7em;
+top: 50%;
+position: absolute;
+left: 0;
+z-index: 999;
+}
+
+
+span.lightbox-righttarrow{
+background: #000;
+height: 8em;
+width: 7em;
+top: 50%;
+z-index: 999;
+position: absolute;
+right: 0;
+}
+
 

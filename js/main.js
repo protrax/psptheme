@@ -1099,8 +1099,11 @@ if( !buttonShape[index] == "" ){
         touchRatio: 0.2,
         slideToClickedSlide: true
     });
-    psGallery.params.control     = galleryThumbs;
-    galleryThumbs.params.control = psGallery;
+    if( $(document).hasClass('gallery-top') ) {
+      psGallery.params.control     = galleryThumbs;
+      galleryThumbs.params.control = psGallery;      
+    }
+
  
 
     // Lightbox 

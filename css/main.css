@@ -94,7 +94,7 @@ small, .font_small {
 }
 
 .superbold {
-  font-weight: 900 !important;
+  font-weight: 400 !important;
 }
 
 .normal {
@@ -102,7 +102,7 @@ small, .font_small {
 }
 
 .medium {
-  font-weight: 400 !important;
+  font-weight: 300 !important;
 }
 
 .hr {
@@ -116,6 +116,7 @@ small, .font_small {
 .hidden {
   visibility: hidden !important;
 }
+
 
 /**** Dividers ***/
 
@@ -635,6 +636,7 @@ div#nav-collapse{
 .our-suggestions {
   padding: 0px;
   margin-bottom: 10px;
+  float: left;
 }
 
 .our-suggestions h2 {
@@ -1639,8 +1641,7 @@ figure figcaption > a {
 }
 
   figure h2 {
-  word-spacing: -0.15em;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 figure h2 span {
@@ -1742,84 +1743,26 @@ figure p {
   padding-bottom: 10px;
 }
 
+.grid-post-info {
+  display: block;
+}
+
+.grid-post-info p {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.grid-post-info a{
+  color: #f78e20;
+}
+
+.grid-post-info a:hover {
+  text-decoration: underline;
+}
 
 /*****************************
  ********* Hover effects ****
 /****************************/
-
-
-/*-----------------*/
-/***** Goliath *****/
-/*-----------------*/
-
-figure.effect-goliath {
-  background: #f9f9f9;
-}
-
-figure.effect-goliath div,
-figure.effect-goliath h3 {
-  -webkit-transition: -webkit-transform 0.35s;
-  transition: transform 0.35s;
-}
-
-figure.effect-goliath div {
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-figure.effect-goliath h3,
-figure.effect-goliath p {
-  opacity: 0;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  padding: 30px;
-}
-
-figure.effect-goliath h3 {
-  text-transform: none;
-  font-size: 150%;
-  color: #333;
-  padding: 29px;
-  opacity: 0;
-  font-weight: 500;
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: translate3d(0,50px,0);
-  transform: translate3d(0,50px,0);
-}
-
-figure.effect-goliath p {
-  text-transform: none;
-  font-size: 90%;
-  color: #333;
-  opacity: 0;
-  padding: 0 0 13px 31px;
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: translate3d(0,50px,0);
-  transform: translate3d(0,50px,0);
-}
-
-figure.effect-goliath:hover div {
-  -webkit-transform: translate3d(0,-80px,0);
-  transform: translate3d(0,-80px,0);
-}
-
-
-figure.effect-goliath:hover p {
-  opacity: 1;
-  display: block;
-  -webkit-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
-}
-
-figure.effect-goliath:hover h3 {
-  display: block;
-  opacity: 1;
-  -webkit-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
-}
 
 
 
@@ -2059,7 +2002,7 @@ figure.effect-ruby:hover img {
 figure.effect-ruby h2 {
   margin-top: 1.3em;
   opacity: 0;
-  font-weight: 300;
+  font-weight: 400;
   text-align: center;
   -webkit-transition: -webkit-transform 0.35s;
   transition: transform 0.35s;
@@ -3563,7 +3506,17 @@ div.folded h2:after {
 
 .syngery-callout h4 {
   margin-top: 0px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.syngery-callout h3 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.syngery-callout h2 {
+  margin-top: 0px;
+  margin-bottom: 10px;
 }
 
 .callout-title-color-1 {
@@ -3848,7 +3801,7 @@ li.active-tab {
 /**** Stuff *****/
 
 .iso-portfolio-item {
-  margin-bottom: 10px;
+  margin-bottom: 50px;
 }
 
 .pf-single h2 {
@@ -4027,6 +3980,7 @@ li.active-tab {
           animation-fill-mode: both;
 }
 
+
 /* =================================
     Gallery
    ================================= */
@@ -4133,4 +4087,103 @@ position: absolute;
 right: 0;
 }
 
+
+
+/**** Typograpgy ****/
+
+.headings-example {
+  float: left;
+  width: 100%;
+  height: auto;
+}
+
+.headings-example h1 {
+    margin-top: 25px !important;
+    margin-bottom: 25px !important;
+}
+
+.headings-example h2,
+.headings-example h3,
+.headings-example h4,
+.headings-example h5,
+.headings-example h6 {
+  margin-top: 0;
+  margin-bottom: 32px !important;
+}
+
+.typography-page {
+  float: left;
+  width: 100%;
+  height: auto;
+}
+
+.typography-page a {
+  color: #f78e20;
+}
+
+.typography-page a:hover {
+  text-decoration: underline;
+}
+
+.synergy-dropcap-1 {
+  position: relative;
+  top: 4px;
+  float: left;
+  margin-right: 7px;
+  padding: 0;
+  line-height: 52px;
+  color: #f78e20;
+  font-size: 60px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: serif;
+}
+
+.synergy-dropcap-2 {
+  padding: 7px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 3px solid #f78e20;
+  position: relative;
+  top: 4px;
+  float: left;
+  margin-right: 7px;
+  margin-bottom: 7px;
+  line-height: 52px;
+  color: #f78e20;
+  font-size: 60px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: serif;
+}
+
+.synergy-dropcap-3 {
+  padding: 10px;
+  background-color: #f78e20;
+  position: relative;
+  top: 4px;
+  float: left;
+  margin-right: 7px;
+  line-height: 52px;
+  color: #f9f9f9;
+  font-size: 60px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: serif;
+}
+
+.synergy-dropcap-4 {
+  padding: 10px;
+  background-color: #f78e20;
+  position: relative;
+  top: 4px;
+  float: left;
+  margin-right: 7px;
+  line-height: 52px;
+  color: #f9f9f9;
+  border-radius: 50%;
+  font-size: 60px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: serif;
+}
 

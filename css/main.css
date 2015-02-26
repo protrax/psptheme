@@ -102,7 +102,7 @@ small, .font_small {
 }
 
 .medium {
-  font-weight: 300 !important;
+  font-weight: 400 !important;
 }
 
 .hr {
@@ -619,7 +619,6 @@ div#nav-collapse{
 .list-unstyled,
 .list-unstyled ul { 
   min-width: 284px;
-  border-right: 1px dotted lightgray; 
 }
 
 
@@ -4186,3 +4185,13 @@ right: 0;
   font-weight: 400;
   font-family: serif;
 }
+
+
+
+/****** Footer styles ******/
+
+.recent-posts div {
+  margin: 3px 5px 5px 3px;
+  
+}
+

@@ -1099,11 +1099,15 @@ if( !buttonShape[index] == "" ){
         touchRatio: 0.2,
         slideToClickedSlide: true
     });
-    if( $(document).hasClass('gallery-top') ) {
-      psGallery.params.control     = galleryThumbs;
-      galleryThumbs.params.control = psGallery;      
-    }
 
+  if( $('.gallery-top').hasClass( "gallery-top" )  ) {
+        psGallery.params.control     = galleryThumbs;
+        galleryThumbs.params.control = psGallery;          
+  }
+
+      
+
+  
  
 
     // Lightbox 
@@ -1122,7 +1126,8 @@ if( !buttonShape[index] == "" ){
   // append lightbox container to body 
 
     $('body').append('<div class="lightbox-container"></div>');
-
+   
+    // Append lightbox on click
     $('.swiper-slide a').click(function(e) {
       e.preventDefault();
       var lightboxImageUrl  = $(this).attr('href');
@@ -1133,15 +1138,21 @@ if( !buttonShape[index] == "" ){
           lightboxImage += '<img src="' + lightboxImageUrl + '" alt="" class="">';
           lightboxImage += '</div>';
 
+    /**** lightbox controllers *****/
+    var lightboxController  = '<div class="lightbox-controllers">';
+        lightboxController += '<div class="left-arrow">';
+        lightboxController += '<i class=""></i>';
+
       $(lightboxContainer).append(lightboxImage);
       $(lightboxContainer).show();
     });
 
+
+    // detach lightbox related elements
     $('.lightbox-container').click(function() {
       $(this).hide();
       $(this).find('.lightbox-image-container').detach();
     });
-
  }); // End document.ready
 
 

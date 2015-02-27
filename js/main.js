@@ -1155,15 +1155,11 @@ if( !buttonShape[index] == "" ){
         touchRatio: 0.2,
         slideToClickedSlide: true
     });
+    if( $('.gallery-top').hasClass( "gallery-top" )  ) {
+      psGallery.params.control     = galleryThumbs;
+      galleryThumbs.params.control = psGallery;      
+    }
 
-  if( $('.gallery-top').hasClass( "gallery-top" )  ) {
-        psGallery.params.control     = galleryThumbs;
-        galleryThumbs.params.control = psGallery;          
-  }
-
-      
-
-  
  
 
     // Lightbox 
@@ -1172,45 +1168,61 @@ if( !buttonShape[index] == "" ){
         galleryOverlay += '</span>';
         galleryOverlay += '</div>';
 
-    // Append hover container to document
-    // $('.gallery-top').hover(function(){
-    //   $(this).append(galleryOverlay);
-    // }, function() {
-    // $(this).find('.gallery-overlay').detach();
-    // });
-
-  // append lightbox container to body 
-
     $('body').append('<div class="lightbox-container"></div>');
-   
-    // Append lightbox on click
-    $('.swiper-slide a').click(function(e) {
+    
+    // Append lightbox
+    $('.gallery-top .swiper-slide a').click(function(e) {
       e.preventDefault();
-      var lightboxImageUrl  = $(this).attr('href');
-      var lightboxContainer = $('.lightbox-container');
+      /*** general vars ***/
+       $('body').append('<div class="lightbox-image-container"></div>');
+      
+      var lightboxImageUrl       = $(this).attr('href');
+      var lightboxContainer      = $('.lightbox-container');
+      var lightboxImageContainer = $('.lightbox-image-container');
+
 
       /*** lightbox image ***/
-      var lightboxImage  = '<div class="lightbox-image-container">';      
+      var lightboxImage  = '<div class="lightbox-image">';      
           lightboxImage += '<img src="' + lightboxImageUrl + '" alt="" class="">';
           lightboxImage += '</div>';
 
-    /**** lightbox controllers *****/
-    var lightboxController  = '<div class="lightbox-controllers">';
-        lightboxController += '<div class="left-arrow">';
-        lightboxController += '<i class=""></i>';
+  
 
-      $(lightboxContainer).append(lightboxImage);
+      $(lightboxImageContainer).append(lightboxImage);
       $(lightboxContainer).show();
     });
-
-
-    // detach lightbox related elements
+    
+// Detach lightbox
     $('.lightbox-container').click(function() {
       $(this).hide();
-      $(this).find('.lightbox-image-container').detach();
+      $('.lightbox-image-container').detach();
     });
+
+// Detach lightbox
+$(document).on("click",".lightbox-image-container",function(){
+     $(this).detach();
+     $('.lightbox-container').hide();
+
+})
+
  }); // End document.ready
 
+/*===========================
+  Related post slider
+ ===========================*/
 
+$(function(){
 
+        var relatedPostSlider =  $('.related-post-slide').swiper({
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        slidesPerView: 3,
+        centeredSlides: true,
+        paginationClickable: true,
+        spaceBetween: 30,
+        shortSwipes: false,
+        resistance: true
+    });
+         
 
+});

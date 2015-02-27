@@ -4220,7 +4220,7 @@ top: 50%;
 right: 0;
 }
 
-i.fa.fa-arrow-right {
+a.gallery-right-arrow  i.fa.fa-arrow-right {
   background: #333;
   line-height: 2.5em;
   font-size: 2em !important;
@@ -4234,7 +4234,7 @@ top: 50%;
 left: 0;
 }
 
-i.fa.fa-arrow-left {
+a.gallery-left-arrow  i.fa.fa-arrow-left {
   background: #333;
   line-height: 2.5em;
   font-size: 2em !important;

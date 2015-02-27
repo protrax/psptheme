@@ -476,18 +476,17 @@ jQuery(document).ready(function($){
 PROGRESS PIE ANIMATION
 *************************************************************/
   
-// SMALL
 
 
 jQuery(function($) {
  
-  $('.chart-small').waypoint(function() {
+  $('.chart').waypoint(function() {
     
-    $('.chart-small').easyPieChart({
+    $('.chart').easyPieChart({
       animate: 6000,
       easing: 'easeOut',
       onStep: function(from, to, percent) {
-        $(this.el).find('.percent-small').text(Math.round(percent));
+        $(this.el).find('.percent').text(Math.round(percent));
       },
         trackColor: '#eee',
         barColor: "#f78e20",
@@ -503,61 +502,6 @@ jQuery(function($) {
   });
 });
 
-
-// Medium
-
-jQuery(function($) {
- 
-  $('.chart-medium').waypoint(function() {
-    
-    $('.chart-medium').easyPieChart({
-      animate: 6000,
-      easing: 'easeOut',
-      lineWidth: 4,
-      onStep: function(from, to, percent) {
-        $(this.el).find('.percent-medium').text(Math.round(percent));
-      },
-        lineCap: 'butt',
-        trackColor: false,
-        barColor: "darkgray",
-        scaleColor: false,
-
-    });
-
-  },
-
-  {
-    offset: '100%',
-    triggerOnce: true
-  });
-});
-
-
-
-
-
-jQuery(function($) {
- 
-  $('.chart-large').waypoint(function() {
-    
-    $('.chart-large').easyPieChart({
-      animate: 6000,
-      easing: 'easeOut',
-      onStep: function(from, to, percent) {
-        $(this.el).find('.percent-large').text(Math.round(percent));
-      },
-        trackColor: '#eee',
-        barColor: "#f78e20",
-        scaleColor: "#4F5050",  
-    });
-
-  },
-
-  {
-    offset: '100%',
-    triggerOnce: true
-  });
-});
 
 
 /*************************************************************

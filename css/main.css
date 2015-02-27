@@ -3137,17 +3137,29 @@ margin-top: 1em;
    15. Counter
 /* ============================================================ */
 
-.counter-holder {
+.counter-holder-border {
+   border: 1px solid #ddd;
+   padding: 20px;
+}
 
+.counter-wrapper {
+  float: left;
+  width: 100%;
+  height: auto;
+  margin-bottom: 50px;
 }
 
 .counter-content {
   display: block;
+  text-align: center;
+}
 
+.counter-content i {
+  font-size: 40px !important;
 }
 
 .counter-content .counter {
-  font-size: 4.2em;
+  font-size: 3.5em;
 }
 
 .counter-icon {
@@ -3155,11 +3167,28 @@ margin-top: 1em;
   padding: 0 .3em 0 0;
 }
 
+.counter-desc-negative {
+  font-size: 1.2em;
+  font-weight: 500;
+  color: #f9f9f9;
+  
+}
+
 .counter-desc {
   font-size: 1.2em;
-  font-weight: 600;
-  color: #fff;
+  font-weight: 500;
+  color: #323232;
   
+}
+
+p.counter-desc {
+  margin: 0;
+  text-align: center;
+}
+
+p.counter-desc-negative {
+  margin: 0;
+  text-align: center;
 }
 
 
@@ -3210,12 +3239,14 @@ margin-top: 1em;
    17. Pie chart
 /* ============================================================ */
 
-.piechart-container {
+/**** Small ****/
+
+.piechart-container-small {
   text-align: center;
   margin: 1em 0;
 }
 
-.chart {
+.chart-small {
   position: relative;
   display: inline-block;
   width: 110px;
@@ -3223,12 +3254,12 @@ margin-top: 1em;
   text-align: center;
 }
 
-.chart canvas {
+.chart-small canvas {
   position: absolute;
   top: 0;
   left: 0;
 }
-.percent {
+.percent-small {
   display: inline-block;
   line-height: 110px;
   z-index: 2;
@@ -3236,18 +3267,111 @@ margin-top: 1em;
   font-weight: bold;
 }
 
-.percent:after {
+.percent-small:after {
   content: '%';
   margin-left: 0.1em;
   font-size: 1em;
 }
 
-.piechart-lable {
+.piechart-lable-small {
   text-align: center;
   font-size: 1.2em;
   font-weight: bold;
   margin: 1em 0 0 0;
 }
+
+
+/**** Medium ****/
+
+.piechart-container-medium {
+  text-align: center;
+  margin: 1em 0;
+}
+
+.chart-medium {
+  position: relative;
+  display: inline-block;
+  width: 230px;
+  height: 230px;
+  text-align: center;
+}
+
+.chart-medium i {
+  position: relative;
+  top: 89px;
+  font-size: 50px !important;
+  color: ;
+}
+
+.chart-medium canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.percent-medium {
+  display: inline-block;
+  line-height: 230px;
+  z-index: 2;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.percent-medium:after {
+  content: '%';
+  margin-left: 0.1em;
+  font-size: 1em;
+}
+
+.piechart-lable-medium {
+  text-align: center;
+  font-size: 1.3em;
+  font-weight: 400;
+  margin: 1em 0 0 0;
+}
+
+/**** Large ****/
+
+.piechart-container-large {
+  text-align: center;
+  margin: 1em 0;
+}
+
+.chart-large {
+  position: relative;
+  display: inline-block;
+  width: 330px;
+  height: 330px;
+  text-align: center;
+}
+
+.chart-large canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.percent-large {
+  display: inline-block;
+  line-height: 330px;
+  z-index: 2;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.percent-large:after {
+  content: '%';
+  margin-left: 0.1em;
+  font-size: 1em;
+}
+
+.piechart-lable-large {
+  text-align: center;
+  font-size: 1.4em;
+  font-weight: bold;
+  margin: 1em 0 0 0;
+}
+
+
+
 
 /* ============================================================
    18. Call to action

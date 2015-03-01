@@ -475,7 +475,8 @@ jQuery(document).ready(function($){
 /*************************************************************
 PROGRESS PIE ANIMATION
 *************************************************************/
-  
+
+
 
 
 jQuery(function($) {
@@ -488,10 +489,10 @@ jQuery(function($) {
       onStep: function(from, to, percent) {
         $(this.el).find('.percent').text(Math.round(percent));
       },
-        trackColor: '#eee',
+        trackColor: false,
         barColor: "#f78e20",
-        scaleColor: "#4F5050",
-        lineWidth: 10,  
+        scaleColor: false,
+        lineWidth: 3,  
     });
 
   },

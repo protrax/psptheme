@@ -3280,10 +3280,23 @@ p.counter-desc-negative {
   margin: 1em 0 0 0;
 }
 
+.chart-small i {
+  position: relative;
+  top: 40px;
+  font-size: 27px !important;
+}
+
 
 /**** Medium ****/
 
-.chart-medium .piechart-container {
+.chart-wrapper {
+  float: left;
+  width: 100%;
+  height: auto;
+  margin-bottom: 50px;
+}
+
+.piechart-container {
   text-align: center;
   margin: 1em 0;
 }
@@ -3311,8 +3324,12 @@ p.counter-desc-negative {
   display: inline-block;
   line-height: 230px;
   z-index: 2;
-  font-size: 1.3em;
-  font-weight: bold;
+  font-size: 2.3em;
+  font-weight: 300;
+}
+
+.negative {
+  color: #f9f9f9;
 }
 
 .chart-medium .percent:after {
@@ -3321,16 +3338,26 @@ p.counter-desc-negative {
   font-size: 1em;
 }
 
-.chart-medium .piechart-lable {
+ .piechart-lable {
   text-align: center;
   font-size: 1.3em;
   font-weight: 400;
   margin: 1em 0 0 0;
 }
 
+
+
 /**** Large ****/
 
-.piechart-container-large {
+
+.chart-wrapper {
+  float: left;
+  width: 100%;
+  height: auto;
+  margin-bottom: 50px;
+}
+
+.piechart-container {
   text-align: center;
   margin: 1em 0;
 }
@@ -3343,31 +3370,42 @@ p.counter-desc-negative {
   text-align: center;
 }
 
+.chart-large i {
+  position: relative;
+  top: 89px;
+  font-size: 50px !important;
+}
+
 .chart-large canvas {
   position: absolute;
   top: 0;
   left: 0;
 }
-.percent-large {
+.chart-large .percent {
   display: inline-block;
   line-height: 330px;
   z-index: 2;
-  font-size: 1.3em;
-  font-weight: bold;
+  font-size: 2.3em;
+  font-weight: 300;
 }
 
-.percent-large:after {
+.negative {
+  color: #f9f9f9;
+}
+
+.chart-large .percent:after {
   content: '%';
   margin-left: 0.1em;
   font-size: 1em;
 }
 
-.piechart-lable-large {
+ .chart-large .piechart-lable {
   text-align: center;
-  font-size: 1.4em;
-  font-weight: bold;
+  font-size: 1.3em;
+  font-weight: 400;
   margin: 1em 0 0 0;
 }
+
 
 
 

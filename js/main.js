@@ -471,35 +471,70 @@ jQuery(document).ready(function($){
 });
 
 /*************************************************************
-PROGRESS PIE ANIMATION
+ PIE chart ANIMATION
 *************************************************************/
 
 
 
 
 jQuery(function($) {
- 
-  $('.chart').waypoint(function() {
-    
-    $('.chart').easyPieChart({
+  var chart = $('.chart');
+  var brColor   = [],
+      ctSize    = [],
+      icoType   = [];
+
+
+
+  $( chart ).each(function(){
+    var barColor    = $(this).data('barcolor'),
+        counterSize = $(this).data('countersize');
+        iconType = $(this).data('showicon');
+        // Bar colors to array
+        brColor.push(barColor);
+        // Sizes to array
+        ctSize.push(counterSize);
+        // Icons to array
+        icoType.push(iconType);
+
+
+  });
+
+    $( chart ).easyPieChart({
       animate: 6000,
       easing: 'easeOut',
       onStep: function(from, to, percent) {
         $(this.el).find('.percent').text(Math.round(percent));
       },
         trackColor: false,
-        barColor: "#f78e20",
         scaleColor: false,
-        lineWidth: 3,  
+        lineWidth: 3,
     });
 
-  },
+  $( chart ).each(function(index){
+    var counterIcon = $(this).data('showicon');
+    // set bar color
+   $(this).data('easyPieChart').options.barColor = brColor[index];
+   // Set size to counters
+   $(this).addClass(ctSize[index]);
 
-  {
-    offset: '100%',
-    triggerOnce: true
-  });
-});
+   // icon layout
+   var iconType    = '<i class="fa ' + icoType[index] + '"></i>',
+       percentType = '<span class="percent"></span>';
+   // Set icon 
+  if( !counterIcon == "" ) {
+    $(this).append(iconType);
+  }else{
+    $(this).append(percentType)
+  }
+
+   // Set percent
+
+
+
+
+  }); // end loop
+
+}); // End document.ready
 
 
 

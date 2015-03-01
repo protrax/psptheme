@@ -1820,6 +1820,16 @@ figure.effect-bubba h2 {
   transform: translate3d(0,-20px,0);
 }
 
+figure.effect-bubba h3 {
+  opacity: 0;
+  position: relative;
+  top: 1.3em;
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(0,-20px,0);
+  transform: translate3d(0,-20px,0);
+}
+
 figure.effect-bubba p {
   position: relative;
   top: 6.5em;
@@ -1839,6 +1849,13 @@ figure.effect-bubba:hover figcaption::after {
 }
 
 figure.effect-bubba:hover h2,
+figure.effect-bubba:hover p {
+  opacity: 1;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+figure.effect-bubba:hover h3,
 figure.effect-bubba:hover p {
   opacity: 1;
   -webkit-transform: translate3d(0,0,0);
@@ -3286,6 +3303,20 @@ p.counter-desc-negative {
   font-size: 27px !important;
 }
 
+.chart-small .percent:after {
+  content: '%';
+  margin-left: 0.1em;
+  font-size: 1em;
+}
+
+.chart-small .percent {
+  display: inline-block;
+  line-height: 110px;
+  z-index: 2;
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
 
 /**** Medium ****/
 
@@ -3492,19 +3523,26 @@ p.counter-desc-negative {
 
 .pricing-table-4 {
    margin-bottom: 10px;
+   float: left;
+   width: 100%;
 }
 
 .pricing-table-3 {
   margin-bottom: 10px;
+  float: left;
+  width: 100%;
 }
 
 .pricing-table-2 {
    margin-bottom: 10px;
+   float: left;
+   width: 100%;
 }
 
 .price-table {
   margin-bottom: 10px;
-  padding: 5px;
+  float: left;
+   width: 100%;
 }
 
 .pricing-table-4 h2 {
@@ -3617,7 +3655,7 @@ div.folded h2 {
     margin: 0;
     padding: 4px 25px;
     position: absolute;
-    right: -9px;
+    right: 1px;
     top: 43px;
 }
 div.folded h2:after {

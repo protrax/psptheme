@@ -350,9 +350,8 @@ jQuery(document).ready(function($){
       sliderAnimationHeading     = $( slider ).data('animationheading'),
       sliderAnimationParagraph   = $( slider ).data('animationparagraph');
       sliderAnimationButtons     = $( slider ).data('animationbuttons');
-
-
-    var pspSlider = $('.swiper-container').swiper({
+if( $('.front-slider').hasClass( "front-slider" )  ) {
+var pspSlider = new Swiper ('.swiper-container', {
       //Slider options
       direction: 'horizontal',
       watchVisibility: true,
@@ -363,6 +362,8 @@ jQuery(document).ready(function($){
       initialSlide: parseInt(sliderStart),
       grabCursor: false,
       longSwipes: true,
+      spaceBetween: 0,
+      slidesPerView: 'auto',
       shortSwipes: true,
       allowSwipeToNext: true,
       allowSwipeToPrev: true,
@@ -377,11 +378,8 @@ jQuery(document).ready(function($){
       onSlideChangeEnd: function(){
         slideEnd();
       }
-      
-      
-
     });
-
+}
 
 // Slider init action
 function slideInit() {
@@ -1088,12 +1086,12 @@ if( !buttonShape[index] == "" ){
 
     var appendNumber  = 4;
     var prependNumber = 1;
-    var psGallery     = $('.gallery-top').swiper({
-        spaceBetween: 10,
+    var psGallery = new Swiper ('.gallery-top', {
+        spaceBetween: 0,
         centeredSlides: true,
         onTouchStart: false,
     });
-    var galleryThumbs =  $('.gallery-thumbs').swiper({
+    var galleryThumbs = new Swiper ('.gallery-thumbs', {
         spaceBetween: 10,
         centeredSlides: true,
         slidesPerView: 4,
@@ -1156,18 +1154,23 @@ $(document).on("click",".lightbox-image-container",function(){
   Related post slider
  ===========================*/
 
-$(function(){
-
-        var relatedPostSlider =  $('.related-post-slide').swiper({
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
-        slidesPerView: 3,
-        centeredSlides: true,
-        paginationClickable: true,
+$(document).ready(function(){
+     var relatedPostSlider = new Swiper ('.related-post-slide', {
+        direction: 'horizontal',
+        loop: false,
+        touchEventsTarget: 'container',
+        nextButton: '.swiper-related-next',
+        prevButton: '.swiper-related-prev',
         spaceBetween: 30,
-        shortSwipes: false,
-        resistance: true
-    });
-         
-
+        centeredSlides: false,
+        slidesPerView: 3,
+        touchRatio: 0.6,
+        slideToClickedSlide: true,
+    });        
 });
+
+
+/*===========================
+  Partners 
+ ===========================*/
+

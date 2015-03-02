@@ -4376,7 +4376,56 @@ a.gallery-left-arrow  i.fa.fa-arrow-left {
         -webkit-align-items: center;
         align-items: center;
 }
+.swiper-related-prev {
+position: absolute;
+/* height: 20px; */
+/* width: 20px; */
+top: 1.5em;
+z-index: 99999;
+font-weight: lighter;
+font-size: 5em;
+left: -1em;
+/* background: #000; */
+}
 
+
+.swiper-related-prev i {
+  color: rgb(63, 64, 64);
+}
+
+.swiper-related-prev:hover i {
+  color: #F78E20;
+  cursor: pointer;
+}
+
+.swiper-related-prev.swiper-button-disabled i {
+  color: #D0D0D0 !important;
+}
+
+.swiper-related-next {
+position: absolute;
+/* height: 20px; */
+/* width: 20px; */
+top: 1.5em;
+z-index: 99999;
+font-weight: lighter;
+font-size: 5em;
+right: -1em;
+/* background: #000; */
+}
+
+.swiper-related-next i {
+  color: rgb(63, 64, 64);
+}
+
+.swiper-related-next:hover i {
+  color: #F78E20;
+  cursor: pointer;
+}
+
+.swiper-related-next.swiper-button-disabled i {
+  color: #D0D0D0 !important;
+}
 
 
 

@@ -4061,6 +4061,7 @@ li.active-tab {
         background-size: cover !important;
         background-position: 50% 50%;
         background-repeat: no-repeat;
+        overflow: hidden;
     }
 
     .swiper-slide .content {
@@ -4178,6 +4179,34 @@ li.active-tab {
           animation-fill-mode: both;
 }
 
+
+/**** Media queries ****/
+
+
+@media only screen and (max-width : 1180px) {
+  .swiper-slide video {
+    /* width: 100%; */
+    z-index: -1000;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    width: auto;
+    height: 100%;
+  }
+
+}
+
+
+@media only screen and (max-width : 767px) {
+  .swiper-button-next {
+    display: none;
+  }
+
+  .swiper-button-prev {
+    display: none;
+  }
+
+}
 
 /* =================================
     Gallery

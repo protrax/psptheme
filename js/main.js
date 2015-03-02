@@ -504,7 +504,7 @@ jQuery(function($) {
         // Percent colors to array
         prctColor.push(percentColor);
   });
-
+    // Init pie chart
     $( chart ).easyPieChart({
       animate: 6000,
       easing: 'easeOut',
@@ -526,14 +526,15 @@ jQuery(function($) {
    // icon layout
    var iconType    = '<i class="fa ' + icoType[index] + '" style="color:' + icoColor[index] +'" ></i>',
        percentType = '<span class="percent" style="color:'+ prctColor[index] +';" ></span>'; 
-   // Set icon 
+   
+   // Set icon else set percent
   if( !counterIcon == "" ) {
     $(this).append(iconType);
   }else{
     $(this).append(percentType)
   }
+  
   }); // end loop
-
 }); // End document.ready
 
 
@@ -677,11 +678,9 @@ TOGGLES
 ACCORDIONS
 *************************************************************/
     var accContent = '.accordion-content',
-    accHolder  = 'accordion-holder',
-    accOpen    = '.accordion-open',
-    accPlus    = '.accordion-open .icon-to-plus';
-
-
+        accHolder  = 'accordion-holder',
+        accOpen    = '.accordion-open',
+        accPlus    = '.accordion-open .icon-to-plus';
 
   $(document).on('click', '.accordion-title', function(){
 
@@ -1121,11 +1120,13 @@ if( !buttonShape[index] == "" ){
 
     var appendNumber  = 4;
     var prependNumber = 1;
+    // Init gallery
     var psGallery = new Swiper ('.gallery-top', {
         spaceBetween: 0,
         centeredSlides: true,
         onTouchStart: false,
     });
+    // Init gallery thumbs
     var galleryThumbs = new Swiper ('.gallery-thumbs', {
         spaceBetween: 10,
         centeredSlides: true,
@@ -1137,8 +1138,6 @@ if( !buttonShape[index] == "" ){
       psGallery.params.control     = galleryThumbs;
       galleryThumbs.params.control = psGallery;      
     }
-
- 
 
     // Lightbox 
     var galleryOverlay = '<div class="gallery-overlay">';
@@ -1164,10 +1163,9 @@ if( !buttonShape[index] == "" ){
           lightboxImage += '<img src="' + lightboxImageUrl + '" alt="" class="">';
           lightboxImage += '</div>';
 
-  
-
       $(lightboxImageContainer).append(lightboxImage);
       $(lightboxContainer).show();
+    
     });
     
 // Detach lightbox

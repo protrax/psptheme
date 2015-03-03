@@ -475,8 +475,7 @@ jQuery(function($) {
       icoType   = [],
       icoColor  = [],
       prctColor = [],
-      trcColor  = [],
-      sclColor  = [];
+      trcColor  = [];
 
 
 
@@ -487,7 +486,7 @@ jQuery(function($) {
         iconColor    = $(this).data('iconcolor'),
         percentColor = $(this).data('percentcolor'),
         trackColor   = $(this).data('trackcolor'),
-        scaleColor   = $(this).data('scalecolor');
+
 
 
         // Bar colors to array
@@ -512,7 +511,7 @@ jQuery(function($) {
       onStep: function(from, to, percent) {
         $(this.el).find('.percent').text(Math.round(percent));
       },
-
+        scaleColor: false,
         lineWidth: 5,
     });
 
@@ -521,18 +520,11 @@ jQuery(function($) {
     // set bar color
     $(this).data('easyPieChart').options.barColor   = brColor[index];
    var track =  $(this).data('easyPieChart').options.trackColor = trcColor[index];
-   var scale =  $(this).data('easyPieChart').options.scaleColor = sclColor[index];
 
     if( track == "" ) {
       $(this).data('easyPieChart').options.trackColor = "#f9f9f9";
     } else {
       track =  $(this).data('easyPieChart').options.trackColor = trcColor[index];
-    }
-
-    if( scale == "" ){
-      $(this).data('easyPieChart').options.scaleColor = "#dfe0e0";
-    }else {
-      $(this).data('easyPieChart').options.scaleColor = "sclColor[index]";
     }
 
    // Set size to counters

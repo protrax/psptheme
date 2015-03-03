@@ -33,28 +33,6 @@ jQuery(function ($) {
 
 jQuery(function($){
 
-// Make a loading function
-
-  // Ajax
-    // append a loading class
-    // End the ajax dfunction
-    // Show all
-
-      // var isotopeContainer = $('.isotope');
-
-      // // Load function
-      //   function pfLoading(e){
-          
-      //     e.find()
-
-      //   };
-      //   // Call the load function
-      //   pfLoading( isotopeContainer );
-
-
-
-
-
 // item column size
 
   $('.iso-item').addClass('col-sm-6 col-xs-12 col-md-3');
@@ -207,30 +185,6 @@ $('.iso-portfolio-item').each(function(i) {
 // End filder data groups
 }); // End isotope function
 //End isotope page-portfolio functions
-
-
-//********************************************
-//************* Ajax portfolio ***************
-//********************************************
-
-  //******** TODO ********/
-    // Load data form html document
-    // make layout
-    // append data
-    // make it posssible to add animations on opening and closing.
-    // Add navigation (Arrows / number / image - next - previous post)
-
-
-//****************************************
-//************ Main menu *****************
-//****************************************
-
-
-
-/****** sticky  main menu *****/
-  // TODO 
-  // Make logo scale on scroll (with no browser conflicts)
-
 
 $(document).scroll(function(){
   
@@ -440,13 +394,6 @@ $( buttonNext ).on('click', function(e){
   }, function(){
     $(this).find('span').hide();
   });
-
-
-// Slider video
-
-
-
-
 
 }); // end document.ready
 
@@ -975,11 +922,11 @@ Google maps
 /************************************
  *********** Button styles **********
 /************************************/
-
 jQuery(document).ready(function($){
 //Values stored in array
-
+var button = $('.ps-btn'); 
  //Button background color
+
  var buttonBgColor           = [],
  // Button hover background color
      buttonBgHoverColor      = [],
@@ -1007,8 +954,9 @@ jQuery(document).ready(function($){
      buttonShape             = [];
 
 // Loop trough and get values from each data value
-$('.ps-btn').each(function(){
-// Variables
+$( button ).each(function(){
+
+  // Variables
    var btnBgColor             = $( this ).data('bgcolor'),
        btnBgHoverColor        = $( this ).data('bghovercolor'),
        btnColor               = $( this ).data('textcolor'),
@@ -1055,8 +1003,7 @@ $('.ps-btn').each(function(){
 }); 
 
 //Set color to each element based on index
-$('.ps-btn').each(function(index){
-
+$( button ).each(function(index){
   if( buttonHasIcon[index] === ""){
     $(this).removeClass('ps-icon-anim');
     $(this).find("i").remove();
@@ -1083,7 +1030,6 @@ if( !buttonShowIcon[index] == "" ){
 if( !buttonShape[index] == "" ){
  $(this).addClass(buttonShape[index]);
 }
-
 // init styles
   // Button colors
   $(this).attr('style',
@@ -1096,8 +1042,7 @@ if( !buttonShape[index] == "" ){
 
   // Hover styles
     $(this).hover(function(){
-
-      $(this).attr('style', 'background-color:' + buttonBgHoverColor[index] + '!important; '
+      $(this).attr('style', 'background-color:' + buttonBgHoverColor[index] + '!important; display: inline-block; '
        + 'border-color:' + buttonHoverBorderColor[index] + '!important; ' + 'color:' + buttonHoverColor[index] + '!important; ' );
       // icon color
       $(this).find('i').attr('style', 'color:' + buttonHoverIconColor[index] + '!important;' );
@@ -1108,14 +1053,15 @@ if( !buttonShape[index] == "" ){
   $(this).attr('style',
      'border-color:' + buttonBorderColor[index] + '!important; '
       + 'background-color:' + buttonBgColor[index] + '!important; '
-       + 'color:' + buttonColor[index] + '!important; ');
-  // Icon color
-  $(this).find('i').attr('style', 'color:' + buttonIconColor[index] + '!important;');
-    
+       + 'color:' + buttonColor[index] + '!important; display: inline-block; ');
+    // Icon color
+    $(this).find('i').attr('style', 'color:' + buttonIconColor[index] + '!important;');
     }); // end hover
+    $('.ps-btn').css('display', 'inline-block');
   }); // end loop
-}); // End document.ready
+     
 
+}); // End document.ready
 
 /*===========================
   Gallery

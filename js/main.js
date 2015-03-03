@@ -1107,8 +1107,7 @@ if( !buttonShape[index] == "" ){
       var lightboxImageUrl       = $(this).attr('href');
       var lightboxContainer      = $('.lightbox-container');
       var lightboxImageContainer = $('.lightbox-image-container');
-
-
+      
       /*** lightbox image ***/
       var lightboxImage  = '<div class="lightbox-image">';      
           lightboxImage += '<img src="' + lightboxImageUrl + '" alt="" class="">';
@@ -1116,7 +1115,6 @@ if( !buttonShape[index] == "" ){
 
       $(lightboxImageContainer).append(lightboxImage);
       $(lightboxContainer).show();
-    
     });
     
 // Detach lightbox
@@ -1129,8 +1127,7 @@ if( !buttonShape[index] == "" ){
 $(document).on("click",".lightbox-image-container",function(){
      $(this).detach();
      $('.lightbox-container').hide();
-
-})
+    });
 
  }); // End document.ready
 

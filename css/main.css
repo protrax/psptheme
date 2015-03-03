@@ -3867,7 +3867,7 @@ li.active-tab {
 
 .ps-btn {
   position: relative;
-  display: inline-block;
+  display: none;
   vertical-align: middle;
   width: auto;
   max-height: 100%; 

@@ -1508,6 +1508,11 @@ background-color: #f5f5f5;
 
 .search-results {
   padding: 0 !important;
+  float: left;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  
 }
 
 

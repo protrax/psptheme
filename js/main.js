@@ -512,8 +512,8 @@ jQuery(function($) {
         $(this.el).find('.percent').text(Math.round(percent));
       },
         trackColor: false,
-        scaleColor: false,
-        lineWidth: 3,
+        scaleColor: 'gray',
+        lineWidth: 5,
     });
 
   $( chart ).each(function(index){

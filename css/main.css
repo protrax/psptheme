@@ -1254,7 +1254,6 @@ background-color: #f5f5f5;
       background: #f9f9f9;
       min-height: 200px;
       max-height: 400px;
-      margin-bottom: 5em;
 
     }
 
@@ -2848,7 +2847,7 @@ figure.effect-hera:hover p i:empty {
 
 /**** Contact Form (Fullwidth) ****/
 .ps-form .form-group input {
-margin-top: 1em;
+  margin-top: 1em;
   border-bottom: 1px solid #DDD;
   outline: 0;
   margin-bottom: 2em;
@@ -2857,7 +2856,7 @@ margin-top: 1em;
 
 /**** Contact Form (Fullwidth) ****/
 .ps-form .form-group textarea {
-margin-top: 1em;
+  margin-top: 1em;
   border: 1px solid #DDD;
   min-height: 200px;
 
@@ -2877,6 +2876,8 @@ margin-top: 1em;
   border-color: transparent;
   box-shadow: none;
 }
+
+
 
 .form-control:focus {
   border-color: transparent;
@@ -3361,6 +3362,7 @@ p.counter-desc-negative {
 
 .negative {
   color: #f9f9f9;
+
 }
 
 .chart-medium .percent:after {
@@ -3372,7 +3374,7 @@ p.counter-desc-negative {
  .piechart-lable {
   text-align: center;
   font-size: 1.3em;
-  font-weight: 400;
+  font-weight: 300 !important;
   margin: 1em 0 0 0;
 }
 
@@ -3433,7 +3435,7 @@ p.counter-desc-negative {
  .chart-large .piechart-lable {
   text-align: center;
   font-size: 1.3em;
-  font-weight: 400;
+  font-weight: 300 !important;
   margin: 1em 0 0 0;
 }
 
@@ -3938,7 +3940,7 @@ li.active-tab {
 }
 .ps-btn.ps-btn-border {
   background: none !important;
-  border: 2px solid;
+  border: 1px solid;
   border-radius: 0px;
 }
 .ps-btn.ps-btn-bg {
@@ -4536,4 +4538,26 @@ right: -1em;
 .recent-posts div {
   margin: 3px 5px 5px 3px;
   
+}
+
+/* =================================
+    Contact Page
+   ================================= */
+
+.contact-us {
+    margin-top: 12px;
+    float: left;
+    width: 100%;
+    height: auto;
+   }
+
+.contact-us p {
+  margin-bottom: 25px;
+  font-weight: 500;
+}
+
+.contact-us i {
+  font-size: 1.5em !important;
+  margin-left: 0;
+  margin-right: 20px;
 }

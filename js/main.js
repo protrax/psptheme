@@ -474,16 +474,22 @@ jQuery(function($) {
       ctSize    = [],
       icoType   = [],
       icoColor  = [],
-      prctColor = [];
+      prctColor = [],
+      trcColor  = [],
+      sclColor  = [];
 
 
 
   $( chart ).each(function(){
-    var barColor    = $(this).data('barcolor'),
-        counterSize = $(this).data('countersize'),
-        iconType    = $(this).data('showicon'),
-        iconColor   = $(this).data('iconcolor'),
-        percentColor = $(this).data('percentcolor');
+    var barColor     = $(this).data('barcolor'),
+        counterSize  = $(this).data('countersize'),
+        iconType     = $(this).data('showicon'),
+        iconColor    = $(this).data('iconcolor'),
+        percentColor = $(this).data('percentcolor'),
+        trackColor   = $(this).data('trackcolor'),
+        scaleColor   = $(this).data('scalecolor');
+
+
         // Bar colors to array
         brColor.push(barColor);
         // Sizes to array
@@ -494,6 +500,10 @@ jQuery(function($) {
         icoColor.push(iconColor);
         // Percent colors to array
         prctColor.push(percentColor);
+        // Track color to array
+        trcColor.push(trackColor);
+        // Scale color to array
+        sclColor.push(scaleColor);
   });
     // Init pie chart
     $( chart ).easyPieChart({
@@ -502,15 +512,29 @@ jQuery(function($) {
       onStep: function(from, to, percent) {
         $(this.el).find('.percent').text(Math.round(percent));
       },
-        trackColor: false,
-        scaleColor: 'gray',
+
         lineWidth: 5,
     });
 
   $( chart ).each(function(index){
     var counterIcon = $(this).data('showicon');
     // set bar color
-   $(this).data('easyPieChart').options.barColor = brColor[index];
+    $(this).data('easyPieChart').options.barColor   = brColor[index];
+   var track =  $(this).data('easyPieChart').options.trackColor = trcColor[index];
+   var scale =  $(this).data('easyPieChart').options.scaleColor = sclColor[index];
+
+    if( track == "" ) {
+      $(this).data('easyPieChart').options.trackColor = "#f9f9f9";
+    } else {
+      track =  $(this).data('easyPieChart').options.trackColor = trcColor[index];
+    }
+
+    if( scale == "" ){
+      $(this).data('easyPieChart').options.scaleColor = "#dfe0e0";
+    }else {
+      $(this).data('easyPieChart').options.scaleColor = "sclColor[index]";
+    }
+
    // Set size to counters
    $(this).addClass(ctSize[index]);
 
@@ -524,7 +548,7 @@ jQuery(function($) {
   }else{
     $(this).append(percentType)
   }
-  
+
   }); // end loop
 }); // End document.ready
 

@@ -485,7 +485,7 @@ jQuery(function($) {
         iconType     = $(this).data('showicon'),
         iconColor    = $(this).data('iconcolor'),
         percentColor = $(this).data('percentcolor'),
-        trackColor   = $(this).data('trackcolor'),
+        trackColor   = $(this).data('trackcolor');
 
 
 
@@ -501,8 +501,6 @@ jQuery(function($) {
         prctColor.push(percentColor);
         // Track color to array
         trcColor.push(trackColor);
-        // Scale color to array
-        sclColor.push(scaleColor);
   });
     // Init pie chart
     $( chart ).easyPieChart({

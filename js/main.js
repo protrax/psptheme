@@ -20,17 +20,8 @@ jQuery(function ($) {
   });
 });
 
-})
+});
 
-//////// TODO/////////////
-
-  // Fix math for loading item layout
-  // Fix flickering (bug) when filtering data-categories
-  // Do other changes if needed
-  // Fix loading bugs
-  // Make animation section dynamic for php vars
-  // fix smoother animations
-  // Remove classes used for load
 
 
 //***************************************************************
@@ -1187,8 +1178,17 @@ $(document).on("click",".lightbox-image-container",function(){
   Related post slider
  ===========================*/
 
+
+
+
+
+
+
 $(document).ready(function(){
-     var relatedPostSlider = new Swiper ('.related-post-slide', {
+
+  var ww = $(window).width();
+      console.log(ww);
+     var relatedProjectsSlider = new Swiper ('.related-projects-slide', {
         direction: 'horizontal',
         loop: false,
         touchEventsTarget: 'container',
@@ -1196,11 +1196,24 @@ $(document).ready(function(){
         prevButton: '.swiper-related-prev',
         spaceBetween: 30,
         centeredSlides: false,
-        slidesPerView: 3,
+        slidesPerView: slidesPrView(),
         touchRatio: 0.6,
         slideToClickedSlide: true,
-    });        
-});
+    });
+function slidesPrView() {
+    var three = 3,
+        one = 1;
+          
+    if( ww < 767  ) {
+        return one;
+      }else {
+       return three;
+      }
+} // end slidesPrView
+
+}); // end anon
+ 
+
 
 
 /*===========================

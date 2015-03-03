@@ -1085,10 +1085,10 @@ if( !buttonShape[index] == "" ){
         touchRatio: 0.2,
         slideToClickedSlide: true
     });
-    if( $('.gallery-top').hasClass( "gallery-top" )  ) {
+
       psGallery.params.control     = galleryThumbs;
       galleryThumbs.params.control = psGallery;      
-    }
+
 
     // Lightbox 
     var galleryOverlay = '<div class="gallery-overlay">';
@@ -1107,7 +1107,7 @@ if( !buttonShape[index] == "" ){
       var lightboxImageUrl       = $(this).attr('href');
       var lightboxContainer      = $('.lightbox-container');
       var lightboxImageContainer = $('.lightbox-image-container');
-      
+
       /*** lightbox image ***/
       var lightboxImage  = '<div class="lightbox-image">';      
           lightboxImage += '<img src="' + lightboxImageUrl + '" alt="" class="">';

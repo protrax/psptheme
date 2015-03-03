@@ -4356,14 +4356,14 @@ a.gallery-left-arrow  i.fa.fa-arrow-left {
 /* =================================
     Related posts
    ================================= */
-.related-post-slide {
+.related-projects-slide {
         width: 100%;
         height: 300px;
         margin: 20px auto;
 }
 
 
-.related-post-slide .swiper-slide {
+.related-projects-slide .swiper-slide {
   height: 14em;
           text-align: center;
         font-size: 18px;

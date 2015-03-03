@@ -20,17 +20,8 @@ jQuery(function ($) {
   });
 });
 
-})
+});
 
-//////// TODO/////////////
-
-  // Fix math for loading item layout
-  // Fix flickering (bug) when filtering data-categories
-  // Do other changes if needed
-  // Fix loading bugs
-  // Make animation section dynamic for php vars
-  // fix smoother animations
-  // Remove classes used for load
 
 
 //***************************************************************
@@ -483,16 +474,22 @@ jQuery(function($) {
       ctSize    = [],
       icoType   = [],
       icoColor  = [],
-      prctColor = [];
+      prctColor = [],
+      trcColor  = [],
+      sclColor  = [];
 
 
 
   $( chart ).each(function(){
-    var barColor    = $(this).data('barcolor'),
-        counterSize = $(this).data('countersize'),
-        iconType    = $(this).data('showicon'),
-        iconColor   = $(this).data('iconcolor'),
-        percentColor = $(this).data('percentcolor');
+    var barColor     = $(this).data('barcolor'),
+        counterSize  = $(this).data('countersize'),
+        iconType     = $(this).data('showicon'),
+        iconColor    = $(this).data('iconcolor'),
+        percentColor = $(this).data('percentcolor'),
+        trackColor   = $(this).data('trackcolor'),
+        scaleColor   = $(this).data('scalecolor');
+
+
         // Bar colors to array
         brColor.push(barColor);
         // Sizes to array
@@ -503,6 +500,10 @@ jQuery(function($) {
         icoColor.push(iconColor);
         // Percent colors to array
         prctColor.push(percentColor);
+        // Track color to array
+        trcColor.push(trackColor);
+        // Scale color to array
+        sclColor.push(scaleColor);
   });
     // Init pie chart
     $( chart ).easyPieChart({
@@ -511,15 +512,29 @@ jQuery(function($) {
       onStep: function(from, to, percent) {
         $(this.el).find('.percent').text(Math.round(percent));
       },
-        trackColor: false,
-        scaleColor: 'gray',
+
         lineWidth: 5,
     });
 
   $( chart ).each(function(index){
     var counterIcon = $(this).data('showicon');
     // set bar color
-   $(this).data('easyPieChart').options.barColor = brColor[index];
+    $(this).data('easyPieChart').options.barColor   = brColor[index];
+   var track =  $(this).data('easyPieChart').options.trackColor = trcColor[index];
+   var scale =  $(this).data('easyPieChart').options.scaleColor = sclColor[index];
+
+    if( track == "" ) {
+      $(this).data('easyPieChart').options.trackColor = "#f9f9f9";
+    } else {
+      track =  $(this).data('easyPieChart').options.trackColor = trcColor[index];
+    }
+
+    if( scale == "" ){
+      $(this).data('easyPieChart').options.scaleColor = "#dfe0e0";
+    }else {
+      $(this).data('easyPieChart').options.scaleColor = "sclColor[index]";
+    }
+
    // Set size to counters
    $(this).addClass(ctSize[index]);
 
@@ -533,7 +548,7 @@ jQuery(function($) {
   }else{
     $(this).append(percentType)
   }
-  
+
   }); // end loop
 }); // End document.ready
 
@@ -1187,8 +1202,17 @@ $(document).on("click",".lightbox-image-container",function(){
   Related post slider
  ===========================*/
 
+
+
+
+
+
+
 $(document).ready(function(){
-     var relatedPostSlider = new Swiper ('.related-post-slide', {
+
+  var ww = $(window).width();
+      console.log(ww);
+     var relatedProjectsSlider = new Swiper ('.related-projects-slide', {
         direction: 'horizontal',
         loop: false,
         touchEventsTarget: 'container',
@@ -1196,11 +1220,24 @@ $(document).ready(function(){
         prevButton: '.swiper-related-prev',
         spaceBetween: 30,
         centeredSlides: false,
-        slidesPerView: 3,
+        slidesPerView: slidesPrView(),
         touchRatio: 0.6,
         slideToClickedSlide: true,
-    });        
-});
+    });
+function slidesPrView() {
+    var three = 3,
+        one = 1;
+          
+    if( ww < 767  ) {
+        return one;
+      }else {
+       return three;
+      }
+} // end slidesPrView
+
+}); // end anon
+ 
+
 
 
 /*===========================

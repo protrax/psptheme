@@ -4645,13 +4645,6 @@ right: -1em;
 
 
 
-/****** Footer styles ******/
-
-.recent-posts div {
-  margin: 3px 5px 5px 3px;
-  
-}
-
 /* =================================
     Contact Page
    ================================= */
@@ -4672,4 +4665,189 @@ right: -1em;
   font-size: 1.5em !important;
   margin-left: 0;
   margin-right: 20px;
+}
+
+
+/* ============================================================
+   CALL TO ACTION
+/* ============================================================ */
+
+
+.synergy-cta-inline {
+  padding: 40px 43px;
+  float: left;
+  width: 100%;
+  max-height: 170px !important;
+  display: table;
+}
+
+.synergy-cta-inline-fullwidth {
+  padding: 50px 428px;
+  float: left;
+  width: 100%;
+  max-height: 170px !important;
+  display: table;
+}
+
+.synergy-cta-text {
+  width: 75%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.synergy-cta-text p {
+   margin-top: 0;
+   margin-bottom: 7px;
+}
+
+.synergy-cta-text h1 {
+  margin-top: 0px;
+  margin-bottom: 15px;
+  font-weight: 300;
+}
+
+.synergy-cta-text h2 {
+  margin-top: 0px;
+  margin-bottom: 15px;
+  font-weight: 300;
+}
+
+.synergy-cta-text h3 {
+  margin-top: 0px;
+  margin-bottom: 15px;
+  font-weight: 300;
+}
+
+.synergy-cta-text h3 {
+  margin-top: 0px;
+  margin-bottom: 15px;
+  font-weight: 300;
+}
+
+.synergy-cta-button {
+  width: 25%;
+  display: inline-block;
+  text-align: right;
+  vertical-align: middle;
+  padding-left: 30px;
+}
+
+@media screen and (max-width: 1500px) {
+   .synergy-cta-inline-fullwidth {
+    padding: 50px 328px;
+    float: left;
+    width: 100%;
+    max-height: 170px !important;
+    display: table;
+   }
+}
+
+@media screen and (max-width: 1300px) {
+   .synergy-cta-inline-fullwidth {
+    padding: 50px 228px;
+    float: left;
+    width: 100%;
+    max-height: 170px !important;
+    display: table;
+   }
+}
+
+@media screen and (max-width: 1100px) {
+   .synergy-cta-inline-fullwidth {
+    padding: 50px 130px;
+    float: left;
+    width: 100%;
+    max-height: 170px !important;
+    display: table;
+   }
+}
+
+@media screen and (max-width: 992px) {
+   .synergy-cta-inline-fullwidth {
+    padding: 50px 90px;
+    float: left;
+    width: 100%;
+    max-height: 170px !important;
+    display: table;
+   }
+
+   .synergy-cta-text {
+    width: 100%;
+    display: block;
+    text-align: center;
+   }
+
+   .synergy-cta-text p {
+    display: none;
+    text-align: center;
+   }
+
+   .synergy-cta-button {
+    width: 100%;
+    display: block;
+    text-align: center;
+    vertical-align: middle;
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+   .synergy-cta-inline-fullwidth {
+    padding: 20px 90px;
+    width: 100%;
+    height: auto;
+    display: block;
+    text-align: center;
+   }
+
+   .synergy-cta-text {
+    width: 100%;
+    display: block;
+    text-align: center;
+   }
+
+   .synergy-cta-text p {
+    display: none;
+    text-align: center;
+   }
+
+   .synergy-cta-button {
+    width: 100%;
+    display: block;
+    text-align: center;
+    vertical-align: middle;
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+   .synergy-cta-inline-fullwidth {
+    padding: 20px 90px;
+    width: 100%;
+    height: auto;
+    display: block;
+    text-align: center;
+   }
+
+   .synergy-cta-text {
+    width: 100%;
+    display: block;
+    text-align: center;
+   }
+   .synergy-cta-text h2 {
+    font-size: 15px;
+   }
+
+   .synergy-cta-text p {
+    display: none;
+    text-align: center;
+   }
+
+   .synergy-cta-button {
+    width: 100%;
+    display: block;
+    text-align: center;
+    vertical-align: middle;
+    padding-left: 0;
+  }
 }

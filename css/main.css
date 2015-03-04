@@ -945,18 +945,25 @@ background-color: #f5f5f5;
 
 /**** TEXT BOX ****/
 
-.text-box{
-  margin: 2em 0;
+.text-box {
+  width: 100%;
+  float: left;
+  height: auto;
+  margin-top: 25px;
 }
 
 .text-box i {
-  padding: 0em 0.3em 0em 0em;
+  font-size: 25px !important;
+  margin-right: 10px;
 }
 
-.text-box h1 {
-  text-align: center !important;
+.text-box a {
+  color: #f78e20;
 }
 
+.text-box a:hover {
+  text-decoration: underline;
+}
 /* ============================================================
    18. Footer
 /* ============================================================ */
@@ -964,12 +971,20 @@ background-color: #f5f5f5;
     clear: both;
     position: relative;
     width: 100%;
+    color: #f9f9f9 !important;
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
     -ms-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
   }
+
+  #footer h4 {
+    margin-top: 15px;
+    margin-bottom: 25px;
+  }
+
+
 
   #footer-top {
     position: relative;
@@ -1003,7 +1018,7 @@ background-color: #f5f5f5;
 
 #footer-inner-top {
   position: relative;
-  padding: 100px 0px;
+  padding: 50px 0px 100px 0px;
 }
 
 
@@ -1037,6 +1052,82 @@ background-color: #f5f5f5;
   width: 100%;
   font-size: 13px;
   line-height: 22px;
+}
+
+.footer-works {
+  width: 100%;
+  height: auto;
+  float: left;
+}
+
+.footer-works div {
+  max-height: 54px;
+  min-height: 54px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  max-width: 54px;
+  min-width: 54px;
+  display: inline-block;
+}
+
+.footer-works div:hover {
+  opacity: 0.5;
+  -webkit-transition: .3s;
+}
+
+.footer-tags {
+   width: 100%;
+  height: auto;
+  float: left;
+}
+
+.footer-tags a {
+   background-color: #fff;
+  border: 1px solid #999999;
+  color: #999999 !important;
+  cursor: pointer;
+  display: inline-block;
+  float: left;
+  margin: 3px 3px 0px 0px;
+  font-size: .8em !important;
+  padding: 7px 9px;
+  position: relative;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+
+}
+
+.footer-tags a:hover {
+  background-color: #f78e20;
+  border: 1px solid #f78e20;
+  color: #ffffff !important;
+}
+
+.footer-posts {
+  width: 100%;
+  height: auto;
+  float: left;
+}
+
+.footer-posts hr {
+  border-color: #bbb;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.footer-posts a {
+  color: #f9f9f9;
+}
+
+.footer-posts a:hover {
+  color: #f78e20;
 }
 /**** IMAGE BOX ****/
 
@@ -1508,6 +1599,11 @@ background-color: #f5f5f5;
 
 .search-results {
   padding: 0 !important;
+  float: left;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  
 }
 
 
@@ -1600,7 +1696,6 @@ figure {
 figure img {
   position: relative;
   display: block;
-  min-height: 100%;
   max-width: 100%;
   opacity: 1;
 }
@@ -2557,6 +2652,12 @@ figure.effect-hera:hover p i:empty {
 /****************************
 ******** Progress bar ******/
 /***************************/
+
+div.progress .desc {
+  margin-bottom: 0px !important;
+}
+
+
 .six-sec-ease-in-out {
     -webkit-transition: width 6s ease-in-out;
     -moz-transition: width 6s ease-in-out;
@@ -3167,6 +3268,7 @@ figure.effect-hera:hover p i:empty {
   margin-bottom: 50px;
 }
 
+
 .counter-content {
   display: block;
   text-align: center;
@@ -3209,7 +3311,13 @@ p.counter-desc-negative {
   text-align: center;
 }
 
-
+@media screen and (max-width: 991px) {
+  .counter-holder {
+    width: 50%;
+    float: left;
+    margin-top: 25px;
+  }
+}
 /* ============================================================
    15. Fullwidth container
 /* ============================================================ */
@@ -3239,6 +3347,10 @@ p.counter-desc-negative {
 
 .icon-text-container {
   text-align: center;
+}
+
+.icon-text-container i {
+  font-size: 60px !important;
 }
 
 .icon-text-icon {

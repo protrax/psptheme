@@ -348,10 +348,10 @@
         <div class="row">
                     <!-- map-streetview : leave blank for false -->
             <div class="col-md-12">
-                <div class="google-maps">
-                        <div id="maps-boxed" 
+                <div>
+                        <div id="maps-boxed" class="google-maps" 
                             map-lat="60.791673"
-                            map-long="11.076144"
+                            map-long="11.076144" 
                             map-zoom="13"
                             map-zoomcontroll="true"
                             map-type="roadmap"
@@ -663,8 +663,9 @@ function addMarker() {
     animation: google.maps.Animation.DROP
   }));
   iterator++;
+  $('.progress-bar').css('background', '#000 !important');
 }
-
+    
 
 google.maps.event.addDomListener(window, 'load', initialize);
 

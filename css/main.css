@@ -2694,6 +2694,53 @@ div.progress .desc {
 .progress.vertical {
   width: 60px;
 }
+.progress-bar {
+  float: left;
+  width: 0;
+  height: 100%;
+  font-size: 12px;
+  line-height: 20px;
+  padding: 2em;
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  background-color: transparent;
+  -webkit-transition: width .6s ease;
+  -o-transition: width .6s ease;
+  transition: width .6s ease;
+}
+.progress .progressbar-back-text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-size: 12px;
+  line-height: 0.2em;
+  text-align: center;
+}
+
+.progress .progressbar-front-text {
+  display: block;
+  width: 100%;
+  font-size: 12px;
+  line-height: 0em !important;
+  text-align: center;
+}
+
+.progress {
+  padding: 1.2em 0em;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+.progress .progress-bar {
+  position: absolute;
+  overflow: hidden;
+  display: block;
+  margin-top: -1.9em;
+}
+
+
+
+
 /**** Blog Author ****/
 
 .author-wrapper {

@@ -507,7 +507,28 @@ jQuery(function($){
         display_text: 'center',
         use_percentage: true
       });
+      
+       
     }
+
+      var prgrsColor   = [],
+          prgrsBgColor = [];
+
+      $this.find('.progress-bar').each(function(index){
+          var progressColor = $(this).data('progresscolor');
+          var progressBgColor = $(this).data('progressbgcolor');
+              // Push to array
+              prgrsColor.push(progressColor);
+              prgrsBgColor.push(progressBgColor);
+      });
+
+        $this.find('.progress-bar').each(function(index){
+           $(this).css('background-color', prgrsColor[index]);
+      });
+
+        $this.find('.progress').each(function(index){
+           $(this).css('background-color', prgrsBgColor[index]);
+        });
 
 // Progressbar waypoint
 $this.find('.toggle-tabs-content').waypoint(function() {
@@ -553,6 +574,10 @@ COUNTER
             });
 
         });  
+
+   $('.counter').each(function(index){
+
+   });
 
 /*************************************************************
 REQUEST ANIMATION FRAME DECLARATION FOR SCROLLING
@@ -706,7 +731,6 @@ Google maps
             map;
         
 
-            
             // If params not set
                if( zoom == empty ){
                    zoom = 12;
@@ -723,9 +747,7 @@ Google maps
 
 
        function initialize() {
-
           // Map styles
-
           var featureOpts = [
             {
               stylers: [
@@ -768,7 +790,7 @@ Google maps
                 { color: poiColor }
               ]
             }
-                    ];
+              ];
 
           // map Options
           var mapOptions = {
@@ -784,9 +806,11 @@ Google maps
             },
             mapTypeId: MY_MAPTYPE_ID
           };
-  
+
+          
           map = new google.maps.Map(document.getElementById('maps-boxed'),
               mapOptions);
+
 
           var styledMapOptions = {
             name: 'Custom Style'
@@ -816,7 +840,6 @@ Google maps
         // Set markers
         function setMarkers(map, locations) {
           // Add markers to the map
-        console.log(beaches);
     
           var image = {
             url: 'images/marker1.png',
@@ -830,6 +853,7 @@ Google maps
 
 
       setTimeout(function(){
+
           for (var i = 0; i < locations.length; i++) {
             var beach = locations[i],
                 myLatLng = new google.maps.LatLng(beach[1], beach[2]),
@@ -1085,10 +1109,10 @@ if( !buttonShape[index] == "" ){
         touchRatio: 0.2,
         slideToClickedSlide: true
     });
-
+    if( $('.gallery-top').hasClass( "gallery-top" )  ) {
       psGallery.params.control     = galleryThumbs;
       galleryThumbs.params.control = psGallery;      
-
+    }
 
     // Lightbox 
     var galleryOverlay = '<div class="gallery-overlay">';
@@ -1107,7 +1131,7 @@ if( !buttonShape[index] == "" ){
       var lightboxImageUrl       = $(this).attr('href');
       var lightboxContainer      = $('.lightbox-container');
       var lightboxImageContainer = $('.lightbox-image-container');
-
+      
       /*** lightbox image ***/
       var lightboxImage  = '<div class="lightbox-image">';      
           lightboxImage += '<img src="' + lightboxImageUrl + '" alt="" class="">';
@@ -1144,7 +1168,6 @@ $(document).on("click",".lightbox-image-container",function(){
 $(document).ready(function(){
 
   var ww = $(window).width();
-      console.log(ww);
      var relatedProjectsSlider = new Swiper ('.related-projects-slide', {
         direction: 'horizontal',
         loop: false,

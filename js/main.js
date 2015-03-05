@@ -1,3 +1,5 @@
+$("body").css("overflow", "hidden");
+
 jQuery(function ($) {
   
   // Enable tooltip

@@ -2803,7 +2803,7 @@ div.progress .desc {
   float: left;
   height: auto;
   width: 100%;
-  margin-bottom: 150px;
+  margin-bottom: 70px;
 }
 
 .author-sub {
@@ -2947,7 +2947,7 @@ div.progress .desc {
 
 
 /**** Contact Form (Fullwidth) ****/
-.ps-form .form-group input {
+#ps-form .form-group input {
   margin-top: 1em;
   border-bottom: 1px solid #DDD;
   outline: 0;
@@ -2956,7 +2956,7 @@ div.progress .desc {
 }
 
 /**** Contact Form (Fullwidth) ****/
-.ps-form .form-group textarea {
+#ps-form .form-group textarea {
   margin-top: 1em;
   border: 1px solid #DDD;
   min-height: 200px;
@@ -2964,7 +2964,7 @@ div.progress .desc {
 
 }
 
-.ps-form label {
+#ps-form label {
   color: #A9A9A9;
   font-size: 14px;
   font-weight: normal;
@@ -2972,7 +2972,7 @@ div.progress .desc {
 
 
 
-.ps-form .form-control {
+#ps-form .form-control {
   outline: 0;
   border-color: transparent;
   box-shadow: none;
@@ -2988,6 +2988,15 @@ div.progress .desc {
 
 
 /**** Single Post ****/
+
+.reply-comment {
+  background-color: #ddd !important;
+}
+
+.comment-box {
+  padding: 15px;
+  background-color: #eee;
+}
 
 .post-info {
   display: inline-flex;
@@ -3085,13 +3094,64 @@ div.progress .desc {
   font-weight: 400;
   text-transform: capitalize;
   margin-top: 25px;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 
 .comments img {
   max-width: 85px;
   max-height: 85px;
   border: 1px solid lightgray;
+}
+
+.comment-date p::before {
+  content: '- ';
+}
+
+.comment-date p {
+   font-size: 0.875em;
+   font-style: italic;
+   margin-top: 5px;
+   margin-bottom: 9px;
+   font-weight: 500;
+}
+
+.comment-info h4 {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.comment-info i {
+  margin-right: 5px;
+}
+
+.comment-info p {
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 6px;
+  font-weight: 400;
+}
+
+.comment-info a {
+  color: #F78E20;
+}
+
+.comment-info a:hover {
+  text-decoration: underline;
+}
+
+.form-button {
+  background-color: #FFF;
+  border: 2px solid lightgray;
+  padding: 5px 20px;
+  color: darkgray;
+}
+
+.form-button:hover {
+  background-color: #FFF;
+  border: 2px solid #f78e20;
+  padding: 5px 20px;
+  color: #f78e20;
+  -webkit-transition: .3s;
 }
 
 @media screen and (max-width: 400px) {
@@ -3628,7 +3688,7 @@ p.counter-desc-negative {
 
 .error {
   font-style: italic;
-  color: #EC2222;
+  color: #EC2222 !important;
 }
 
 /* ============================================================

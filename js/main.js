@@ -686,14 +686,7 @@ ACCORDIONS
     }
   });
 
-
-/*************************************************************
-FORM VALIDATION
-*************************************************************/
-
  
-
-
   /*********** Scroll reveal **********/
   jQuery(document).ready(function(){
     window.sr = new scrollReveal(); 
@@ -1206,13 +1199,13 @@ function slidesPrView() {
   Comment Form Validation 
  ===========================*/
 $(document).ready(function() {
-   
-$("#ps-form").validate({
-  rules: {
-    name: "required",
-    email: "required",
-    comment: "required"
-  },
-  
-});
+   if( $('.cmxform').hasClass('cmxform') ){
+    $("#ps-form").validate({
+      rules: {
+        name: "required",
+        email: "required",
+        comment: "required"
+      },
+    });
+   }
  });

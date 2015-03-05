@@ -434,48 +434,37 @@
                         <div class="col-md-12">
                                 <div class="col-md-8">
                                         <!-- Starting ur content -->
-                                    <form class="ps-form">
-                                      <div class="form-group">
-                                        <label for="name">Name</label>
-                                        <input type="text" class="form-control" id="name">
-                                      </div>
-
-                                      <div class="form-group">
-                                        <label for="email">Email address</label>
-                                        <input type="email" class="form-control" id="email">
-                                      </div>
-
-                                      <div class="form-group">
-                                        <label for="subject">Subject</label>
-                                        <input type="text" class="form-control" id="subject">
-                                      </div>
-
-                                    <div class="form-group">
-                                      <label for="comment">Comment:</label>
-                                      <textarea class="form-control"  id="comment"></textarea>
-                                    </div>
-
-                                                                                                                  
-                                      
-                                      <a class="ps-btn standard ps-btn-border ps-btn-anim"target="_self" href="#"
-                    data-buttonsize="small"
-                    data-buttonshape=""
-                    data-showicon=""
-                    data-bgcolor="#f78e20"
-                    data-bghovercolor="#F7A44C"
-                    data-textcolor="#f9f9f9"
-                    data-texthovercolor="#f8f8f8"
-                    data-hasicon="true"
-                    data-iconcolor="#f9f9f9"
-                    data-iconhovercolor="#fff"
-                    data-icon="fa fa-envelope"
-                    data-bordercolor="#f78e20"
-                    data-borderhovercolor="#F7A44C"
-                    >
-                        <span>SEND</span>
-                        <i data-btnicon="#0000" class="ps-btn-icon ps-icon-anim fa fa fa-arrow-right"></i>
-                    </a>
-                                </form>
+                                    <form class="cmxform" id="ps-form" method="get" action="">
+                                            <fieldset>
+                                                <div class="form-group" method="get">
+                                                <p>
+                                                    <label for="name">Name (required, at least 2 characters)</label>
+                                                    <input id="name" class="form-control" name="name" minlength="2" type="text" required>
+                                                </p>
+                                                </div>
+                                                <div class="form-group" method="get">
+                                                <p>
+                                                    <label for="email">E-Mail (required)</label>
+                                                    <input id="email" class="form-control" type="email" name="email" required>
+                                                </p>
+                                                </div>
+                                                <div class="form-group" method="get">
+                                                <p>
+                                                    <label for="curl">URL (optional)</label>
+                                                    <input id="curl" class="form-control" type="url" name="url">
+                                                </p>
+                                                </div>
+                                                <div class="form-group" method="get">
+                                                <p>
+                                                    <label for="comment">Your comment (required)</label>
+                                                    <textarea id="comment" class="form-control" name="comment" required></textarea>
+                                                </p>
+                                                </div>
+                                                <p>
+                                                    <input class="form-button" type="submit" value="Submit">
+                                                </p>
+                                            </fieldset>
+                                        </form>
                     </div>
                             <div class="col-md-4">
 
@@ -682,6 +671,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
          <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
          <script src="js/bootstrap.min.js"></script>
+         <script type="text/javascript" src="js/jquery.validate.js"></script> 
          <script src="js/main.js"></script> 
          <script src="js/SmoothScroll.v1.2.1.js"></script>
          <script src="js/jquery.easypiechart.min.js"></script>

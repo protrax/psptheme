@@ -4672,22 +4672,16 @@ right: -1em;
    CALL TO ACTION
 /* ============================================================ */
 
+/**** Container ****/
 
 .synergy-cta-inline {
-  padding: 40px 43px;
+  padding: 40px 43px 40px 43px;
   float: left;
   width: 100%;
   max-height: 170px !important;
   display: table;
 }
 
-.synergy-cta-inline-fullwidth {
-  padding: 50px 428px;
-  float: left;
-  width: 100%;
-  max-height: 170px !important;
-  display: table;
-}
 
 .synergy-cta-text {
   width: 75%;
@@ -4718,11 +4712,7 @@ right: -1em;
   font-weight: 300;
 }
 
-.synergy-cta-text h3 {
-  margin-top: 0px;
-  margin-bottom: 15px;
-  font-weight: 300;
-}
+
 
 .synergy-cta-button {
   width: 25%;
@@ -4732,122 +4722,117 @@ right: -1em;
   padding-left: 30px;
 }
 
-@media screen and (max-width: 1500px) {
-   .synergy-cta-inline-fullwidth {
-    padding: 50px 328px;
-    float: left;
-    width: 100%;
-    max-height: 170px !important;
-    display: table;
-   }
+/**** Fullwidth ****/
+
+.synergy-cta-inline-fullwidth {
+  padding: 40px 43px 40px 43px;
+  float: left;
+  width: 100%;
+  max-height: 170px !important;
+  display: table-cell;
 }
 
-@media screen and (max-width: 1300px) {
-   .synergy-cta-inline-fullwidth {
-    padding: 50px 228px;
-    float: left;
-    width: 100%;
-    max-height: 170px !important;
-    display: table;
-   }
+.synergy-cta-text-fullwidth {
+  width: 75%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.synergy-cta-text-fullwidth h1 {
+  margin-top: 0px;
+  display: table-cell;
+  vertical-align: middle;
+  position: absolute;
+  font-weight: 300;
 }
 
-@media screen and (max-width: 1100px) {
-   .synergy-cta-inline-fullwidth {
-    padding: 50px 130px;
-    float: left;
-    width: 100%;
-    max-height: 170px !important;
-    display: table;
-   }
+.synergy-cta-text-fullwidth h2 {
+  margin-top: 0px;
+  display: table-cell;
+  vertical-align: middle;
+  position: absolute;
+  font-weight: 300;
 }
 
-@media screen and (max-width: 992px) {
-   .synergy-cta-inline-fullwidth {
-    padding: 50px 90px;
-    float: left;
-    width: 100%;
-    max-height: 170px !important;
-    display: table;
-   }
-
-   .synergy-cta-text {
-    width: 100%;
-    display: block;
-    text-align: center;
-   }
-
-   .synergy-cta-text p {
-    display: none;
-    text-align: center;
-   }
-
-   .synergy-cta-button {
-    width: 100%;
-    display: block;
-    text-align: center;
-    vertical-align: middle;
-    padding-left: 0;
-  }
+.synergy-cta-text-fullwidth h3 {
+  margin-top: 0px;
+  display: table-cell;
+  vertical-align: middle;
+  position: absolute;
+  font-weight: 300;
 }
 
-@media screen and (max-width: 768px) {
-   .synergy-cta-inline-fullwidth {
-    padding: 20px 90px;
-    width: 100%;
-    height: auto;
-    display: block;
-    text-align: center;
-   }
 
-   .synergy-cta-text {
-    width: 100%;
-    display: block;
-    text-align: center;
-   }
+.synergy-cta-button-fullwidth {
+  width: 25%;
+  display: table-cell;
+  text-align: right;
+  vertical-align: middle;
+  padding-left: 30px;
+  float: right;
+}
 
-   .synergy-cta-text p {
-    display: none;
-    text-align: center;
-   }
+@media screen and (max-width: 1200px) {
+  .synergy-cta-text-fullwidth h1 {
+  position: relative;
+}
 
-   .synergy-cta-button {
-    width: 100%;
-    display: block;
-    text-align: center;
-    vertical-align: middle;
-    padding-left: 0;
-  }
+.synergy-cta-text-fullwidth h2 {
+  position: relative;
+}
+
+.synergy-cta-text-fullwidth h3 {
+  position: relative;
+ }
+}
+
+@media screen and (max-width: 991px) {
+  .synergy-cta-button {
+  width: 100%;
+  display: block;
+  text-align: center;
+  vertical-align: middle;
+  margin: 0px auto;
+  padding: 0;
+ }
+  .synergy-cta-inline {
+  text-align: center;
+ }
+}
+
+@media screen and (max-width: 767px) {
+  .synergy-cta-inline-fullwidth {
+  padding: 5px;
+  float: left;
+  width: 100%;
+  text-align: center;
+  max-height: 170px !important;
+  display: table-cell;
+  font-size: 10px;
+ }
+ .synergy-cta-button-fullwidth {
+  width: 25%;
+  display: table-cell;
+  vertical-align: middle;
+  float: none;
+  text-align: center;
+ }
 }
 
 @media screen and (max-width: 500px) {
-   .synergy-cta-inline-fullwidth {
-    padding: 20px 90px;
-    width: 100%;
-    height: auto;
-    display: block;
-    text-align: center;
-   }
+  .synergy-cta-inline-fullwidth {
+  padding: 5px;
+  float: left;
+  width: 100%;
+  text-align: center;
+  max-height: 170px !important;
+  display: table-cell;
+  font-size: 8px;
+ }
+}
 
-   .synergy-cta-text {
-    width: 100%;
-    display: block;
-    text-align: center;
-   }
-   .synergy-cta-text h2 {
-    font-size: 15px;
-   }
-
-   .synergy-cta-text p {
-    display: none;
-    text-align: center;
-   }
-
-   .synergy-cta-button {
-    width: 100%;
-    display: block;
-    text-align: center;
-    vertical-align: middle;
-    padding-left: 0;
-  }
+@media screen and (max-width: 500px) {
+  .synergy-cta-inline {
+  padding: 5px;
+  
+ }
 }

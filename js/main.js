@@ -1202,3 +1202,17 @@ function slidesPrView() {
   Partners 
  ===========================*/
 
+/*===========================
+  Comment Form Validation 
+ ===========================*/
+$(document).ready(function() {
+   
+$("#ps-form").validate({
+  rules: {
+    name: "required",
+    email: "required",
+    comment: "required"
+  },
+  
+});
+ });

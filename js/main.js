@@ -1190,6 +1190,48 @@ function slidesPrView() {
  
 
 
+/*===========================
+  Testimonials slider
+ ===========================*/
+
+$(document).ready(function(){
+  var sliderBtnNext = $('.swiper-testimonials-next'),
+      sliderBtnPrev = $('.swiper-testimonials-prev');
+
+
+  var ww = $(window).width();
+     var testimonialsSlider = new Swiper ('.testimonials-slider', {
+        direction: 'horizontal',
+        loop: false,
+        touchEventsTarget: 'container',
+        spaceBetween: 30,
+        nextButton: '.swiper-testimonials-next',
+        prevButton: '.swiper-testimonials-prev',
+        centeredSlides: false,
+        slidesPerView: slidesPrView(),
+        touchRatio: 0.6,
+        slideToClickedSlide: true,
+    });
+function slidesPrView() {
+    var three = 3,
+        one = 1;
+          
+    if( ww < 767  ) {
+        return one;
+      }else {
+       return three;
+      }
+} // end slidesPrView
+$( sliderBtnPrev ).on('click', function(e){
+    e.preventDefault();
+    testimonialsSlider.slidePrev();
+  });
+
+
+}); // end anon
+
+
+
 
 /*===========================
   Partners 

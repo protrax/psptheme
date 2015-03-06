@@ -2698,11 +2698,48 @@ div.progress .desc {
   /** Bottom ***/
 .progress.vertical.bottom {
   width: 60px;
+  padding: 0;
 }
  /*** Top ***/
 .progress.vertical {
   width: 60px;
+  padding: 0;
 }
+
+.vertical .progress-bar {
+  margin-top: 0em;
+}
+
+.progress {
+  height: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  padding: 1.2em 0em;
+  background-color: #f5f5f5;
+  border-radius: 0px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.progress-bar {
+    margin-top: -1.4em;
+}
+
+.progress .progressbar-front-text {
+  display: block;
+  width: 100%;
+  font-size: 12px;
+  line-height: em;
+  text-align: center;
+  margin: 0px auto;
+  line-height: 3em;
+  color: #000;
+}
+
+.progress .progressbar-back-text {
+  line-height: 0em;
+}
+
 /**** Blog Author ****/
 
 .author-wrapper {
@@ -4624,6 +4661,95 @@ right: -1em;
 }
 
 
+/* =================================
+    Related posts
+   ================================= */
+.testimonials-slider {
+        width: 100%;
+        margin: 20px auto;
+}
+
+
+.testimonials-slider .swiper-slide {
+  height: 100%;
+          text-align: center;
+        font-size: 18px;
+        background: #fff;
+        
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+}
+
+
+
+
+.swiper-testimonials-prev {
+position: absolute;
+/* height: 20px; */
+/* width: 20px; */
+top: 50%;
+z-index: 1;
+font-weight: lighter;
+font-size: 5em;
+left: -1.5em;
+/* background: #000; */
+}
+
+
+.swiper-testimonials-prev i {
+  color: rgb(63, 64, 64);
+}
+
+.swiper-testimonials-prev:hover i {
+  color: #F78E20;
+  cursor: pointer;
+}
+
+.swiper-testimonials-prev.swiper-button-disabled i {
+  color: #D0D0D0 !important;
+}
+
+.swiper-testimonials-next {
+position: absolute;
+/* height: 20px; */
+/* width: 20px; */
+top: 50%;
+z-index: 1;
+font-weight: lighter;
+font-size: 5em;
+right: -1.5em;
+/* background: #000; */
+}
+
+.swiper-testimonials-next i {
+  color: rgb(63, 64, 64);
+}
+
+.swiper-testimonials-next:hover i {
+  color: #F78E20;
+  cursor: pointer;
+}
+
+.swiper-testimonials-next.swiper-button-disabled i {
+  color: #D0D0D0 !important;
+}
+
+
+.fp-testimonials-item {
+  padding: 1em;
+  border: 1px solid #444;
+}
 
 /* =================================
     Typograpgy

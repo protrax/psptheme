@@ -3643,9 +3643,7 @@ p.counter-desc-negative {
    18. Call to action
 /* ============================================================ */
 
-  .call-to-action-container {
-    
-  }
+
 
 
 /**** HOME PAGE ****/
@@ -4769,7 +4767,7 @@ right: -1em;
 
 .synergy-cta-text {
   width: 75%;
-  display: inline-block;
+  display: table-cell;
   vertical-align: middle;
 }
 
@@ -4800,10 +4798,11 @@ right: -1em;
 
 .synergy-cta-button {
   width: 25%;
-  display: inline-block;
+  display: table-cell;
   text-align: right;
   vertical-align: middle;
   padding-left: 30px;
+
 }
 
 /**** Fullwidth ****/
@@ -4880,6 +4879,11 @@ right: -1em;
  }
   .synergy-cta-inline {
   text-align: center;
+ }
+ .synergy-cta-text {
+  width: 100%;
+  text-align: center;
+  display: block;
  }
 }
 

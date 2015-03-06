@@ -1198,35 +1198,82 @@ $(document).ready(function(){
   var sliderBtnNext = $('.swiper-testimonials-next'),
       sliderBtnPrev = $('.swiper-testimonials-prev');
 
+ var ww = $(window).width();
 
-  var ww = $(window).width();
-     var testimonialsSlider = new Swiper ('.testimonials-slider', {
+
+// Option array 
+  var tstAmount   = [],
+      tstAutoplay = [],
+      tstSpeed    = [];
+
+
+// Get attr data
+$('.testimonials-slider').each(function(index){
+  var testimonialAmount   = $(this).data('testimonialamount'),
+      testimonialAutoplay = $(this).data('testimonialautoplay'),
+      testimonialSpeed    = $(this).data('testimonialspeed');
+     // Push to array
+      tstAmount.push(testimonialAmount);
+      tstSpeed.push(testimonialSpeed);
+      tstAutoplay.push(testimonialAutoplay);
+});
+
+
+
+
+// Testimonial loop
+$('.testimonials-slider').each(function(index){
+    // Add classes
+    $(this).addClass('testimonial-' + index);
+    $(this).parent().find('.swiper-testimonials-next').addClass('testimonials-button-next' + index);
+    $(this).parent().find('.swiper-testimonials-prev').addClass('testimonials-button-prev' + index);
+    // inc buttons
+    var buttonPrev = '.testimonials-button-prev' + index,
+        buttonNext = '.testimonials-button-next' + index;
+    // Init testimonial slider
+     var testimonialsSlider = [index];
+     var testimonialsSlider = new Swiper ('.testimonial-' + index, {
         direction: 'horizontal',
         loop: false,
+        autoplay: tstAutoplay[index],
+        speed: tstSpeed[index],
         touchEventsTarget: 'container',
         spaceBetween: 30,
-        nextButton: '.swiper-testimonials-next',
-        prevButton: '.swiper-testimonials-prev',
         centeredSlides: false,
-        slidesPerView: slidesPrView(),
+        slidesPerView: tstAmount[index],
         touchRatio: 0.6,
         slideToClickedSlide: true,
     });
-function slidesPrView() {
-    var three = 3,
-        one = 1;
-          
-    if( ww < 767  ) {
-        return one;
-      }else {
-       return three;
-      }
-} // end slidesPrView
-$( sliderBtnPrev ).on('click', function(e){
-    e.preventDefault();
-    testimonialsSlider.slidePrev();
-  });
 
+      // Navigate slideshow
+      $( buttonPrev ).on('click', function(e){
+          e.preventDefault();
+          console.log('clicked ' + index);
+          testimonialsSlider.slidePrev();
+        });
+
+      $( buttonNext ).on('click', function(e){
+          e.preventDefault();
+          console.log('clicked ' + index);
+          testimonialsSlider.slideNext();
+        });     
+
+}); // End each loop
+
+
+
+
+
+// function slidesPrView() {
+//     var three = 3,
+//         one = 1;
+          
+//     if( ww < 767  ) {
+//         return one;
+//       }else {
+//        return three;
+//       }
+// } // end slidesPrView
 
 }); // end anon
 

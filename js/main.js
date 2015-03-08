@@ -1,4 +1,4 @@
-$("body").css("overflow-x", "hidden");
+$("body").css("overflow", "hidden");
 
 jQuery(function ($) {
   
@@ -776,7 +776,6 @@ Google maps
  function initialize() {  
 
       $('.google-maps').each(function(index){
-         console.log(owaterColor[index]);
           $(this).attr('id', 'maps-boxed' + index);
 
           // Map styles
@@ -860,6 +859,7 @@ console.log(featureOpts);
         // Load map to page
        if ( $('.google-maps').hasClass( "google-maps" ) ) {
         google.maps.event.addDomListener(window, 'load', initialize);
+
        }else {
         return false;
        }
@@ -905,6 +905,7 @@ console.log(featureOpts);
                 $('.markers').each(function(index){
 
                 });
+
 
             // add marker ( marker options )  
             var marker = [];
@@ -969,24 +970,12 @@ console.log(featureOpts);
                                   [data.zindex],
                                   [data.content],
                                   [data.mapicon]
-
                               ];
               // Push marker data to array
               beaches.push(markerPos);
 
 
               });
-
-          var mrkrLat = [];
-
-        $('.google-maps .markers li').each(function(index){
-           var markerLat = $(this).data('markerlat');
-           mrkrLat.push(markerLat);
-           console.log(mrkrLat);
-        });
-
-        console.log(mrkrLat);
-        console.log($('.google-maps .markers li'));
       }); // end anon func
 
 
@@ -1026,6 +1015,7 @@ var button = $('.ps-btn');
 
 // Loop trough and get values from each data value
 $( button ).each(function(){
+
   // Variables
    var btnBgColor             = $( this ).data('bgcolor'),
        btnBgHoverColor        = $( this ).data('bghovercolor'),

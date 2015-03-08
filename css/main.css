@@ -2773,6 +2773,7 @@ div.progress .desc {
 .google-maps {
   width: 100%;
   height: 450px;
+  margin-top: -20px;
 }
 
 .gmnoprint img {

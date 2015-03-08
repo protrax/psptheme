@@ -29,9 +29,9 @@ p {
   font-weight: 300;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5, h6 {
   margin: 1.414em 0 0.5em;
-  font-weight: 400;
+  font-weight: 300 !important;
   line-height: 1.2;
 }
 
@@ -109,21 +109,7 @@ hr {
   text-align: right;
 }
 
-.bold {
-  font-weight: 400 !important;
-}
 
-.superbold {
-  font-weight: 400 !important;
-}
-
-.normal {
-  font-weight: 400 !important;
-}
-
-.medium {
-  font-weight: 400 !important;
-}
 
 .hr {
   max-width: 6%;
@@ -1041,7 +1027,7 @@ background-color: #f5f5f5;
 
 .search-wrapper h3 {
   text-transform: capitalize;
-  font-weight: 400;
+  font-weight: 300;
   margin-top: 10px;
   margin-bottom: 13px;
 }
@@ -2291,7 +2277,7 @@ figure.effect-hera:hover p i:empty {
 ********** Team members ******
 ******************************/
 .team-members {
- padding-bottom: 30px;
+ padding-bottom: 50px;
  float: left;
 }
 
@@ -3027,6 +3013,7 @@ div.progress .desc {
 
 .comments {
   padding: 0px;
+  margin-bottom: 50px;
 }
 
 .comments h2 {

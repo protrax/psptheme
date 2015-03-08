@@ -2621,6 +2621,76 @@ figure.effect-hera:hover p i:empty {
   margin: .3em;
 }
 
+/*=============================
+  Partners
+==============================*/
+
+
+.fp-partners p{
+  font-size: 1.3em;
+  text-align: center;
+}
+
+.fp-partners h4 {
+  font-size: 1.6em;
+  text-align: center;
+}
+
+
+.partner-slider .swiper-slide {
+  height: auto;
+}
+
+
+.partner-slider .swiper-slide img {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+ 
+}
+
+.partner-slider .swiper-slide:hover img {
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+ 
+}
+
+.fp-partner-title {
+  text-align: center;
+
+}
+
+.fp-partner-title::before {
+    
+  font-family: FontAwesome;
+  content:"- ";
+  content: "\f068";
+  font-size: .7em;
+  color: #f78e20;
+  margin-right: .3em;
+  
+}
+
+
+.fp-partner-title::after {
+  font-family: FontAwesome;
+  content: "\f068";
+  font-size: .7em;
+  color: #f78e20;
+  margin-left: .3em;
+}
+
+.fp-partners-item i {
+  font-size: 1.2em;
+  color: #adadad;
+  margin: .3em;
+}
+
+.fp-partners-item:hover i {
+  font-size: 1.2em;
+  color: #f78e20;
+  margin: .3em;
+}
+
 /****************************
 ******** Progress bar ******/
 /***************************/
@@ -2896,10 +2966,9 @@ div.progress .desc {
 
 /**** Google Maps and Contact Page ****/
 
-#maps-fullwidth {
+.google-maps {
   width: 100%;
   height: 450px;
-
 }
 
 .gmnoprint img {

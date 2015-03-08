@@ -1,4 +1,4 @@
-$("body").css("overflow", "hidden");
+$("body").css("overflow-x", "hidden");
 
 jQuery(function ($) {
   
@@ -703,46 +703,84 @@ Google maps
 
         var $this = $(this),
             empty = "",
-            // Latitude and longitude
-            latitude        = $this.find('#maps-boxed').attr('map-lat'),
-            longitude       = $this.find('#maps-boxed').attr('map-long'),
-            // Default map options
-            mapType         = $this.find('#maps-boxed').attr('map-type'),
-            zoom            = $this.find('#maps-boxed').attr('map-zoom'),
-            MY_MAPTYPE_ID = 'custom_style',
-            // Map controll UI options
-            zoomControll    = $this.find('#maps-boxed').attr('map-zoomcontroll'),
-            streetview      = $this.find('#maps-boxed').attr('map-streetview'),         
-            panControll     = $this.find('#maps-boxed').attr('map-pancontroll'),
-            mapTypeControl  = $this.find('#maps-boxed').attr('map-maptypecontroll'),
-            // Map color settings
-            landscapeColor  = $this.find('#maps-boxed').attr('map-landscapecolor'),
-            roadColor       = $this.find('#maps-boxed').attr('map-roadcolor'),
-            waterColor      = $this.find('#maps-boxed').attr('map-watercolor'),
-            poiColor        = $this.find('#maps-boxed').attr('map-poicolor'),
-            lables          = $this.find('#maps-boxed').attr('map-lables'),
             // vars
             bounceTimer,
             map;
-        
 
-            // If params not set
-               if( zoom == empty ){
-                   zoom = 12;
+        var olatitude       = [],
+            olongitude      = [],
+            omapType        = [],
+            ozoom           = [],
+            oMY_MAPTYPE_ID  = [],
+            ozoomControll   = [],
+            ostreetview     = [],
+            opanControll    = [],
+            omapTypeControl = [],
+            olandscapeColor = [],
+            oroadColor      = [],
+            owaterColor     = [],
+            opoiColor       = [],
+            olables         = [];
+
+            $('.google-maps').each(function(index){
+                                  // Latitude and longitude
+                var latitude        = $(this).data('lat'),
+                    longitude       = $(this).data('long'),
+                    // Default map options
+                    mapType         = $(this).data('type'),
+                    zoom            = $(this).data('zoom'),
+                    MY_MAPTYPE_ID   = 'custom_style',
+                    // Map controll UI options
+                    zoomControll    = $(this).data('zoomcontroll'),
+                    streetview      = $(this).data('streetview'),         
+                    panControll     = $(this).data('pancontroll'),
+                    mapTypeControl  = $(this).data('maptypecontroll'),
+                    // Map color settings
+                    landscapeColor  = $(this).data('landscapecolor'),
+                    roadColor       = $(this).data('roadcolor'),
+                    waterColor      = $(this).data('watercolor'),
+                    poiColor        = $(this).data('poicolor'),
+                    lables          = $(this).data('map-lables');
+
+                // Push to array
+                  olatitude.push(latitude);
+                  olongitude.push(longitude);
+                  omapType.push(mapType);
+                  ozoom.push(zoom);
+                  oMY_MAPTYPE_ID.push(MY_MAPTYPE_ID);
+                  ozoomControll.push(zoomControll);
+                  ostreetview.push(streetview);
+                  opanControll.push(panControll);
+                  omapTypeControl.push(mapTypeControl);
+                  olandscapeColor.push(landscapeColor);
+                  oroadColor.push(roadColor);
+                  owaterColor.push(waterColor);
+                  opoiColor.push(poiColor);
+                  olables.push(lables);
+            }); // end each loop
+
+              //If params not set
+               if( ozoom == empty ){
+                   ozoom = 12;
                 }
-               if( mapType == empty ){
-                   mapType = "roadmap";
+               if( omapType == empty ){
+                   omapType = "roadmap";
                 }
-               if( latitude == empty ){
-                   latitude = "40.782865,";
+               if( olatitude == empty ){
+                   olatitude = "40.782865,";
                 }
-               if( longitude == empty ){
-                   longitude = "-73.965355,17z";
+               if( olongitude == empty ){
+                   olongitude = "-73.965355,17z";
                 }
 
+ function initialize() {  
 
-       function initialize() {
+      $('.google-maps').each(function(index){
+         console.log(owaterColor[index]);
+          $(this).attr('id', 'maps-boxed' + index);
+
           // Map styles
+
           var featureOpts = [
             {
               stylers: [
@@ -755,68 +793,76 @@ Google maps
             {
               elementType: 'labels',
               stylers: [
-                { visibility: lables }
+                { visibility: olables[index] }
               ]
             },
             {
               featureType: "landscape",
               stylers: [
                 { visibility: "on" },
-                { color: landscapeColor }
+                { color: olandscapeColor[index] }
               ]
             },{
               featureType: "road",
               stylers: [
                 { visibility: "on" },
                 { weight: 1.1 },
-                { color: roadColor }
+                { color: oroadColor[index] }
               ]
             },{
               featureType: "water",
               stylers: [
                 { visibility: "on" },
-                { color: waterColor }
+                { color: owaterColor[index] }
               ]
             },{
               featureType: "poi",
               elementType: "geometry",
               stylers: [
                 { visibility: "on" },
-                { color: poiColor }
+                { color: opoiColor[index] }
               ]
             }
               ];
 
+console.log(featureOpts);
           // map Options
-          var mapOptions = {
-            center: new google.maps.LatLng(latitude, longitude),
-            zoom: parseInt(zoom),
-            zoomControl: zoomControll,
+         var  mapOptions = {
+            center: new google.maps.LatLng(olatitude[index], olongitude[index]),
+            zoom: parseInt(ozoom[index]),
+            zoomControl: ozoomControll[index],
             disableDefaultUI: true,
-            panControl: panControll,
-            streetViewControl: streetview,
-            mapTypeControl: mapTypeControl,
+            panControl: opanControll[index],
+            streetViewControl: ostreetview[index],
+            mapTypeControl: omapTypeControl[index],
             mapTypeControlOptions: {
-              mapTypeIds: [google.maps.MapTypeId.ROADMAP, MY_MAPTYPE_ID]
+              mapTypeIds: [google.maps.MapTypeId.ROADMAP, oMY_MAPTYPE_ID[index]]
             },
-            mapTypeId: MY_MAPTYPE_ID
+            mapTypeId: oMY_MAPTYPE_ID[index]
           };
 
-          
-          map = new google.maps.Map(document.getElementById('maps-boxed'),
+          map = new google.maps.Map(document.getElementById('maps-boxed' + index),
               mapOptions);
-
 
           var styledMapOptions = {
             name: 'Custom Style'
           };
-
-          var customMapType = new google.maps.StyledMapType(featureOpts, styledMapOptions);
-          map.mapTypes.set(MY_MAPTYPE_ID, customMapType);
+          customMapType = [];
+          customMapType = new google.maps.StyledMapType(featureOpts, styledMapOptions);
+          map.mapTypes.set(oMY_MAPTYPE_ID[index], customMapType);
            
            setMarkers(map, beaches);
     
-        }; // end init
+     }); // end each loop
+
+        }// end init
+        
+        // Load map to page
+       if ( $('.google-maps').hasClass( "google-maps" ) ) {
+        google.maps.event.addDomListener(window, 'load', initialize);
+       }else {
+        return false;
+       }
 
         // Drop animation function
         function drop() {
@@ -855,8 +901,14 @@ Google maps
                 myinfowindow = new google.maps.InfoWindow({
                     content: String(beach[4])
                 });
+
+                $('.markers').each(function(index){
+
+                });
+
             // add marker ( marker options )  
-            var marker = new google.maps.Marker({
+            var marker = [];
+             marker = new google.maps.Marker({
                 position: myLatLng,
                 draggable: false,
                 optimized: false,
@@ -875,10 +927,8 @@ Google maps
             });
 
 
-    google.maps.event.addListener(marker, 'mouseover', function() {
+        google.maps.event.addListener(marker, 'mouseover', function() {
         if (this.getAnimation() == null || typeof this.getAnimation() === 'undefined') {
-            
-
             
             clearTimeout(bounceTimer);
             
@@ -927,14 +977,16 @@ Google maps
 
               });
 
+          var mrkrLat = [];
 
-       if ( $('.google-maps').hasClass( "google-maps" ) ) {
-        google.maps.event.addDomListener(window, 'load', initialize);
+        $('.google-maps .markers li').each(function(index){
+           var markerLat = $(this).data('markerlat');
+           mrkrLat.push(markerLat);
+           console.log(mrkrLat);
+        });
 
-       }else {
-        return false;
-       }
-
+        console.log(mrkrLat);
+        console.log($('.google-maps .markers li'));
       }); // end anon func
 
 
@@ -974,7 +1026,6 @@ var button = $('.ps-btn');
 
 // Loop trough and get values from each data value
 $( button ).each(function(){
-
   // Variables
    var btnBgColor             = $( this ).data('bgcolor'),
        btnBgHoverColor        = $( this ).data('bghovercolor'),
@@ -1283,6 +1334,93 @@ $('.testimonials-slider').each(function(index){
 /*===========================
   Partners 
  ===========================*/
+
+$(document).ready(function(){
+  var sliderBtnPartnerNext = $('.swiper-partners-next'),
+      sliderBtnPartnerPrev = $('.swiper-partners-prev');
+
+ var ww = $(window).width();
+
+
+// Option array 
+  var prtAmount   = [],
+      prtAutoplay = [],
+      prtSpeed    = [];
+
+
+// Get attr data
+$('.partner-slider').each(function(index){
+  var partnerAmount   = $(this).data('partneramount'),
+      partnerAutoplay = $(this).data('partnerautoplay'),
+      partnerSpeed    = $(this).data('partnerspeed');
+     // Push to array
+      prtAmount.push(partnerAmount);
+      prtSpeed.push(partnerSpeed);
+      prtAutoplay.push(partnerAutoplay);
+});
+
+
+
+
+// Testimonial loop
+$('.partner-slider').each(function(index){
+    // Add classes
+    $(this).addClass('partner-' + index);
+    $(this).parent().find('.swiper-partners-next').addClass('partners-button-next' + index);
+    $(this).parent().find('.swiper-partners-prev').addClass('partners-button-prev' + index);
+    // inc buttons
+    var buttonPartnerPrev = '.partners-button-prev' + index,
+        buttonPartnerNext = '.partners-button-next' + index;
+    // Init testimonial slider
+     var partnersSlider = [index];
+     var partnersSlider = new Swiper ('.partner-' + index, {
+        direction: 'horizontal',
+        loop: false,
+        autoplay: prtAutoplay[index],
+        speed: prtSpeed[index],
+        touchEventsTarget: 'container',
+        spaceBetween: 30,
+        centeredSlides: false,
+        slidesPerView: prtAmount[index],
+        touchRatio: 0.6,
+        slideToClickedSlide: true,
+    });
+
+      // Navigate slideshow
+      $( buttonPartnerPrev ).on('click', function(e){
+          e.preventDefault();
+          console.log('clicked ' + index);
+          partnersSlider.slidePrev();
+        });
+
+      $( buttonPartnerNext ).on('click', function(e){
+          e.preventDefault();
+          console.log('clicked ' + index);
+          partnersSlider.slideNext();
+        });     
+
+}); // End each loop
+
+
+
+
+
+// function slidesPrView() {
+//     var three = 3,
+//         one = 1;
+          
+//     if( ww < 767  ) {
+//         return one;
+//       }else {
+//        return three;
+//       }
+// } // end slidesPrView
+
+}); // end anon
+
+
+
+
 
 /*===========================
   Comment Form Validation 

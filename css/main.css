@@ -1147,6 +1147,7 @@ background-color: #f5f5f5;
   background: rgba(249, 249, 249, 0.18);
   min-height: 144px;
   padding: 3em;
+  max-width: 100%;
 
 }
 

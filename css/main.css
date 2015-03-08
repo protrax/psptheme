@@ -117,6 +117,9 @@ small, .font_small {
 
 }
 
+
+
+
 /*** General ****/
 .hidden {
   visibility: hidden !important;
@@ -876,51 +879,7 @@ background-color: #f5f5f5;
 /**** THEME FEATURES ****/
 
 
-/**** FEATURED BOX ****/
-  /** Featured box right ***/
-.featured-box {
-  padding: 0px;
-  margin: 2em 0em;
-}
 
-.featured-box h2 {
-  margin-top: 0em;
-  margin-bottom: 1em;
-}
-
-.featured-box p {
-  font-size: 1.3em;
-  padding: 0em .3em;
-  line-height: 1.3em;
-}
-
-.featured-box .fa-2x{
-  margin-right: 0.4em;
-}
-
-/*** Featured box left ****/
-
-
-.featured-box-left {
-  padding: 0px;
-  margin: 2em 0em;
-}
-
-.featured-box-left h2 {
-  margin-top: 0em;
-  margin-bottom: 1em;
-}
-
-.featured-box-left p {
-  font-size: 1.3em;
-  padding: 0em .3em;
-  line-height: 1.3em;
- 
-}
-
-.featured-box-left .fa-2x{
-  margin-right: 0.4em;
-}
 
 
 /**** Featured box bg for prallax ***/
@@ -5049,4 +5008,21 @@ right: -1.5em;
   padding: 5px;
   
  }
+}
+
+/* ============================================================
+   POPOVERS
+/* ============================================================ */
+
+.popover-title {
+  text-align: left !important;
+   background-color: #f78e20 !important;
+   color: #f9f9f9;
+   font-weight: 400 !important;
+   border: #f78e20 !important;
+}
+
+.popover {
+    text-align: left !important;
+    padding: 0 !important;
 }

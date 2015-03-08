@@ -339,6 +339,11 @@ button.search-bg:hover .search-icon {
   background: none;
 }
 
+.btn-default:active{
+  background: none;
+  color: orange;
+}
+
 .main-menu-container li a {
   padding: 2em .8em;
   font-size: 1em;
@@ -642,12 +647,37 @@ background-color: #f5f5f5;
   position: absolute;
   z-index: 100;
   margin: 0px;
+  background: rgba(115, 115, 115, 0.28);
+  margin: 0px auto;
   padding: 0px;
   float: left;
+  padding: 1em;
   display: none;
-  right: -52px !important;
-  top: 14px;
+  right: 9px !important;
+  top: 5.8em;
+  /* text-align: center; */
 }
+
+#main-search-form form.navbar-form.navbar-left {
+  margin: 0px auto;
+  text-align: center;
+  left: 15px !important;
+  position: relative;
+}
+
+#main-search-form form.navbar-form.navbar-left .search-bg {
+  background:#f78e20;
+  border-color: #f78e20 !important;
+}
+
+#main-search-form form.navbar-form.navbar-left .search-icon {
+  color:#f9f9f9;
+}
+
+
+
+
+
 
 .form-group input{
   border-radius: 0;

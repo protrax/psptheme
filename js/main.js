@@ -225,32 +225,32 @@ $('#to-top').click(function(){
          $('.navbar-default .nav li.dropdown').hover(function() {
           if($(window).width() >= 767) {
             $(this).addClass('open');
-            $('.dropdown-menu').addClass('menu-animation zoomIn');
+            $('.dropdown-menu').addClass('menu-animation fadeIn');
           }
          
     }, function() {
       if($(window).width() >= 767) { 
          $(this).removeClass('open');
-         $('.dropdown-menu').removeClass('menu-animation zoomIn');
+         $('.dropdown-menu').removeClass('menu-animation fadeIn');
        }
       });
     }); 
   
   /****** Show/Hide search form *****/
   jQuery(function($) {
-
+    $('#main-search-form').addClass('search-animation zoomIn');
     $("#main-search-button").click(function(e) {
         e.preventDefault();
         var $toClose = $("#main-search-form");
         // Show the search div/form
-        $("#main-search-form").show( function() {
-            
+        $("#main-search-form").show(1, function() {
+           
           // Close the menu when clicking outside the search form
             if($toClose.is(':visible')) { 
                 $('#main-search-button').addClass('visibility');
                 $('body').one('click', function(e) {
                     e.preventDefault();
-                    $toClose.hide(600);
+                    $toClose.hide().addClass('search-animation zoomIn');
                     $('#main-search-button').removeClass('visibility');
                 });
             }
@@ -258,7 +258,7 @@ $('#to-top').click(function(){
 
                 $('body').unbind('click');
             }
-        });
+        }).addClass('search-animation zoomIn');
     });
     // Prevent Menu to close when targeting the search div
     $("#main-search-form").click(function(e) {
@@ -615,9 +615,9 @@ TABS
 *************************************************************/
 
   var tabholder = '.toggle-tabs-holder',
-    tab = '.toggle-tabs li',
-    tabLine = '.toggle-tabs-line',
-    activetab = 'active-tab';
+    tab         = '.toggle-tabs li',
+    tabLine     = '.toggle-tabs-line',
+    activetab   = 'active-tab';
   
   $(document).on( 'click',tab, function() {
     var $this = $(this);
@@ -656,6 +656,7 @@ ACCORDIONS
 
     $this = $(this);
     $prev = $this.parent().prev();
+
     while ($prev.hasClass(accHolder)) {
       if ($prev.find(accContent).is(':visible')) {
         $prev.find(accContent).slideToggle(300);
@@ -663,6 +664,7 @@ ACCORDIONS
       }
       $prev = $prev.prev();
     }
+
     $next = $this.parent().next();
     while ($next.hasClass(accHolder)) {
       if ($next.find(accContent).is(':visible')) {

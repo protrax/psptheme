@@ -447,17 +447,16 @@ div#main-search-form {
 }
 
 .menu-animation {
-<<<<<<< HEAD
+
   -webkit-animation-duration:.25s;
   animation-duration:.25s;
   -webkit-animation-fill-mode:both;
-  animation-fill-mode:both
-=======
+  animation-fill-mode:both;
   -webkit-animation-duration: .6s;
           animation-duration: .6s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
->>>>>>> fba306b997e721eee7e5bf5ad70eae05910cb325
+
 }
 
 .main-nav .main-nav-fixed {
@@ -597,7 +596,7 @@ a.dropdown-toggle {
 
 /******** Menu Search *********/
 #main-search-form {
-<<<<<<< HEAD
+
   position:absolute;
   z-index:10000;
   margin:0;
@@ -611,7 +610,7 @@ a.dropdown-toggle {
   right:9px!important;
   top:4.8em
 /* text-align: center; */
-=======
+
   position: absolute;
   z-index: 10000;
   margin: 0px;
@@ -625,7 +624,7 @@ a.dropdown-toggle {
   right: 9px !important;
   top: 5.3em;
   /* text-align: center; */
->>>>>>> fba306b997e721eee7e5bf5ad70eae05910cb325
+
 }
 
 .main-nav-fixed #main-search-form {
@@ -648,10 +647,10 @@ a.dropdown-toggle {
   color:#f9f9f9
 }
 
-<<<<<<< HEAD
+
 .form-group input {
   border-radius:0
-=======
+
 
 
 .search-animation {
@@ -663,7 +662,7 @@ a.dropdown-toggle {
 
 .form-group input{
   border-radius: 0;
->>>>>>> fba306b997e721eee7e5bf5ad70eae05910cb325
+
 }
 
 #main-search-form input {

@@ -339,6 +339,11 @@ button.search-bg:hover .search-icon {
   background: none;
 }
 
+.btn-default:active{
+  background: none;
+  color: orange;
+}
+
 .main-menu-container li a {
   padding: 2em .8em;
   font-size: 1em;

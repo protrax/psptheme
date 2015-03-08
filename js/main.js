@@ -1,3 +1,7 @@
+/*************************************************************
+ 1 GENERAL
+*************************************************************/
+
 $("body").css("overflow", "hidden");
 
 jQuery(function ($) {
@@ -18,9 +22,9 @@ $(document).ready(function () {
 
 
 
-//***************************************************************
-//****** Start Isotope functions blog and portfolio masonry *****
-//***************************************************************
+/*************************************************************
+2 ISOTOPE AND BLOG MASONRY
+*************************************************************/
 
 //Isotope function
 
@@ -102,9 +106,9 @@ $('.iso-item').each(function(i) {
 
 
 
-//********************************************************************
-//****** Start Isotope functions Portfolio page all column pages *****
-//********************************************************************
+/*************************************************************
+3 PORTFOLIO ISOTOPE
+*************************************************************/
 
 //Isotope function
 jQuery( function($) {
@@ -267,9 +271,9 @@ $('#to-top').click(function(){
 });
 
 
-//****************************************
-//************ PSP Slider *****************
-//****************************************
+/*************************************************************
+ 4 PSP SLIDER
+*************************************************************/
 jQuery(document).ready(function($){
 // general vars
   var slider           = $('.swiper-container'),
@@ -392,7 +396,7 @@ $( buttonNext ).on('click', function(e){
 
 
 /*************************************************************
-Parallax
+5 Parallax
 *************************************************************/
   
 jQuery(document).ready(function($){
@@ -402,7 +406,7 @@ jQuery(document).ready(function($){
 });
 
 /*************************************************************
- PIE chart ANIMATION
+6 PIE chart ANIMATION
 *************************************************************/
 
 
@@ -485,7 +489,7 @@ jQuery(function($) {
 
 
 /*************************************************************
-PROGRESS BAR ANIMATION
+7 PROGRESS BAR ANIMATION
 *************************************************************/
 
 
@@ -557,7 +561,7 @@ $this.find('.toggle-tabs-content').waypoint(function() {
 
 
 /*************************************************************
-COUNTER
+8 COUNTER
 *************************************************************/
 
    jQuery(document).ready(function($) {
@@ -573,7 +577,7 @@ COUNTER
    });
 
 /*************************************************************
-REQUEST ANIMATION FRAME DECLARATION FOR SCROLLING
+ 9 REQUEST ANIMATION FRAME DECLARATION FOR SCROLLING
 *************************************************************/
 
 var scroll = window.requestAnimationFrame ||
@@ -584,7 +588,7 @@ var scroll = window.requestAnimationFrame ||
              function(callback){ window.setTimeout(callback, 1000/6); };
 
 /*************************************************************
-DEBOUNCED RESIZE (http://www.paulirish.com/2009/throttled-smartresize-jquery-event-handler)  
+ 10 DEBOUNCED RESIZE (http://www.paulirish.com/2009/throttled-smartresize-jquery-event-handler)  
 *************************************************************/
 
 function smartresize(sr) {
@@ -611,7 +615,7 @@ function smartresize(sr) {
 
 
 /*************************************************************
-TABS
+11 TABS
 *************************************************************/
 
   var tabholder = '.toggle-tabs-holder',
@@ -632,7 +636,7 @@ TABS
 
 
 /*************************************************************
-TOGGLES
+12 TOGGLES
 *************************************************************/
 
   $(document).on('click', '.to-toggle-title', function(){
@@ -645,7 +649,7 @@ TOGGLES
   }); 
 
 /*************************************************************
-ACCORDIONS
+13 ACCORDIONS
 *************************************************************/
     var accContent = '.accordion-content',
         accHolder  = 'accordion-holder',
@@ -687,7 +691,7 @@ ACCORDIONS
 
 
 /*************************************************************
-Google maps
+ 14 Google maps
 *************************************************************/
 
       $(function() { 
@@ -970,9 +974,9 @@ console.log(featureOpts);
       }); // end anon func
 
 
-/************************************
- *********** Button styles **********
-/************************************/
+/*************************************************************
+15 BUTTON STYLES
+*************************************************************/
 jQuery(document).ready(function($){
 //Values stored in array
 var button = $('.ps-btn'); 
@@ -1182,14 +1186,9 @@ $(document).on("click",".lightbox-image-container",function(){
 
  }); // End document.ready
 
-/*===========================
-  Related post slider
- ===========================*/
-
-
-
-
-
+/*************************************************************
+16 RELATED POSTS
+*************************************************************/
 
 
 $(document).ready(function(){
@@ -1222,9 +1221,9 @@ function slidesPrView() {
  
 
 
-/*===========================
-  Testimonials slider
- ===========================*/
+/*************************************************************
+17 TESTIMONIALS
+*************************************************************/
 
 $(document).ready(function(){
   var sliderBtnNext = $('.swiper-testimonials-next'),
@@ -1312,9 +1311,9 @@ $('.testimonials-slider').each(function(index){
 
 
 
-/*===========================
-  Partners 
- ===========================*/
+/*************************************************************
+18 OUR PARTNERS
+*************************************************************/
 
 $(document).ready(function(){
   var sliderBtnPartnerNext = $('.swiper-partners-next'),
@@ -1401,11 +1400,11 @@ $('.partner-slider').each(function(index){
 
 
 
+/*************************************************************
+19 FORM VALIDATION
+*************************************************************/
 
 
-/*===========================
-  Comment Form Validation 
- ===========================*/
 $(document).ready(function() {
    if( $('.cmxform').hasClass('cmxform') ){
     $("#ps-form").validate({

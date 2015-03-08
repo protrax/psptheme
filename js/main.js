@@ -778,7 +778,7 @@ Google maps
       $('.google-maps').each(function(index){
           $(this).attr('id', 'maps-boxed' + index);
 
-          // Map styles
+          // Map styles 
 
           var featureOpts = [
             {

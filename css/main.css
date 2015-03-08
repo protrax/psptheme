@@ -1425,7 +1425,7 @@ background-color: #f5f5f5;
   -o-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-}
+} 
 
 #filters .ui-group a.button.btn:hover {
   border-bottom: 2px solid orange;

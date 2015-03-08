@@ -57,6 +57,11 @@ a:hover {
   text-decoration: underline !important; 
 }
 
+hr {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+
 /**** Icon sizes ******/
 .fa-2x {
   font-size: 1.5em;
@@ -2893,6 +2898,7 @@ div.progress .desc {
 
 .single-post { 
    padding: 0;
+   margin-bottom: 50px;
 }
 
 .single-post img { 
@@ -2901,8 +2907,9 @@ div.progress .desc {
 
 
 .single-post h2 {
-  font-weight: 400;
-  margin-top: 25px;
+  font-weight: 300;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 .single-post-author {

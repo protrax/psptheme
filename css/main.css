@@ -567,6 +567,13 @@ div#nav-collapse{
      border-radius: 0px;
 }
 
+a.dropdown-toggle { 
+  text-decoration: none !important;
+}
+
+.dropdown li a:hover {
+  text-decoration: none !important;
+}
 
 
 .mega-menu .mega-menu-content li a{
@@ -1183,9 +1190,12 @@ background-color: #f5f5f5;
   color: #999999;
 }
 
+#sidebar ul li a {
+  color: inherit !important;
+}
+
 #sidebar ul li a:hover {
- 
-  color: #f78e20;
+  color: #f78e20 !important;
 }
 
 

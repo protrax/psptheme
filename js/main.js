@@ -241,7 +241,7 @@ $('#to-top').click(function(){
 
     $("#main-search-button").click(function(e) {
         e.preventDefault();
-        var $toClose = $("#main-search-form")
+        var $toClose = $("#main-search-form");
         // Show the search div/form
         $("#main-search-form").show( function() {
             

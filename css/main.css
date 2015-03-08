@@ -64,6 +64,8 @@ a:hover {
 
 
 
+
+
 /**** APPENDING STYLES ****/
 
 .negative {
@@ -126,103 +128,20 @@ a:hover {
 }
 
 
-
-
 /*** General ****/
+
+
+.spacer {
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+}
+
 .hidden {
   visibility: hidden !important;
 }
 
-
-/**** Dividers ***/
-
-.divider-100 {
-   margin-bottom: 100px;
-}
-
-.divider-50 {
-  margin-bottom: 50px;
-}
-
-/** Spacers **/
-
-.spacer-25 {
-   height: 25px;
-}
-
-.spacer-50 {
-   height: 50px;
-}
-
-.spacer-70 {
-   height: 70px;
-}
-
-.spacer-100 {
-   height: 100px;
-}
-
-.spacer-150 {
-   height: 150px;
-}
-
-.spacer-200 {
-   height: 200px;
-}
-
-
-.spacer-250 {
-   height: 250px;
-}
-
-.spacer-300 {
-   height: 300px;
-}
-
-.spacer-350 {
-   height: 350px;
-}
-
-.spacer-400 {
-   height: 350px;
-}
-/**** Fixed height *****/
-
-.fixed-height-100 {
-  height: 100px;
-}
-
-.fixed-height-150 {
-  height: 150px;
-}
-
-.fixed-height-200 {
-  height: 200px;
-}
-
-.fixed-height-250 {
-  height: 250px;
-}
-
-.fixed-height-300 {
-  height: 300px;
-}
-
-.fixed-height-350 {
-  height: 350px;
-}
-
-.fixed-height-400 {
-  height: 400px;
-}
-
-.fixed-height-450 {
-  height: 450px;
-}
-
-.fixed-height-500 {
-  height: 500px;
-}
 
  .txt-color {
   color: #f78e20 !important;
@@ -321,26 +240,7 @@ a:hover {
   font-size: 1.2em !important;
 }
 
-.top-bar .contact-info,.social-links span.glyphicon{   
-  font-size: 1.1em;
-  color: #3f4040;
-}
-.top-bar .contact-info,a,p span.glyphicon{   
- 
-  color: #333;
-}
-.top-bar .contact-info,a:hover{   
- text-decoration: none;
- color: #3f4040;
-}
-.top-bar .contact-info,a:focus{   
- text-decoration: none;
- color: #ffffff; 
-}
-.top-bar .contact-info,a:visited{   
- text-decoration: none;
- color: #3f4040; 
-}
+
 /**** Topbar ****/
 .fa {
   color: #adadad;
@@ -1095,104 +995,8 @@ background-color: #f5f5f5;
   margin-bottom: 15px;
 }
 
-/**** IMAGE BOX ****/
 
-.img-box {
-    padding: 0px;
-    margin: 2em 0em;
-}
 
-/**** IMG HOVER ****/
-.img-box img {
-    width: 100%;
-}
-
-.figcaption {
-  display: none;
-}
- 
-.img-box .figure {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    position: relative;
-    display: block;
-    cursor: pointer;
-    overflow: hidden;
-}
-
-.img-box .figure:hover img {
-    -webkit-transform:scale(1.25);
-    -moz-transform:scale(1.25); 
-    -ms-transform:scale(1.25);
-    -o-transform:scale(1.25); 
-     transform:scale(1.25);
-}
-
-.img-box .figure img {
-    -webkit-transition: all .4s ease-out; 
-    -moz-transition: all .4s ease-out; 
-    -ms-transition: all .4s ease-out; 
-    -o-transition: all .4s ease-out;  
-    transition: all .4s ease-out;
-}
- 
-.img-box .figure:hover .figcaption {
-    opacity: 1;
-    top: 0;
-}
- 
-.img-box .figcaption {
-    display: block;
-    opacity: 0;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 250px;
-    background: rgba(247,142,32,0.6);
-    color: #fff;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    -o-transition: all .3s ease-in-out;
-    -ms-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-}
- 
-.img-box .figcaption h3 {
-    font-family: 'Roboto';
-    font-weight: 500 !important;
-    color: #f9f9f9;
-    padding: 10px 20px;
-    margin-bottom: 5px;
-    position: relative;
-    right: 100%;
-    margin-top: 24%;
-    font-size: 30px;
-    text-align: center;
-    width: 100%;
-}
-
-.img-box .figcaption p {
-  text-align: center;
-  color: #FFF;
-}
- 
-.img-box .figure:hover h3,.figure:hover p {
-    left: 0;
-}
- 
-.img-box .figcaption a {
-    color: #fff !important;
-    border: 2px solid #fff;
-    padding: 4px 10px;
-    text-decoration: none;
-    margin-top: 10px;
-}
- 
-.img-box .figcaption a:hover {
-    color: #3f4040 !important;
-    background: #fff;
-}
 /**** Page Search ****/
 
 .search-content {
@@ -4104,6 +3908,12 @@ li.active-tab {
   -o-transition: all .3s ease;
   transition: all .3s ease;
 }
+
+
+.ps-btn:hover {
+  text-decoration: none !important;
+}
+
 .ps-btn.tiny {
   height: 35px;
   line-height: 31px;

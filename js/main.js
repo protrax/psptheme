@@ -242,10 +242,9 @@ $('#to-top').click(function(){
     $("#main-search-button").click(function(e) {
         e.preventDefault();
         var $toClose = $("#main-search-form")
-
         // Show the search div/form
         $("#main-search-form").show( function() {
-
+            
           // Close the menu when clicking outside the search form
             if($toClose.is(':visible')) { 
                 $('#main-search-button').addClass('visibility');

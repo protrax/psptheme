@@ -422,6 +422,26 @@ div#nav-collapse{
 } 
 
 
+@media screen and (max-width: 767px) {
+  .main-menu-container li a {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .btn.btn-default .search-bg.no-outline.button-border{
+    float: left;
+    margin-right: -42px;
+  }
+  .form-group {
+    display: flex;
+  }
+  .navbar-form.navbar-left {
+    border: none;
+  }
+}
+
+
 /******** Show menu on hover ********/
 
 

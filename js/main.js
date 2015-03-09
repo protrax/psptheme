@@ -1418,3 +1418,18 @@ $(document).ready(function() {
     });
    }
  });
+
+
+/*************************************************************
+20 POPOVERS
+*************************************************************/
+
+$(document).ready(function() {
+  $("#myPopOver").popover();
+  $("#myPopOver2").popover();
+  $("#myPopOver3").popover();
+  $("#myPopOver4").popover();
+  $("#myPopOver5").popover();
+  $("#myPopOver6").popover();
+  $("#myPopOver7").popover();
+})

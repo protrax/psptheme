@@ -4148,7 +4148,7 @@ li.active-tab {
 .swiper-slide {
   text-align:center;
   font-size:18px;
-  background:#fff;
+  background: transparent;
 /* Center slide text vertically */
   display:-webkit-box;
   display:-ms-flexbox;
@@ -4184,11 +4184,6 @@ li.active-tab {
   line-height:60px
 }
 
-.swiper-slide .content-inner {
-}
-
-.swiper-slide .content-buttons {
-}
 
 /***** Navigation *******/
 .swiper-button-prev {

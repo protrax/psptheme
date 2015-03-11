@@ -152,6 +152,10 @@ hr {
   border-top:2px solid #F5F6FA
 }
 
+.breadcrumb a:hover {
+  text-decoration: none !important;
+}
+
 /**** Content backgrounds *****/
 
 .dark {

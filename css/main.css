@@ -2391,14 +2391,17 @@ figure.effect-hera:hover p i:empty {
 }
 
 .testimonial img {
-  width:100px!important;
+  width:100px;
   height:auto;
-  display:inline-block
+  float: left;
+  display:inline-block;
+  margin:0 1em;
 }
 
 .testimonial p {
   display:inline-block;
-  margin:15px 0 0 10px
+  margin:15px 0 0 10px;
+  float:left;
 }
 
 .testimonials-slider .swiper-slide {

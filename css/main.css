@@ -4164,10 +4164,10 @@ li.active-tab {
   display: inline-block;
   pointer-event: none;
   transform: initial;
-  -webkit-transition: left .3s ease, color .3s ease;
-  -moz-transition: left .3s ease, color .3s ease;
-  -o-transition: left .3s ease, color .3s ease;
-  transition: left .3s ease, color .3s ease;
+  -webkit-transition: left .1s ease, color .1s ease;
+  -moz-transition: left .1s ease, color .1s ease;
+  -o-transition: left .1s ease, color .1s ease;
+  transition: left .1s ease, color .1s ease;
 }
 .ps-btn.tiny.ps-icon-anim span {
   left: 10px;
@@ -4305,7 +4305,7 @@ li.active-tab {
   position: absolute;
   z-index: 99999;
   font-size: 3em;
-  left: 0;
+  left: .3em;
   background: #444;
   height: 1.5em;
   color: #fff;
@@ -4327,7 +4327,7 @@ li.active-tab {
   position: absolute;
   z-index: 99999;
   font-size: 3em;
-  right: 0;
+  right: .3em;
   background: #444;
   height: 1.5em;
   color: #fff;

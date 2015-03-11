@@ -1062,7 +1062,7 @@ nav.navbar-fixed-top.main-nav-fixed .navbar-nav.navbar-right.main-right-menu {
 }
 
 .search-wrapper h3 {
-  text-transform:capitalize;
+  text-transform: initial;
   font-weight:300;
   margin-top:10px;
   margin-bottom:13px

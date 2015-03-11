@@ -428,6 +428,10 @@ div#main-search-form {
   border:none
 }
 
+.breadcrumb>.active {
+  color: lightgray!important;
+}
+
 .main-menu-container li a:hover {
   border-top:3px solid #f78e20;
   -webkit-animation:bordertop .25s forwards;

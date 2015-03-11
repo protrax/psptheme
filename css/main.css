@@ -156,6 +156,11 @@ hr {
   text-decoration: none !important;
 }
 
+.page-image {
+   height: 500px;
+   overflow: hidden;
+}
+
 /**** Content backgrounds *****/
 
 .dark {
@@ -1731,6 +1736,7 @@ figure.effect-bubba figcaption::after {
 figure.effect-bubba h2 {
   opacity:0;
   position:relative;
+  text-transform: initial;
   top:2.2em;
   -webkit-transition:-webkit-transform .35s;
   transition:transform .35s;
@@ -1740,6 +1746,7 @@ figure.effect-bubba h2 {
 
 figure.effect-bubba h3 {
   opacity:0;
+  text-transform: initial;
   position:relative;
   top:1.3em;
   -webkit-transition:-webkit-transform .35s;
@@ -1926,6 +1933,7 @@ figure.effect-ruby:hover img {
 figure.effect-ruby h2 {
   margin-top:1.3em;
   opacity:0;
+  text-transform: initial;
   font-weight:400;
   text-align:center;
   -webkit-transition:-webkit-transform .35s;
@@ -1937,6 +1945,7 @@ figure.effect-ruby h2 {
 figure.effect-ruby h3 {
   margin-top:1.2em;
   opacity:0;
+  text-transform: initial;
   font-weight:300;
   text-align:center;
   -webkit-transition:-webkit-transform .35s;
@@ -1948,6 +1957,7 @@ figure.effect-ruby h3 {
 figure.effect-ruby h4 {
   margin-top:1em;
   opacity:0;
+  text-transform: initial;
   font-weight:300;
   text-align:center;
   -webkit-transition:-webkit-transform .35s;
@@ -3841,7 +3851,8 @@ div.folded h2:after {
   border-left-width:3px;
   border-radius:3px;
   background-color:#f9f9f9;
-  float:left
+  float:left;
+  margin-left: 20px;
 }
 
 .smite-callout p {

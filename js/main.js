@@ -1293,21 +1293,6 @@ $('.testimonials-slider').each(function(index){
 
 }); // End each loop
 
-
-
-
-
-// function slidesPrView() {
-//     var three = 3,
-//         one = 1;
-          
-//     if( ww < 767  ) {
-//         return one;
-//       }else {
-//        return three;
-//       }
-// } // end slidesPrView
-
 }); // end anon
 
 

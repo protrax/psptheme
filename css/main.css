@@ -1,4 +1,6 @@
-/*** Default styles ***/
+/***********************************
+01 General Styles
+***********************************/
 html {
   font-size:.875em!important;
   max-width:100%;
@@ -67,12 +69,12 @@ hr {
   margin-bottom:10px!important
 }
 
-/**** Icon sizes ******/
 .fa-2x {
   font-size:1.5em
 }
 
 /**** APPENDING STYLES ****/
+
 .negative {
   color:#f9f9f9
 }
@@ -116,6 +118,7 @@ hr {
 }
 
 /*** General ****/
+
 .spacer {
   display:block;
   height:0;
@@ -150,33 +153,15 @@ hr {
 }
 
 /**** Content backgrounds *****/
+
 .dark {
   background:#F5F6FA
 }
 
-/****** Headers ******/
-.header-element {
-}
+/***********************************
+02 Logo/Links Styles
+***********************************/
 
-/************************************
-************ Header *****************
-************************************/
-/*** main ***/
-.main-nav {
-  background:#fff;
-  border:none;
-  border-radius:0;
-  margin-bottom:0
-}
-
-.nav .open>a,.nav .open>a:hover,.nav .open>a:focus {
-  background-color:#fff!important
-}
-
-.main-nav .dropdown-menu {
-  border-radius:0;
-  border-top:1px solid orange
-}
 
 /** Logo **/
 .main-logo {
@@ -187,7 +172,7 @@ hr {
 }
 
 .main-logo img {
-  width:110px!important;
+  width:88px!important;
   height:auto;
   -webkit-transition:all .6s;
   -moz-transition:all .6s;
@@ -195,31 +180,6 @@ hr {
   -o-transition:all .6s;
   transition:all .6s;
   padding:0
-}
-
-/*** Top header ***/
-.top-bar {
-  padding:.3em 0;
-  background:#fff;
-  color:#333
-}
-
-.social-links p {
-  margin:0;
-  padding:.3em 0 0
-}
-
-.social-links p a {
-  padding:.6em
-}
-
-.contact-info p {
-  margin:0;
-  padding:.3em 0 0
-}
-
-.contact-info p a {
-  padding:.6em
 }
 
 /*** icons ***/
@@ -300,10 +260,26 @@ button.search-bg:hover .search-icon {
 }
 }
 
-/************************************
-************ Menu Styles ************
-************************************/
-/***** Main menu ****/
+/***********************************
+03 Logo/Links Styles
+***********************************/
+
+.main-nav {
+  background:#fff;
+  border:none;
+  border-radius:0;
+  margin-bottom:0
+}
+
+.nav .open>a,.nav .open>a:hover,.nav .open>a:focus {
+  background-color:#fff!important
+}
+
+.main-nav .dropdown-menu {
+  border-radius:0;
+  border-top:1px solid orange
+}
+
 /** float menu right **/
 .navbar-nav {
   float:right
@@ -419,7 +395,6 @@ div#main-search-form {
 }
 }
 
-/******** Show menu on hover ********/
 /******** End Main menu Tablet and mobile hover **********/
 .navbar-default .navbar-default .navbar-nav>.open>a,.navbar-default .navbar-nav>.open>a:hover,.navbar-default .navbar-nav>.open>a:focus {
   background-color:#fff
@@ -741,7 +716,6 @@ a.dropdown-toggle {
   background-color:transparent!important
 }
 
-/****** Scroll to top **************/
 #to-top {
   position:fixed;
   padding:.8em;
@@ -758,9 +732,6 @@ a.dropdown-toggle {
   font-size:1.8em
 }
 
-/************************************
-************ Off canvas ************
-************************************/
 @media screen and (max-width: 767px) {
 .row-offcanvas {
   position:relative;
@@ -807,21 +778,16 @@ a.dropdown-toggle {
 }
 }
 
-/************************************
-************ Isotope ****************
-************************************/
-/*** Isotope layout ***/
-/* clear fix */
+/***********************************
+04 Isotope Styles
+***********************************/
+
 .isotope:after {
   content:'';
   display:block;
   clear:both
 }
 
-/******* Isotope load animation ******/
-/*.iso-animate {
-  
-}*/
 .isotope .iso-item {
   -webkit-backface-visibility:hidden;
   -moz-backface-visibility:hidden;
@@ -854,7 +820,6 @@ nav.navbar-fixed-top.main-nav-fixed .navbar-nav.navbar-right.main-right-menu {
   margin-left:-5px!important
 }
 
-/**** THEME FEATURES ****/
 /**** Featured box bg for prallax ***/
 .fb-pl-bg {
   background:rgba(249,249,249,0.45);
@@ -883,22 +848,9 @@ nav.navbar-fixed-top.main-nav-fixed .navbar-nav.navbar-right.main-right-menu {
   -webkit-filter:grayscale(0%)
 }
 
-/**** TEXT BOX ****/
-.text-box {
-  width:100%;
-  float:left;
-  height:auto;
-  margin-top:25px
-}
-
-.text-box i {
-  font-size:25px!important;
-  margin-right:10px
-}
-
-/* ============================================================
-   18. Footer
-/* ============================================================ */
+/***********************************
+05 Footer Styles
+***********************************/
 #footer {
   clear:both;
   position:relative;
@@ -970,7 +922,7 @@ nav.navbar-fixed-top.main-nav-fixed .navbar-nav.navbar-right.main-right-menu {
   position:relative;
   height:100%;
   margin:0 auto;
-  padding:50px 0;
+  padding:50px 0 20px 0;
   cursor:pointer
 }
 
@@ -1053,7 +1005,21 @@ nav.navbar-fixed-top.main-nav-fixed .navbar-nav.navbar-right.main-right-menu {
   margin-bottom:15px
 }
 
-/**** Page Search ****/
+.social-links {
+  display: inline-block;
+}
+
+.social-links p {
+  display: inline-block;
+}
+
+.social-links p i {
+  margin: 0px 10px 0 10px;
+
+}
+/***********************************
+06 Search Styles
+***********************************/
 .search-content {
   margin-bottom:50px;
   max-width:350px!important
@@ -1140,9 +1106,9 @@ nav.navbar-fixed-top.main-nav-fixed .navbar-nav.navbar-right.main-right-menu {
   content:"- "
 }
 
-/************************************
-************ Pages ******************
-************************************/
+/***********************************
+07 Pages Styles
+***********************************/
 /**** Page header Default ****/
 .main-page-header {
   border:none;
@@ -1185,17 +1151,19 @@ nav.navbar-fixed-top.main-nav-fixed .navbar-nav.navbar-right.main-right-menu {
   max-width:100%
 }
 
-/*************** Main Content **********/
 .main-content img {
   margin:2em 0
 }
 
-/**** SIDEBAR PAGE ****/
+/***********************************
+08 Sidebar Styles
+***********************************/
+
+
 .sidebar-page {
   padding:0
 }
 
-/**** SIDEBAR ****/
 #sidebar {
   margin:0
 }
@@ -1399,7 +1367,6 @@ button.btn.btn-primary.btn-xs {
   padding:0 .4em
 }
 
-/***** categories sidebar ******/
 .widget_categories ul {
   margin:1.5em 0
 }
@@ -1408,9 +1375,6 @@ button.btn.btn-primary.btn-xs {
   margin:.8em 0;
   padding:0 3em;
   border-bottom:1px solid #999!important
-}
-
-.widget_categories .categories-title {
 }
 
 .widget_categories .categories-amount {
@@ -1459,7 +1423,10 @@ button.btn.btn-primary.btn-xs {
   color:#fff!important
 }
 
-/**** SEARCH PAGE ****/
+/***********************************
+09 Search Page
+***********************************/
+
 .search-results {
   padding:0!important;
   float:left;
@@ -1468,10 +1435,10 @@ button.btn.btn-primary.btn-xs {
   text-align:center
 }
 
-/************************************
-************ Portfolio **************
-************************************/
-/*** Portfolio front page ****/
+/***********************************
+10 Portfolio Styles
+***********************************/
+
 /** Layout **/
 .grid-sizer {
   width:0;
@@ -1584,8 +1551,6 @@ figure figcaption,figure figcaption > a {
   height:100%
 }
 
-/* Anchor will cover the whole item by default */
-/* For some effects it will show as a button */
 figure figcaption > a {
   z-index:1000;
   text-indent:200%;
@@ -1625,9 +1590,10 @@ figure p {
   padding:2.857em 0 5em
 }
 
-/******************************
-/**** Portfolio ( grid ) ******
-/*****************************/
+/***********************************
+11 Portfolio Gird Styles
+***********************************/
+
 #filters-portfolio .ui-group {
   border-bottom:1px solid #DADADA;
   display:inline-block;
@@ -1707,9 +1673,9 @@ figure p {
   margin-bottom:15px
 }
 
-/*****************************
- ********* Hover effects ****
-/****************************/
+/***********************************
+12 Hover Effects
+***********************************/
 /*---------------*/
 /***** Bubba *****/
 /*---------------*/
@@ -2253,9 +2219,10 @@ figure.effect-hera:hover p i:empty {
   opacity:1
 }
 
-/*****************************
-********** Team members ******
-******************************/
+/***********************************
+13 Team Members
+***********************************/
+
 .team-members {
   padding-bottom:50px;
   float:left
@@ -2383,10 +2350,129 @@ figure.effect-hera:hover p i:empty {
   font-size:initial!important
 }
 
-/*********************************
-************ Testimonials ********
-**********************************/
+/***********************************
+13 Testimonials
+***********************************/
+
+.testimonials-slider {
+  width:100%;
+  margin:20px auto
+}
+
+.testimonial blockquote {
+  float:left;
+  width:100%;
+  height:auto;
+  background-color:#eee;
+  padding:20px;
+  font-size:1.1em
+}
+
+.testimonial blockquote::after {
+  content:'';
+  position:absolute;
+  border-style:solid;
+  border-width:10px 10px 0;
+  border-color:#eee transparent;
+  display:block;
+  width:0;
+  z-index:1;
+  bottom:110px;
+  left:48px
+}
+
+.testimonial img {
+  width:100px!important;
+  height:auto;
+  display:inline-block
+}
+
+.testimonial p {
+  display:inline-block;
+  margin:15px 0 0 10px
+}
+
+.testimonials-slider .swiper-slide {
+  height:100%;
+  text-align:center;
+  font-size:18px;
+  background:#fff;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:-webkit-flex;
+  display:flex;
+  -webkit-box-pack:center;
+  -ms-flex-pack:center;
+  -webkit-justify-content:center;
+  justify-content:center;
+  -webkit-box-align:center;
+  -ms-flex-align:center;
+  -webkit-align-items:center;
+  align-items:center
+}
+
+.swiper-testimonials-prev {
+  position:absolute;
+  top:50%;
+  z-index:1;
+  font-weight:lighter;
+  font-size:5em;
+  left:-1.5em
+}
+
+.swiper-testimonials-prev i {
+  color:#3f4040
+}
+
+.swiper-testimonials-prev:hover i {
+  color:#F78E20;
+  cursor:pointer
+}
+
+.swiper-testimonials-prev.swiper-button-disabled i {
+  color:#D0D0D0!important
+}
+
+.swiper-testimonials-next {
+  position:absolute;
+  top:50%;
+  z-index:1;
+  font-weight:lighter;
+  font-size:5em;
+  right:-1.5em
+}
+
+.swiper-testimonials-next i {
+  color:#3f4040
+}
+
+.swiper-testimonials-next:hover i {
+  color:#F78E20;
+  cursor:pointer
+}
+
+.swiper-testimonials-next.swiper-button-disabled i {
+  color:#D0D0D0!important
+}
+
+.fp-testimonials-item {
+  padding:1em;
+  border:1px solid #eee
+}
+
+.swiper-wrapper a {
+  color:inherit!important
+}
+
+.swiper-wrapper a:hover {
+  color:inherit!important;
+  text-decoration:none!important
+}
+
+
+
 /***** Front page testimonial ******/
+
 .fp-testimonials p {
   font-size:1.3em;
   text-align:center
@@ -2407,29 +2493,6 @@ figure.effect-hera:hover p i:empty {
   -webkit-filter:grayscale(0%)
 }
 
-/*.fp-testimonials-image:after {
-  display: inline-block;
-  font-family: FontAwesome;
-  top: 7.2em;
-  left: 26px;
-  color: #f9f9f9;
-  left: 7em;
-  font-size: 2em;
-  content: "\f0d8";
-  position: absolute !important;
-}
-
-.fp-testimonials-image:before {
-  display: inline-block;
-  font-family: FontAwesome;
-  top: 7.2em;
-  left: 26px;
-  color: #f9f9f9;
-  left: 7em;
-  font-size: 2em;
-  content: "\f0d8";
-  position: absolute !important;
-}*/
 .fp-testimonial-title {
   text-align:center
 }
@@ -2463,9 +2526,10 @@ figure.effect-hera:hover p i:empty {
   margin:.3em
 }
 
-/*=============================
-  Partners
-==============================*/
+/***********************************
+14 Our Partners
+***********************************/
+
 .fp-partners p {
   font-size:1.3em;
   text-align:center
@@ -2523,9 +2587,10 @@ figure.effect-hera:hover p i:empty {
   margin:.3em
 }
 
-/****************************
-******** Progress bar ******/
-/***************************/
+/***********************************
+15 Progress Bars
+***********************************/
+
 div.progress .desc {
   margin-bottom:0!important
 }
@@ -2554,14 +2619,16 @@ div.progress .desc {
   transition:height 2s ease-in-out
 }
 
-/*** vertical *****/
+
 /** Bottom ***/
+
 .progress.vertical.bottom {
   width:60px;
   padding:0
 }
 
 /*** Top ***/
+
 .progress.vertical {
   width:60px;
   padding:0
@@ -2601,7 +2668,10 @@ div.progress .desc {
   line-height:0
 }
 
-/**** Blog Author ****/
+/***********************************
+16 Author Blog
+***********************************/
+
 .author-wrapper {
   width:100%;
   min-width:544px;
@@ -2704,7 +2774,10 @@ div.progress .desc {
   width:100%
 }
 
-/**** Blog Listview ****/
+/***********************************
+17 Blog Listview
+***********************************/
+
 .listview-wrapper {
   width:100%;
   height:auto;
@@ -2788,7 +2861,10 @@ div.progress .desc {
 }
 }
 
-/**** Google Maps and Contact Page ****/
+/***********************************
+18 Google Maps & Contact Page
+***********************************/
+
 .google-maps {
   width:100%;
   height:450px;
@@ -2825,7 +2901,26 @@ div.progress .desc {
   font-weight:400
 }
 
+.contact-us {
+  margin-top:12px;
+  float:left;
+  width:100%;
+  height:auto
+}
+
+.contact-us p {
+  margin-bottom:25px;
+  font-weight:500
+}
+
+.contact-us i {
+  font-size:1.5em!important;
+  margin-left:0;
+  margin-right:20px
+}
+
 /**** Contact Form (Fullwidth) ****/
+
 #ps-form .form-group input {
   margin-top:1em;
   border-bottom:1px solid #DDD;
@@ -2834,6 +2929,7 @@ div.progress .desc {
 }
 
 /**** Contact Form (Fullwidth) ****/
+
 #ps-form .form-group textarea {
   margin-top:1em;
   border:1px solid #DDD;
@@ -2858,7 +2954,10 @@ div.progress .desc {
   outline:0
 }
 
-/**** Single Post ****/
+/***********************************
+19 Single Post
+***********************************/
+
 .reply-comment {
   background-color:#ddd!important
 }
@@ -2869,13 +2968,14 @@ div.progress .desc {
 }
 
 .post-info {
-  display:inline-flex
+  display:inline-block
 }
 
 .post-info p {
   margin-right:10px;
   margin-top:5px;
-  margin-bottom:5px
+  margin-bottom:5px;
+  display:inline-block
 }
 
 .post-info a {
@@ -3012,11 +3112,12 @@ div.progress .desc {
 }
 }
 
-/* ============================================================
-   12. PARALLAX SECTION
-/* ============================================================ */
-/*** No repeat ***/
+/***********************************
+20 Parallax
+***********************************/
+
 /** Center content **/
+
 .parallax-container .parallax-big-content {
   display:block;
   text-align:center
@@ -3034,6 +3135,7 @@ div.progress .desc {
 }
 
 /********* Parallax quote ****/
+
 .quote-container {
   padding:8em 0
 }
@@ -3047,6 +3149,7 @@ div.progress .desc {
 }
 
 /***** Parallax video ******/
+
 .parallax-video .video-wrapper {
   max-height:200px;
   overflow:hidden;
@@ -3060,9 +3163,10 @@ div.progress .desc {
   left:0
 }
 
-/* ============================================================
-   13. ACCORDION
-/* ============================================================ */
+/***********************************
+21 Accordions
+***********************************/
+
 .accordion-holder {
   margin-bottom:5px;
   border-bottom:1px solid;
@@ -3124,9 +3228,10 @@ div.progress .desc {
   margin:25px 50px 25px 10px
 }
 
-/* ============================================================
-   14. TOGGLE
-/* ============================================================ */
+/***********************************
+22 Toggle
+***********************************/
+
 .to-toggle-holder {
   margin-bottom:5px;
   border-bottom:1px solid;
@@ -3178,9 +3283,10 @@ div.progress .desc {
   margin:25px 50px 25px 10px
 }
 
-/* ============================================================
-   15. Counter
-/* ============================================================ */
+/***********************************
+23 Counters
+***********************************/
+
 .counter-holder-border {
   border:1px solid #ddd;
   padding:20px
@@ -3238,13 +3344,11 @@ p.counter-desc-negative {
   width:50%;
   float:left;
   margin-top:25px
-}
+ }
 }
 
-/* ============================================================
-   15. Fullwidth container
-/* ============================================================ */
 /** Center content **/
+
 .parallax-container .fullwidth-content-big {
   display:block;
   text-align:center
@@ -3261,9 +3365,10 @@ p.counter-desc-negative {
   padding:1em 5em
 }
 
-/* ============================================================
-   16. Text icon
-/* ============================================================ */
+/***********************************
+23 Text Icon
+***********************************/
+
 .icon-text-container {
   text-align:center
 }
@@ -3282,10 +3387,12 @@ p.counter-desc-negative {
   color:#3F4045
 }
 
-/* ============================================================
-   17. Pie chart
-/* ============================================================ */
+/***********************************
+24 Pie Charts
+***********************************/
+
 /**** Small ****/
+
 .piechart-container .chart-small {
   text-align:center;
   margin:1em 0
@@ -3347,6 +3454,7 @@ p.counter-desc-negative {
 }
 
 /**** Medium ****/
+
 .chart-wrapper {
   float:left;
   width:100%;
@@ -3405,6 +3513,7 @@ p.counter-desc-negative {
 }
 
 /**** Large ****/
+
 .chart-wrapper {
   float:left;
   width:100%;
@@ -3462,57 +3571,19 @@ p.counter-desc-negative {
   margin:1em 0 0
 }
 
-/* ============================================================
-   18. Call to action
-/* ============================================================ */
-/**** HOME PAGE ****/
-.main-blog-info {
-  margin-bottom:10px
-}
+/***********************************
+25 Form Validation
+***********************************/
 
-.main-blog-info img {
-  border:5px solid lightgray
-}
-
-.main-blog-info h3 {
-  margin-top:10px;
-  margin-bottom:10px;
-  font-weight:400;
-  text-transform:capitalize
-}
-
-.home-extra-info {
-  display:inline-flex
-}
-
-.home-extra-info p {
-  margin-right:10px
-}
-
-.home-likes i {
-  margin-left:20px
-}
-
-/**** Page ****/
-.featured-image img {
-  border:4px solid lightgray
-}
-
-.featured-image h2 {
-  margin-top:15px
-}
-
-/* ============================================================
-   18. Form Validation Styles
-/* ============================================================ */
 .error {
   font-style:italic;
   color:#EC2222!important
 }
 
-/* ============================================================
-   19. Pricing Tables
-/* ============================================================ */
+/***********************************
+26 Pricing Tables
+***********************************/
+
 .pricing-table-4 {
   margin-bottom:10px;
   float:left;
@@ -3677,10 +3748,10 @@ div.folded h2:after {
   background-color:#F3BF34!important
 }
 
-/* ============================================================
-   19. Syngergy Callout Box
-/* ============================================================ */
-.syngery-callout {
+/***********************************
+27 Callouts
+***********************************/
+.smite-callout {
   padding:20px;
   margin-bottom:15px;
   border:1px solid #eee;
@@ -3690,21 +3761,21 @@ div.folded h2:after {
   float:left
 }
 
-.syngery-callout p {
+.smite-callout p {
   margin:0
 }
 
-.syngery-callout h4 {
+.smite-callout h4 {
   margin-top:0;
   margin-bottom:10px
 }
 
-.syngery-callout h3 {
+.smite-callout h3 {
   margin-top:0;
   margin-bottom:10px
 }
 
-.syngery-callout h2 {
+.smite-callout h2 {
   margin-top:0;
   margin-bottom:10px
 }
@@ -3725,9 +3796,9 @@ div.folded h2:after {
   border-left-color:#1b809e
 }
 
-/* ============================================================
-   20. TABS
-/* ============================================================ */
+/***********************************
+28 Tabs
+***********************************/
 .toggle-tabs-holder {
   position:relative;
   display:block
@@ -3861,9 +3932,9 @@ li.active-tab {
   transition:width 6s ease-in-out
 }
 
-/* ============================================================
-   . BUTTON STYLES
-/* ============================================================ */
+/***********************************
+29 Buttons
+***********************************/
 .ps-btn {
   position:relative;
   display:none;
@@ -4038,9 +4109,9 @@ li.active-tab {
   text-decoration:underline
 }
 
-/* ============================================================
-   21. BLOG MASONRY
-/* ============================================================ */
+/***********************************
+30 Blog Masonry
+***********************************/
 .article-info h3 {
   margin-top:0
 }
@@ -4060,9 +4131,9 @@ li.active-tab {
   text-decoration:none!important
 }
 
-/* ========================================================
-    22. Slideshow
-/* ======================================================== */
+/***********************************
+31 Slideshow
+***********************************/
 .swiper-container {
   width:100%;
   height:100%
@@ -4221,9 +4292,9 @@ li.active-tab {
 }
 }
 
-/* =================================
-    Gallery
-   ================================= */
+/***********************************
+32 Gallery
+***********************************/
 .gallery-top {
   height:32em;
   width:100%
@@ -4355,9 +4426,9 @@ a.gallery-left-arrow i.fa.fa-arrow-left {
   float:left
 }
 
-/* =================================
-    Related posts
-   ================================= */
+/***********************************
+33 Related Posts
+***********************************/
 .related-projects-slide {
   width:100%;
   height:300px;
@@ -4434,101 +4505,10 @@ a.gallery-left-arrow i.fa.fa-arrow-left {
   color:#D0D0D0!important
 }
 
-/* =================================
-    Related posts
-   ================================= */
-.testimonials-slider {
-  width:100%;
-  margin:20px auto
-}
 
-.testimonials-slider .swiper-slide {
-  height:100%;
-  text-align:center;
-  font-size:18px;
-  background:#fff;
-/* Center slide text vertically */
-  display:-webkit-box;
-  display:-ms-flexbox;
-  display:-webkit-flex;
-  display:flex;
-  -webkit-box-pack:center;
-  -ms-flex-pack:center;
-  -webkit-justify-content:center;
-  justify-content:center;
-  -webkit-box-align:center;
-  -ms-flex-align:center;
-  -webkit-align-items:center;
-  align-items:center
-}
-
-.swiper-testimonials-prev {
-  position:absolute;
-/* height: 20px; */
-/* width: 20px; */
-  top:50%;
-  z-index:1;
-  font-weight:lighter;
-  font-size:5em;
-  left:-1.5em
-/* background: #000; */
-}
-
-.swiper-testimonials-prev i {
-  color:#3f4040
-}
-
-.swiper-testimonials-prev:hover i {
-  color:#F78E20;
-  cursor:pointer
-}
-
-.swiper-testimonials-prev.swiper-button-disabled i {
-  color:#D0D0D0!important
-}
-
-.swiper-testimonials-next {
-  position:absolute;
-/* height: 20px; */
-/* width: 20px; */
-  top:50%;
-  z-index:1;
-  font-weight:lighter;
-  font-size:5em;
-  right:-1.5em
-/* background: #000; */
-}
-
-.swiper-testimonials-next i {
-  color:#3f4040
-}
-
-.swiper-testimonials-next:hover i {
-  color:#F78E20;
-  cursor:pointer
-}
-
-.swiper-testimonials-next.swiper-button-disabled i {
-  color:#D0D0D0!important
-}
-
-.fp-testimonials-item {
-  padding:1em;
-  border:1px solid #eee
-}
-
-.swiper-wrapper a {
-  color:inherit!important
-}
-
-.swiper-wrapper a:hover {
-  color:inherit!important;
-  text-decoration:none!important
-}
-
-/* =================================
-    Typograpgy
-   ================================= */
+/***********************************
+34 Typography
+***********************************/
 .headings-example {
   float:left;
   width:100%;
@@ -4551,7 +4531,7 @@ a.gallery-left-arrow i.fa.fa-arrow-left {
   height:auto
 }
 
-.synergy-dropcap-1 {
+.smite-dropcap-1 {
   position:relative;
   top:4px;
   float:left;
@@ -4565,7 +4545,7 @@ a.gallery-left-arrow i.fa.fa-arrow-left {
   font-family:serif
 }
 
-.synergy-dropcap-2 {
+.smite-dropcap-2 {
   padding:7px;
   background-color:rgba(0,0,0,0.8);
   border:3px solid #f78e20;
@@ -4582,7 +4562,7 @@ a.gallery-left-arrow i.fa.fa-arrow-left {
   font-family:serif
 }
 
-.synergy-dropcap-3 {
+.smite-dropcap-3 {
   padding:10px;
   background-color:#f78e20;
   position:relative;
@@ -4597,7 +4577,7 @@ a.gallery-left-arrow i.fa.fa-arrow-left {
   font-family:serif
 }
 
-.synergy-dropcap-4 {
+.smite-dropcap-4 {
   padding:10px;
   background-color:#f78e20;
   position:relative;
@@ -4613,32 +4593,12 @@ a.gallery-left-arrow i.fa.fa-arrow-left {
   font-family:serif
 }
 
-/* =================================
-    Contact Page
-   ================================= */
-.contact-us {
-  margin-top:12px;
-  float:left;
-  width:100%;
-  height:auto
-}
 
-.contact-us p {
-  margin-bottom:25px;
-  font-weight:500
-}
-
-.contact-us i {
-  font-size:1.5em!important;
-  margin-left:0;
-  margin-right:20px
-}
-
-/* ============================================================
-   CALL TO ACTION
-/* ============================================================ */
+/***********************************
+35 Call To Action
+***********************************/
 /**** Container ****/
-.synergy-cta-inline {
+.smite-cta-inline {
   padding:40px 43px;
   float:left;
   width:100%;
@@ -4646,36 +4606,36 @@ a.gallery-left-arrow i.fa.fa-arrow-left {
   display:table
 }
 
-.synergy-cta-text {
+.smite-cta-text {
   width:75%;
   display:table-cell;
   vertical-align:middle
 }
 
-.synergy-cta-text p {
+.smite-cta-text p {
   margin-top:0;
   margin-bottom:7px
 }
 
-.synergy-cta-text h1 {
+.smite-cta-text h1 {
   margin-top:0;
   margin-bottom:15px;
   font-weight:300
 }
 
-.synergy-cta-text h2 {
+.smite-cta-text h2 {
   margin-top:0;
   margin-bottom:15px;
   font-weight:300
 }
 
-.synergy-cta-text h3 {
+.smite-cta-text h3 {
   margin-top:0;
   margin-bottom:15px;
   font-weight:300
 }
 
-.synergy-cta-button {
+.smite-cta-button {
   width:25%;
   display:table-cell;
   text-align:right;
@@ -4684,7 +4644,7 @@ a.gallery-left-arrow i.fa.fa-arrow-left {
 }
 
 /**** Fullwidth ****/
-.synergy-cta-inline-fullwidth {
+.smite-cta-inline-fullwidth {
   padding:40px 43px;
   float:left;
   width:100%;
@@ -4692,13 +4652,13 @@ a.gallery-left-arrow i.fa.fa-arrow-left {
   display:table-cell
 }
 
-.synergy-cta-text-fullwidth {
+.smite-cta-text-fullwidth {
   width:75%;
   display:inline-block;
   vertical-align:middle
 }
 
-.synergy-cta-text-fullwidth h1 {
+.smite-cta-text-fullwidth h1 {
   margin-top:0;
   display:table-cell;
   vertical-align:middle;
@@ -4706,7 +4666,7 @@ a.gallery-left-arrow i.fa.fa-arrow-left {
   font-weight:300
 }
 
-.synergy-cta-text-fullwidth h2 {
+.smite-cta-text-fullwidth h2 {
   margin-top:0;
   display:table-cell;
   vertical-align:middle;
@@ -4714,7 +4674,7 @@ a.gallery-left-arrow i.fa.fa-arrow-left {
   font-weight:300
 }
 
-.synergy-cta-text-fullwidth h3 {
+.smite-cta-text-fullwidth h3 {
   margin-top:0;
   display:table-cell;
   vertical-align:middle;
@@ -4722,7 +4682,7 @@ a.gallery-left-arrow i.fa.fa-arrow-left {
   font-weight:300
 }
 
-.synergy-cta-button-fullwidth {
+.smite-cta-button-fullwidth {
   width:25%;
   display:table-cell;
   text-align:right;
@@ -4732,21 +4692,21 @@ a.gallery-left-arrow i.fa.fa-arrow-left {
 }
 
 @media screen and (max-width: 1200px) {
-.synergy-cta-text-fullwidth h1 {
+.smite-cta-text-fullwidth h1 {
   position:relative
 }
 
-.synergy-cta-text-fullwidth h2 {
+.smite-cta-text-fullwidth h2 {
   position:relative
 }
 
-.synergy-cta-text-fullwidth h3 {
+.smite-cta-text-fullwidth h3 {
   position:relative
 }
 }
 
 @media screen and (max-width: 991px) {
-.synergy-cta-button {
+.smite-cta-button {
   width:100%;
   display:block;
   text-align:center;
@@ -4755,11 +4715,11 @@ a.gallery-left-arrow i.fa.fa-arrow-left {
   padding:0
 }
 
-.synergy-cta-inline {
+.smite-cta-inline {
   text-align:center
 }
 
-.synergy-cta-text {
+.smite-cta-text {
   width:100%;
   text-align:center;
   display:block
@@ -4767,7 +4727,7 @@ a.gallery-left-arrow i.fa.fa-arrow-left {
 }
 
 @media screen and (max-width: 767px) {
-.synergy-cta-inline-fullwidth {
+.smite-cta-inline-fullwidth {
   padding:5px;
   float:left;
   width:100%;
@@ -4777,17 +4737,17 @@ a.gallery-left-arrow i.fa.fa-arrow-left {
   font-size:10px
 }
 
-.synergy-cta-button-fullwidth {
+.smite-cta-button-fullwidth {
   width:25%;
   display:table-cell;
   vertical-align:middle;
   float:none;
   text-align:center
-}
+ }
 }
 
 @media screen and (max-width: 500px) {
-.synergy-cta-inline-fullwidth {
+.smite-cta-inline-fullwidth {
   padding:5px;
   float:left;
   width:100%;
@@ -4795,18 +4755,19 @@ a.gallery-left-arrow i.fa.fa-arrow-left {
   max-height:170px!important;
   display:table-cell;
   font-size:8px
-}
+ }
 }
 
 @media screen and (max-width: 500px) {
-.synergy-cta-inline {
+.smite-cta-inline {
   padding:5px
-}
+ }
 }
 
-/* ============================================================
-   POPOVERS
-/* ============================================================ */
+/***********************************
+36 Popovers
+***********************************/
+
 .popover-title {
   text-align:left!important;
   background-color:#f78e20!important;

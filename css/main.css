@@ -2548,6 +2548,18 @@ figure.effect-hera:hover p i:empty {
   margin:.3em
 }
 
+/*==========================
+Slides for mobile
+===========================*/
+
+@media screen and (max-width: 750px ){
+  .swiper-slide {
+    width: 100% !important;
+  }
+}
+
+
+
 /***********************************
 14 Our Partners
 ***********************************/
@@ -2668,26 +2680,85 @@ div.progress .desc {
   background-color:#f5f5f5;
   border-radius:0;
   -webkit-box-shadow:none;
-  box-shadow:none
+  box-shadow:none;
 }
 
 .progress-bar {
-  margin-top:-1.4em
+  margin-top:-1.4em;
 }
+
 
 .progress .progressbar-front-text {
-  display:block;
-  width:100%;
-  font-size:12px;
-  line-height:em;
-  text-align:center;
-  margin:0 auto;
-  line-height:3em;
-  color:#000
+  display: block;
+  width: 100%;
+  font-size: 12px;
+  display: none;
+  text-align: center;
+  margin: 0 21.2em !important;
+  line-height: 3em;
+  color: #000;
+  /* left: -13em; */
+  /* position: absolute; */
+  text-align: left;
 }
 
+
 .progress .progressbar-back-text {
-  line-height:0
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  z-index: 2000;
+  color: #000;
+  left: 0;
+  line-height: 0;
+  font-weight: bold;
+}
+
+/** Lables ***/
+.progress-bar p {
+  z-index: 9999;
+  position: absolute;
+  color: #fff;
+  padding: 0em;
+  float: left;
+  line-height: 2.4em;
+  display: inline-block;
+  margin: -4em;
+  background: rgba(255, 255, 255, 0.27);
+  font-size: 1.2em;
+  float: left;
+  text-align: center;
+  left: 42px;
+  bottom: 4em;
+  padding: 0em 2em;
+}
+
+.progress.right p {
+  margin: 0em -4em;
+  line-height: 2.5em;
+  left: 98%;
+  float: right;
+  /* width: 1%; */
+  padding: 0em 1em;
+  position: absolute;
+}
+
+
+.progress.vertical .progressbar-front-text {
+  display: block;
+  width: 100%;
+  font-size: 12px;
+  text-align: center;
+  margin: 0 1.5em !important;
+  line-height: 3em;
+  color: #000;
+  display: none;
+  /* left: -13em; */
+  /* position: absolute; */
+  text-align: left;
 }
 
 /***********************************

@@ -645,6 +645,7 @@ a.dropdown-toggle {
 
 #main-search-form form.navbar-form.navbar-left .search-bg {
   background:#f78e20;
+  margin-left: -4px;
   border-color:#f78e20!important
 }
 
@@ -665,10 +666,11 @@ a.dropdown-toggle {
   #main-search-forminputopacity:1;
   width:79%;
   display:inline-block;
-  -webkit-animation:search-show .4s forwards;
-  animation:search-show .4s forwards
+
 }
 }
+
+
 
 @keyframes search-show {
 0% {

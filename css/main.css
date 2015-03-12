@@ -988,6 +988,10 @@ nav.navbar-fixed-top.main-nav-fixed .navbar-nav.navbar-right.main-right-menu {
   float:left
 }
 
+.footer-works a:hover {
+  color: transparent !important;
+}
+
 .footer-works div {
   max-height:54px;
   min-height:54px;
@@ -1708,8 +1712,20 @@ figure p {
 }
 
 .pf-single-img img {
-  padding-left:25px;
+  padding-left:35px;
   padding-bottom:10px
+}
+
+.pf-description {
+  float: left;
+  width: 100%;
+  height: 588px;
+}
+
+.pf-single {
+  float: left;
+  width: 100%;
+  height: auto;
 }
 
 .grid-post-info {

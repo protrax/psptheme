@@ -271,6 +271,17 @@ $('#to-top').click(function(){
 });
 
 
+
+/*=============================
+  Mega menu 
+===============================*/
+jQuery(function($) {
+  window.prettyPrint && prettyPrint()
+  $(document).on('click', '.mega-menu .dropdown-menu', function(e) {
+    e.stopPropagation()
+    });
+  });
+
 /*************************************************************
  4 PSP SLIDER
 *************************************************************/

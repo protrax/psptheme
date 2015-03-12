@@ -358,24 +358,24 @@ div#nav-collapse {
 
 /***** Main menu tablet ****/
 @media screen and (max-width: 991px) {
-.navbar.mega-menu.navbar-default.main-nav {
-  font-size:.95em!important
-}
+  .navbar.mega-menu.navbar-default.main-nav {
+    font-size:.95em!important
+  }
 
-ul.col-sm-2.list-unstyled {
-  min-width:179px
-}
+  ul.col-sm-2.list-unstyled {
+    min-width:179px
+  }
 
-ul.dropdown-menu.initial {
-  font-size:1.15em
-}
+  ul.dropdown-menu.initial {
+    font-size:1.15em
+  }
 }
 
 @media screen and (max-width: 767px) {
-.main-logo img {
-  margin-left:18px;
-  margin-bottom:15px
-}
+  .main-logo img {
+    margin-left:18px;
+    margin-bottom:15px;
+  }
 }
 
 /**** Mobile ****/
@@ -399,24 +399,43 @@ div#main-search-form {
 }
 
 @media screen and (max-width: 767px) {
-.main-menu-container li a {
-  margin-left:10px
-}
+  .main-menu-container li a {
+    margin-left:10px
+  }
 }
 
 @media screen and (max-width: 767px) {
-.btn.btn-default .search-bg.no-outline.button-border {
-  float:left;
-  margin-right:-42px
-}
+  .btn.btn-default .search-bg.no-outline.button-border {
+    float:left;
+    margin-right:-42px
+  }
 
-.form-group {
-  display:flex
-}
+  .form-group {
+    display:flex;
+  }
 
-.navbar-form.navbar-left {
-  border:none
-}
+  .navbar-form.navbar-left {
+    border:none
+  }
+  .container>.navbar-header, .container-fluid>.navbar-header, .container>.navbar-collapse, .container-fluid>.navbar-collapse {
+    margin: 0em !important;
+  }
+  .navbar-collapse.in {
+    overflow-y: auto; 
+  }
+
+  .navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+    background: #fff !important;
+    width: 100%;
+    height: auto;
+    max-height: 40em;
+    height: 38em;
+  }
+
+  nav.navbar.mega-menu.navbar-default.main-nav.navbar-fixed-top.main-nav-fixed .container {
+    padding: 0em;
+  }
+
 }
 
 /******** End Main menu Tablet and mobile hover **********/

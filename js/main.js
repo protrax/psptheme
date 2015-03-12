@@ -276,12 +276,12 @@ $('#to-top').click(function(){
 *************************************************************/
 jQuery(document).ready(function($){
 // general vars
-  var slider           = $('.swiper-container'),
-      buttonPrev       = $('.swiper-button-prev'),
-      buttonNext       = $('.swiper-button-next'),
-      sliderHeading    = $('.swiper-slide  .content h1'),
-      sliderParagraph  = $('.swiper-slide .content .content-inner'),
-      sliderButtons    = $('.swiper-slide .content .content-buttons');
+  var slider                    = $('.swiper-container'),
+      buttonSlideshowPrev       = $('.swiper-button-prev'),
+      buttonSlideshowNext       = $('.swiper-button-next'),
+      sliderHeading             = $('.swiper-slide  .content h1'),
+      sliderParagraph           = $('.swiper-slide .content .content-inner'),
+      sliderButtons             = $('.swiper-slide .content .content-buttons');
 
 // Attr settings
   var sliderStart                = $( slider ).data('start'),
@@ -297,6 +297,8 @@ var pspSlider = new Swiper ('.swiper-container', {
       //Slider options
       direction: 'horizontal',
       watchVisibility: true,
+      nextButton: '.swiper-button-next',
+      prevButton: '.swiper-button-prev',
       loop: false,
       autoplay: parseInt(sliderAutoplayTime),
       speed: parseInt(sliderTransitionSpeed),
@@ -363,30 +365,17 @@ function slideEnd() {
 } // end slideEnd
 
 
-
-
 // Navigation
 
-// Navigate slideshow
-$( buttonPrev ).on('click', function(e){
-    e.preventDefault();
-    pspSlider.slidePrev();
-  });
-
-$( buttonNext ).on('click', function(e){
-    e.preventDefault();
-    pspSlider.slideNext();
-  });
 // Navigate slideshow label
   
-  $( buttonPrev ).hover(function(index){
+  $( buttonSlideshowPrev ).hover(function(index){
     $(this).find('span').show().addClass('animated flipInX');
   }, function(){
     $(this).find('span').hide();
   });
 
-
-  $( buttonNext ).hover(function(){
+  $( buttonSlideshowNext ).hover(function(){
     $(this).find('span').show().addClass('animated flipInX');
   }, function(){
     $(this).find('span').hide();
@@ -1279,11 +1268,6 @@ $('.testimonials-slider').each(function(index){
     });
 
 
-
-
-
-
-
       // Navigate slideshow
       $( buttonPrev ).on('click', function(e){
           e.preventDefault();
@@ -1296,7 +1280,7 @@ $('.testimonials-slider').each(function(index){
           console.log('clicked ' + index);
           testimonialsSlider.slideNext();
         }); 
-
+      // Slide in tab fix
       $('.toggle-tabs li').hover(function(index){
         testimonialsSlider.update();
       });

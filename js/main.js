@@ -1278,6 +1278,7 @@ $('.testimonials-slider').each(function(index){
         slideToClickedSlide: true,
     });
 
+
       // Navigate slideshow
       $( buttonPrev ).on('click', function(e){
           e.preventDefault();

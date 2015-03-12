@@ -119,6 +119,16 @@ hr {
 
 /*** General ****/
 
+.text-box {
+  float: left;
+  width: 100%;
+  height: auto;
+}
+
+.text-box i {
+  margin-right: 10px;
+}
+
 .spacer {
   display:block;
   height:0;

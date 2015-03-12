@@ -880,18 +880,26 @@ nav.navbar-fixed-top.main-nav-fixed .navbar-nav.navbar-right.main-right-menu {
   margin:2em 0
 }
 
+.partners img {
+   width: 180px !important;
+   height: auto;
+   margin-right: 10px;
+}
+
 .our-partners img {
   margin-bottom:30px;
-  max-width:100%;
-  height: 37px;
+  max-width:100% !important;
+  height: 37px !important;
+  display: inline-block !important;
   filter:gray;
   -webkit-filter:grayscale(100%)
 }
 
 .our-partners img:hover {
-  margin-bottom:30px;
-  width:200px;
-  height:75px;
+  margin-bottom:30px !important;
+  width:200px !important;
+  height:75px !important;
+  display: inline-block !important;
   filter:gray;
   -webkit-filter:grayscale(0%)
 }

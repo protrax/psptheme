@@ -275,6 +275,7 @@ $('#to-top').click(function(){
  4 PSP SLIDER
 *************************************************************/
 jQuery(document).ready(function($){
+
 // general vars
   var slider                    = $('.swiper-container'),
       buttonSlideshowPrev       = $('.swiper-button-prev'),
@@ -293,7 +294,7 @@ jQuery(document).ready(function($){
       sliderAnimationParagraph   = $( slider ).data('animationparagraph');
       sliderAnimationButtons     = $( slider ).data('animationbuttons');
 if( $('.front-slider').hasClass( "front-slider" )  ) {
-var pspSlider = new Swiper ('.swiper-container', {
+var pspSlider = new Swiper ('.front-slider', {
       //Slider options
       direction: 'horizontal',
       watchVisibility: true,
@@ -321,7 +322,7 @@ var pspSlider = new Swiper ('.swiper-container', {
       },
       onSlideChangeEnd: function(){
         slideEnd();
-      }
+      },
     });
 }
 
@@ -1182,34 +1183,33 @@ $(document).on("click",".lightbox-image-container",function(){
 *************************************************************/
 
 
-$(document).ready(function(){
+// $(document).ready(function(){
 
-  var ww = $(window).width();
-     var relatedProjectsSlider = new Swiper ('.related-projects-slide', {
-        direction: 'horizontal',
-        loop: false,
-        touchEventsTarget: 'container',
-        nextButton: '.swiper-related-next',
-        prevButton: '.swiper-related-prev',
-        spaceBetween: 30,
-        centeredSlides: false,
-        slidesPerView: slidesPrView(),
-        touchRatio: 0.6,
-        slideToClickedSlide: true,
-    });
-function slidesPrView() {
-    var three = 3,
-        one = 1;
+//   var ww = $(window).width();
+//      var relatedProjectsSlider = new Swiper ('.related-projects-slide', {
+//         direction: 'horizontal',
+//         loop: false,
+//         touchEventsTarget: 'container',
+//         nextButton: '.swiper-related-next',
+//         prevButton: '.swiper-related-prev',
+//         spaceBetween: 30,
+//         centeredSlides: false,
+//         slidesPerView: slidesPrView(),
+//         touchRatio: 0.6,
+//         slideToClickedSlide: true,
+//     });
+// function slidesPrView() {
+//     var three = 3,
+//         one = 1;
           
-    if( ww < 767  ) {
-        return one;
-      }else {
-       return three;
-      }
-} // end slidesPrView
+//     if( ww < 767  ) {
+//         return one;
+//       }else {
+//        return three;
+//       }
+// } // end slidesPrView
 
-}); // end anon
- 
+// }); // end anon
 
 
 /*************************************************************
@@ -1217,11 +1217,6 @@ function slidesPrView() {
 *************************************************************/
 
 $(document).ready(function(){
-  var sliderBtnNext = $('.swiper-testimonials-next'),
-      sliderBtnPrev = $('.swiper-testimonials-prev');
-
- var ww = $(window).width();
-
 
 // Option array 
   var tstAmount   = [],
@@ -1241,8 +1236,6 @@ $('.testimonials-slider').each(function(index){
 });
 
 
-
-
 // Testimonial loop
 $('.testimonials-slider').each(function(index){
     // Add classes
@@ -1250,8 +1243,8 @@ $('.testimonials-slider').each(function(index){
     $(this).parent().find('.swiper-testimonials-next').addClass('testimonials-button-next' + index);
     $(this).parent().find('.swiper-testimonials-prev').addClass('testimonials-button-prev' + index);
     // inc buttons
-    var buttonPrev = '.testimonials-button-prev' + index,
-        buttonNext = '.testimonials-button-next' + index;
+    var buttonTestimonialPrev = '.testimonials-button-prev' + index,
+        buttonTestimonialNext = '.testimonials-button-next' + index;
     // Init testimonial slider
      var testimonialsSlider = [index];
      var testimonialsSlider = new Swiper ('.testimonial-' + index, {
@@ -1264,20 +1257,18 @@ $('.testimonials-slider').each(function(index){
         centeredSlides: false,
         slidesPerView: tstAmount[index],
         touchRatio: 0.6,
-        slideToClickedSlide: true,
+        slideToClickedSlide: true
     });
 
 
       // Navigate slideshow
-      $( buttonPrev ).on('click', function(e){
+      $( buttonTestimonialPrev ).on('click', function(e){
           e.preventDefault();
-          console.log('clicked ' + index);
           testimonialsSlider.slidePrev();
         });
 
-      $( buttonNext ).on('click', function(e){
+      $( buttonTestimonialNext ).on('click', function(e){
           e.preventDefault();
-          console.log('clicked ' + index);
           testimonialsSlider.slideNext();
         }); 
       // Slide in tab fix
@@ -1285,11 +1276,7 @@ $('.testimonials-slider').each(function(index){
         testimonialsSlider.update();
       });
 
-}); // End each loop
-
-
-
-
+  }); // End each loop
 }); // end anon
 
 
@@ -1300,10 +1287,9 @@ $('.testimonials-slider').each(function(index){
 *************************************************************/
 
 $(document).ready(function(){
-  var sliderBtnPartnerNext = $('.swiper-partners-next'),
-      sliderBtnPartnerPrev = $('.swiper-partners-prev');
 
- var ww = $(window).width();
+
+
 
 
 // Option array 
@@ -1353,13 +1339,11 @@ $('.partner-slider').each(function(index){
       // Navigate slideshow
       $( buttonPartnerPrev ).on('click', function(e){
           e.preventDefault();
-          console.log('clicked ' + index);
           partnersSlider.slidePrev();
         });
 
       $( buttonPartnerNext ).on('click', function(e){
           e.preventDefault();
-          console.log('clicked ' + index);
           partnersSlider.slideNext();
         });     
 
@@ -1369,16 +1353,7 @@ $('.partner-slider').each(function(index){
 
 
 
-// function slidesPrView() {
-//     var three = 3,
-//         one = 1;
-          
-//     if( ww < 767  ) {
-//         return one;
-//       }else {
-//        return three;
-//       }
-// } // end slidesPrView
+
 
 }); // end anon
 

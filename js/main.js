@@ -1279,6 +1279,11 @@ $('.testimonials-slider').each(function(index){
     });
 
 
+
+
+
+
+
       // Navigate slideshow
       $( buttonPrev ).on('click', function(e){
           e.preventDefault();
@@ -1290,9 +1295,16 @@ $('.testimonials-slider').each(function(index){
           e.preventDefault();
           console.log('clicked ' + index);
           testimonialsSlider.slideNext();
-        });     
+        }); 
+
+      $('.toggle-tabs li').hover(function(index){
+        testimonialsSlider.update();
+      });
 
 }); // End each loop
+
+
+
 
 }); // end anon
 

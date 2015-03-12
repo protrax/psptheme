@@ -171,6 +171,11 @@ hr {
    overflow: hidden;
 }
 
+@media screen and ( max-width: 768px ) {
+  .page-image {
+    height: auto;
+  }
+}
 /**** Content backgrounds *****/
 
 .dark {
@@ -2638,6 +2643,12 @@ Slides for mobile
   margin:.3em
 }
 
+@media screen and (max-width: 752px) {
+  .partner-slider .swiper-slide img {
+    width: 100px;
+  }
+
+}
 /***********************************
 15 Progress Bars
 ***********************************/
@@ -2882,6 +2893,20 @@ div.progress .desc {
 .author-sub {
   float:left;
   width:100%
+}
+
+@media screen and (max-width: 681px) {
+  .author-post-info {
+    display: block;
+  }
+  .author-post-info p {
+    display: block;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+  .author-info-wrapper h4 {
+    margin-top: 12px;
+  }
 }
 
 /***********************************
@@ -3206,6 +3231,25 @@ div.progress .desc {
 }
 }
 
+@media screen and (max-width: 680px) {
+  .post-info p {
+    display: block;
+    text-align: center;
+    margin-bottom: 18px;
+  }
+  .post-info {
+    display: block;
+  }
+  .team-links {
+    display: block;
+    float: none !important;
+  }
+  .team-links p {
+    display: block;
+    text-align: center;
+  }
+}
+
 /***********************************
 20 Parallax
 ***********************************/
@@ -3320,6 +3364,12 @@ div.progress .desc {
 .accordion-content {
   display:none;
   margin:25px 50px 25px 10px
+}
+
+@media screen and (max-width: 768px) {
+  .accordion-holder {
+    padding: 0 20px 0 20px;
+  }
 }
 
 /***********************************

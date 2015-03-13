@@ -326,9 +326,9 @@ button.search-bg:hover .search-icon {
 
 /**** Tablet and mobile ****/
 @media screen and (max-width:48em ) {
-.social-links {
-  float:left!important
-}
+  .social-links {
+    float:left!important
+  }
 }
 
 /***********************************

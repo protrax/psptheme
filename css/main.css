@@ -3381,8 +3381,8 @@ div.progress .desc {
 .quote-heading {
 }
 
-.row.skrollable.skrollable-between {
-
+.parallax-container {
+  background-attachment: none;
 }
 
 

@@ -400,7 +400,7 @@ function slideEnd() {
 5 Parallax
 *************************************************************/
   
-jQuery(document).ready(function($){
+jQuery(window).ready(function($){
       skrollr.init({
         forceHeight: true
       });

@@ -1362,11 +1362,6 @@ $('.partner-slider').each(function(index){
 }); // End each loop
 
 
-
-
-
-
-
 }); // end anon
 
 

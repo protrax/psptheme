@@ -403,11 +403,7 @@ function slideEnd() {
 
 
 
-  skrollr.init({
-    smoothScrolling: false,
-    mobileDeceleration: 0.004,
-    forceHeight: true
-  });
+var s = skrollr.init();
 
 /*************************************************************
 6 PIE chart ANIMATION

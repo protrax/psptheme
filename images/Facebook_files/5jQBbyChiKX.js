@@ -1,0 +1,5 @@
+/*!CK:2140059573!*//*1418266289,*/
+
+if (self.CavalryLogger) { CavalryLogger.start_js(["kJXnV"]); }
+
+__d("TypeaheadSearchMegaphone",["AsyncRequest","DOM","DOMQuery","Event","Parent"],function(a,b,c,d,e,f,g,h,i,j,k){function l(m){"use strict";this.$TypeaheadSearchMegaphone0=m;}l.prototype.enable=function(){"use strict";var m=i.scry(this.$TypeaheadSearchMegaphone0.getView().getElement(),'.megaphone_location_gsv2_typeahead')[0];if(!m)return;this.ajaxify=i.scry(m,'a.megaphone_hide_link[ajaxify]')[0].getAttribute('ajaxify');i.scry(m,'a').forEach(this.processLink,this);j.listen(m,'click',this.onClick.bind(this));};l.prototype.disable=function(){"use strict";};l.prototype.processLink=function(m){"use strict";if(m.getAttribute('ajaxify'))return;h.setAttributes(m,{target:'_blank'});};l.prototype.onClick=function(event){"use strict";var m=k.byTag(event.target,'a');if(!m||m.getAttribute('ajaxify'))return;g.bootstrap(this.ajaxify,m);};e.exports=l;},null);

@@ -52,6 +52,7 @@ Search By Index Number:
 ***********************************/
 html {
   font-size:.875em !important;
+  overflow-x: hidden;
 }
 
 body {

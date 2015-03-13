@@ -402,7 +402,7 @@ function slideEnd() {
   
 jQuery(document).ready(function($){
       skrollr.init({
-        forceHeight: false
+        forceHeight: true
       });
 });
 

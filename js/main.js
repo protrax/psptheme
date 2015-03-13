@@ -404,7 +404,7 @@ function slideEnd() {
   skrollr.init({
     smoothScrolling: false,
     mobileDeceleration: 0.004,
-    forceHeight: false
+    forceHeight: true
   });
 
 /*************************************************************

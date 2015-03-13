@@ -1,10 +1,60 @@
+/*===========================
+Search By Index Number:
+
+01 General Styles
+02 Logo/Links Styles
+03 Menu Styles
+04 Isotope Styles
+05 Footer Styles
+06 Search Styles
+07 Pages Styles
+08 Sidebar Styles
+09 Search Page
+10 Portfolio Styles
+11 Portfolio Gird Styles
+12 Hover Effects
+13 Team Members
+14 Testimonials
+15 Our Partners
+16 Progress Bars
+17 Author Blog
+18 Blog Listview
+19 Google Maps & Contact Page
+20 Single Post
+21 Parallax
+22 Accordions
+23 Toggle
+24 Counters
+25 Text Icon
+26 Pie Charts
+27 Form Validation
+28 Pricing Tables
+29 Callouts
+30 Tabs
+31 Buttons
+32 Blog Masonry
+33 Slideshow
+34 Gallery
+35 Related Posts
+36 Typography
+37 Call To Action
+38 Popovers
+
+
+============================*/
+
+
+
+
+
+
 /***********************************
 01 General Styles
 ***********************************/
 html {
   font-size:.875em!important;
-  max-width:100%;
-  overflow-x:hidden
+  overflow-x:hidden;
+  overflow: scroll;
 }
 
 body {
@@ -17,7 +67,7 @@ body {
   width:100%;
   height: auto !important;
   max-width:100%;
-  overflow-x:hidden
+  overflow-x:hidden;
 }
 
 img {
@@ -286,7 +336,7 @@ button.search-bg:hover .search-icon {
 }
 
 /***********************************
-03 Logo/Links Styles
+03 Menu Styles
 ***********************************/
 
 .main-nav {
@@ -836,6 +886,7 @@ a.dropdown-toggle {
   display:block;
   clear:both
 }
+
 
 .isotope .iso-item {
   -webkit-backface-visibility:hidden;
@@ -1746,6 +1797,8 @@ figure p {
   margin-bottom:15px
 }
 
+
+
 /***********************************
 12 Hover Effects
 ***********************************/
@@ -2393,7 +2446,8 @@ figure.effect-hera:hover p i:empty {
 }
 
 .team-links {
-  display:inline-block
+  display:inline-block;
+  float: right;
 }
 
 .team-links .instagram {
@@ -2429,7 +2483,7 @@ figure.effect-hera:hover p i:empty {
 }
 
 /***********************************
-13 Testimonials
+14 Testimonials
 ***********************************/
 
 .testimonials-slider {
@@ -2626,7 +2680,7 @@ Slides for mobile
 
 
 /***********************************
-14 Our Partners
+15 Our Partners
 ***********************************/
 
 .fp-partners p {
@@ -2694,7 +2748,7 @@ Slides for mobile
 
 }
 /***********************************
-15 Progress Bars
+16 Progress Bars
 ***********************************/
 
 div.progress .desc {
@@ -2834,7 +2888,7 @@ div.progress .desc {
 }
 
 /***********************************
-16 Author Blog
+17 Author Blog
 ***********************************/
 
 .author-wrapper {
@@ -2954,7 +3008,7 @@ div.progress .desc {
 }
 
 /***********************************
-17 Blog Listview
+18 Blog Listview
 ***********************************/
 
 .listview-wrapper {
@@ -3041,7 +3095,7 @@ div.progress .desc {
 }
 
 /***********************************
-18 Google Maps & Contact Page
+19 Google Maps & Contact Page
 ***********************************/
 
 .google-maps {
@@ -3134,7 +3188,7 @@ div.progress .desc {
 }
 
 /***********************************
-19 Single Post
+20 Single Post
 ***********************************/
 
 .reply-comment {
@@ -3295,7 +3349,7 @@ div.progress .desc {
 }
 
 /***********************************
-20 Parallax
+21 Parallax
 ***********************************/
 
 /** Center content **/
@@ -3346,7 +3400,7 @@ div.progress .desc {
 }
 
 /***********************************
-21 Accordions
+22 Accordions
 ***********************************/
 
 .accordion-holder {
@@ -3417,7 +3471,7 @@ div.progress .desc {
 }
 
 /***********************************
-22 Toggle
+23 Toggle
 ***********************************/
 
 .to-toggle-holder {
@@ -3472,7 +3526,7 @@ div.progress .desc {
 }
 
 /***********************************
-23 Counters
+24 Counters
 ***********************************/
 
 .counter-holder-border {
@@ -3554,7 +3608,7 @@ p.counter-desc-negative {
 }
 
 /***********************************
-23 Text Icon
+25 Text Icon
 ***********************************/
 
 .icon-text-container {
@@ -3577,7 +3631,7 @@ p.counter-desc-negative {
 }
 
 /***********************************
-24 Pie Charts
+26 Pie Charts
 ***********************************/
 
 /**** Small ****/
@@ -3761,7 +3815,7 @@ p.counter-desc-negative {
 }
 
 /***********************************
-25 Form Validation
+27 Form Validation
 ***********************************/
 
 .error {
@@ -3770,7 +3824,7 @@ p.counter-desc-negative {
 }
 
 /***********************************
-26 Pricing Tables
+28 Pricing Tables
 ***********************************/
 
 .pricing-table-4 {
@@ -3938,7 +3992,7 @@ div.folded h2:after {
 }
 
 /***********************************
-27 Callouts
+29 Callouts
 ***********************************/
 .smite-callout {
   padding:20px;
@@ -3987,7 +4041,7 @@ div.folded h2:after {
 }
 
 /***********************************
-28 Tabs
+30 Tabs
 ***********************************/
 .toggle-tabs-holder {
   position:relative;
@@ -4123,7 +4177,7 @@ li.active-tab {
 }
 
 /***********************************
-29 Buttons
+31 Buttons
 ***********************************/
 .ps-btn {
   position:relative;
@@ -4300,7 +4354,7 @@ li.active-tab {
 }
 
 /***********************************
-30 Blog Masonry
+32 Blog Masonry
 ***********************************/
 .article-info h3 {
   margin-top:0
@@ -4322,7 +4376,7 @@ li.active-tab {
 }
 
 /***********************************
-31 Slideshow
+33 Slideshow
 ***********************************/
 .swiper-container {
   width:100%;
@@ -4477,10 +4531,10 @@ li.active-tab {
 }
 
 /***********************************
-32 Gallery
+34 Gallery
 ***********************************/
 .gallery-top {
-  height:32em;
+  height:auto;
   width:100%
 }
 
@@ -4611,7 +4665,7 @@ a.gallery-left-arrow i.fa.fa-arrow-left {
 }
 
 /***********************************
-33 Related Posts
+35 Related Posts
 ***********************************/
 .related-projects-slide {
   width:100%;
@@ -4691,7 +4745,7 @@ a.gallery-left-arrow i.fa.fa-arrow-left {
 
 
 /***********************************
-34 Typography
+36 Typography
 ***********************************/
 .headings-example {
   float:left;
@@ -4779,7 +4833,7 @@ a.gallery-left-arrow i.fa.fa-arrow-left {
 
 
 /***********************************
-35 Call To Action
+37 Call To Action
 ***********************************/
 /**** Container ****/
 .smite-cta-inline {
@@ -4949,7 +5003,7 @@ a.gallery-left-arrow i.fa.fa-arrow-left {
 }
 
 /***********************************
-36 Popovers
+38 Popovers
 ***********************************/
 
 .popover-title {

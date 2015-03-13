@@ -46,11 +46,14 @@ $( function() {
       itemSelector: '.iso-item',
       layoutMode: 'masonry',
       transitionDuration: '0.8s',
+     
           getSortData: {
             category: '[data-category]',
+
           },
       masonry: {
-      columnWidth: '.grid-sizer'
+      columnWidth: '.grid-sizer',
+     
       }
 });
 

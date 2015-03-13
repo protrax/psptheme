@@ -401,9 +401,11 @@ function slideEnd() {
 5 Parallax
 *************************************************************/
 
-
-
-var s = skrollr.init();
+  skrollr.init({
+    smoothScrolling: false,
+    mobileDeceleration: 0.004,
+    forceHeight: false
+  });
 
 /*************************************************************
 6 PIE chart ANIMATION

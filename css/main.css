@@ -66,7 +66,7 @@ body {
   width:100%;
   height: 100% !important;
   max-width:100%;
-  overflow-x:hidden;
+  overflow-x: hidden;
 }
 
 img {
@@ -4535,24 +4535,31 @@ li.active-tab {
 ***********************************/
 .gallery-top {
   height:auto;
-  width:100%
+  width:100%;
+  max-height: 620px;
 }
 
 .gallery-top .swiper-slide {
   width:100%;
-  height:100%
+  height:100%;
 }
 
 .gallery-thumbs {
   height:10em;
   box-sizing:border-box;
-  padding:10px 0
+  padding:10px 0;
+}
+
+@media screen and (max-width: 767px) {
+  .swiper-container.gallery-thumbs.swiper-container-horizontal {
+    display: none;
+  }
 }
 
 .gallery-thumbs .swiper-slide {
   width:25%;
   height:100%;
-  opacity:.4
+  opacity:.4;
 }
 
 .gallery-thumbs .swiper-slide-active {

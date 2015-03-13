@@ -15,6 +15,7 @@ body {
   min-height:100%;
   vertical-align:baseline;
   width:100%;
+  height: auto !important;
   max-width:100%;
   overflow-x:hidden
 }

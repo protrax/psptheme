@@ -2,7 +2,7 @@
  1 GENERAL
 *************************************************************/
 $("body").css("overflow-x", "hidden");
-
+$("body").attr("id", "skrollr-body");
 
 jQuery(function ($) {
   

@@ -1,15 +1,12 @@
 /*************************************************************
  1 GENERAL
 *************************************************************/
-$("html").css("overflow-y", "scroll");
-$("body").css("overflow-x", "hidden");
-$("body").css("overflow-y", "scroll");
+$("body").css("overflow", "auto");
 
 jQuery(function ($) {
   
   // Enable tooltip
   $('[data-toggle="tooltip"]').tooltip()
-
 
 
   //Enable Sidebar offcanvas

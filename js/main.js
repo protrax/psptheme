@@ -2,7 +2,7 @@
  1 GENERAL
 *************************************************************/
 
-$("body").css("overflow", "hidden");
+$("body").css("overflow-x", "hidden");
 
 jQuery(function ($) {
   

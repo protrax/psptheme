@@ -429,22 +429,23 @@ div#nav-collapse {
 
 /**** Mobile ****/
 @media screen and (max-width: 767px) {
-.social-links {
-  display:none
-}
+  .social-links {
+    display:none
+  }
 
-li.search-hide {
-  display:none
-}
+  li.search-hide {
+    display:none
+  }
 
-div#main-search-form {
-  display:block!important;
-  position:relative
-}
+  div#main-search-form {
+    display:block!important;
+    position:relative;
+    top:-2em;
+  }
 
-#main-search-form input {
-  float:left
-}
+  #main-search-form input {
+    float:left;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -2672,6 +2673,7 @@ Slides for mobile
 @media screen and (max-width: 750px ){
   .swiper-slide {
     width: 100% !important;
+    height: 26em !important;
   }
 }
 

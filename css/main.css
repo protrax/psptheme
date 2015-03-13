@@ -1117,6 +1117,7 @@ nav.navbar-fixed-top.main-nav-fixed .navbar-nav.navbar-right.main-right-menu {
 
 .social-links {
   display: inline-block;
+  float: right;
 }
 
 .social-links p {
@@ -1127,6 +1128,36 @@ nav.navbar-fixed-top.main-nav-fixed .navbar-nav.navbar-right.main-right-menu {
   margin: 0px 10px 0 10px;
 
 }
+
+@media screen and (max-width: 992px) {
+  .footer-logo-desc {
+    text-align: center;
+  }
+  .footer-works {
+    text-align: center;
+  }
+  .footer-posts {
+    text-align: center;
+  }
+  .footer-tags h4 {
+    text-align: center;
+  }
+  .footer-links {
+    text-align: center;
+    display: block;
+  }
+  #copyright p {
+    text-align: center !important;
+  }
+  .social-links p {
+    display: block;
+    text-align: center;
+  }
+  .social-links {
+    float: none !important;
+  }
+}
+
 /***********************************
 06 Search Styles
 ***********************************/

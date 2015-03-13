@@ -4982,23 +4982,29 @@ a.gallery-left-arrow i.fa.fa-arrow-left {
 }
 
 @media screen and (max-width: 767px) {
-.smite-cta-inline-fullwidth {
-  padding:5px;
-  float:left;
-  width:100%;
-  text-align:center;
-  max-height:170px!important;
-  display:table-cell;
-  font-size:10px
-}
 
-.smite-cta-button-fullwidth {
-  width:25%;
-  display:table-cell;
-  vertical-align:middle;
-  float:none;
-  text-align:center
- }
+  .smite-cta-inline-fullwidth {
+    padding:3em;
+    float:left;
+    width:100%;
+    text-align:center;
+    max-height:170px!important;
+    display:table-cell;
+    font-size:10px
+  }
+
+  .smite-cta-button-fullwidth {
+    width:25%;
+    display:table-cell;
+    vertical-align:middle;
+    float:none;
+    text-align:center
+   }
+
+  .smite-cta-text-fullwidth {
+    padding: 0.6em;
+  }
+
 }
 
 @media screen and (max-width: 500px) {

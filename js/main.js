@@ -3,6 +3,7 @@
 *************************************************************/
 
 $("body").css("overflow-x", "hidden");
+$("body").css("overflow-y", "scroll");
 
 jQuery(function ($) {
   

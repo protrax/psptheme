@@ -402,14 +402,12 @@ function slideEnd() {
 *************************************************************/
 
 
-jQuery(document).ready(function($){
-      skrollr.init({
-            smoothScrolling: false,
-            mobileDeceleration: 0.004,
-      });
-});
 
-
+  skrollr.init({
+    smoothScrolling: false,
+    mobileDeceleration: 0.004,
+    forceHeight: true
+  });
 
 /*************************************************************
 6 PIE chart ANIMATION

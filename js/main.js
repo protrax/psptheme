@@ -1,6 +1,7 @@
 /*************************************************************
  1 GENERAL
 *************************************************************/
+$("body").css("overflow-x", "hidden");
 $("body").attr("id", "skrollr-body");
 
 jQuery(function ($) {
@@ -1401,4 +1402,3 @@ $(document).ready(function() {
   $("#myPopOver6").popover();
   $("#myPopOver7").popover();
 })
-

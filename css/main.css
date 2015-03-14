@@ -1827,11 +1827,26 @@ figure p {
   margin-bottom:15px
 }
 
+/*** portfolio mobile ***/
+
+@media screen and (max-width: 767px ) {
+  #filters-portfolio .ui-group a.button.btn {
+    display: block !important;
+  }
+
+  #filters-portfolio {
+    height: 100%;
+    max-height: 40em;
+    min-height: 20em;
+  }
+
+}
 
 
 /***********************************
 12 Hover Effects
 ***********************************/
+
 /*---------------*/
 /***** Bubba *****/
 /*---------------*/
@@ -4418,6 +4433,13 @@ li.active-tab {
   #filters .ui-group a.button.btn {
       display: block !important;
   }
+
+  div#filters {
+    min-height: 20em;
+    max-height: 30em;
+    height: 100%;
+  }
+
 }
 
 /***********************************

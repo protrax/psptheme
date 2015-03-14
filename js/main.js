@@ -1403,3 +1403,12 @@ $(document).ready(function() {
   $("#myPopOver6").popover();
   $("#myPopOver7").popover();
 })
+
+/*********************************************************
+21 Smoth scroll
+*********************************************************/
+var smothWindow = $(window).width();
+
+if( smothWindow > 767 ) {
+   $('body').append('<script src="js/SmoothScroll.v1.2.1.js"></script>');
+} 

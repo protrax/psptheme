@@ -3621,6 +3621,12 @@ p.counter-desc-negative {
  }
 }
 
+@media screen and (max-width: 992px) {
+  .col-md-4.parallax-smal-content {
+    float: left;
+  }
+}
+
 /** Center content **/
 
 .parallax-container .fullwidth-content-big {
